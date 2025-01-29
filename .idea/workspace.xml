@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="moved main.java into correct folder">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main.java" afterDir="false" />
     </list>
@@ -24,8 +25,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Blaqkstar/EscapeRoomGame.git&quot;,
-    &quot;accountId&quot;: &quot;33bf5a69-71e6-4530-b179-74da27333e68&quot;
+    &quot;url&quot;: &quot;https://github.com/kylejfavorite/EscapeRoomGame.git&quot;,
+    &quot;accountId&quot;: &quot;86515775-36cf-415b-b0dd-8cb11382d995&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -49,6 +50,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Kyle/IdeaProjects/EscapeRoomGame",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,6 +85,9 @@
       <workItem from="1737849600120" duration="56000" />
       <workItem from="1737849841090" duration="619000" />
       <workItem from="1737850628128" duration="3451000" />
+      <workItem from="1738106155603" duration="115000" />
+      <workItem from="1738106927247" duration="1401000" />
+      <workItem from="1738167915922" duration="6141000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
