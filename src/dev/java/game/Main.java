@@ -1,4 +1,4 @@
-package org;
+package game;
 
 import java.util.EnumMap;
 import java.util.HashMap;
@@ -6,7 +6,6 @@ import java.util.Map;
 import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LoggingException;
 
 public class Main {
     public static void main(final String[] args) {
