@@ -1,5 +1,6 @@
 package org;
 
+
 import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
@@ -7,6 +8,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(final String[] args) {
+
         // instantiates room
         Room room = new Room();
 
