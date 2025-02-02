@@ -1,7 +1,8 @@
 package org;
-import java.util.Map;
-import java.util.HashMap;
+
 import java.util.EnumMap;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
