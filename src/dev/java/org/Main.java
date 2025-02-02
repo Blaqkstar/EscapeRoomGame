@@ -1,18 +1,23 @@
 package org;
 
-
-
 import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LoggingException;
 
 public class Main {
     public static void main(final String[] args) {
 
+        final Logger log = LogManager.getLogger(Main.class.getName());
+
+        log.info("instantiating room...");
         // instantiates room
         Room room = new Room();
 
+        log.debug("adding items to room...");
         // adds items to each wall. This could prob just be a method later
         room.setItem(Direction.north, new Item("painting", "A painting of an old house surrounded by neatly-trimmed hedges.", "The painter's signature is inscribed in the corner: 'F.L. Romulus'."));
         room.setItem(Direction.south, new Item("bookshelf", "A bookshelf filled with books about the occult.", "A pungent smell gets stronger the closer you get to the shelf."));
@@ -30,8 +35,10 @@ public class Main {
         do {
             System.out.print("Enter input (look <direction>, exit): ");
             input = scanner.nextLine(); // user input
+            log.info("user input received...");
 
             // processes user input
+            log.info("user selected look...");
             if (input.startsWith("look ")) {
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
@@ -45,7 +52,6 @@ public class Main {
                 } else {
                     System.out.println("Invalid input. Please use the format 'look <direction>'."); // handles formatting issues
                 }
-
             } else if(input.startsWith("inspect ")) {
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
@@ -74,6 +80,7 @@ public class Main {
         } while (!input.equalsIgnoreCase("exit")); // repeats loop until user types 'exit'
 
         // exit message
+        log.info("exiting game...");
         System.out.println("Thanks for playing!");
         scanner.close();
     }
