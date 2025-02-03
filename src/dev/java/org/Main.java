@@ -11,6 +11,7 @@ import org.apache.logging.log4j.LoggingException;
 public class Main {
     public static void main(final String[] args) {
 
+        //Need this logger to work again pls!
         final Logger log = LogManager.getLogger(Main.class.getName());
 
         log.info("instantiating room...");
