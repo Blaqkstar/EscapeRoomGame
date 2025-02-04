@@ -12,11 +12,12 @@ public class Main {
 
         final Logger log = LogManager.getLogger(Main.class.getName());
 
-        log.info("instantiating room...");
+
         // instantiates room
         Room room = new Room();
-
-        log.debug("adding items to room...");
+        room.setName("Tutorial Room");
+        log.info("instantiating " + room.getName());
+        log.debug("adding items to " + room.getName());
         // adds items to each wall. This could prob just be a method later
         room.setItem(Direction.north, new Item("painting", "A painting of an old house surrounded by neatly-trimmed hedges.", "The painter's signature is inscribed in the corner: 'F.L. Romulus'."));
         room.setItem(Direction.south, new Item("bookshelf", "A bookshelf filled with books about the occult.", "A pungent smell gets stronger the closer you get to the shelf."));
@@ -37,8 +38,8 @@ public class Main {
             log.info("user input received...");
 
             // processes user input
-            log.info("user selected look...");
             if (input.startsWith("look ")) {
+                log.info("user selects look");
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
@@ -84,7 +85,7 @@ public class Main {
         scanner.close();
     }
 
-    // TODO: ----------------------------------------------------------- CLASSES AND ENUMS BEGIN HERE
+    // TODO: ---------------------------------------[ INLINE CLASSES AND ENUMS BEGIN HERE ]--------------------------------------------------------
     // enum representing four cardinal directions
     public enum Direction {
         north("to the north"),
@@ -153,6 +154,9 @@ public class Main {
         // This way player can inspect item without specifying direction
         // TODO: Are we adding items to this map after player "discovers" them via look?
         private Map<String, Item> items = new HashMap<>();
+        // this string holds the name of the room, which is set at instantiation
+        // We could also maybe think about pre-baking constructors for our rooms, that way they're built at runtime and just need to be loaded in on the fly
+        private String name = "Undefined Room Name";
 
         public Room() {
             walls = new EnumMap<>(Direction.class); // initializes map
@@ -165,6 +169,12 @@ public class Main {
 
         public Item getItemAtDirection(Direction direction) {
             return walls.get(direction); // gets item at the specified direction
+        }
+        public void setName(String name) {
+            this.name = name;
+        }
+        public String getName() {
+            return name;
         }
 
         public Map<String, Item> getItems() {
