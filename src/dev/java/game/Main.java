@@ -12,22 +12,6 @@ public class Main {
 
         final Logger log = LogManager.getLogger(Main.class.getName());
 
-
-        // instantiates room
-        Room room = new Room();
-        room.setName("Tutorial Room");
-        log.info("instantiating " + room.getName());
-        log.debug("adding items to " + room.getName());
-        // adds items to each wall. This could prob just be a method later
-        room.setItem(Direction.north, new Item("painting", "A painting of an old house surrounded by neatly-trimmed hedges.", "The painter's signature is inscribed in the corner: 'F.L. Romulus'."));
-        room.setItem(Direction.south, new Item("bookshelf", "A bookshelf filled with books about the occult.", "A pungent smell gets stronger the closer you get to the shelf."));
-        room.setItem(Direction.east, new Item("desk", "A desk with a lamp. Judging by the flickering of the bulb, it's on its last leg.", "When the bulb flicks off, you notice a key hidden inside the bulb."));
-        room.setItem(Direction.west, new Item("window", "A window overlooking a garden. It's too foggy to see very far.", "The garden is guarded by a scarecrow with a tattered black hat."));
-
-        // this is going to read user input
-        Scanner scanner = new Scanner(System.in);
-        String input;
-
         // ANSI escape code to reset color
         final String RESET = "\033[0m";
         // ANSI escape codes for text colors
@@ -38,6 +22,24 @@ public class Main {
         final String PURPLE = "\033[0;35m";
         final String CYAN = "\033[0;36m";
 
+        printTitle(); // prints game title
+
+        // instantiates room
+        Room room = new Room();
+        room.setName("Tutorial Room");
+        log.info("instantiating " + room.getName());
+        log.debug("adding items to " + room.getName());
+        System.out.println();
+        // adds items to each wall. This could prob just be a method later
+        room.setItem(Direction.north, new Item("painting", "A painting of an old house surrounded by neatly-trimmed hedges.", "The painter's signature is inscribed in the corner: 'F.L. Romulus'."));
+        room.setItem(Direction.south, new Item("bookshelf", "A bookshelf filled with books about the occult.", "A pungent smell gets stronger the closer you get to the shelf."));
+        room.setItem(Direction.east, new Item("desk", "A desk with a lamp. Judging by the flickering of the bulb, it's on its last leg.", "When the bulb flicks off, you notice a key hidden inside the bulb."));
+        room.setItem(Direction.west, new Item("window", "A window overlooking a garden. It's too foggy to see very far.", "The garden is guarded by a scarecrow with a tattered black hat."));
+
+        // this is going to read user input
+        Scanner scanner = new Scanner(System.in);
+        String input;
+
         // Welcome message
         System.out.println("You awaken, groggily, to find yourself in a strange room. Along each wall are items.");
 
@@ -46,7 +48,8 @@ public class Main {
             System.out.println();
             System.out.print(YELLOW+"Enter input (look <direction>, exit): "+RESET);
             input = scanner.nextLine(); // user input
-            log.info("user input received...");
+            log.info("user input received");
+            System.out.println();
 
             // processes user input
             if (input.startsWith("look ")) {
@@ -117,7 +120,29 @@ public class Main {
         System.out.println(YELLOW+"2. inspect <item>"+RESET+": inspects the specified item");
         System.out.println(YELLOW+"3. help"+RESET+": prints this message");
         System.out.println(YELLOW+"4. exit"+RESET+": exits the game");
-        System.out.println();
+    }
+    private static void printTitle(){
+        // ANSI escape code to reset color
+        final String RESET = "\033[0m";
+        // ANSI escape codes for text colors
+        final String RED = "\033[0;31m";
+        final String GREEN = "\033[0;32m";
+        final String YELLOW = "\033[0;33m";
+        final String BLUE = "\033[0;34m";
+        final String PURPLE = "\033[0;35m";
+        final String CYAN = "\033[0;36m";
+
+        // text generated via https://patorjk.com/software/taag. This is the "Slant" font
+        final String title = RED+"\n" +
+                "    ___________ _________    ____  ______   ____  ____  ____  __  ___\n" +
+                "   / ____/ ___// ____/   |  / __ \\/ ____/  / __ \\/ __ \\/ __ \\/  |/  /\n" +
+                "  / __/  \\__ \\/ /   / /| | / /_/ / __/    / /_/ / / / / / / / /|_/ / \n" +
+                " / /___ ___/ / /___/ ___ |/ ____/ /___   / _, _/ /_/ / /_/ / /  / /  \n" +
+                "/_____//____/\\____/_/  |_/_/   /_____/  /_/ |_|\\____/\\____/_/  /_/   \n" +
+                "                                                                     \n" +
+                "===================================================================="+RESET;
+
+        System.out.println(title);
     }
 
     // TODO: ---------------------------------------[ INLINE CLASSES AND ENUMS BEGIN HERE ]--------------------------------------------------------

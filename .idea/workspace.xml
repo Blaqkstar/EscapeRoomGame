@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="fixed broken logging/package issue. This should work again">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Implemented printCommands() method and handling for input: &quot;help&quot; or &quot;?&quot;.&#10;Added some color and spacial formatting to text output to improve legibility">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
@@ -108,7 +108,7 @@
       <workItem from="1738621730410" duration="281000" />
       <workItem from="1738648535960" duration="1331000" />
       <workItem from="1738685087679" duration="182000" />
-      <workItem from="1738711824963" duration="1905000" />
+      <workItem from="1738711824963" duration="2957000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -142,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738649719723</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implemented printCommands() method and handling for input: &quot;help&quot; or &quot;?&quot;.&#10;Added some color and spacial formatting to text output to improve legibility">
+      <option name="closed" value="true" />
+      <created>1738714673789</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738714673789</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +162,8 @@
     <MESSAGE value="added logging. Yay!" />
     <MESSAGE value="fixed broken logging/package issue. This should work again" />
     <MESSAGE value="added property: name to the Room class to allow for further extensibility" />
-    <option name="LAST_COMMIT_MESSAGE" value="added property: name to the Room class to allow for further extensibility" />
+    <MESSAGE value="Implemented printCommands() method and handling for input: &quot;help&quot; or &quot;?&quot;.&#10;Added some color and spacial formatting to text output to improve legibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented printCommands() method and handling for input: &quot;help&quot; or &quot;?&quot;.&#10;Added some color and spacial formatting to text output to improve legibility" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
