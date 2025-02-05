@@ -28,18 +28,29 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String input;
 
+        // ANSI escape code to reset color
+        final String RESET = "\033[0m";
+        // ANSI escape codes for text colors
+        final String RED = "\033[0;31m";
+        final String GREEN = "\033[0;32m";
+        final String YELLOW = "\033[0;33m";
+        final String BLUE = "\033[0;34m";
+        final String PURPLE = "\033[0;35m";
+        final String CYAN = "\033[0;36m";
+
         // Welcome message
         System.out.println("You awaken, groggily, to find yourself in a strange room. Along each wall are items.");
 
         // this continues until the user types 'exit'
         do {
-            System.out.print("Enter input (look <direction>, exit): ");
+            System.out.println();
+            System.out.print(YELLOW+"Enter input (look <direction>, exit): "+RESET);
             input = scanner.nextLine(); // user input
             log.info("user input received...");
 
             // processes user input
             if (input.startsWith("look ")) {
-                log.info("user selects look");
+                log.info("player selected look");
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
@@ -74,6 +85,9 @@ public class Main {
                     System.out.println("Invalid input. Please use the format 'inspect <item>'."); // handles formatting issues
                 }
             }
+            else if (input.equalsIgnoreCase("help") || input.equalsIgnoreCase("?")) {
+                printCommands();
+            }
             else if (!input.equalsIgnoreCase("exit")) { // handles incorrect commands
                 System.out.println("Unknown input. Please enter 'look <direction>' or 'exit'.");
             }
@@ -83,6 +97,27 @@ public class Main {
         log.info("exiting game...");
         System.out.println("Thanks for playing!");
         scanner.close();
+    }
+
+    private static void printCommands() {
+        // ANSI escape code to reset color
+        final String RESET = "\033[0m";
+        // ANSI escape codes for text colors
+        final String RED = "\033[0;31m";
+        final String GREEN = "\033[0;32m";
+        final String YELLOW = "\033[0;33m";
+        final String BLUE = "\033[0;34m";
+        final String PURPLE = "\033[0;35m";
+        final String CYAN = "\033[0;36m";
+
+        // list of available commands
+        System.out.println("AVAILABLE COMMANDS:");
+        System.out.println("--------------------");
+        System.out.println(YELLOW+"1. look <direction>"+RESET+": looks at the specified direction");
+        System.out.println(YELLOW+"2. inspect <item>"+RESET+": inspects the specified item");
+        System.out.println(YELLOW+"3. help"+RESET+": prints this message");
+        System.out.println(YELLOW+"4. exit"+RESET+": exits the game");
+        System.out.println();
     }
 
     // TODO: ---------------------------------------[ INLINE CLASSES AND ENUMS BEGIN HERE ]--------------------------------------------------------

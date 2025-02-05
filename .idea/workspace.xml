@@ -106,7 +106,9 @@
       <workItem from="1738204764967" duration="2000" />
       <workItem from="1738453709326" duration="796000" />
       <workItem from="1738621730410" duration="281000" />
-      <workItem from="1738648535960" duration="1001000" />
+      <workItem from="1738648535960" duration="1331000" />
+      <workItem from="1738685087679" duration="182000" />
+      <workItem from="1738711824963" duration="1905000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -132,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738609440187</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added property: name to the Room class to allow for further extensibility">
+      <option name="closed" value="true" />
+      <created>1738649719723</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738649719723</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +153,8 @@
     <MESSAGE value="moved main.java into correct folder" />
     <MESSAGE value="added logging. Yay!" />
     <MESSAGE value="fixed broken logging/package issue. This should work again" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed broken logging/package issue. This should work again" />
+    <MESSAGE value="added property: name to the Room class to allow for further extensibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="added property: name to the Room class to allow for further extensibility" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
