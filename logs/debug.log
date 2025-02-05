@@ -63,3 +63,6 @@
 02-04-2025 18:31:59.058 INFO  [game.Main] - instantiating Tutorial Room
 02-04-2025 18:31:59.060 DEBUG [game.Main] - adding items to Tutorial Room
 02-04-2025 18:32:02.399 INFO  [game.Main] - user input received
+02-04-2025 18:37:00.608 INFO  [game.Main] - instantiating Tutorial Room
+02-04-2025 18:37:00.610 DEBUG [game.Main] - adding items to Tutorial Room
+02-04-2025 18:37:28.113 INFO  [game.Main] - user input received

@@ -12,16 +12,6 @@ public class Main {
 
         final Logger log = LogManager.getLogger(Main.class.getName());
 
-        // ANSI escape code to reset color
-        final String RESET = "\033[0m";
-        // ANSI escape codes for text colors
-        final String RED = "\033[0;31m";
-        final String GREEN = "\033[0;32m";
-        final String YELLOW = "\033[0;33m";
-        final String BLUE = "\033[0;34m";
-        final String PURPLE = "\033[0;35m";
-        final String CYAN = "\033[0;36m";
-
         printTitle(); // prints game title
 
         // instantiates room
@@ -46,7 +36,7 @@ public class Main {
         // this continues until the user types 'exit'
         do {
             System.out.println();
-            System.out.print(YELLOW+"Enter input (look <direction>, exit): "+RESET);
+            System.out.print(ConsoleColors.YELLOW+"Enter input (look <direction>, exit): "+ConsoleColors.RESET);
             input = scanner.nextLine(); // user input
             log.info("user input received");
             System.out.println();
@@ -103,44 +93,24 @@ public class Main {
     }
 
     private static void printCommands() {
-        // ANSI escape code to reset color
-        final String RESET = "\033[0m";
-        // ANSI escape codes for text colors
-        final String RED = "\033[0;31m";
-        final String GREEN = "\033[0;32m";
-        final String YELLOW = "\033[0;33m";
-        final String BLUE = "\033[0;34m";
-        final String PURPLE = "\033[0;35m";
-        final String CYAN = "\033[0;36m";
-
         // list of available commands
         System.out.println("AVAILABLE COMMANDS:");
         System.out.println("--------------------");
-        System.out.println(YELLOW+"1. look <direction>"+RESET+": looks at the specified direction");
-        System.out.println(YELLOW+"2. inspect <item>"+RESET+": inspects the specified item");
-        System.out.println(YELLOW+"3. help"+RESET+": prints this message");
-        System.out.println(YELLOW+"4. exit"+RESET+": exits the game");
+        System.out.println(ConsoleColors.YELLOW+"1. look <direction>"+ConsoleColors.RESET+": looks at the specified direction");
+        System.out.println(ConsoleColors.YELLOW+"2. inspect <item>"+ConsoleColors.RESET+": inspects the specified item");
+        System.out.println(ConsoleColors.YELLOW+"3. help"+ConsoleColors.RESET+": prints this message");
+        System.out.println(ConsoleColors.YELLOW+"4. exit"+ConsoleColors.RESET+": exits the game");
     }
     private static void printTitle(){
-        // ANSI escape code to reset color
-        final String RESET = "\033[0m";
-        // ANSI escape codes for text colors
-        final String RED = "\033[0;31m";
-        final String GREEN = "\033[0;32m";
-        final String YELLOW = "\033[0;33m";
-        final String BLUE = "\033[0;34m";
-        final String PURPLE = "\033[0;35m";
-        final String CYAN = "\033[0;36m";
-
         // text generated via https://patorjk.com/software/taag. This is the "Slant" font
-        final String title = RED+"\n" +
+        final String title = ConsoleColors.RED+"\n" +
                 "    ___________ _________    ____  ______   ____  ____  ____  __  ___\n" +
                 "   / ____/ ___// ____/   |  / __ \\/ ____/  / __ \\/ __ \\/ __ \\/  |/  /\n" +
                 "  / __/  \\__ \\/ /   / /| | / /_/ / __/    / /_/ / / / / / / / /|_/ / \n" +
                 " / /___ ___/ / /___/ ___ |/ ____/ /___   / _, _/ /_/ / /_/ / /  / /  \n" +
                 "/_____//____/\\____/_/  |_/_/   /_____/  /_/ |_|\\____/\\____/_/  /_/   \n" +
                 "                                                                     \n" +
-                "===================================================================="+RESET;
+                "===================================================================="+ConsoleColors.RESET;
 
         System.out.println(title);
     }
