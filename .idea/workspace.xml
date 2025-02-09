@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="moved main.java into correct folder">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="moved main.java into correct folder&#10;Adding a comment to hopefullly create a PR with this version to fix logging issue.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/org/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/org/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -28,12 +35,12 @@
     &quot;assignee&quot;: &quot;Blaqkstar&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/twilight921/EscapeRoomGame.git",
-    "accountId": "2b5c2ac4-1c51-4cc6-8208-9d053c3ced33"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/twilight921/EscapeRoomGame.git&quot;,
+    &quot;accountId&quot;: &quot;2b5c2ac4-1c51-4cc6-8208-9d053c3ced33&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -105,7 +112,10 @@
       <workItem from="1738202210730" duration="1837000" />
       <workItem from="1738204764967" duration="2000" />
       <workItem from="1738453709326" duration="796000" />
-      <workItem from="1738608147588" duration="29000" />
+      <workItem from="1738608147588" duration="2291000" />
+      <workItem from="1738696039364" duration="3888000" />
+      <workItem from="1739028029956" duration="149000" />
+      <workItem from="1739059334534" duration="2901000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -123,7 +133,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737850767623</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="moved main.java into correct folder&#10;Adding a comment to hopefullly create a PR with this version to fix logging issue.">
+      <option name="closed" value="true" />
+      <created>1738608407484</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738608407484</updated>
+    </task>
+    <task id="LOCAL-00004" summary="moved main.java into correct folder&#10;Adding a comment to hopefullly create a PR with this version to fix logging issue.">
+      <option name="closed" value="true" />
+      <created>1738608461739</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738608461739</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +158,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="starting point" />
     <MESSAGE value="moved main.java into correct folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved main.java into correct folder" />
+    <MESSAGE value="moved main.java into correct folder&#10;Adding a comment to hopefullly create a PR with this version to fix logging issue." />
+    <option name="LAST_COMMIT_MESSAGE" value="moved main.java into correct folder&#10;Adding a comment to hopefullly create a PR with this version to fix logging issue." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
