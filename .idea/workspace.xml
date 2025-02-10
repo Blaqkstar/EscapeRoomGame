@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Implemented printTitle() method and placeholder title &quot;ESCAPE ROOM&quot; with rad ASCII font.&#10;Some additional cleanup of unnecessary line breaks which disrupted text flow">
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/ConsoleColors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_29_2025_2_14_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_29_2025_2_14_PM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Moved ANSI color values into ConsoleColors class to mitigate redundant use of variables.&#10;Updated references to color variables to point at the ConsoleColors class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
@@ -119,7 +116,7 @@
       <workItem from="1738648535960" duration="1331000" />
       <workItem from="1738685087679" duration="182000" />
       <workItem from="1738711824963" duration="3492000" />
-      <workItem from="1738793627963" duration="347000" />
+      <workItem from="1738793627963" duration="1092000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -169,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738715686830</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Moved ANSI color values into ConsoleColors class to mitigate redundant use of variables.&#10;Updated references to color variables to point at the ConsoleColors class.">
+      <option name="closed" value="true" />
+      <created>1738794150477</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738794150477</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,7 +188,8 @@
     <MESSAGE value="added property: name to the Room class to allow for further extensibility" />
     <MESSAGE value="Implemented printCommands() method and handling for input: &quot;help&quot; or &quot;?&quot;.&#10;Added some color and spacial formatting to text output to improve legibility" />
     <MESSAGE value="Implemented printTitle() method and placeholder title &quot;ESCAPE ROOM&quot; with rad ASCII font.&#10;Some additional cleanup of unnecessary line breaks which disrupted text flow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented printTitle() method and placeholder title &quot;ESCAPE ROOM&quot; with rad ASCII font.&#10;Some additional cleanup of unnecessary line breaks which disrupted text flow" />
+    <MESSAGE value="Moved ANSI color values into ConsoleColors class to mitigate redundant use of variables.&#10;Updated references to color variables to point at the ConsoleColors class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved ANSI color values into ConsoleColors class to mitigate redundant use of variables.&#10;Updated references to color variables to point at the ConsoleColors class." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
