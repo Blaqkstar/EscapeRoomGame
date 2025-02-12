@@ -1,2 +1,6 @@
 02-11-2025 12:46:37.281 INFO  [game.Main] - instantiating Tutorial Room
 02-11-2025 12:46:37.291 DEBUG [game.Main] - adding items to Tutorial Room
+02-11-2025 18:56:06.485 INFO  [game.Main] - instantiating Tutorial Room
+02-11-2025 18:56:06.489 DEBUG [game.Main] - adding items to Tutorial Room
+02-11-2025 18:56:13.704 INFO  [game.Main] - user input received
+02-11-2025 18:56:13.704 INFO  [game.Main] - player selected look
