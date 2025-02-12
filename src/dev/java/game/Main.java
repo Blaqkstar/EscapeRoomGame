@@ -45,7 +45,7 @@ public class Main {
         // this continues until the user types 'exit'
         do {
             System.out.println();
-            System.out.print(ConsoleColors.YELLOW+"Enter input (look <direction>, exit): "+ConsoleColors.RESET);
+            System.out.print(ConsoleColors.YELLOW+"Enter input (or 'help' for a list of available commands): "+ConsoleColors.RESET);
             input = scanner.nextLine(); // user input
             log.info("user input received");
             System.out.println();
@@ -131,6 +131,7 @@ public class Main {
         System.out.println("--------------------");
         System.out.println(ConsoleColors.YELLOW+"1. look <direction>"+ConsoleColors.RESET+": looks at the specified direction");
         System.out.println(ConsoleColors.YELLOW+"2. inspect <item>"+ConsoleColors.RESET+": inspects the specified item");
+        System.out.println(ConsoleColors.YELLOW+"2. use <item>"+ConsoleColors.RESET+": attempts to use the specified item");
         System.out.println(ConsoleColors.YELLOW+"3. help"+ConsoleColors.RESET+": prints this message");
         System.out.println(ConsoleColors.YELLOW+"4. exit"+ConsoleColors.RESET+": exits the game");
     }
