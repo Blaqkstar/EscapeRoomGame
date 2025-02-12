@@ -21,10 +21,19 @@ public class Main {
         log.debug("adding items to " + room.getName());
         System.out.println();
         // adds items to each wall. This could prob just be a method later
-        room.setItem(Direction.north, new Item("painting", "A painting of an old house surrounded by neatly-trimmed hedges.", "The painter's signature is inscribed in the corner: 'F.L. Romulus'."));
-        room.setItem(Direction.south, new Item("bookshelf", "A bookshelf filled with books about the occult.", "A pungent smell gets stronger the closer you get to the shelf."));
-        room.setItem(Direction.east, new Item("desk", "A desk with a lamp. Judging by the flickering of the bulb, it's on its last leg.", "When the bulb flicks off, you notice a key hidden inside the bulb."));
-        room.setItem(Direction.west, new Item("window", "A window overlooking a garden. It's too foggy to see very far.", "The garden is guarded by a scarecrow with a tattered black hat."));
+        room.setItem(Direction.north, new Painting("painting",
+                "A painting of an old house surrounded by neatly-trimmed hedges.",
+                "The painter's signature is inscribed in the corner: 'F.L. Romulus'.",
+                room));
+        room.setItem(Direction.south, new Bookshelf("bookshelf",
+                "A bookshelf filled with books about the occult.",
+                "A pungent smell gets stronger the closer you get to the shelf."));
+        room.setItem(Direction.east, new Desk("desk",
+                "A desk with a lamp. Judging by the flickering of the bulb, it's on its last leg.",
+                "When the bulb flicks off, you notice a key hidden inside the bulb."));
+        room.setItem(Direction.west, new Window("window",
+                "A window overlooking a garden. It's too foggy to see very far.",
+                "The garden is guarded by a scarecrow with a tattered black hat."));
 
         // this is going to read user input
         Scanner scanner = new Scanner(System.in);
@@ -74,8 +83,32 @@ public class Main {
                     catch (Exception e) {
                         System.out.println("You do not see this item");
                     }
-                } else {
+                }
+                else {
                     System.out.println("Invalid input. Please use the format 'inspect <item>'."); // handles formatting issues
+                }
+            }
+            else if (input.startsWith("use ")) {
+                final String[] parts = input.split(" "); // splits input into parts, storing in an array
+                if (parts.length == 2) { // ensures that input consists of two parts
+                    try {
+                        // declare item that is being inspected
+                        Item item = room.getItems().get(parts[1].toLowerCase());
+                        // Check if player has observed the item yet
+                        if (item.isObserved()) {
+                            item.use();
+                        }
+                        else{
+                            System.out.print("You do not see this item.");
+                        }
+                    }
+                    // Handles input of unknown item
+                    catch (Exception e) {
+                        System.out.println("You do not see this item");
+                    }
+                }
+                else {
+                    System.out.println("Invalid input. Please use the format 'use <item>'."); // handles formatting issues
                 }
             }
             else if (input.equalsIgnoreCase("help") || input.equalsIgnoreCase("?")) {
@@ -110,7 +143,6 @@ public class Main {
                 " / /___ ___/ / /___/ ___ |/ ____/ /___   / _, _/ /_/ / /_/ / /  / /  \n" +
                 "/_____//____/\\____/_/  |_/_/   /_____/  /_/ |_|\\____/\\____/_/  /_/   \n" +
                 "====================================================================\n"+ConsoleColors.RESET;
-
         System.out.println(title);
     }
 

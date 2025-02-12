@@ -23,7 +23,6 @@ public class Door {
             this.currentRoom = roomToMoveTo;
             System.out.println("You have moved to a new room!");
         }
-
     }
 }
 

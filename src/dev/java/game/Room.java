@@ -38,5 +38,9 @@ public class Room {
     public Map<String, Item> getItems() {
         return items;
     }
+
+    public void addItem(Item item) {
+        items.put(item.getName().toLowerCase(), item);
+    }
 }
 

@@ -1,6 +1,6 @@
 package game;
 
-public class Item {
+public abstract class Item {
     private String name;
     private String description;
 
@@ -38,4 +38,9 @@ public class Item {
     public String toString() {
         return name + ": " + description;
     }
+
+    //TODO: -------------------------------------------[ METHODS BELOW ]---------------------------------
+
+    // abstract use method to be implemented by subclasses
+    public abstract void use();
 }
