@@ -76,12 +76,12 @@ public class Main {
                             System.out.print(item.getInspection());
                         }
                         else{
-                            System.out.print("You do not see this item.");
+                            System.out.println("You do not see any " + parts[1]);
                         }
                     }
                     // Handles input of unknown item
                     catch (Exception e) {
-                        System.out.println("You do not see this item");
+                        System.out.println("You do not see any " + parts[1]);
                     }
                 }
                 else {
@@ -99,12 +99,12 @@ public class Main {
                             item.use();
                         }
                         else{
-                            System.out.print("You do not see this item.");
+                            System.out.println("You do not see any " + parts[1]);
                         }
                     }
                     // Handles input of unknown item
                     catch (Exception e) {
-                        System.out.println("You do not see this item");
+                        System.out.println("You do not see any " + parts[1]);
                     }
                 }
                 else {

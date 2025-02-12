@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Bookshelf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Desk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Key.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Painting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="implemented Item.use() method.&#10;Separated items out as children of the Item class.&#10;Got the Key item to fall out from behind the painting onto the floor but that logic is not yet complete.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Door.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +141,7 @@
       <workItem from="1739293501402" duration="66000" />
       <workItem from="1739299591561" duration="644000" />
       <workItem from="1739300488990" duration="687000" />
-      <workItem from="1739388764789" duration="2801000" />
+      <workItem from="1739388764789" duration="3616000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -216,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739213454641</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="implemented Item.use() method.&#10;Separated items out as children of the Item class.&#10;Got the Key item to fall out from behind the painting onto the floor but that logic is not yet complete.">
+      <option name="closed" value="true" />
+      <created>1739391695017</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1739391695017</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +231,8 @@
     <MESSAGE value="Implemented printTitle() method and placeholder title &quot;ESCAPE ROOM&quot; with rad ASCII font.&#10;Some additional cleanup of unnecessary line breaks which disrupted text flow" />
     <MESSAGE value="Moved ANSI color values into ConsoleColors class to mitigate redundant use of variables.&#10;Updated references to color variables to point at the ConsoleColors class." />
     <MESSAGE value="re-submitting to ensure that we are all working from the same codebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="re-submitting to ensure that we are all working from the same codebase" />
+    <MESSAGE value="implemented Item.use() method.&#10;Separated items out as children of the Item class.&#10;Got the Key item to fall out from behind the painting onto the floor but that logic is not yet complete." />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented Item.use() method.&#10;Separated items out as children of the Item class.&#10;Got the Key item to fall out from behind the painting onto the floor but that logic is not yet complete." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
