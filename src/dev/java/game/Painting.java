@@ -12,7 +12,7 @@ public class Painting extends Item {
         System.out.println("You straighten the painting on its hangar and a key tumbles out from behind the frame!");
 
         // creates a new instance of Key
-        Item key = new Key("Rusty Key", "A rusty old key", "The key appears to be quite old. The shine of the metal has dulled with oxidation.");
+        Item key = new Key("key", "A rusty old key", "The key appears to be quite old. The shine of the metal has dulled with oxidation.");
         key.setObserved(true); // sets key as observed
         room.addItem(key); // adds key to room
     }

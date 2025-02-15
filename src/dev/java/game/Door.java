@@ -1,11 +1,19 @@
 package game;
 
-public class Door {
+public class Door extends Item{
     private int id;
     private Room currentRoom;
     private boolean isLocked;
 
-    public Door(Room currentRoom, int id) {
+    private String description;
+
+    // Detailed description that is given when inspected
+    private String inspection;
+
+    public Door(Room currentRoom, int id, String description, String inspection, String name) {
+
+        super(name, description, inspection);
+
         this.currentRoom = currentRoom;
         this.id = id;
     }
@@ -24,5 +32,10 @@ public class Door {
             System.out.println("You have moved to a new room!");
         }
     }
+
+    public  void use(){
+        System.out.println("There is nothing to use.");
+    };
 }
+
 

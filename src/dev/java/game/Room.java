@@ -1,12 +1,10 @@
 package game;
 
-import java.util.EnumMap;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Room {
     // this is the logical representation of the "walls" of each room
-    private EnumMap<Main.Direction, Item> walls; // map of directions to items. syntax: <key, value>
+    private EnumMap<Main.Direction, List<Item>> walls; // map of directions to items. syntax: <key, value>
 
     // Keeps track of items in separate map not associated with direction
     // This way player can inspect item without specifying direction
@@ -17,10 +15,16 @@ public class Room {
 
     public Room() {
         walls = new EnumMap<>(Main.Direction.class); // initializes map
+
+        for (Main.Direction direction : Main.Direction.values()) {
+            walls.put(direction, new ArrayList<>());
+        }
     }
 
     public void setItem(Main.Direction direction, Item item) {
-        walls.put(direction, item); // adds item to specified direction
+
+        List<Item> itemList = walls.get(direction);
+        itemList.add(item);
         items.put(item.getName(), item); // adds item to item list
     }
 
@@ -31,8 +35,18 @@ public class Room {
         return name;
     }
 
-    public Item getItemAtDirection(Main.Direction direction) {
-        return walls.get(direction); // gets item at the specified direction
+    public List<Item> getItemsAtDirection(Main.Direction direction) {
+        return walls.get(direction); // gets items at the specified direction
+    }
+
+    public String describeItemsToPlayer(List<Item> items) {
+        StringBuilder desc = new StringBuilder();
+
+        // Add each item's description to string.
+        for (int i =0; i<items.size(); i++) {
+            desc.append(items.get(i).getDescription()).append(" ");
+        }
+        return desc.toString();
     }
 
     public Map<String, Item> getItems() {
