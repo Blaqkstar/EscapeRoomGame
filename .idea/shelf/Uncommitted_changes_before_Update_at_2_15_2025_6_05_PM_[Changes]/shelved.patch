@@ -1,0 +1,211 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_21\" default=\"true\" project-jdk-name=\"openjdk-21\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision e09616270a165f2a88ba5c9e80814c7b01187969)
++++ b/.idea/misc.xml	(date 1739578473424)
+@@ -8,7 +8,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: logs/debug.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>02-12-2025 13:58:19.282 INFO  [game.Main] - instantiating Tutorial Room\r\n02-12-2025 13:58:19.295 DEBUG [game.Main] - adding items to Tutorial Room\r\n02-12-2025 13:58:22.563 INFO  [game.Main] - user input received\r\n02-12-2025 13:58:22.563 INFO  [game.Main] - player selected look\r\n02-12-2025 13:58:31.316 INFO  [game.Main] - user input received\r\n02-12-2025 14:00:31.532 INFO  [game.Main] - instantiating Tutorial Room\r\n02-12-2025 14:00:31.534 DEBUG [game.Main] - adding items to Tutorial Room\r\n02-12-2025 14:00:34.976 INFO  [game.Main] - user input received\r\n02-12-2025 14:00:34.976 INFO  [game.Main] - player selected look\r\n02-12-2025 14:00:40.845 INFO  [game.Main] - user input received\r\n02-12-2025 14:09:54.719 INFO  [game.Main] - instantiating Tutorial Room\r\n02-12-2025 14:09:54.721 DEBUG [game.Main] - adding items to Tutorial Room\r\n02-12-2025 14:09:59.708 INFO  [game.Main] - user input received\r\n02-12-2025 14:09:59.708 INFO  [game.Main] - player selected look\r\n02-12-2025 14:10:12.990 INFO  [game.Main] - user input received\r\n02-12-2025 14:10:22.583 INFO  [game.Main] - user input received\r\n02-12-2025 14:10:35.985 INFO  [game.Main] - instantiating Tutorial Room\r\n02-12-2025 14:10:35.988 DEBUG [game.Main] - adding items to Tutorial Room\r\n02-12-2025 14:10:40.975 INFO  [game.Main] - user input received\r\n02-12-2025 14:10:40.975 INFO  [game.Main] - player selected look\r\n02-12-2025 14:10:43.841 INFO  [game.Main] - user input received\r\n02-12-2025 14:10:56.555 INFO  [game.Main] - user input received\r\n02-12-2025 14:18:06.811 INFO  [game.Main] - instantiating Tutorial Room\r\n02-12-2025 14:18:06.812 DEBUG [game.Main] - adding items to Tutorial Room\r\n02-12-2025 14:18:10.602 INFO  [game.Main] - user input received\r\n02-12-2025 14:18:10.602 INFO  [game.Main] - player selected look\r\n02-12-2025 14:18:13.071 INFO  [game.Main] - user input received\r\n02-12-2025 14:18:16.463 INFO  [game.Main] - user input received\r\n02-12-2025 14:18:19.048 INFO  [game.Main] - user input received\r\n02-12-2025 14:27:42.719 INFO  [game.Main] - instantiating Tutorial Room\r\n02-12-2025 14:27:42.722 DEBUG [game.Main] - adding items to Tutorial Room\r\n02-12-2025 14:27:46.487 INFO  [game.Main] - user input received\r\n02-12-2025 14:27:46.487 INFO  [game.Main] - player selected look\r\n02-12-2025 14:27:48.360 INFO  [game.Main] - user input received\r\n02-12-2025 14:27:48.360 INFO  [game.Main] - player selected look\r\n02-12-2025 14:27:50.321 INFO  [game.Main] - user input received\r\n02-12-2025 14:27:50.321 INFO  [game.Main] - player selected look\r\n02-12-2025 14:27:52.229 INFO  [game.Main] - user input received\r\n02-12-2025 14:27:52.230 INFO  [game.Main] - player selected look\r\n02-12-2025 14:27:57.770 INFO  [game.Main] - user input received\r\n02-12-2025 14:28:02.673 INFO  [game.Main] - user input received\r\n02-12-2025 14:29:01.668 INFO  [game.Main] - instantiating Tutorial Room\r\n02-12-2025 14:29:01.672 DEBUG [game.Main] - adding items to Tutorial Room\r\n02-12-2025 14:29:04.548 INFO  [game.Main] - user input received\r\n02-12-2025 14:29:21.494 INFO  [game.Main] - instantiating Tutorial Room\r\n02-12-2025 14:29:21.496 DEBUG [game.Main] - adding items to Tutorial Room\r\n02-12-2025 14:29:23.734 INFO  [game.Main] - user input received\r\n02-12-2025 14:29:38.645 INFO  [game.Main] - instantiating Tutorial Room\r\n02-12-2025 14:29:38.646 DEBUG [game.Main] - adding items to Tutorial Room\r\n02-12-2025 14:29:41.712 INFO  [game.Main] - user input received\r\n02-12-2025 14:32:15.994 INFO  [game.Main] - instantiating Tutorial Room\r\n02-12-2025 14:32:15.995 DEBUG [game.Main] - adding items to Tutorial Room\r\n02-12-2025 14:32:22.936 INFO  [game.Main] - user input received\r\n02-12-2025 14:32:26.622 INFO  [game.Main] - user input received\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/logs/debug.log b/logs/debug.log
+--- a/logs/debug.log	(revision e09616270a165f2a88ba5c9e80814c7b01187969)
++++ b/logs/debug.log	(date 1739578536864)
+@@ -1,54 +1,7 @@
+-02-12-2025 13:58:19.282 INFO  [game.Main] - instantiating Tutorial Room
+-02-12-2025 13:58:19.295 DEBUG [game.Main] - adding items to Tutorial Room
+-02-12-2025 13:58:22.563 INFO  [game.Main] - user input received
+-02-12-2025 13:58:22.563 INFO  [game.Main] - player selected look
+-02-12-2025 13:58:31.316 INFO  [game.Main] - user input received
+-02-12-2025 14:00:31.532 INFO  [game.Main] - instantiating Tutorial Room
+-02-12-2025 14:00:31.534 DEBUG [game.Main] - adding items to Tutorial Room
+-02-12-2025 14:00:34.976 INFO  [game.Main] - user input received
+-02-12-2025 14:00:34.976 INFO  [game.Main] - player selected look
+-02-12-2025 14:00:40.845 INFO  [game.Main] - user input received
+-02-12-2025 14:09:54.719 INFO  [game.Main] - instantiating Tutorial Room
+-02-12-2025 14:09:54.721 DEBUG [game.Main] - adding items to Tutorial Room
+-02-12-2025 14:09:59.708 INFO  [game.Main] - user input received
+-02-12-2025 14:09:59.708 INFO  [game.Main] - player selected look
+-02-12-2025 14:10:12.990 INFO  [game.Main] - user input received
+-02-12-2025 14:10:22.583 INFO  [game.Main] - user input received
+-02-12-2025 14:10:35.985 INFO  [game.Main] - instantiating Tutorial Room
+-02-12-2025 14:10:35.988 DEBUG [game.Main] - adding items to Tutorial Room
+-02-12-2025 14:10:40.975 INFO  [game.Main] - user input received
+-02-12-2025 14:10:40.975 INFO  [game.Main] - player selected look
+-02-12-2025 14:10:43.841 INFO  [game.Main] - user input received
+-02-12-2025 14:10:56.555 INFO  [game.Main] - user input received
+-02-12-2025 14:18:06.811 INFO  [game.Main] - instantiating Tutorial Room
+-02-12-2025 14:18:06.812 DEBUG [game.Main] - adding items to Tutorial Room
+-02-12-2025 14:18:10.602 INFO  [game.Main] - user input received
+-02-12-2025 14:18:10.602 INFO  [game.Main] - player selected look
+-02-12-2025 14:18:13.071 INFO  [game.Main] - user input received
+-02-12-2025 14:18:16.463 INFO  [game.Main] - user input received
+-02-12-2025 14:18:19.048 INFO  [game.Main] - user input received
+-02-12-2025 14:27:42.719 INFO  [game.Main] - instantiating Tutorial Room
+-02-12-2025 14:27:42.722 DEBUG [game.Main] - adding items to Tutorial Room
+-02-12-2025 14:27:46.487 INFO  [game.Main] - user input received
+-02-12-2025 14:27:46.487 INFO  [game.Main] - player selected look
+-02-12-2025 14:27:48.360 INFO  [game.Main] - user input received
+-02-12-2025 14:27:48.360 INFO  [game.Main] - player selected look
+-02-12-2025 14:27:50.321 INFO  [game.Main] - user input received
+-02-12-2025 14:27:50.321 INFO  [game.Main] - player selected look
+-02-12-2025 14:27:52.229 INFO  [game.Main] - user input received
+-02-12-2025 14:27:52.230 INFO  [game.Main] - player selected look
+-02-12-2025 14:27:57.770 INFO  [game.Main] - user input received
+-02-12-2025 14:28:02.673 INFO  [game.Main] - user input received
+-02-12-2025 14:29:01.668 INFO  [game.Main] - instantiating Tutorial Room
+-02-12-2025 14:29:01.672 DEBUG [game.Main] - adding items to Tutorial Room
+-02-12-2025 14:29:04.548 INFO  [game.Main] - user input received
+-02-12-2025 14:29:21.494 INFO  [game.Main] - instantiating Tutorial Room
+-02-12-2025 14:29:21.496 DEBUG [game.Main] - adding items to Tutorial Room
+-02-12-2025 14:29:23.734 INFO  [game.Main] - user input received
+-02-12-2025 14:29:38.645 INFO  [game.Main] - instantiating Tutorial Room
+-02-12-2025 14:29:38.646 DEBUG [game.Main] - adding items to Tutorial Room
+-02-12-2025 14:29:41.712 INFO  [game.Main] - user input received
+-02-12-2025 14:32:15.994 INFO  [game.Main] - instantiating Tutorial Room
+-02-12-2025 14:32:15.995 DEBUG [game.Main] - adding items to Tutorial Room
+-02-12-2025 14:32:22.936 INFO  [game.Main] - user input received
+-02-12-2025 14:32:26.622 INFO  [game.Main] - user input received
++02-14-2025 18:14:45.546 INFO  [game.Main] - instantiating Tutorial Room
++02-14-2025 18:14:45.555 DEBUG [game.Main] - adding items to Tutorial Room
++02-14-2025 18:14:55.862 INFO  [game.Main] - user input received
++02-14-2025 18:15:13.987 INFO  [game.Main] - user input received
++02-14-2025 18:15:13.988 INFO  [game.Main] - player selected look
++02-14-2025 18:15:36.863 INFO  [game.Main] - user input received
++02-14-2025 18:15:36.864 INFO  [game.Main] - exiting game...
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d1dfdc85-7105-4882-9f55-0cb3ae09b9f8\" name=\"Changes\" comment=\"added some contextual awareness to the message provided to player when they attempt to use or inspect an item they haven't yet observed.\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/dev/java/game/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/dev/java/game/Main.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;history&quot;: [\r\n    {\r\n      &quot;state&quot;: &quot;OPEN&quot;\r\n    }\r\n  ],\r\n  &quot;lastFilter&quot;: {}\r\n}</component>\r\n  <component name=\"GitHubPullRequestState\">{\r\n  &quot;prStates&quot;: [\r\n    {\r\n      &quot;id&quot;: {\r\n        &quot;id&quot;: &quot;PR_kwDONuRPp86J49wX&quot;,\r\n        &quot;number&quot;: 5\r\n      },\r\n      &quot;lastSeen&quot;: 1739300143650\r\n    },\r\n    {\r\n      &quot;id&quot;: {\r\n        &quot;id&quot;: &quot;PR_kwDONuRPp86K2aoW&quot;,\r\n        &quot;number&quot;: 6\r\n      },\r\n      &quot;lastSeen&quot;: 1739300961000\r\n    }\r\n  ]\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Blaqkstar/EscapeRoomGame.git&quot;,\r\n    &quot;accountId&quot;: &quot;33bf5a69-71e6-4530-b179-74da27333e68&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2s0o67TPH45VjPp8LDj214eTk3q\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Application.Main.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/josia/IdeaProjects/EscapeRoomGame/resources&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;onboarding.tips.debug.path&quot;: &quot;G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"G:\\Personal\\School\\NWTC\\2025\\2025 Spring Semester\\8W1\\Java 2\\Group Project\\EscapeRoomGame\\Logging\" />\r\n      <recent name=\"G:\\Personal\\School\\NWTC\\2025\\2025 Spring Semester\\8W1\\Java 2\\Group Project\\EscapeRoomGame\\src\\dev\\java\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"G:\\Personal\\School\\NWTC\\2025\\2025 Spring Semester\\8W1\\Java 2\\Group Project\\EscapeRoomGame\\resources\" />\r\n      <recent name=\"G:\\Personal\\School\\NWTC\\2025\\2025 Spring Semester\\8W1\\Java 2\\Group Project\\EscapeRoomGame\\src\\main\\java\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d1dfdc85-7105-4882-9f55-0cb3ae09b9f8\" name=\"Changes\" comment=\"\" />\r\n      <created>1737601676137</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1737601676137</updated>\r\n      <workItem from=\"1737601677089\" duration=\"1072000\" />\r\n      <workItem from=\"1737849600120\" duration=\"56000\" />\r\n      <workItem from=\"1737849841090\" duration=\"619000\" />\r\n      <workItem from=\"1737850628128\" duration=\"3451000\" />\r\n      <workItem from=\"1738106155603\" duration=\"115000\" />\r\n      <workItem from=\"1738106927247\" duration=\"1401000\" />\r\n      <workItem from=\"1738167915922\" duration=\"6141000\" />\r\n      <workItem from=\"1738199105426\" duration=\"8000\" />\r\n      <workItem from=\"1738202210730\" duration=\"1837000\" />\r\n      <workItem from=\"1738204764967\" duration=\"2000\" />\r\n      <workItem from=\"1738453709326\" duration=\"796000\" />\r\n      <workItem from=\"1738621730410\" duration=\"281000\" />\r\n      <workItem from=\"1738648535960\" duration=\"1331000\" />\r\n      <workItem from=\"1738685087679\" duration=\"182000\" />\r\n      <workItem from=\"1738711824963\" duration=\"3492000\" />\r\n      <workItem from=\"1738793627963\" duration=\"1092000\" />\r\n      <workItem from=\"1739213140818\" duration=\"1417000\" />\r\n      <workItem from=\"1739293501402\" duration=\"66000\" />\r\n      <workItem from=\"1739299591561\" duration=\"644000\" />\r\n      <workItem from=\"1739300488990\" duration=\"687000\" />\r\n      <workItem from=\"1739388764789\" duration=\"3778000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"starting point\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1737601738920</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1737601738920</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"moved main.java into correct folder\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1737850767623</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1737850767623</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"fixed broken logging/package issue. This should work again\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738609440187</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738609440187</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"added property: name to the Room class to allow for further extensibility\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738649719723</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738649719723</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Implemented printCommands() method and handling for input: &quot;help&quot; or &quot;?&quot;.&#10;Added some color and spacial formatting to text output to improve legibility\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738714673789</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738714673789</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Implemented printTitle() method and placeholder title &quot;ESCAPE ROOM&quot; with rad ASCII font.&#10;Some additional cleanup of unnecessary line breaks which disrupted text flow\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738715686830</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738715686830</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Moved ANSI color values into ConsoleColors class to mitigate redundant use of variables.&#10;Updated references to color variables to point at the ConsoleColors class.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1738794150477</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738794150477</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"re-submitting to ensure that we are all working from the same codebase\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1739213454641</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1739213454641</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"implemented Item.use() method.&#10;Separated items out as children of the Item class.&#10;Got the Key item to fall out from behind the painting onto the floor but that logic is not yet complete.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1739391695017</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1739391695017</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"added some contextual awareness to the message provided to player when they attempt to use or inspect an item they haven't yet observed.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1739392444827</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1739392444827</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"11\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"starting point\" />\r\n    <MESSAGE value=\"moved main.java into correct folder\" />\r\n    <MESSAGE value=\"added logging. Yay!\" />\r\n    <MESSAGE value=\"fixed broken logging/package issue. This should work again\" />\r\n    <MESSAGE value=\"added property: name to the Room class to allow for further extensibility\" />\r\n    <MESSAGE value=\"Implemented printCommands() method and handling for input: &quot;help&quot; or &quot;?&quot;.&#10;Added some color and spacial formatting to text output to improve legibility\" />\r\n    <MESSAGE value=\"Implemented printTitle() method and placeholder title &quot;ESCAPE ROOM&quot; with rad ASCII font.&#10;Some additional cleanup of unnecessary line breaks which disrupted text flow\" />\r\n    <MESSAGE value=\"Moved ANSI color values into ConsoleColors class to mitigate redundant use of variables.&#10;Updated references to color variables to point at the ConsoleColors class.\" />\r\n    <MESSAGE value=\"re-submitting to ensure that we are all working from the same codebase\" />\r\n    <MESSAGE value=\"implemented Item.use() method.&#10;Separated items out as children of the Item class.&#10;Got the Key item to fall out from behind the painting onto the floor but that logic is not yet complete.\" />\r\n    <MESSAGE value=\"added some contextual awareness to the message provided to player when they attempt to use or inspect an item they haven't yet observed.\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"added some contextual awareness to the message provided to player when they attempt to use or inspect an item they haven't yet observed.\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>\r\n          <line>13</line>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision e09616270a165f2a88ba5c9e80814c7b01187969)
++++ b/.idea/workspace.xml	(date 1739664312621)
+@@ -5,7 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="added some contextual awareness to the message provided to player when they attempt to use or inspect an item they haven't yet observed.">
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -54,12 +56,12 @@
+     }
+   ]
+ }</component>
+-  <component name="GithubPullRequestsUISettings">{
+-  &quot;selectedUrlAndAccountId&quot;: {
+-    &quot;url&quot;: &quot;https://github.com/Blaqkstar/EscapeRoomGame.git&quot;,
+-    &quot;accountId&quot;: &quot;33bf5a69-71e6-4530-b179-74da27333e68&quot;
++  <component name="GithubPullRequestsUISettings"><![CDATA[{
++  "selectedUrlAndAccountId": {
++    "url": "https://github.com/twilight921/EscapeRoomGame.git",
++    "accountId": "2b5c2ac4-1c51-4cc6-8208-9d053c3ced33"
+   }
+-}</component>
++}]]></component>
+   <component name="ProblemsViewState">
+     <option name="selectedTabId" value="CurrentFile" />
+   </component>
+@@ -107,8 +109,8 @@
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
+-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
++        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
++        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
+       </set>
+     </attachedChunks>
+   </component>
+Index: src/dev/java/game/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package game;\r\n\r\nimport java.util.EnumMap;\r\nimport java.util.HashMap;\r\nimport java.util.Map;\r\nimport java.util.Scanner;\r\nimport org.apache.logging.log4j.LogManager;\r\nimport org.apache.logging.log4j.Logger;\r\n\r\npublic class Main {\r\n    public static void main(final String[] args) {\r\n\r\n        final Logger log = LogManager.getLogger(Main.class.getName());\r\n\r\n        printTitle(); // prints game title\r\n\r\n        // instantiates room\r\n        Room room = new Room();\r\n        room.setName(\"Tutorial Room\");\r\n        log.info(\"instantiating \" + room.getName());\r\n        log.debug(\"adding items to \" + room.getName());\r\n        System.out.println();\r\n        // adds items to each wall. This could prob just be a method later\r\n        room.setItem(Direction.north, new Painting(\"painting\",\r\n                \"A painting of an old house surrounded by neatly-trimmed hedges.\",\r\n                \"The painter's signature is inscribed in the corner: 'F.L. Romulus'.\",\r\n                room));\r\n        room.setItem(Direction.south, new Bookshelf(\"bookshelf\",\r\n                \"A bookshelf filled with books about the occult.\",\r\n                \"A pungent smell gets stronger the closer you get to the shelf.\"));\r\n        room.setItem(Direction.east, new Desk(\"desk\",\r\n                \"A desk with a lamp. Judging by the flickering of the bulb, it's on its last leg.\",\r\n                \"When the bulb flicks off, you notice a key hidden inside the bulb.\"));\r\n        room.setItem(Direction.west, new Window(\"window\",\r\n                \"A window overlooking a garden. It's too foggy to see very far.\",\r\n                \"The garden is guarded by a scarecrow with a tattered black hat.\"));\r\n\r\n        // this is going to read user input\r\n        Scanner scanner = new Scanner(System.in);\r\n        String input;\r\n\r\n        // Welcome message\r\n        System.out.println(\"You awaken, groggily, to find yourself in a strange room. Along each wall are items.\");\r\n\r\n        // this continues until the user types 'exit'\r\n        do {\r\n            System.out.println();\r\n            System.out.print(ConsoleColors.YELLOW+\"Enter input (or 'help' for a list of available commands): \"+ConsoleColors.RESET);\r\n            input = scanner.nextLine(); // user input\r\n            log.info(\"user input received\");\r\n            System.out.println();\r\n\r\n            // processes user input\r\n            if (input.startsWith(\"look \")) {\r\n                log.info(\"player selected look\");\r\n                final String[] parts = input.split(\" \"); // splits input into parts, storing in an array\r\n                if (parts.length == 2) { // ensures that input consists of two parts\r\n                    try {\r\n                        final Direction direction = Direction.valueOf(parts[1].toLowerCase()); // gets direction\r\n                        room.getItemAtDirection(direction).setObserved(true);\r\n                        System.out.println(\"You look \" + direction.getDescription() + \" and see: \" + room.getItemAtDirection(direction)); // displays item in chosen direction\r\n                    } catch (IllegalArgumentException e) {\r\n                        System.out.println(\"Invalid direction. Please enter one of the following: north, south, east, west.\"); // handles input issues\r\n                    }\r\n                } else {\r\n                    System.out.println(\"Invalid input. Please use the format 'look <direction>'.\"); // handles formatting issues\r\n                }\r\n            } else if(input.startsWith(\"inspect \")) {\r\n                final String[] parts = input.split(\" \"); // splits input into parts, storing in an array\r\n                if (parts.length == 2) { // ensures that input consists of two parts\r\n                    try {\r\n                        // declare item that is being inspected\r\n                        Item item = room.getItems().get(parts[1].toLowerCase());\r\n                        // Check if player has observed the item yet\r\n                        if (item.isObserved()) {\r\n                            System.out.print(item.getInspection());\r\n                        }\r\n                        else{\r\n                            System.out.println(\"You do not see any \" + parts[1]);\r\n                        }\r\n                    }\r\n                    // Handles input of unknown item\r\n                    catch (Exception e) {\r\n                        System.out.println(\"You do not see any \" + parts[1]);\r\n                    }\r\n                }\r\n                else {\r\n                    System.out.println(\"Invalid input. Please use the format 'inspect <item>'.\"); // handles formatting issues\r\n                }\r\n            }\r\n            else if (input.startsWith(\"use \")) {\r\n                final String[] parts = input.split(\" \"); // splits input into parts, storing in an array\r\n                if (parts.length == 2) { // ensures that input consists of two parts\r\n                    try {\r\n                        // declare item that is being inspected\r\n                        Item item = room.getItems().get(parts[1].toLowerCase());\r\n                        // Check if player has observed the item yet\r\n                        if (item.isObserved()) {\r\n                            item.use();\r\n                        }\r\n                        else{\r\n                            System.out.println(\"You do not see any \" + parts[1]);\r\n                        }\r\n                    }\r\n                    // Handles input of unknown item\r\n                    catch (Exception e) {\r\n                        System.out.println(\"You do not see any \" + parts[1]);\r\n                    }\r\n                }\r\n                else {\r\n                    System.out.println(\"Invalid input. Please use the format 'use <item>'.\"); // handles formatting issues\r\n                }\r\n            }\r\n            else if (input.equalsIgnoreCase(\"help\") || input.equalsIgnoreCase(\"?\")) {\r\n                printCommands();\r\n            }\r\n            else if (!input.equalsIgnoreCase(\"exit\")) { // handles incorrect commands\r\n                System.out.println(\"Unknown input. Please enter 'look <direction>' or 'exit'.\");\r\n            }\r\n        } while (!input.equalsIgnoreCase(\"exit\")); // repeats loop until user types 'exit'\r\n\r\n        // exit message\r\n        log.info(\"exiting game...\");\r\n        System.out.println(\"Thanks for playing!\");\r\n        scanner.close();\r\n    }\r\n\r\n    private static void printCommands() {\r\n        // list of available commands\r\n        System.out.println(\"AVAILABLE COMMANDS:\");\r\n        System.out.println(\"--------------------\");\r\n        System.out.println(ConsoleColors.YELLOW+\"1. look <direction>\"+ConsoleColors.RESET+\": looks at the specified direction\");\r\n        System.out.println(ConsoleColors.YELLOW+\"2. inspect <item>\"+ConsoleColors.RESET+\": inspects the specified item\");\r\n        System.out.println(ConsoleColors.YELLOW+\"2. use <item>\"+ConsoleColors.RESET+\": attempts to use the specified item\");\r\n        System.out.println(ConsoleColors.YELLOW+\"3. help\"+ConsoleColors.RESET+\": prints this message\");\r\n        System.out.println(ConsoleColors.YELLOW+\"4. exit\"+ConsoleColors.RESET+\": exits the game\");\r\n    }\r\n    private static void printTitle(){\r\n        // text generated via https://patorjk.com/software/taag. This is the \"Slant\" font\r\n        final String title = ConsoleColors.RED+\"\\n\" +\r\n                \"    ___________ _________    ____  ______   ____  ____  ____  __  ___\\n\" +\r\n                \"   / ____/ ___// ____/   |  / __ \\\\/ ____/  / __ \\\\/ __ \\\\/ __ \\\\/  |/  /\\n\" +\r\n                \"  / __/  \\\\__ \\\\/ /   / /| | / /_/ / __/    / /_/ / / / / / / / /|_/ / \\n\" +\r\n                \" / /___ ___/ / /___/ ___ |/ ____/ /___   / _, _/ /_/ / /_/ / /  / /  \\n\" +\r\n                \"/_____//____/\\\\____/_/  |_/_/   /_____/  /_/ |_|\\\\____/\\\\____/_/  /_/   \\n\" +\r\n                \"====================================================================\\n\"+ConsoleColors.RESET;\r\n        System.out.println(title);\r\n    }\r\n\r\n    // TODO: ---------------------------------------[ INLINE CLASSES AND ENUMS BEGIN HERE ]--------------------------------------------------------\r\n    // enum representing four cardinal directions\r\n    public enum Direction {\r\n        north(\"to the north\"),\r\n        south(\"to the south\"),\r\n        east(\"to the east\"),\r\n        west(\"to the west\");\r\n\r\n        private final String description; //\r\n\r\n        Direction(String description) {\r\n            this.description = description;\r\n        }\r\n\r\n        public String getDescription() {\r\n            return description; // returns the direction's description\r\n        }\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dev/java/game/Main.java b/src/dev/java/game/Main.java
+--- a/src/dev/java/game/Main.java	(revision e09616270a165f2a88ba5c9e80814c7b01187969)
++++ b/src/dev/java/game/Main.java	(date 1739578473114)
+@@ -14,26 +14,10 @@
+ 
+         printTitle(); // prints game title
+ 
+-        // instantiates room
+-        Room room = new Room();
+-        room.setName("Tutorial Room");
+-        log.info("instantiating " + room.getName());
+-        log.debug("adding items to " + room.getName());
+-        System.out.println();
+-        // adds items to each wall. This could prob just be a method later
+-        room.setItem(Direction.north, new Painting("painting",
+-                "A painting of an old house surrounded by neatly-trimmed hedges.",
+-                "The painter's signature is inscribed in the corner: 'F.L. Romulus'.",
+-                room));
+-        room.setItem(Direction.south, new Bookshelf("bookshelf",
+-                "A bookshelf filled with books about the occult.",
+-                "A pungent smell gets stronger the closer you get to the shelf."));
+-        room.setItem(Direction.east, new Desk("desk",
+-                "A desk with a lamp. Judging by the flickering of the bulb, it's on its last leg.",
+-                "When the bulb flicks off, you notice a key hidden inside the bulb."));
+-        room.setItem(Direction.west, new Window("window",
+-                "A window overlooking a garden. It's too foggy to see very far.",
+-                "The garden is guarded by a scarecrow with a tattered black hat."));
++        //Added by Josiah
++        //Took the room instantiating code and made it's own method
++        //so it's easier to keep making new rooms
++        Room room = SetNewRoom(log);
+ 
+         // this is going to read user input
+         Scanner scanner = new Scanner(System.in);
+@@ -166,4 +150,28 @@
+         }
+     }
+ 
++    private static Room SetNewRoom(Logger log) {
++        Room room = new Room();
++        room.setName("Tutorial Room");
++        log.info("instantiating " + room.getName());
++        log.debug("adding items to " + room.getName());
++        System.out.println();
++        // adds items to each wall. This could prob just be a method later
++        room.setItem(Direction.north, new Painting("painting",
++                "A painting of an old house surrounded by neatly-trimmed hedges.",
++                "The painter's signature is inscribed in the corner: 'F.L. Romulus'.",
++                room));
++        room.setItem(Direction.south, new Bookshelf("bookshelf",
++                "A bookshelf filled with books about the occult.",
++                "A pungent smell gets stronger the closer you get to the shelf."));
++        room.setItem(Direction.east, new Desk("desk",
++                "A desk with a lamp. Judging by the flickering of the bulb, it's on its last leg.",
++                "When the bulb flicks off, you notice a key hidden inside the bulb."));
++        room.setItem(Direction.west, new Window("window",
++                "A window overlooking a garden. It's too foggy to see very far.",
++                "The garden is guarded by a scarecrow with a tattered black hat."));
++
++        return room;
++    }
++
+ }
