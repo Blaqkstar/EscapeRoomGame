@@ -14,6 +14,6 @@ public class Painting extends Item {
         // creates a new instance of Key
         Item key = new Key("key", "A rusty old key", "The key appears to be quite old. The shine of the metal has dulled with oxidation.");
         key.setObserved(true); // sets key as observed
-        room.addItem(key); // adds key to room
+        room.setItem(Main.Direction.north, key); // adds key to the north
     }
 }
