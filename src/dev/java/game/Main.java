@@ -1,5 +1,6 @@
 package game;
 
+import java.sql.Connection;
 import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
@@ -8,36 +9,18 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Main {
-    public static void main(final String[] args) {
+    public static void main(final String[] args) throws Exception {
 
         final Logger log = LogManager.getLogger(Main.class.getName());
 
+        Door exitDoor = null;
+
+        //This might break!
+        ScoreDB scoreDB = new ScoreDB();
+
         printTitle(); // prints game title
 
-        // instantiates room
-        Room room = new Room();
-        room.setName("Tutorial Room");
-        log.info("instantiating " + room.getName());
-        log.debug("adding items to " + room.getName());
-        System.out.println();
-        // adds items to each wall. This could prob just be a method later
-        room.setItem(Direction.north, new Painting("painting",
-                "A painting of an old house surrounded by neatly-trimmed hedges.",
-                "The painter's signature is inscribed in the corner: 'F.L. Romulus'.",
-                room));
-        // Assigning door to the room in two steps so that we can reference door when creating the key.
-        Door exitDoor = new Door(room, 1, "A wooden door with a rusty handle.",
-                "There is a deadbolt that looks like it would accept an old key.", "door");
-        room.setItem(Direction.south, exitDoor);
-        room.setItem(Direction.south, new Bookshelf("bookshelf",
-                "A bookshelf filled with books about the occult.",
-                "A pungent smell gets stronger the closer you get to the shelf."));
-        room.setItem(Direction.east, new Desk("desk",
-                "A desk with a lamp. Judging by the flickering of the bulb, it's on its last leg.",
-                "You notice the shape of a hand in the dust on the surface of the desk. Someone has been here."));
-        room.setItem(Direction.west, new Window("window",
-                "A window overlooking a garden. It's too foggy to see very far.",
-                "The garden is guarded by a scarecrow with a tattered black hat."));
+        Room room = SetNewRoom(log, exitDoor);
 
         // this is going to read user input
         Scanner scanner = new Scanner(System.in);
@@ -138,9 +121,13 @@ public class Main {
             else if (input.equalsIgnoreCase("help") || input.equalsIgnoreCase("?")) {
                 printCommands();
             }
+            else if (input.equalsIgnoreCase("highScores")) {
+                printHighScores(scoreDB);
+            }
             else if (!input.equalsIgnoreCase("exit")) { // handles incorrect commands
                 System.out.println("Unknown input. Please enter 'look <direction>' or 'exit'.");
             }
+
         } while (!input.equalsIgnoreCase("exit")); // repeats loop until user types 'exit'
 
         // exit message
@@ -157,6 +144,7 @@ public class Main {
         System.out.println(ConsoleColors.YELLOW+"2. inspect <item>"+ConsoleColors.RESET+": inspects the specified item");
         System.out.println(ConsoleColors.YELLOW+"2. use <item>"+ConsoleColors.RESET+": attempts to use the specified item");
         System.out.println(ConsoleColors.YELLOW+"2. open <item>"+ConsoleColors.RESET+": attempts to open the specified item");
+        System.out.println(ConsoleColors.YELLOW+"2. highScores:"+ConsoleColors.RESET+": displays the high scores");
         System.out.println(ConsoleColors.YELLOW+"3. help"+ConsoleColors.RESET+": prints this message");
         System.out.println(ConsoleColors.YELLOW+"4. exit"+ConsoleColors.RESET+": exits the game");
     }
@@ -170,6 +158,15 @@ public class Main {
                 "/_____//____/\\____/_/  |_/_/   /_____/  /_/ |_|\\____/\\____/_/  /_/   \n" +
                 "====================================================================\n"+ConsoleColors.RESET;
         System.out.println(title);
+    }
+
+    private static void printHighScores(ScoreDB scoreDB) throws Exception {
+        System.out.println("This is where the high scores should be!");
+        Connection conn = ScoreDB.Setup();
+        if (conn != null) {
+            scoreDB.Test(conn);
+        }
+
     }
 
     // TODO: ---------------------------------------[ INLINE CLASSES AND ENUMS BEGIN HERE ]--------------------------------------------------------
@@ -189,6 +186,35 @@ public class Main {
         public String getDescription() {
             return description; // returns the direction's description
         }
+    }
+
+    private static Room SetNewRoom(Logger log, Door exitDoor) {
+        // instantiates room
+        Room room = new Room();
+        room.setName("Tutorial Room");
+        log.info("instantiating " + room.getName());
+        log.debug("adding items to " + room.getName());
+        System.out.println();
+        // adds items to each wall. This could prob just be a method later
+        room.setItem(Direction.north, new Painting("painting",
+                "A painting of an old house surrounded by neatly-trimmed hedges.",
+                "The painter's signature is inscribed in the corner: 'F.L. Romulus'.",
+                room));
+        // Assigning door to the room in two steps so that we can reference door when creating the key.
+        exitDoor = new Door(room, 1, "A wooden door with a rusty handle.",
+                "There is a deadbolt that looks like it would accept an old key.", "door");
+        room.setItem(Direction.south, exitDoor);
+        room.setItem(Direction.south, new Bookshelf("bookshelf",
+                "A bookshelf filled with books about the occult.",
+                "A pungent smell gets stronger the closer you get to the shelf."));
+        room.setItem(Direction.east, new Desk("desk",
+                "A desk with a lamp. Judging by the flickering of the bulb, it's on its last leg.",
+                "You notice the shape of a hand in the dust on the surface of the desk. Someone has been here."));
+        room.setItem(Direction.west, new Window("window",
+                "A window overlooking a garden. It's too foggy to see very far.",
+                "The garden is guarded by a scarecrow with a tattered black hat."));
+
+        return room;
     }
 
 }
