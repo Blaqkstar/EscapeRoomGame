@@ -4,10 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed key spawning into room to correctly use room.setItem instead of room.addItem. Key now appears in the full room description.">
+      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/db.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c101.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c111.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c121.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c130.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c141.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c20.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c31.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c41.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c51.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c60.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c610.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c621.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c630.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c641.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c71.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c81.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c90.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/ca1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/cb1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/cf0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/d5d0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/d5e1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/d5f0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/d601.dat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ScoreDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ScoreDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +67,12 @@
     &quot;assignee&quot;: &quot;Blaqkstar&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/kylejfavorite/EscapeRoomGame.git&quot;,
-    &quot;accountId&quot;: &quot;86515775-36cf-415b-b0dd-8cb11382d995&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Blaqkstar/EscapeRoomGame.git",
+    "accountId": "33bf5a69-71e6-4530-b179-74da27333e68"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -53,29 +85,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.ScoreDB.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/josia/IdeaProjects/EscapeRoomGame/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ScoreDB.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/resources/derbyclient.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Personal\School\NWTC\2025\2025 Spring Semester\8W1\Java 2\Group Project\EscapeRoomGame\Logging" />
@@ -90,8 +122,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
       </set>
     </attachedChunks>
   </component>
@@ -115,6 +147,7 @@
       <workItem from="1738204764967" duration="2000" />
       <workItem from="1738453709326" duration="796000" />
       <workItem from="1739629190925" duration="8304000" />
+      <workItem from="1739672615482" duration="4172000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />

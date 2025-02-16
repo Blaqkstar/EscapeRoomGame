@@ -40,3 +40,109 @@
 02-15-2025 18:42:00.897 INFO  [game.Main] - user input received
 02-15-2025 18:42:03.134 INFO  [game.Main] - user input received
 02-15-2025 18:42:03.134 INFO  [game.Main] - player selected look
+02-15-2025 20:00:11.870 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 20:00:11.873 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 20:00:22.124 INFO  [game.Main] - user input received
+02-15-2025 20:00:42.846 INFO  [game.Main] - user input received
+02-15-2025 20:00:42.846 INFO  [game.Main] - player selected look
+02-15-2025 20:00:45.211 INFO  [game.Main] - user input received
+02-15-2025 20:00:59.153 INFO  [game.Main] - user input received
+02-15-2025 20:00:59.153 INFO  [game.Main] - player selected look
+02-15-2025 20:25:25.733 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 20:25:25.734 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 20:26:07.040 INFO  [game.Main] - user input received
+02-15-2025 20:26:07.041 INFO  [game.Main] - player selected look
+02-15-2025 20:26:20.737 INFO  [game.Main] - user input received
+02-15-2025 20:26:26.450 INFO  [game.Main] - user input received
+02-15-2025 20:27:07.318 INFO  [game.Main] - user input received
+02-15-2025 20:27:07.318 INFO  [game.Main] - player selected look
+02-15-2025 20:42:18.606 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 20:42:18.608 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 20:42:55.352 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 20:42:55.353 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 20:45:39.671 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 20:45:39.672 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 20:46:58.689 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 20:46:58.692 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 20:47:55.626 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 20:47:55.629 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 20:48:33.542 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 20:48:33.545 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 20:48:56.455 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 20:48:56.458 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 20:49:54.560 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 20:49:54.563 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 20:50:12.369 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 20:50:12.372 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 20:51:10.824 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 20:51:10.827 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 20:54:58.373 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 20:54:58.376 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 20:55:56.926 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 20:55:56.927 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 21:00:58.381 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 21:00:58.384 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 21:03:55.545 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 21:03:55.548 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 21:04:16.849 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 21:04:16.852 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 21:04:47.667 INFO  [game.Main] - user input received
+02-15-2025 21:05:12.472 INFO  [game.Main] - user input received
+02-15-2025 21:07:43.814 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 21:07:43.817 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 21:07:51.362 INFO  [game.Main] - user input received
+02-15-2025 21:10:21.035 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 21:10:21.038 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 21:10:41.999 INFO  [game.Main] - user input received
+02-15-2025 21:12:25.525 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 21:12:25.529 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 21:12:45.004 INFO  [game.Main] - user input received
+02-15-2025 21:12:45.004 INFO  [game.Main] - player selected look
+02-15-2025 21:13:06.909 INFO  [game.Main] - user input received
+02-15-2025 21:13:11.037 INFO  [game.Main] - user input received
+02-15-2025 21:13:21.322 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 21:13:21.325 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 21:13:41.063 INFO  [game.Main] - user input received
+02-15-2025 21:13:41.064 INFO  [game.Main] - player selected look
+02-15-2025 21:13:54.482 INFO  [game.Main] - user input received
+02-15-2025 21:13:58.639 INFO  [game.Main] - user input received
+02-15-2025 21:14:01.745 INFO  [game.Main] - user input received
+02-15-2025 21:14:01.747 INFO  [game.Main] - player selected look
+02-15-2025 21:14:08.732 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 21:14:08.734 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 21:14:24.229 INFO  [game.Main] - user input received
+02-15-2025 21:14:24.229 INFO  [game.Main] - player selected look
+02-15-2025 21:14:29.005 INFO  [game.Main] - user input received
+02-15-2025 21:14:31.873 INFO  [game.Main] - user input received
+02-15-2025 21:14:31.873 INFO  [game.Main] - player selected look
+02-15-2025 21:14:46.159 INFO  [game.Main] - user input received
+02-15-2025 21:14:46.159 INFO  [game.Main] - player selected look
+02-15-2025 21:14:48.832 INFO  [game.Main] - user input received
+02-15-2025 21:14:48.832 INFO  [game.Main] - player selected look
+02-15-2025 21:14:51.708 INFO  [game.Main] - user input received
+02-15-2025 21:14:51.708 INFO  [game.Main] - player selected look
+02-15-2025 21:14:54.981 INFO  [game.Main] - user input received
+02-15-2025 21:14:56.908 INFO  [game.Main] - user input received
+02-15-2025 21:15:05.185 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 21:15:05.188 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 21:15:16.803 INFO  [game.Main] - user input received
+02-15-2025 21:15:16.803 INFO  [game.Main] - player selected look
+02-15-2025 21:15:19.611 INFO  [game.Main] - user input received
+02-15-2025 21:15:34.581 INFO  [game.Main] - user input received
+02-15-2025 21:15:34.581 INFO  [game.Main] - player selected look
+02-15-2025 21:31:39.258 INFO  [game.Main] - instantiating Tutorial Room
+02-15-2025 21:31:39.261 DEBUG [game.Main] - adding items to Tutorial Room
+02-15-2025 21:33:03.809 DEBUG [game.Main] - user input received
+02-15-2025 21:33:03.809 DEBUG [game.Main] - player selected look
+02-15-2025 21:33:08.300 DEBUG [game.Main] - user input received
+02-15-2025 21:33:08.302 DEBUG [game.Main] - player selected look
+02-15-2025 21:33:10.013 DEBUG [game.Main] - user input received
+02-15-2025 21:33:10.014 DEBUG [game.Main] - player selected use
+02-15-2025 21:33:21.830 DEBUG [game.Main] - user input received
+02-15-2025 21:33:21.830 DEBUG [game.Main] - player selected look
+02-15-2025 21:33:24.189 DEBUG [game.Main] - user input received
+02-15-2025 21:33:24.189 DEBUG [game.Main] - player selected use
+02-15-2025 21:33:27.264 DEBUG [game.Main] - user input received
+02-15-2025 21:33:27.264 DEBUG [game.Main] - player selected open
+02-15-2025 21:33:30.291 DEBUG [game.Main] - user input received
+02-15-2025 21:33:30.291 DEBUG [game.Main] - player selected look

@@ -14,7 +14,6 @@ public class Main {
         final Logger log = LogManager.getLogger(Main.class.getName());
 
         Door exitDoor = null;
-
         //This might break!
         ScoreDB scoreDB = new ScoreDB();
 
@@ -27,6 +26,19 @@ public class Main {
         String input;
 
         // Welcome message
+        System.out.println("Shadows encapsulate your ephemeral form. In the distance, a dim candle flickers, suspended by some unknown force. " +
+                "As you approach, transfixed, a quiet voice beckons...");
+        Thread.sleep(300);
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'... Who are you?' ");
+        System.out.print(ConsoleColors.YELLOW+"Enter your name: "+ConsoleColors.RESET);
+        Thread.sleep(200);
+        String playerName = scanner.nextLine(); // collects player name
+        // instantiates player
+        Player player = new Player(playerName, 0);
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getName() + "... I do not know you...' ");
+        Thread.sleep(200);
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'BEGONE!'");
+        Thread.sleep(300);
         System.out.println("You awaken, groggily, to find yourself in a strange room. Along each wall are items.");
 
         // this continues until the user types 'exit'
@@ -34,12 +46,12 @@ public class Main {
             System.out.println();
             System.out.print(ConsoleColors.YELLOW+"Enter input (or 'help' for a list of available commands): "+ConsoleColors.RESET);
             input = scanner.nextLine(); // user input
-            log.info("user input received");
+            log.debug("user input received");
             System.out.println();
 
             // processes user input
             if (input.startsWith("look ")) {
-                log.info("player selected look");
+                log.debug("player selected look");
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
@@ -58,6 +70,7 @@ public class Main {
                     System.out.println("Invalid input. Please use the format 'look <direction>'."); // handles formatting issues
                 }
             } else if(input.startsWith("inspect ")) {
+                log.debug("player selected inspect");
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
@@ -81,6 +94,7 @@ public class Main {
                 }
             }
             else if (input.startsWith("use ")) {
+                log.debug("player selected use");
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
@@ -107,6 +121,7 @@ public class Main {
                 }
             }
             else if (input.startsWith("open ")) {
+                log.debug("player selected open");
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
@@ -121,8 +136,9 @@ public class Main {
             else if (input.equalsIgnoreCase("help") || input.equalsIgnoreCase("?")) {
                 printCommands();
             }
-            else if (input.equalsIgnoreCase("highScores")) {
+            else if (input.equalsIgnoreCase("highscores")) {
                 printHighScores(scoreDB);
+
             }
             else if (!input.equalsIgnoreCase("exit")) { // handles incorrect commands
                 System.out.println("Unknown input. Please enter 'look <direction>' or 'exit'.");
@@ -144,7 +160,7 @@ public class Main {
         System.out.println(ConsoleColors.YELLOW+"2. inspect <item>"+ConsoleColors.RESET+": inspects the specified item");
         System.out.println(ConsoleColors.YELLOW+"2. use <item>"+ConsoleColors.RESET+": attempts to use the specified item");
         System.out.println(ConsoleColors.YELLOW+"2. open <item>"+ConsoleColors.RESET+": attempts to open the specified item");
-        System.out.println(ConsoleColors.YELLOW+"2. highScores:"+ConsoleColors.RESET+": displays the high scores");
+        System.out.println(ConsoleColors.YELLOW+"2. highscores"+ConsoleColors.RESET+": displays the high scores");
         System.out.println(ConsoleColors.YELLOW+"3. help"+ConsoleColors.RESET+": prints this message");
         System.out.println(ConsoleColors.YELLOW+"4. exit"+ConsoleColors.RESET+": exits the game");
     }

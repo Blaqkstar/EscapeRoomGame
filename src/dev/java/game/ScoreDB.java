@@ -71,13 +71,15 @@ public class ScoreDB {
     }
 
     public void Test(Connection conn) throws SQLException {
+        // input
         Statement stmt = conn.createStatement();
         String sql = "select * from highScores";
         ResultSet rs = stmt.executeQuery(sql);
 
+        // output
         while(rs.next()) {
-            System.out.println("Person Name: " + rs.getString("name"));
-            System.out.println("Person High Score: " + rs.getInt(1));
+            System.out.println(ConsoleColors.YELLOW+"Player: " +ConsoleColors.RESET+ rs.getString("name"));
+            System.out.println(ConsoleColors.YELLOW+"High Score: " +ConsoleColors.RESET+ rs.getInt(1));
         }
     }
 
