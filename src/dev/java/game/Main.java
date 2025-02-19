@@ -19,7 +19,8 @@ public class Main {
 
         printTitle(); // prints game title
 
-        Room room = SetNewRoom(log, exitDoor);
+        Room room = SetNewRoom(log, "Tutorial Room");
+        exitDoor = SetExitDoor(room);
 
         // this is going to read user input
         Scanner scanner = new Scanner(System.in);
@@ -105,6 +106,8 @@ public class Main {
                             item.use();
                             if (item.getName().equals("key")) {
                                 exitDoor.unlockDoor();
+                                room = SetNewRoom(log, "Room#2");
+                                System.out.println("You entered a new room!");
                             }
                         }
                         else{
@@ -182,7 +185,6 @@ public class Main {
         if (conn != null) {
             scoreDB.Test(conn);
         }
-
     }
 
     // TODO: ---------------------------------------[ INLINE CLASSES AND ENUMS BEGIN HERE ]--------------------------------------------------------
@@ -204,10 +206,10 @@ public class Main {
         }
     }
 
-    private static Room SetNewRoom(Logger log, Door exitDoor) {
+    private static Room SetNewRoom(Logger log, String roomName) throws Exception {
         // instantiates room
         Room room = new Room();
-        room.setName("Tutorial Room");
+        room.setName(roomName);
         log.info("instantiating " + room.getName());
         log.debug("adding items to " + room.getName());
         System.out.println();
@@ -216,10 +218,7 @@ public class Main {
                 "A painting of an old house surrounded by neatly-trimmed hedges.",
                 "The painter's signature is inscribed in the corner: 'F.L. Romulus'.",
                 room));
-        // Assigning door to the room in two steps so that we can reference door when creating the key.
-        exitDoor = new Door(room, 1, "A wooden door with a rusty handle.",
-                "There is a deadbolt that looks like it would accept an old key.", "door");
-        room.setItem(Direction.south, exitDoor);
+        //room.setItem(Direction.south, exitDoor);
         room.setItem(Direction.south, new Bookshelf("bookshelf",
                 "A bookshelf filled with books about the occult.",
                 "A pungent smell gets stronger the closer you get to the shelf."));
@@ -231,6 +230,15 @@ public class Main {
                 "The garden is guarded by a scarecrow with a tattered black hat."));
 
         return room;
+    }
+
+    private static Door SetExitDoor(Room room) {
+        return new Door(room, new Room() ,1, "A wooden door with a rusty handle.",
+                        "There is a deadbolt that looks like it would accept an old key.", "door");
+    }
+
+    private static void ShowRoomName(Room currentRoom) {
+        System.out.println(currentRoom.getName());
     }
 
 }
