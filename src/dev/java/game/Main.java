@@ -227,7 +227,7 @@ public class Main {
                 "A desk with a lamp. ",
                 "You notice the shape of a hand in the dust on the surface of the desk. Someone has been here."));
         room.setItem(Direction.east, new Lamp("lamp",
-                "Judging by the flickering of the bulb, it's on its last leg.",
+                "Judging by the occasional flickering of the bulb, it's on its last leg.",
                 "The lamp's once polished brass base now shows signs of tarnish and wear. The bulb flickers intermittently, casting unsettling \n" +
                         "shadows that dance across the room. The switch, slightly loose and worn from years of use, hints at the lamp's frailty. It's as if \n" +
                         "the lamp is holding on by a thread, inviting you to test its resilience one last time."));

@@ -24,6 +24,7 @@ public abstract class Item {
     public String getDescription() {
         return description;
     }
+    public void setDescription(String description) {this.description = description;}
 
     public void setObserved(boolean observed) {
         this.observed = observed;
@@ -34,6 +35,7 @@ public abstract class Item {
     }
 
     public String getInspection() {return inspection + "\n";}
+    public void setInspection(String inspection) {this.inspection = inspection;}
     @Override
     public String toString() {
         return name + ": " + description;

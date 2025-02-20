@@ -22,6 +22,8 @@ public class Lamp extends Item {
                 counter++;
                 powered = false; // lamp is off
                 destroyed = true; // lamp is now broken
+                this.setDescription("It's broken.");
+                this.setInspection("A lamp with a broken bulb.");
             }
             else {
                 if (powered) {
@@ -29,11 +31,13 @@ public class Lamp extends Item {
                             "shadows deepen and the lamp stands quietly, awaiting your next command.");
                     counter++;
                     powered = false; // lamp is off
+                    this.setDescription("It's off.");
                 } else {
                     System.out.println("You flip the lamp's power switch. The light flickers briefly before casting a warm glow across the room. Shadows recede \n" +
                             "and the lamp stands quietly, illuminating the space and inviting your next move.");
                     counter++;
                     powered = true; // lamp is on
+                    this.setDescription("Judging by the occasional flickering of the bulb, it's on its last leg.");
                 }
             }
         } else {

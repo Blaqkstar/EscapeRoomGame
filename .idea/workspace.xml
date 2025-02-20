@@ -4,40 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed key spawning into room to correctly use room.setItem instead of room.addItem. Key now appears in the full room description.">
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Lamp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Created Lamp item and added into tutorial room&#10;Fixed numbering on help menu items">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/db.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/log/log1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c101.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c111.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c121.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c130.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c141.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c20.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c31.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c41.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c51.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c60.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c6d0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c6e1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c6f0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c701.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c71.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c81.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c90.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/ca1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/cb1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/cf0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/d690.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/d6a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/d6b0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/d6c1.dat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Lamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Lamp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +119,8 @@
       <workItem from="1739629190925" duration="8304000" />
       <workItem from="1739672615482" duration="4172000" />
       <workItem from="1740011764901" duration="14000" />
-      <workItem from="1740011788295" duration="4062000" />
+      <workItem from="1740011788295" duration="4497000" />
+      <workItem from="1740027929116" duration="446000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -166,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737850767623</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Created Lamp item and added into tutorial room&#10;Fixed numbering on help menu items">
+      <option name="closed" value="true" />
+      <created>1740020413342</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740020413342</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +164,8 @@
     <MESSAGE value="re-submitting to ensure that we are all working from the same codebase" />
     <MESSAGE value="implemented Item.use() method.&#10;Separated items out as children of the Item class.&#10;Got the Key item to fall out from behind the painting onto the floor but that logic is not yet complete." />
     <MESSAGE value="added some contextual awareness to the message provided to player when they attempt to use or inspect an item they haven't yet observed." />
-    <option name="LAST_COMMIT_MESSAGE" value="added some contextual awareness to the message provided to player when they attempt to use or inspect an item they haven't yet observed." />
+    <MESSAGE value="Created Lamp item and added into tutorial room&#10;Fixed numbering on help menu items" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Lamp item and added into tutorial room&#10;Fixed numbering on help menu items" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

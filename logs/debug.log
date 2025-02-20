@@ -245,3 +245,39 @@
 02-19-2025 20:55:08.339 DEBUG [game.Main] - player selected use
 02-19-2025 20:55:10.019 DEBUG [game.Main] - user input received
 02-19-2025 20:55:10.019 DEBUG [game.Main] - player selected use
+02-19-2025 23:05:36.912 INFO  [game.Main] - instantiating Tutorial Room
+02-19-2025 23:05:36.915 DEBUG [game.Main] - adding items to Tutorial Room
+02-19-2025 23:05:45.779 DEBUG [game.Main] - user input received
+02-19-2025 23:05:45.779 DEBUG [game.Main] - player selected look
+02-19-2025 23:05:50.572 DEBUG [game.Main] - user input received
+02-19-2025 23:05:50.572 DEBUG [game.Main] - player selected use
+02-19-2025 23:09:30.975 INFO  [game.Main] - instantiating Tutorial Room
+02-19-2025 23:09:30.978 DEBUG [game.Main] - adding items to Tutorial Room
+02-19-2025 23:09:35.795 DEBUG [game.Main] - user input received
+02-19-2025 23:09:35.797 DEBUG [game.Main] - player selected look
+02-19-2025 23:09:39.085 DEBUG [game.Main] - user input received
+02-19-2025 23:09:39.085 DEBUG [game.Main] - player selected use
+02-19-2025 23:09:41.752 DEBUG [game.Main] - user input received
+02-19-2025 23:09:41.752 DEBUG [game.Main] - player selected use
+02-19-2025 23:09:43.338 DEBUG [game.Main] - user input received
+02-19-2025 23:09:43.338 DEBUG [game.Main] - player selected use
+02-19-2025 23:09:44.883 DEBUG [game.Main] - user input received
+02-19-2025 23:09:44.884 DEBUG [game.Main] - player selected use
+02-19-2025 23:09:46.533 DEBUG [game.Main] - user input received
+02-19-2025 23:09:46.533 DEBUG [game.Main] - player selected use
+02-19-2025 23:09:57.306 DEBUG [game.Main] - user input received
+02-19-2025 23:09:57.306 DEBUG [game.Main] - player selected look
+02-19-2025 23:10:07.331 DEBUG [game.Main] - user input received
+02-19-2025 23:10:07.331 DEBUG [game.Main] - player selected inspect
+02-19-2025 23:12:19.743 INFO  [game.Main] - instantiating Tutorial Room
+02-19-2025 23:12:19.744 DEBUG [game.Main] - adding items to Tutorial Room
+02-19-2025 23:12:25.072 DEBUG [game.Main] - user input received
+02-19-2025 23:12:25.072 DEBUG [game.Main] - player selected look
+02-19-2025 23:12:28.023 DEBUG [game.Main] - user input received
+02-19-2025 23:12:28.025 DEBUG [game.Main] - player selected use
+02-19-2025 23:12:32.703 DEBUG [game.Main] - user input received
+02-19-2025 23:12:32.703 DEBUG [game.Main] - player selected look
+02-19-2025 23:12:38.618 DEBUG [game.Main] - user input received
+02-19-2025 23:12:38.618 DEBUG [game.Main] - player selected use
+02-19-2025 23:12:40.516 DEBUG [game.Main] - user input received
+02-19-2025 23:12:40.516 DEBUG [game.Main] - player selected look
