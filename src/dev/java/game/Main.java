@@ -161,11 +161,11 @@ public class Main {
         System.out.println("--------------------");
         System.out.println(ConsoleColors.YELLOW+"1. look <direction>"+ConsoleColors.RESET+": looks at the specified direction");
         System.out.println(ConsoleColors.YELLOW+"2. inspect <item>"+ConsoleColors.RESET+": inspects the specified item");
-        System.out.println(ConsoleColors.YELLOW+"2. use <item>"+ConsoleColors.RESET+": attempts to use the specified item");
-        System.out.println(ConsoleColors.YELLOW+"2. open <item>"+ConsoleColors.RESET+": attempts to open the specified item");
-        System.out.println(ConsoleColors.YELLOW+"2. highscores"+ConsoleColors.RESET+": displays the high scores");
-        System.out.println(ConsoleColors.YELLOW+"3. help"+ConsoleColors.RESET+": prints this message");
-        System.out.println(ConsoleColors.YELLOW+"4. exit"+ConsoleColors.RESET+": exits the game");
+        System.out.println(ConsoleColors.YELLOW+"3. use <item>"+ConsoleColors.RESET+": attempts to use the specified item");
+        System.out.println(ConsoleColors.YELLOW+"4. open <item>"+ConsoleColors.RESET+": attempts to open the specified item");
+        System.out.println(ConsoleColors.YELLOW+"5. highscores"+ConsoleColors.RESET+": displays the high scores");
+        System.out.println(ConsoleColors.YELLOW+"6. help"+ConsoleColors.RESET+": prints this message");
+        System.out.println(ConsoleColors.YELLOW+"7. exit"+ConsoleColors.RESET+": exits the game");
     }
     private static void printTitle(){
         // text generated via https://patorjk.com/software/taag. This is the "Slant" font
@@ -215,16 +215,22 @@ public class Main {
         System.out.println();
         // adds items to each wall. This could prob just be a method later
         room.setItem(Direction.north, new Painting("painting",
-                "A painting of an old house surrounded by neatly-trimmed hedges.",
+                "A painting of an old house surrounded by neatly-trimmed hedges, askew and dust-covered from years of neglect.",
                 "The painter's signature is inscribed in the corner: 'F.L. Romulus'.",
                 room));
         //room.setItem(Direction.south, exitDoor);
         room.setItem(Direction.south, new Bookshelf("bookshelf",
                 "A bookshelf filled with books about the occult.",
-                "A pungent smell gets stronger the closer you get to the shelf."));
+                "A pungent aura of aged paper and leather pervades the air around the bookshelf. Among the many tomes, several of \n" +
+                        "Aleister Crowley's occult works stand out; their dark, worn spines hinting at secrets and mysteries bound within."));
         room.setItem(Direction.east, new Desk("desk",
-                "A desk with a lamp. Judging by the flickering of the bulb, it's on its last leg.",
+                "A desk with a lamp. ",
                 "You notice the shape of a hand in the dust on the surface of the desk. Someone has been here."));
+        room.setItem(Direction.east, new Lamp("lamp",
+                "Judging by the flickering of the bulb, it's on its last leg.",
+                "The lamp's once polished brass base now shows signs of tarnish and wear. The bulb flickers intermittently, casting unsettling \n" +
+                        "shadows that dance across the room. The switch, slightly loose and worn from years of use, hints at the lamp's frailty. It's as if \n" +
+                        "the lamp is holding on by a thread, inviting you to test its resilience one last time."));
         room.setItem(Direction.west, new Window("window",
                 "A window overlooking a garden. It's too foggy to see very far.",
                 "The garden is guarded by a scarecrow with a tattered black hat."));
