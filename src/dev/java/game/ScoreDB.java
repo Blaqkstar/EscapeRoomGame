@@ -3,9 +3,14 @@ package game;
 import org.apache.derby.jdbc.EmbeddedDataSource;
 
 import javax.swing.*;
+import java.awt.event.ActionListener;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
-public class ScoreDB {
+public class ScoreDB{
+
+    List<Player> players = new ArrayList<Player>();
 
     public static Connection Setup() throws Exception {
         try {
@@ -70,7 +75,7 @@ public class ScoreDB {
         ps.execute();
     }
 
-    public void Test(Connection conn) throws SQLException {
+    public List<Player> Test(Connection conn) throws SQLException {
         // input
         Statement stmt = conn.createStatement();
         String sql = "select * from highScores";
@@ -80,7 +85,9 @@ public class ScoreDB {
         while(rs.next()) {
             System.out.println(ConsoleColors.YELLOW+"Player: " +ConsoleColors.RESET+ rs.getString("name"));
             System.out.println(ConsoleColors.YELLOW+"High Score: " +ConsoleColors.RESET+ rs.getInt(1));
+            players.add(new Player(rs.getString("name"), rs.getInt("score")));
         }
-    }
 
+        return players;
+    }
 }
