@@ -37,6 +37,7 @@ public class Door extends Item{
     }
 
     public  void use(){
+        this.setUsed(true); // used!
         System.out.println("There is nothing to use.");
     };
 }

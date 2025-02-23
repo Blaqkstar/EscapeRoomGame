@@ -6,6 +6,7 @@ public class Window extends Item {
     }
     @Override
     public void use() {
+        this.setUsed(true); // used!
         System.out.println("You try and open the window but it won't budge.");
     }
 }

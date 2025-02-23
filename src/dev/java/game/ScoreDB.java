@@ -78,8 +78,10 @@ public class ScoreDB {
 
         // output
         while(rs.next()) {
-            System.out.println(ConsoleColors.YELLOW+"Player: " +ConsoleColors.RESET+ rs.getString("name"));
-            System.out.println(ConsoleColors.YELLOW+"High Score: " +ConsoleColors.RESET+ rs.getInt(1));
+            System.out.print(ConsoleColors.YELLOW+"Player: " +ConsoleColors.RESET+ rs.getString("name") +
+                    " " +
+                    ConsoleColors.YELLOW+"High Score: " +ConsoleColors.RESET+ rs.getInt(1));
+            System.out.println();
         }
     }
 

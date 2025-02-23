@@ -1,5 +1,7 @@
 package game;
 
+import java.awt.*;
+
 public class Painting extends Item {
     private Room room;
 
@@ -9,6 +11,7 @@ public class Painting extends Item {
     }
     @Override
     public void use() {
+        setUsed(true); // used!
         System.out.println("You straighten the painting on its hangar and a key tumbles out from behind the frame!");
 
         // creates a new instance of Key
