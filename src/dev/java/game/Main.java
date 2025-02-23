@@ -104,6 +104,8 @@ public class Main {
                         // Check if player has observed the item yet
                         if (item.isObserved()) {
                             item.use();
+                            // tracks user score
+                            player.setScore(player.getScore() + 1);
                             if (item.getName().equals("key")) {
                                 exitDoor.unlockDoor();
                                 room = SetNewRoom(log, "Room#2");
@@ -128,9 +130,11 @@ public class Main {
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
-                        if (parts[1].equals("door")){
+                        if (parts[1].equals("door")) {
                             System.out.println("You open the door and go into a new room.");
                         }
+                        // tracks user score
+                        player.setScore(player.getScore() + 1);
                     } catch(Exception e){
                         System.out.println("You do not see any " + parts[1]);
                     }
@@ -180,7 +184,16 @@ public class Main {
     }
 
     private static void printHighScores(ScoreDB scoreDB) throws Exception {
-        System.out.println("This is where the high scores should be!");
+
+
+        System.out.println("\n" +
+                "██╗  ██╗██╗ ██████╗ ██╗  ██╗    ███████╗ ██████╗ ██████╗ ██████╗ ███████╗███████╗\n" +
+                "██║  ██║██║██╔════╝ ██║  ██║    ██╔════╝██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔════╝\n" +
+                "███████║██║██║  ███╗███████║    ███████╗██║     ██║   ██║██████╔╝█████╗  ███████╗\n" +
+                "██╔══██║██║██║   ██║██╔══██║    ╚════██║██║     ██║   ██║██╔══██╗██╔══╝  ╚════██║\n" +
+                "██║  ██║██║╚██████╔╝██║  ██║    ███████║╚██████╗╚██████╔╝██║  ██║███████╗███████║\n" +
+                "╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═╝    ╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝\n" +
+                "                                                                                 \n");
         Connection conn = ScoreDB.Setup();
         if (conn != null) {
             scoreDB.Test(conn);
@@ -218,23 +231,22 @@ public class Main {
                 "A painting of an old house surrounded by neatly-trimmed hedges, askew and dust-covered from years of neglect.",
                 "The painter's signature is inscribed in the corner: 'F.L. Romulus'.",
                 room));
-        //room.setItem(Direction.south, exitDoor);
-        room.setItem(Direction.south, new Bookshelf("bookshelf",
-                "A bookshelf filled with books about the occult.",
-                "A pungent aura of aged paper and leather pervades the air around the bookshelf. Among the many tomes, several of \n" +
-                        "Aleister Crowley's occult works stand out; their dark, worn spines hinting at secrets and mysteries bound within."));
-        room.setItem(Direction.east, new Desk("desk",
-                "A desk with a lamp. ",
-                "You notice the shape of a hand in the dust on the surface of the desk. Someone has been here."));
         room.setItem(Direction.east, new Lamp("lamp",
                 "Judging by the occasional flickering of the bulb, it's on its last leg.",
                 "The lamp's once polished brass base now shows signs of tarnish and wear. The bulb flickers intermittently, casting unsettling \n" +
                         "shadows that dance across the room. The switch, slightly loose and worn from years of use, hints at the lamp's frailty. It's as if \n" +
                         "the lamp is holding on by a thread, inviting you to test its resilience one last time."));
+        room.setItem(Direction.east, new Desk("desk",
+                "A desk with a lamp. ",
+                "You notice the shape of a hand in the dust on the surface of the desk. Someone has been here."));
+        //room.setItem(Direction.south, exitDoor);
+        room.setItem(Direction.south, new Bookshelf("bookshelf",
+                "A bookshelf filled with books about the occult.",
+                "A pungent aura of aged paper and leather pervades the air around the bookshelf. Among the many tomes, several of \n" +
+                        "Aleister Crowley's occult works stand out; their dark, worn spines hinting at secrets and mysteries bound within."));
         room.setItem(Direction.west, new Window("window",
                 "A window overlooking a garden. It's too foggy to see very far.",
                 "The garden is guarded by a scarecrow with a tattered black hat."));
-
         return room;
     }
 

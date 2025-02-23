@@ -3,6 +3,8 @@ package game;
 public abstract class Item {
     private String name;
     private String description;
+    private boolean used;
+
 
     // Detailed description that is given when inspected
     private String inspection;
@@ -15,10 +17,15 @@ public abstract class Item {
         this.description = description;
         this.inspection = inspection;
         this.observed = false;
+        this.used = false;
     }
 
     public String getName() {
-        return name;
+        if (used) {
+            return ConsoleColors.RED + name + ConsoleColors.RESET;
+        } else {
+            return name;
+        }
     }
 
     public String getDescription() {
@@ -36,6 +43,8 @@ public abstract class Item {
 
     public String getInspection() {return inspection + "\n";}
     public void setInspection(String inspection) {this.inspection = inspection;}
+    public boolean isUsed() {return used;}
+    public void setUsed(boolean used) {this.used = used;}
     @Override
     public String toString() {
         return name + ": " + description;
