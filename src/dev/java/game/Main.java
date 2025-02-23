@@ -1,17 +1,17 @@
 package game;
 
 import java.sql.Connection;
-import java.util.EnumMap;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Main {
+public class Main{
     public static void main(final String[] args) throws Exception {
 
         final Logger log = LogManager.getLogger(Main.class.getName());
+
+        List<Integer> newInts = new ArrayList<>();
 
         Door exitDoor = null;
         //This might break!
@@ -179,12 +179,32 @@ public class Main {
         System.out.println(title);
     }
 
+    //This is the our example of the comparator. The difference bewtween a comparator and comparable is that
+    //a comparator is used to compare different aspects bewtween two specfic objects of a certain type. Whereas a
+    //a comparable defines how you can sort a large collection of objects.
+    Comparator<Player> nameComparator = new Comparator<Player>() {
+        public int compare(Player p1, Player p2) {
+            return p1.getName().compareTo(p2.getName());
+        }
+    };
+
     private static void printHighScores(ScoreDB scoreDB) throws Exception {
         System.out.println("This is where the high scores should be!");
         Connection conn = ScoreDB.Setup();
         if (conn != null) {
-            scoreDB.Test(conn);
+            List<Player> players = scoreDB.Test(conn);
+
+            Collections.sort(players);
+
+            System.out.println("This is the sorted players and scores using the Comparable and Comparator");
+
+            for (Player player : players) {
+                System.out.println(player.getName());
+                System.out.println(player.getScore());
+            }
         }
+
+
     }
 
     // TODO: ---------------------------------------[ INLINE CLASSES AND ENUMS BEGIN HERE ]--------------------------------------------------------
