@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Added setDescription and setInspection methods to Item parent class.&#10;Updated Lamp to utilize setDescription and setInspection methods so that the powered state is reflected in the game world.">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Worked on finishing the system for moving the player between rooms. I had to rework some of the exit door code, but now have it working properly. Cheers!">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_14_2025_6_07_PM_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_14_2025_6_07_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -30,15 +31,9 @@
       <change beforePath="$PROJECT_DIR$/foobar/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/cb1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foobar/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/cf0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Desk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Desk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Door.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Key.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Lamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Lamp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Painting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Painting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/ScoreDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ScoreDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,12 +61,12 @@
     &quot;assignee&quot;: &quot;Blaqkstar&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Blaqkstar/EscapeRoomGame.git&quot;,
-    &quot;accountId&quot;: &quot;33bf5a69-71e6-4530-b179-74da27333e68&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/twilight921/EscapeRoomGame.git",
+    "accountId": "2b5c2ac4-1c51-4cc6-8208-9d053c3ced33"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -84,29 +79,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.ScoreDB.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/resources/derbyclient.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ScoreDB.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/resources/derbyclient.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Personal\School\NWTC\2025\2025 Spring Semester\8W1\Java 2\Group Project\EscapeRoomGame\Logging" />
@@ -121,8 +116,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
       </set>
     </attachedChunks>
   </component>
@@ -147,10 +142,7 @@
       <workItem from="1738453709326" duration="796000" />
       <workItem from="1739629190925" duration="8304000" />
       <workItem from="1739672615482" duration="4172000" />
-      <workItem from="1740011764901" duration="14000" />
-      <workItem from="1740011788295" duration="4497000" />
-      <workItem from="1740027929116" duration="594000" />
-      <workItem from="1740268298807" duration="4308000" />
+      <workItem from="1740267770583" duration="8667000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -168,23 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737850767623</updated>
     </task>
-    <task id="LOCAL-00003" summary="Created Lamp item and added into tutorial room&#10;Fixed numbering on help menu items">
+    <task id="LOCAL-00003" summary="Worked on finishing the system for moving the player between rooms. I had to rework some of the exit door code, but now have it working properly. Cheers!">
       <option name="closed" value="true" />
-      <created>1740020413342</created>
+      <created>1740002342595</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1740020413342</updated>
+      <updated>1740002342595</updated>
     </task>
-    <task id="LOCAL-00004" summary="Added setDescription and setInspection methods to Item parent class.&#10;Updated Lamp to utilize setDescription and setInspection methods so that the powered state is reflected in the game world.">
-      <option name="closed" value="true" />
-      <created>1740028502948</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1740028502948</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,9 +186,8 @@
     <MESSAGE value="re-submitting to ensure that we are all working from the same codebase" />
     <MESSAGE value="implemented Item.use() method.&#10;Separated items out as children of the Item class.&#10;Got the Key item to fall out from behind the painting onto the floor but that logic is not yet complete." />
     <MESSAGE value="added some contextual awareness to the message provided to player when they attempt to use or inspect an item they haven't yet observed." />
-    <MESSAGE value="Created Lamp item and added into tutorial room&#10;Fixed numbering on help menu items" />
-    <MESSAGE value="Added setDescription and setInspection methods to Item parent class.&#10;Updated Lamp to utilize setDescription and setInspection methods so that the powered state is reflected in the game world." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added setDescription and setInspection methods to Item parent class.&#10;Updated Lamp to utilize setDescription and setInspection methods so that the powered state is reflected in the game world." />
+    <MESSAGE value="Worked on finishing the system for moving the player between rooms. I had to rework some of the exit door code, but now have it working properly. Cheers!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked on finishing the system for moving the player between rooms. I had to rework some of the exit door code, but now have it working properly. Cheers!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
