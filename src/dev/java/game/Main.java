@@ -9,6 +9,14 @@ import org.apache.logging.log4j.Logger;
 public class Main{
     public static void main(final String[] args) throws Exception {
 
+        ArrayList<Room> rooms = new ArrayList<Room>();
+
+        RoomSetup roomSetup = new RoomSetup();
+
+        //You could loop this and have an infinite number of rooms
+        //Check out the RoomSetup Class for how it works!
+        rooms.add(roomSetup.makeRooms());
+
         final Logger log = LogManager.getLogger(Main.class.getName());
 
         List<Integer> newInts = new ArrayList<>();
