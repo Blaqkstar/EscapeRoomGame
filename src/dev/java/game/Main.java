@@ -9,26 +9,22 @@ import org.apache.logging.log4j.Logger;
 public class Main{
     public static void main(final String[] args) throws Exception {
 
+        final Logger log = LogManager.getLogger(Main.class.getName());
+
+        ScoreDB scoreDB = new ScoreDB();
+
+        // prints game title
+        printTitle();
+
+        // Create list of rooms
         ArrayList<Room> rooms = new ArrayList<Room>();
 
-        RoomSetup roomSetup = new RoomSetup();
+        // Create tutorial room suing new room using SetNewRoom
+        Room room = SetNewRoom(log, "Tutorial Room");
 
         //You could loop this and have an infinite number of rooms
         //Check out the RoomSetup Class for how it works!
-        rooms.add(roomSetup.makeRooms());
-
-        final Logger log = LogManager.getLogger(Main.class.getName());
-
-        List<Integer> newInts = new ArrayList<>();
-
-        Door exitDoor = null;
-        //This might break!
-        ScoreDB scoreDB = new ScoreDB();
-
-        printTitle(); // prints game title
-
-        Room room = SetNewRoom(log, "Tutorial Room");
-        exitDoor = SetExitDoor(room);
+        rooms.add(room);
 
         // this is going to read user input
         Scanner scanner = new Scanner(System.in);
@@ -66,12 +62,17 @@ public class Main{
                     try {
                         final Direction direction = Direction.valueOf(parts[1].toLowerCase()); // gets direction
 
-                        // Set all items in this direction to observed
-                        for (Item item : room.getItemsAtDirection(direction)) {
-                            item.setObserved(true);
+                        if (!room.getItemsAtDirection(direction).isEmpty()) {
+                            // Set all items in this direction to observed
+                            for (Item item : room.getItemsAtDirection(direction)) {
+                                item.setObserved(true);
+                            }
+                            // displays item in chosen direction
+                            System.out.println("You look " + direction.getDescription() + " and see: " + room.describeItemsToPlayer(room.getItemsAtDirection(direction)));
                         }
-                        // displays item in chosen direction
-                        System.out.println("You look " + direction.getDescription() + " and see: " + room.describeItemsToPlayer(room.getItemsAtDirection(direction)));
+                        else{
+                            System.out.println("You look " + direction.getDescription() + " and see a blank wall");
+                        }
                     } catch (IllegalArgumentException e) {
                         System.out.println("Invalid direction. Please enter one of the following: north, south, east, west."); // handles input issues
                     }
@@ -111,13 +112,21 @@ public class Main{
                         Item item = room.getItems().get(parts[1].toLowerCase());
                         // Check if player has observed the item yet
                         if (item.isObserved()) {
-                            item.use();
                             // tracks user score
                             player.setScore(player.getScore() + 1);
                             if (item.getName().equals("key")) {
-                                exitDoor.unlockDoor();
-                                room = SetNewRoom(log, "Room#2");
-                                System.out.println("You entered a new room!");
+
+                                if (room.GetExitDoor().isObserved()) {
+                                    item.use();
+                                    room.GetExitDoor().unlockDoor();
+                                }
+                                else{
+                                    System.out.println("You have not seen anything to unlock");
+                                }
+                            }
+                            else{
+                                item.use();
+
                             }
                         }
                         else{
@@ -139,7 +148,20 @@ public class Main{
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
                         if (parts[1].equals("door")) {
-                            System.out.println("You open the door and go into a new room.");
+
+                            if(room.GetExitDoor().isObserved()) {
+                                if (!room.GetExitDoor().getIsLocked()) {
+                                    room = SetNewRoom(log, "Room#2");
+
+                                    System.out.println("You open the door and go into a new room.");
+                                }
+                                else{
+                                    System.out.println("The door is locked");
+                                }
+                            }
+                            else{
+                                System.out.println("You do not see any " + parts[1]);
+                            }
                         }
                         // tracks user score
                         player.setScore(player.getScore() + 1);
@@ -191,7 +213,7 @@ public class Main{
         System.out.println(title);
     }
 
-    //This is the our example of the comparator. The difference bewtween a comparator and comparable is that
+    //This is our example of the comparator. The difference bewtween a comparator and comparable is that
     //a comparator is used to compare different aspects bewtween two specfic objects of a certain type. Whereas a
     //a comparable defines how you can sort a large collection of objects.
     Comparator<Player> nameComparator = new Comparator<Player>() {
@@ -248,43 +270,34 @@ public class Main{
     }
 
     private static Room SetNewRoom(Logger log, String roomName) throws Exception {
-        // instantiates room
-        Room room = new Room();
-        room.setName(roomName);
-        log.info("instantiating " + room.getName());
-        log.debug("adding items to " + room.getName());
-        System.out.println();
-        // adds items to each wall. This could prob just be a method later
-        room.setItem(Direction.north, new Painting("painting",
-                "A painting of an old house surrounded by neatly-trimmed hedges, askew and dust-covered from years of neglect.",
-                "The painter's signature is inscribed in the corner: 'F.L. Romulus'.",
-                room));
-        room.setItem(Direction.east, new Lamp("lamp",
-                "Judging by the occasional flickering of the bulb, it's on its last leg.",
-                "The lamp's once polished brass base now shows signs of tarnish and wear. The bulb flickers intermittently, casting unsettling \n" +
-                        "shadows that dance across the room. The switch, slightly loose and worn from years of use, hints at the lamp's frailty. It's as if \n" +
-                        "the lamp is holding on by a thread, inviting you to test its resilience one last time."));
-        room.setItem(Direction.east, new Desk("desk",
-                "A desk with a lamp. ",
-                "You notice the shape of a hand in the dust on the surface of the desk. Someone has been here."));
-        //room.setItem(Direction.south, exitDoor);
-        room.setItem(Direction.south, new Bookshelf("bookshelf",
-                "A bookshelf filled with books about the occult.",
-                "A pungent aura of aged paper and leather pervades the air around the bookshelf. Among the many tomes, several of \n" +
-                        "Aleister Crowley's occult works stand out; their dark, worn spines hinting at secrets and mysteries bound within."));
-        room.setItem(Direction.west, new Window("window",
-                "A window overlooking a garden. It's too foggy to see very far.",
-                "The garden is guarded by a scarecrow with a tattered black hat."));
-        return room;
-    }
+        // Create RoomSetup object
+        RoomSetup roomSetup = new RoomSetup();
 
-    private static Door SetExitDoor(Room room) {
-        return new Door(room, new Room() ,1, "A wooden door with a rusty handle.",
-                        "There is a deadbolt that looks like it would accept an old key.", "door");
+        // Declare room variable
+        Room room = null;
+
+        // Assign previously declared room variable to a new room depending on roomName input
+        if(roomName.equalsIgnoreCase("Tutorial Room")) {
+            // Assigns room to return of roomSetup's makeRooms method
+            room = roomSetup.MakeTutorialRoom();
+        }
+        else if (roomName.equalsIgnoreCase("Room#2")) {
+            room = roomSetup.MakeRoom2();
+        }
+        // Sets room name
+        room.setName(roomName);
+
+        log.info("instantiating " + room.getName());
+
+        log.debug("adding items to " + room.getName());
+
+        System.out.println();
+
+        return room;
     }
 
     private static void ShowRoomName(Room currentRoom) {
         System.out.println(currentRoom.getName());
     }
-
 }
+

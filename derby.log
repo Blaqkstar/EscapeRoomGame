@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Sat Feb 22 20:13:57 CST 2025:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0195-3095-2a0b-00002f0d1c78 
-on database directory G:\Personal\School\NWTC\2025\2025 Spring Semester\8W1\Java 2\Group Project\EscapeRoomGame\foobar with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528 
-Loaded from file:/G:/Personal/School/NWTC/2025/2025%20Spring%20Semester/8W1/Java%202/Group%20Project/EscapeRoomGame/resources/derby.jar
+Sat Mar 01 09:31:23 CST 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0195-5255-67c4-000006f17d00 
+on database directory C:\Users\Kyle\IdeaProjects\EscapeRoomGame\foobar with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5a07e868 
+Loaded from file:/C:/Users/Kyle/IdeaProjects/EscapeRoomGame/resources/derby.jar
 java.vendor=Oracle Corporation
-java.runtime.version=21.0.2+13-58
-user.dir=G:\Personal\School\NWTC\2025\2025 Spring Semester\8W1\Java 2\Group Project\EscapeRoomGame
+java.runtime.version=23.0.2+7-58
+user.dir=C:\Users\Kyle\IdeaProjects\EscapeRoomGame
 os.name=Windows 11
 os.arch=amd64
 os.version=10.0
