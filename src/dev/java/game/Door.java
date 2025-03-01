@@ -4,14 +4,14 @@ public class Door extends Item{
     private int id;
     private Room currentRoom;
     private Room nextRoom;
-    private boolean isLocked;
+    private boolean isLocked = true;
 
     private String description;
 
     // Detailed description that is given when inspected
     private String inspection;
 
-    public Door(Room currentRoom, Room nextRoom ,int id, String description, String inspection, String name) {
+    public Door(Room currentRoom, int id, String description, String inspection, String name) {
 
         super(name, description, inspection);
 
@@ -22,7 +22,7 @@ public class Door extends Item{
 
     public void unlockDoor() {
         isLocked = false;
-        currentRoom = nextRoom;
+
     }
 
     public boolean getIsLocked() {
@@ -31,6 +31,7 @@ public class Door extends Item{
 
     public void OpenDoor(Room roomToMoveTo) {
         if(!isLocked) {
+            currentRoom = nextRoom;
             this.currentRoom = roomToMoveTo;
             System.out.println("You have moved to a new room!");
         }

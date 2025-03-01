@@ -4,17 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Worked on finishing the system for our assignment 5 by implementing a Comparable and Comparator in the high scores system.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_15_2025_6_05_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_15_2025_6_05_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_15_2025_7_44_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_15_2025_7_44_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_19_2025_3_02_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_19_2025_3_02_PM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Worked on finishing the system for moving the player between rooms. I had to rework some of the exit door code, but now have it working properly. Cheers!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/db.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c101.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c111.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c121.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c130.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c141.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c20.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c31.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c41.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c51.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c60.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c71.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c81.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c90.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/ca1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/cb1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foobar/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/cf0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Door.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,15 +53,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;twilight921&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Blaqkstar&quot;
+    &quot;assignee&quot;: &quot;twilight921&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/twilight921/EscapeRoomGame.git&quot;,
-    &quot;accountId&quot;: &quot;2b5c2ac4-1c51-4cc6-8208-9d053c3ced33&quot;
+    &quot;url&quot;: &quot;https://github.com/kylejfavorite/EscapeRoomGame.git&quot;,
+    &quot;accountId&quot;: &quot;86515775-36cf-415b-b0dd-8cb11382d995&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -61,29 +82,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ScoreDB.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/resources/derbyclient.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.ScoreDB.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/resources/derbyclient.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Personal\School\NWTC\2025\2025 Spring Semester\8W1\Java 2\Group Project\EscapeRoomGame\Logging" />
@@ -98,8 +119,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
       </set>
     </attachedChunks>
   </component>
@@ -124,9 +145,9 @@
       <workItem from="1738453709326" duration="796000" />
       <workItem from="1739629190925" duration="8304000" />
       <workItem from="1739672615482" duration="4172000" />
-      <workItem from="1740267770583" duration="9205000" />
-      <workItem from="1740515647885" duration="3677000" />
-      <workItem from="1740693369857" duration="716000" />
+      <workItem from="1740267770583" duration="8667000" />
+      <workItem from="1740806582854" duration="3013000" />
+      <workItem from="1740842757127" duration="1649000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -152,15 +173,7 @@
       <option name="project" value="LOCAL" />
       <updated>1740002342595</updated>
     </task>
-    <task id="LOCAL-00004" summary="Worked on finishing the system for our assignment 5 by implementing a Comparable and Comparator in the high scores system.">
-      <option name="closed" value="true" />
-      <created>1740276621147</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1740276621148</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,8 +192,9 @@
     <MESSAGE value="implemented Item.use() method.&#10;Separated items out as children of the Item class.&#10;Got the Key item to fall out from behind the painting onto the floor but that logic is not yet complete." />
     <MESSAGE value="added some contextual awareness to the message provided to player when they attempt to use or inspect an item they haven't yet observed." />
     <MESSAGE value="Worked on finishing the system for moving the player between rooms. I had to rework some of the exit door code, but now have it working properly. Cheers!" />
-    <MESSAGE value="Worked on finishing the system for our assignment 5 by implementing a Comparable and Comparator in the high scores system." />
-    <option name="LAST_COMMIT_MESSAGE" value="Worked on finishing the system for our assignment 5 by implementing a Comparable and Comparator in the high scores system." />
+    <MESSAGE value="Merge pull request #13 from twilight921/dev&#10;&#10;Got my changes finished which implement the RoomSetup Class to stream…" />
+    <MESSAGE value="-Expanded on Joey's RoomSetup class by making it handle all room creation. Renamed the method in RoomSetup that randomly assigns items to AssignRandomItems and made other methods for making specific rooms.&#10;&#10;- Slightly reworked order of operation for room creation. Main method still declares a room, adds to &quot;rooms&quot; list, and assigns room to Room object using SetNewRoom, but now SetNewRoom uses roomName to call appropriate method in RoomSetup to actually create the room, and returns it to the method call in main. RoomSetup is where we can create the individual rooms in addition to randomly generating items.&#10;- Deleted &quot;next room&quot; property in Door just for now as it was giving me trouble. I think it's a good concept and would like to bring it back in next update&#10;- Created SetExitDoor and GetExitDoor method in Door, which is called by RoomSetup when creating rooms&#10;- Used all these changes to fix unlocking/opening bugs so that player cannot unlock door until seeing the door, and cannot open door until seeing AND unlocking door" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Expanded on Joey's RoomSetup class by making it handle all room creation. Renamed the method in RoomSetup that randomly assigns items to AssignRandomItems and made other methods for making specific rooms.&#10;&#10;- Slightly reworked order of operation for room creation. Main method still declares a room, adds to &quot;rooms&quot; list, and assigns room to Room object using SetNewRoom, but now SetNewRoom uses roomName to call appropriate method in RoomSetup to actually create the room, and returns it to the method call in main. RoomSetup is where we can create the individual rooms in addition to randomly generating items.&#10;- Deleted &quot;next room&quot; property in Door just for now as it was giving me trouble. I think it's a good concept and would like to bring it back in next update&#10;- Created SetExitDoor and GetExitDoor method in Door, which is called by RoomSetup when creating rooms&#10;- Used all these changes to fix unlocking/opening bugs so that player cannot unlock door until seeing the door, and cannot open door until seeing AND unlocking door" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
