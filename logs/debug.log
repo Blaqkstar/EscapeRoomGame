@@ -550,3 +550,57 @@
 03-01-2025 14:23:05.264 DEBUG [game.Main] - player selected use
 03-01-2025 14:23:09.488 DEBUG [game.Main] - user input received
 03-01-2025 14:23:09.488 DEBUG [game.Main] - player selected inspect
+03-01-2025 14:29:23.220 INFO  [game.Main] - instantiating Tutorial Room
+03-01-2025 14:29:23.224 DEBUG [game.Main] - adding items to Tutorial Room
+03-01-2025 14:29:30.216 DEBUG [game.Main] - user input received
+03-01-2025 14:29:30.216 DEBUG [game.Main] - player selected look
+03-01-2025 14:29:31.500 DEBUG [game.Main] - user input received
+03-01-2025 14:29:31.501 DEBUG [game.Main] - player selected look
+03-01-2025 14:29:38.186 DEBUG [game.Main] - user input received
+03-01-2025 14:29:38.186 DEBUG [game.Main] - player selected use
+03-01-2025 14:29:39.604 DEBUG [game.Main] - user input received
+03-01-2025 14:29:39.604 DEBUG [game.Main] - player selected use
+03-01-2025 14:29:42.526 DEBUG [game.Main] - user input received
+03-01-2025 14:29:42.526 DEBUG [game.Main] - player selected open
+03-01-2025 14:29:42.526 INFO  [game.Main] - instantiating The Conservatory
+03-01-2025 14:29:42.526 DEBUG [game.Main] - adding items to The Conservatory
+03-01-2025 14:30:37.589 INFO  [game.Main] - instantiating Tutorial Room
+03-01-2025 14:30:37.592 DEBUG [game.Main] - adding items to Tutorial Room
+03-01-2025 14:30:43.741 DEBUG [game.Main] - user input received
+03-01-2025 14:30:43.741 DEBUG [game.Main] - player selected look
+03-01-2025 14:30:44.941 DEBUG [game.Main] - user input received
+03-01-2025 14:30:44.941 DEBUG [game.Main] - player selected look
+03-01-2025 14:30:49.035 DEBUG [game.Main] - user input received
+03-01-2025 14:30:49.035 DEBUG [game.Main] - player selected use
+03-01-2025 14:30:50.398 DEBUG [game.Main] - user input received
+03-01-2025 14:30:50.398 DEBUG [game.Main] - player selected use
+03-01-2025 14:30:51.588 DEBUG [game.Main] - user input received
+03-01-2025 14:30:51.588 DEBUG [game.Main] - player selected open
+03-01-2025 14:30:51.588 INFO  [game.Main] - instantiating The Conservatory
+03-01-2025 14:30:51.590 DEBUG [game.Main] - adding items to The Conservatory
+03-01-2025 14:31:21.977 INFO  [game.Main] - instantiating Tutorial Room
+03-01-2025 14:31:21.980 DEBUG [game.Main] - adding items to Tutorial Room
+03-01-2025 14:31:25.882 DEBUG [game.Main] - user input received
+03-01-2025 14:31:25.882 DEBUG [game.Main] - player selected look
+03-01-2025 14:31:27.201 DEBUG [game.Main] - user input received
+03-01-2025 14:31:27.201 DEBUG [game.Main] - player selected look
+03-01-2025 14:31:28.602 DEBUG [game.Main] - user input received
+03-01-2025 14:31:28.602 DEBUG [game.Main] - player selected use
+03-01-2025 14:31:29.715 DEBUG [game.Main] - user input received
+03-01-2025 14:31:29.715 DEBUG [game.Main] - player selected use
+03-01-2025 14:31:32.039 DEBUG [game.Main] - user input received
+03-01-2025 14:31:32.039 DEBUG [game.Main] - player selected open
+03-01-2025 14:31:32.040 INFO  [game.Main] - instantiating The Conservatory
+03-01-2025 14:31:32.040 DEBUG [game.Main] - adding items to The Conservatory
+03-01-2025 14:31:34.323 DEBUG [game.Main] - user input received
+03-01-2025 14:31:34.323 DEBUG [game.Main] - player selected look
+03-01-2025 14:31:52.964 DEBUG [game.Main] - user input received
+03-01-2025 14:31:52.964 DEBUG [game.Main] - player selected inspect
+03-01-2025 14:31:56.836 DEBUG [game.Main] - user input received
+03-01-2025 14:31:56.836 DEBUG [game.Main] - player selected inspect
+03-01-2025 14:31:58.981 DEBUG [game.Main] - user input received
+03-01-2025 14:31:58.981 DEBUG [game.Main] - player selected inspect
+03-01-2025 14:32:01.597 DEBUG [game.Main] - user input received
+03-01-2025 14:32:01.597 DEBUG [game.Main] - player selected use
+03-01-2025 14:32:03.819 DEBUG [game.Main] - user input received
+03-01-2025 14:32:03.820 DEBUG [game.Main] - player selected inspect
