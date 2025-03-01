@@ -13,6 +13,8 @@ public class Room {
 
     private String name = "Undefined Room Name";
 
+    private Door exitDoor;
+
     public Room() {
         walls = new EnumMap<>(Main.Direction.class); // initializes map
 
@@ -23,6 +25,7 @@ public class Room {
 
     public void setItem(Main.Direction direction, Item item) {
 
+        // Adds item to wall specified by direction paramater
         List<Item> itemList = walls.get(direction);
         itemList.add(item);
         items.put(item.getName(), item); // adds item to item list
@@ -31,9 +34,14 @@ public class Room {
     public void setName(String name) {
         this.name = name;
     }
+
     public String getName() {
         return name;
     }
+
+    public Door GetExitDoor() {return exitDoor;}
+
+    public void SetExitDoor(Door exitDoor) { this.exitDoor = exitDoor;}
 
     public List<Item> getItemsAtDirection(Main.Direction direction) {
         return walls.get(direction); // gets items at the specified direction
