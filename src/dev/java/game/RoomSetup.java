@@ -68,9 +68,21 @@ public class RoomSetup {
         conservatoryRoom.SetExitDoor(exitDoor);
 
         // creates levers. Need to figure out a way to distinguish between them for player input
-        Lever leverA = new Lever("lever", "An ancient, mechanical lever.", "");
-        Lever leverB = new Lever("lever", "An ancient, mechanical lever.", "");
-        Lever leverC = new Lever("lever", "An ancient, mechanical lever.", "");
+        ///  LEVER A
+        Lever leverA = new Lever("lever1", "An ancient, mechanical lever ("+ConsoleColors.YELLOW + "Lever1" + ConsoleColors.RESET +").",
+                "The left-most lever.");
+        leverA.setPositionalIndicator("The left-most lever. "); // sets left position relative to other levers
+        leverA.setInspection(leverA.getPositionalIndicator() + " It's currently in the " + leverA.getPosition() + " position.");
+        ///  LEVER B
+        Lever leverB = new Lever("lever2", "An ancient, mechanical lever ("+ConsoleColors.YELLOW + "Lever2" + ConsoleColors.RESET +").",
+                "The middle lever.");
+        leverB.setPositionalIndicator("The middle lever. "); // sets center position relative to other levers
+        leverB.setInspection(leverB.getPositionalIndicator() + " It's currently in the " + leverB.getPosition() + " position.");
+        ///  LEVER C
+        Lever leverC = new Lever("lever3", "An ancient, mechanical lever ("+ConsoleColors.YELLOW + "Lever3" + ConsoleColors.RESET +").",
+                "The right-most lever.");
+        leverC.setPositionalIndicator("The right-most lever. "); // sets right position relative to other levers
+        leverC.setInspection(leverC.getPositionalIndicator() + " It's currently in the " + leverC.getPosition() + " position.");
 
 
         // adds items to their respective walls

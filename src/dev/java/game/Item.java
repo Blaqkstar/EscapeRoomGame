@@ -41,7 +41,7 @@ public abstract class Item {
         return observed;
     }
 
-    public String getInspection() {return inspection + "\n";}
+    public String getInspection() {return inspection;}
     public void setInspection(String inspection) {this.inspection = inspection;}
     public boolean isUsed() {return used;}
     public void setUsed(boolean used) {this.used = used;}
