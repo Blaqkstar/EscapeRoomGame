@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Got levers and associated player feedback working correctly. &#10;Added positionalIndicator w/ getter and setter to Lever class to allow greater distinction between them within diagetic feedback&#10;Removed the line break from Item.GetInspection">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Updated some of the 'open' cmd logic to include the name of the room player is entering">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Lever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Lever.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +125,7 @@
       <workItem from="1740267770583" duration="8667000" />
       <workItem from="1740806582854" duration="3013000" />
       <workItem from="1740842757127" duration="1649000" />
-      <workItem from="1740847651054" duration="10261000" />
+      <workItem from="1740847651054" duration="10796000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -167,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740860825747</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated some of the 'open' cmd logic to include the name of the room player is entering">
+      <option name="closed" value="true" />
+      <created>1740861190939</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740861190939</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +209,8 @@
     <MESSAGE value="-Expanded on Joey's RoomSetup class by making it handle all room creation. Renamed the method in RoomSetup that randomly assigns items to AssignRandomItems and made other methods for making specific rooms.&#10;&#10;- Slightly reworked order of operation for room creation. Main method still declares a room, adds to &quot;rooms&quot; list, and assigns room to Room object using SetNewRoom, but now SetNewRoom uses roomName to call appropriate method in RoomSetup to actually create the room, and returns it to the method call in main. RoomSetup is where we can create the individual rooms in addition to randomly generating items.&#10;- Deleted &quot;next room&quot; property in Door just for now as it was giving me trouble. I think it's a good concept and would like to bring it back in next update&#10;- Created SetExitDoor and GetExitDoor method in Door, which is called by RoomSetup when creating rooms&#10;- Used all these changes to fix unlocking/opening bugs so that player cannot unlock door until seeing the door, and cannot open door until seeing AND unlocking door" />
     <MESSAGE value="Built out initial iteration of Conservatory room&#10;Added some logic to PottedPlant to allow player to 'actually' dump some dirt out and have that reflected in the game world&#10;Created Telescope and Lever item classes" />
     <MESSAGE value="Got levers and associated player feedback working correctly. &#10;Added positionalIndicator w/ getter and setter to Lever class to allow greater distinction between them within diagetic feedback&#10;Removed the line break from Item.GetInspection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got levers and associated player feedback working correctly. &#10;Added positionalIndicator w/ getter and setter to Lever class to allow greater distinction between them within diagetic feedback&#10;Removed the line break from Item.GetInspection" />
+    <MESSAGE value="Updated some of the 'open' cmd logic to include the name of the room player is entering" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated some of the 'open' cmd logic to include the name of the room player is entering" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

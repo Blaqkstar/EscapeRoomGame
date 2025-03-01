@@ -19,13 +19,13 @@ public class Lever extends Item{
             // swaps position
             setPosition("up"); // lever is now up
             setInspection(getPositionalIndicator() + " It's currently in the " + getPosition() + " position.");
-            System.out.println("You push the lever back " + position + ". It clicks into place with a sharp, metallic sound.");
+            System.out.println("You push the lever back " + position +". It clicks into place with a sharp, metallic sound.");
         }
     }
     public String getPosition() {return position;}
     public void setPosition(String position) {
-        this.position = position;
-        this.positionUp = !positionUp; // flips value
+        this.position = position; // changes string value
+        this.positionUp = !positionUp; // flips bool value
     }
     // these allow us to set the position relative to the other levers on the wall
     public void setPositionalIndicator(String positionalIndicator) {this.positionalIndicator = positionalIndicator;}
