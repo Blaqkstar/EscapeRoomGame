@@ -156,7 +156,7 @@ public class Main{
                                 if (!room.GetExitDoor().getIsLocked()) {
                                     room = SetNewRoom(log, "The Conservatory");
 
-                                    System.out.println("You open the door and go into a new room.");
+                                    System.out.println("You open the door and enter a new room. Welcome to " + room.getName());
                                 }
                                 else{
                                     System.out.println("The door is locked");
