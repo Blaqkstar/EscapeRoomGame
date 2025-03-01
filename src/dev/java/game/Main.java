@@ -19,12 +19,15 @@ public class Main{
         // Create list of rooms
         ArrayList<Room> rooms = new ArrayList<Room>();
 
-        // Create tutorial room suing new room using SetNewRoom
+        // Create tutorial room using SetNewRoom
         Room room = SetNewRoom(log, "Tutorial Room");
+        // creates conservatory room
+        //Room conservatoryRoom = SetNewRoom(log, "The Conservatory");
 
         //You could loop this and have an infinite number of rooms
         //Check out the RoomSetup Class for how it works!
         rooms.add(room);
+        //rooms.add(conservatoryRoom);
 
         // this is going to read user input
         Scanner scanner = new Scanner(System.in);
@@ -151,7 +154,7 @@ public class Main{
 
                             if(room.GetExitDoor().isObserved()) {
                                 if (!room.GetExitDoor().getIsLocked()) {
-                                    room = SetNewRoom(log, "Room#2");
+                                    room = SetNewRoom(log, "The Conservatory");
 
                                     System.out.println("You open the door and go into a new room.");
                                 }
@@ -250,7 +253,7 @@ public class Main{
 
     }
 
-    // TODO: ---------------------------------------[ INLINE CLASSES AND ENUMS BEGIN HERE ]--------------------------------------------------------
+    /// ---------------------------------------{ INLINE CLASSES AND ENUMS BEGIN HERE }--------------------------------------------------------
     // enum representing four cardinal directions
     public enum Direction {
         north("to the north"),
@@ -281,8 +284,8 @@ public class Main{
             // Assigns room to return of roomSetup's makeRooms method
             room = roomSetup.MakeTutorialRoom();
         }
-        else if (roomName.equalsIgnoreCase("Room#2")) {
-            room = roomSetup.MakeRoom2();
+        else if (roomName.equalsIgnoreCase("The Conservatory")) {
+            room = roomSetup.MakeConservatoryRoom();
         }
         // Sets room name
         room.setName(roomName);

@@ -1,7 +1,6 @@
 package game;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class RoomSetup {
@@ -19,6 +18,7 @@ public class RoomSetup {
 //        return newRoom;
 //    }
 
+    /// -------------------------------------------- { TUTORIAL ROOM } ----------------------------
     public Room MakeTutorialRoom() {
         Door exitDoor = null;
 
@@ -51,12 +51,37 @@ public class RoomSetup {
         return tutorialRoom;
     }
 
-    // Make Room #2
-    // Nothing in here right now
-    public Room MakeRoom2(){
-        Room room2 = new Room();
+    /// -------------------------------------------- { CONSERVATORY ROOM } ----------------------------
+    public Room MakeConservatoryRoom(){
+        Room conservatoryRoom = new Room();
+        // for the moment, this room will contain the same items as tutorial room
+        // mechanically, maybe this could be more of a MYST style puzzle. No key, but some kind of config trigger that results in the door unlocking
+        // three levers??
 
-        return room2;
+        Door exitDoor = null;
+
+        // creates exit door
+        exitDoor = new Door(conservatoryRoom,2, "A steel door with no handle.",
+                "You search for a keyhole but find none. It's a smooth, thick, steel plate.", "door");
+
+        // defines SetExitDoor()
+        conservatoryRoom.SetExitDoor(exitDoor);
+
+        // creates levers. Need to figure out a way to distinguish between them for player input
+        Lever leverA = new Lever("lever", "An ancient, mechanical lever.", "");
+        Lever leverB = new Lever("lever", "An ancient, mechanical lever.", "");
+        Lever leverC = new Lever("lever", "An ancient, mechanical lever.", "");
+
+
+        // adds items to their respective walls
+        conservatoryRoom.setItem(Main.Direction.west, leverA);
+        conservatoryRoom.setItem(Main.Direction.west, leverB);
+        conservatoryRoom.setItem(Main.Direction.west, leverC);
+        conservatoryRoom.setItem(Main.Direction.east, exitDoor);
+
+        //AssignRandomItems(tutorialRoom);
+
+        return conservatoryRoom;
     }
 
     // Method for randomly assigning prebuilt items to walls
@@ -65,9 +90,9 @@ public class RoomSetup {
                 "A window overlooking a garden. It's too foggy to see very far.",
                 "The garden is guarded by a scarecrow with a tattered black hat.");
 
-        PottedPlant itemPlant = new PottedPlant("pottedPlant",
-                "A plant in a pot. ",
-                "You move the potted plant and even dump the dirt out, but nothing of interest here.");
+        PottedPlant itemPlant = new PottedPlant("plant",
+                "A plant in a pot.",
+                "A vibrant plant sits in a polished ceramic pot. Its lush green leaves stretch upward, and the soil looks rich and well-watered.");
 
         Bookshelf itemBookshelf = new Bookshelf("bookshelf",
                 "A bookshelf filled with books about the occult.",
