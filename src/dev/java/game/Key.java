@@ -8,6 +8,6 @@ public class Key extends Item {
     @Override
     public void use() {
         this.setUsed(true); // used!
-        System.out.println("You use the key to unlock the door.");
+        System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You use the key to unlock the door.");
     }
 }

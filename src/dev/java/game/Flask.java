@@ -13,7 +13,7 @@ public class Flask extends Item{
 
     @Override
     public void use() {
-        System.out.println("Flask used, weird bubbles appear!");
+        System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": Flask used, weird bubbles appear!");
 
 
     }

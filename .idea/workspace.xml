@@ -4,36 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Began building Lab room and Transmogrifier item with consumer functional interface">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed Transmorgrifier interaction menu loop to behave as expected.&#10;Modified Room.describeItemsToPlayer to include a grammar formatter&#10;Cleaned up perceptual feedback output generally. Debug output is now purple, and any time the player receives some kind of perceptual feedback, it is now preceded by an 'PERCEPTION' indicator. &#10;Grouped up debug messages and created space between them and perceptual feedback&#10;Changed 'highscores' command to 'hiscores' to reduce player keystroke requirements&#10;Changed MakeRoom method naming conventions to allow for greater uniformity in our method calls (syntax is now MakeRoom_RoomName)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/db.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/log/log1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c101.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c111.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c121.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c130.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c141.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c20.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c31.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c41.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c51.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c60.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c71.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c81.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/c90.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/ca1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/cb1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foobar/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/foobar/seg0/cf0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Bookshelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Bookshelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Desk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Desk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Door.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Flask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Flask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Key.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Lamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Lamp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Lever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Lever.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Painting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Painting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/PottedPlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/PottedPlant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Transmorgrifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Transmorgrifier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740694157327</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed Transmorgrifier interaction menu loop to behave as expected.&#10;Modified Room.describeItemsToPlayer to include a grammar formatter&#10;Cleaned up perceptual feedback output generally. Debug output is now purple, and any time the player receives some kind of perceptual feedback, it is now preceded by an 'PERCEPTION' indicator. &#10;Grouped up debug messages and created space between them and perceptual feedback&#10;Changed 'highscores' command to 'hiscores' to reduce player keystroke requirements&#10;Changed MakeRoom method naming conventions to allow for greater uniformity in our method calls (syntax is now MakeRoom_RoomName)">
+      <option name="closed" value="true" />
+      <created>1740895307939</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740895307939</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +202,8 @@
     <MESSAGE value="Worked on finishing the system for moving the player between rooms. I had to rework some of the exit door code, but now have it working properly. Cheers!" />
     <MESSAGE value="Worked on finishing the system for our assignment 5 by implementing a Comparable and Comparator in the high scores system." />
     <MESSAGE value="Got my changes finished which implement the RoomSetup Class to streamline room creation. Hope you guys like it!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got my changes finished which implement the RoomSetup Class to streamline room creation. Hope you guys like it!" />
+    <MESSAGE value="Fixed Transmorgrifier interaction menu loop to behave as expected.&#10;Modified Room.describeItemsToPlayer to include a grammar formatter&#10;Cleaned up perceptual feedback output generally. Debug output is now purple, and any time the player receives some kind of perceptual feedback, it is now preceded by an 'PERCEPTION' indicator. &#10;Grouped up debug messages and created space between them and perceptual feedback&#10;Changed 'highscores' command to 'hiscores' to reduce player keystroke requirements&#10;Changed MakeRoom method naming conventions to allow for greater uniformity in our method calls (syntax is now MakeRoom_RoomName)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Transmorgrifier interaction menu loop to behave as expected.&#10;Modified Room.describeItemsToPlayer to include a grammar formatter&#10;Cleaned up perceptual feedback output generally. Debug output is now purple, and any time the player receives some kind of perceptual feedback, it is now preceded by an 'PERCEPTION' indicator. &#10;Grouped up debug messages and created space between them and perceptual feedback&#10;Changed 'highscores' command to 'hiscores' to reduce player keystroke requirements&#10;Changed MakeRoom method naming conventions to allow for greater uniformity in our method calls (syntax is now MakeRoom_RoomName)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
