@@ -33,13 +33,13 @@ public class Door extends Item{
         if(!isLocked) {
             currentRoom = nextRoom;
             this.currentRoom = roomToMoveTo;
-            System.out.println("You have moved to a new room!");
+            System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You have moved to a new room!");
         }
     }
 
     public  void use(){
         this.setUsed(true); // used!
-        System.out.println("There is nothing to use.");
+        System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": There is nothing to use.");
     };
 }
 

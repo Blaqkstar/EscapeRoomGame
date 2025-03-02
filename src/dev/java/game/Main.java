@@ -99,18 +99,22 @@ public class Main{
                         // Check if player has observed the item yet
                         if (item.isObserved()) {
                             System.out.print(item.getInspection());
+                            System.out.println();
                         }
                         else{
                             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
+                            System.out.println();
                         }
                     }
                     // Handles input of unknown item
                     catch (Exception e) {
                         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
+                        System.out.println();
                     }
                 }
                 else {
                     System.out.println("Invalid input. Please use the format 'inspect <item>'."); // handles formatting issues
+                    System.out.println();
                 }
             }
             /// ------------------------------------------------{ USE ACTION HANDLER }--------------------
@@ -138,7 +142,6 @@ public class Main{
                             }
                             else{
                                 item.use();
-
                             }
                         }
                         else{
@@ -309,9 +312,9 @@ public class Main{
             throw new Exception("Room does not exist"); // error handling in case room doesn't exist
         }
 
-        log.info("instantiating " + room.getName());
-
-        log.debug("adding items to " + room.getName());
+        // prints logs
+        log.debug(ConsoleColors.PURPLE+"instantiating " + room.getName()+ConsoleColors.RESET);
+        log.debug(ConsoleColors.PURPLE+"adding items to " + room.getName()+ConsoleColors.RESET);
 
         System.out.println();
 

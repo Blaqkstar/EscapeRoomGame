@@ -13,13 +13,13 @@ public class Lever extends Item{
         if (positionUp) {
             // swaps position
             setPosition("down"); // lever is now down
-            setInspection(getPositionalIndicator() + " It's currently in the " + getPosition() + " position.");
-            System.out.println("You pull " + position + " on the lever. It settles into place with a heavy clunk.");
+            setInspection(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": "+getPositionalIndicator() + " It's currently in the " + getPosition() + " position.");
+            System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You pull " + position + " on the lever. It settles into place with a heavy clunk.");
         } else {
             // swaps position
             setPosition("up"); // lever is now up
-            setInspection(getPositionalIndicator() + " It's currently in the " + getPosition() + " position.");
-            System.out.println("You push the lever back " + position +". It clicks into place with a sharp, metallic sound.");
+            setInspection(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": "+getPositionalIndicator() + " It's currently in the " + getPosition() + " position.");
+            System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You push the lever back " + position +". It clicks into place with a sharp, metallic sound.");
         }
     }
     public String getPosition() {return position;}

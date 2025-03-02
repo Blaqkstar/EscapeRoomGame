@@ -7,6 +7,6 @@ public class Bookshelf extends Item {
 
     @Override
     public void use() {
-        System.out.println("You flip through a few of the books on the shelf. Nothing seems to stand out.");
+        System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You flip through a few of the books on the shelf. Nothing seems to stand out.");
     }
 }
