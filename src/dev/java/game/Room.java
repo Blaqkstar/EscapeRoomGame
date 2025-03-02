@@ -50,11 +50,11 @@ public class Room {
     public String describeItemsToPlayer(List<Item> items) {
         StringBuilder desc = new StringBuilder();
 
-        ///  GRAMMAR FORMATTER
+        ///  PUNCTUATION FORMATTER
         for (int i =0; i<items.size(); i++) {
             // if i is the second to last item in the list
             if (i == items.size() - 2) {
-                // appends second to last item with a comma and 'and'
+                // appends second to last item with an Oxford comma
                 desc.append(items.get(i).getDescription()).append(", and ");
             } else if (i == items.size() - 1) {
                 // appends last item
