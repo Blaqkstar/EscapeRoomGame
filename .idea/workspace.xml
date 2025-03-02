@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Some additional narrative output spacing cleanup">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Color-coded usable items in tutorial room descriptions">
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ConsoleColors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ConsoleColors.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +122,7 @@
       <workItem from="1740886184220" duration="12000" />
       <workItem from="1740897031310" duration="39000" />
       <workItem from="1740937103305" duration="1364000" />
-      <workItem from="1740938649445" duration="399000" />
+      <workItem from="1740938649445" duration="544000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -198,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740938436485</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Color-coded usable items in tutorial room descriptions">
+      <option name="closed" value="true" />
+      <created>1740939100455</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1740939100455</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +229,8 @@
     <MESSAGE value="Some further cleanup work to diegetic feedback to improve player experience and readability" />
     <MESSAGE value="Some further (I swear to god actual final update of the night) cleanup work to diegetic feedback to improve player experience and readability" />
     <MESSAGE value="Some additional narrative output spacing cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some additional narrative output spacing cleanup" />
+    <MESSAGE value="Color-coded usable items in tutorial room descriptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Color-coded usable items in tutorial room descriptions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
