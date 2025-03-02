@@ -43,7 +43,9 @@ public class Main{
         String playerName = scanner.nextLine(); // collects player name
         // instantiates player
         Player player = new Player(playerName, 0);
-        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getName() + "... I do not know you...' ");
+
+        /// player.getUpperName uses our function and unaryOperator examples
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
         Thread.sleep(200);
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'BEGONE!'");
         Thread.sleep(300);
@@ -154,7 +156,7 @@ public class Main{
 
                             if(room.GetExitDoor().isObserved()) {
                                 if (!room.GetExitDoor().getIsLocked()) {
-                                    room = SetNewRoom(log, "The Conservatory");
+                                    room = SetNewRoom(log, "labRoom");
 
                                     System.out.println("You open the door and enter a new room. Welcome to " + room.getName());
                                 }
@@ -286,6 +288,9 @@ public class Main{
         }
         else if (roomName.equalsIgnoreCase("The Conservatory")) {
             room = roomSetup.MakeConservatoryRoom();
+        }
+        else if (roomName.equalsIgnoreCase("labRoom")) {
+            room = roomSetup.MakeLabRoom();
         }
         // Sets room name
         room.setName(roomName);
