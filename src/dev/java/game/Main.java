@@ -160,6 +160,7 @@ public class Main{
             /// ------------------------------------------------{ OPEN ACTION HANDLER }--------------------
             else if (input.startsWith("open ")) {
                 log.debug(ConsoleColors.PURPLE+"player selected open"+ConsoleColors.RESET);
+                System.out.println();
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
