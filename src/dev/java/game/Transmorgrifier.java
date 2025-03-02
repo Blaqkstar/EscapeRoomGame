@@ -27,35 +27,38 @@ public class Transmorgrifier extends Item {
     public void printMenu(List<Item> items)
     {
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Please choose the item you want to use in the machine");
+        // prints a list of available items to use
         for (Item item : items) {
-            System.out.println("use " + item.getName());
+            System.out.println(ConsoleColors.YELLOW+"AVAILABLE ITEM"+ConsoleColors.RESET + ": " + item.getName());
         }
-
         String input;
-        boolean isValid;
+        boolean isValid = false;
         do {
-            System.out.print("Please enter item name: ");
+            System.out.print("Please enter item name (or 'stop' to leave interaction menu): ");
             input = scanner.nextLine();
-             isValid = false;
-
+            // checks for stop first to allow skipping of the code below if player wants to leave menu
+            if (input.equalsIgnoreCase("stop")) {
+                break;
+            }
+            // player has entered something
+            final String finalInput = input; // copies input as a final String for use in Predicate Functional Interface
+            // iterates through item list and compares to nearby available valid usable objects
             for (Item item : items) {
-                String finalInput = input;
-                ValidItemPredicate<Item> nameTester = n -> n.getName().equals(finalInput);
+                ValidItemPredicate<Item> nameTester = n -> n.getName().equals(finalInput); // tests that player input matches the name of the currently item in iteration
+                // if the item name matches the name of the current item in items list
                 if (nameTester.test(item))  {
                     isValid = true;
                     this.itemToUse = item;
                     this.use();
                     break;
                 }
-                else {
-                    System.out.println("Invalid item name");
-                }
             }
-
-        }
-        while(!isValid || !input.equalsIgnoreCase("stop"));
+            // if not a valid item
+            if (!isValid) {
+                System.out.println("Invalid item name");
+            }
+        } while(!input.equalsIgnoreCase("stop") && !isValid);
     }
 
 }

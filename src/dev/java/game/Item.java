@@ -22,7 +22,7 @@ public abstract class Item {
 
     public String getName() {
         if (used) {
-            return ConsoleColors.RED + name + ConsoleColors.RESET;
+            return name;
         } else {
             return name;
         }

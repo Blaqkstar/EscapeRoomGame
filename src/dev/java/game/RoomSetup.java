@@ -20,24 +20,24 @@ public class RoomSetup {
 //    }
 
     /// -------------------------------------------- { TUTORIAL ROOM } ----------------------------
-    public Room MakeTutorialRoom() {
+    public Room MakeRoom_TutorialRoom() {
         Door exitDoor = null;
 
         Room tutorialRoom = new Room();
 
-        exitDoor = new Door(tutorialRoom,1, "A wooden door with a rusty handle.",
+        exitDoor = new Door(tutorialRoom,1, "a wooden door with a rusty handle",
                 "There is a deadbolt that looks like it would accept an old key.", "door");
 
         tutorialRoom.SetExitDoor(exitDoor);
 
         Desk itemDesk = new Desk("desk",
-                "A desk with a lamp. ",
+                "a desk with a lamp",
                 "You notice the shape of a hand in the dust on the surface of the desk. Someone has been here.");
 
-        Painting itemPainting = new Painting("painting", "A painting of an old house surrounded by neatly-trimmed hedges, askew and dust-covered from years of neglect.",
+        Painting itemPainting = new Painting("painting", "a painting of an old house surrounded by neatly-trimmed hedges, askew and dust-covered from years of neglect",
                 "The painter's signature is inscribed in the corner: 'F.L. Romulus'.", tutorialRoom);
 
-        Lamp itemLamp = new Lamp("lamp", "Judging by the occasional flickering of the bulb, it's on its last leg.",
+        Lamp itemLamp = new Lamp("lamp", "judging by the occasional flickering of the bulb, it's on its last leg",
                 "The lamp's once polished brass base now shows signs of tarnish and wear. The bulb flickers intermittently, casting unsettling \n" +
                         "shadows that dance across the room. The switch, slightly loose and worn from years of use, hints at the lamp's frailty. It's as if \n" +
                         "the lamp is holding on by a thread, inviting you to test its resilience one last time.");
@@ -52,8 +52,8 @@ public class RoomSetup {
         return tutorialRoom;
     }
 
-    /// -------------------------------------------- { CONSERVATORY ROOM } ----------------------------
-    public Room MakeConservatoryRoom(){
+    /// -------------------------------------------- { THE CONSERVATORY } ----------------------------
+    public Room MakeRoom_Conservatory(){
         Room conservatoryRoom = new Room();
         // for the moment, this room will contain the same items as tutorial room
         // mechanically, maybe this could be more of a MYST style puzzle. No key, but some kind of config trigger that results in the door unlocking
@@ -62,7 +62,7 @@ public class RoomSetup {
         Door exitDoor = null;
 
         // creates exit door
-        exitDoor = new Door(conservatoryRoom,2, "A steel door with no handle.",
+        exitDoor = new Door(conservatoryRoom,2, "a steel door with no handle",
                 "You search for a keyhole but find none. It's a smooth, thick, steel plate.", "door");
 
         // defines SetExitDoor()
@@ -70,17 +70,17 @@ public class RoomSetup {
 
         // creates levers. Need to figure out a way to distinguish between them for player input
         ///  LEVER A
-        Lever leverA = new Lever("lever1", "An ancient, mechanical lever ("+ConsoleColors.YELLOW + "Lever1" + ConsoleColors.RESET +").",
+        Lever leverA = new Lever("lever1", "An ancient, mechanical lever ("+ConsoleColors.YELLOW + "Lever1" + ConsoleColors.RESET +")",
                 "The left-most lever.");
         leverA.setPositionalIndicator("The left-most lever. "); // sets left position relative to other levers
         leverA.setInspection(leverA.getPositionalIndicator() + " It's currently in the " + leverA.getPosition() + " position.");
         ///  LEVER B
-        Lever leverB = new Lever("lever2", "An ancient, mechanical lever ("+ConsoleColors.YELLOW + "Lever2" + ConsoleColors.RESET +").",
+        Lever leverB = new Lever("lever2", "An ancient, mechanical lever ("+ConsoleColors.YELLOW + "Lever2" + ConsoleColors.RESET +")",
                 "The middle lever.");
         leverB.setPositionalIndicator("The middle lever. "); // sets center position relative to other levers
         leverB.setInspection(leverB.getPositionalIndicator() + " It's currently in the " + leverB.getPosition() + " position.");
         ///  LEVER C
-        Lever leverC = new Lever("lever3", "An ancient, mechanical lever ("+ConsoleColors.YELLOW + "Lever3" + ConsoleColors.RESET +").",
+        Lever leverC = new Lever("lever3", "An ancient, mechanical lever ("+ConsoleColors.YELLOW + "Lever3" + ConsoleColors.RESET +")",
                 "The right-most lever.");
         leverC.setPositionalIndicator("The right-most lever. "); // sets right position relative to other levers
         leverC.setInspection(leverC.getPositionalIndicator() + " It's currently in the " + leverC.getPosition() + " position.");
@@ -97,23 +97,24 @@ public class RoomSetup {
         return conservatoryRoom;
     }
 
-    /// -------------------------------------------- { LAB ROOM } ----------------------------
-    public Room MakeLabRoom() {
+    /// -------------------------------------------- { THE LAB } ----------------------------
+    public Room MakeRoom_Lab() {
         Door exitDoor = null;
 
         Room labRoom = new Room();
 
         List<Item> items = new ArrayList<Item>();
 
-        Sandwich sandwich = new Sandwich("sandwich","a moldy ham sandwich on rye bread","The sandwich don't smell like something you'd eat");
+        Sandwich sandwich = new Sandwich("sandwich","a moldy ham sandwich on rye bread","The sandwich doesn't smell like something you'd eat.");
 
         items.add(sandwich);
 
         Transmorgrifier transmorgrifier = new Transmorgrifier("transmorgrifier","An odd machine with a large vat for converting objects","You notice how odd looking this machine is",labRoom);
 
+        // the room, temporarily immediately prints the transmorgrifier's interaction menu to demonstrate our use of functional interfaces
         transmorgrifier.printMenu(items);
 
-        exitDoor = new Door(labRoom,1, "A wooden door with a rusty handle.",
+        exitDoor = new Door(labRoom,1, "a wooden door with a rusty handle",
                 "There is a deadbolt that looks like it would accept an old key.", "door");
 
         labRoom.SetExitDoor(exitDoor);
@@ -157,15 +158,16 @@ public class RoomSetup {
     // Method for randomly assigning prebuilt items to walls
     public void AssignRandomItems(Room room) {
         Window itemWindow = new Window("window",
-                "A window overlooking a garden. It's too foggy to see very far.",
-                "The garden is guarded by a scarecrow with a tattered black hat.");
+                "a window overlooking a garden",
+                "It's too foggy to see very far. What little you're able to make out of the garden appears to be guarded \n" +
+                        "by a scarecrow with a tattered black hat.");
 
         PottedPlant itemPlant = new PottedPlant("plant",
-                "A plant in a pot.",
+                "a plant in a pot",
                 "A vibrant plant sits in a polished ceramic pot. Its lush green leaves stretch upward, and the soil looks rich and well-watered.");
 
         Bookshelf itemBookshelf = new Bookshelf("bookshelf",
-                "A bookshelf filled with books about the occult.",
+                "a bookshelf filled with books about the occult",
                 "A pungent aura of aged paper and leather pervades the air around the bookshelf. Among the many tomes, several of \n" +
                         "Aleister Crowley's occult works stand out; their dark, worn spines hinting at secrets and mysteries bound within.");
 
