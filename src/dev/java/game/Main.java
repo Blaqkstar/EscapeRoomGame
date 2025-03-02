@@ -34,7 +34,7 @@ public class Main{
         String input;
 
         // Welcome message
-        System.out.println("Shadows encapsulate your ephemeral form. In the distance, a dim candle flickers, suspended by some unknown force. " +
+        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": Shadows encapsulate your ephemeral form. In the distance, a dim candle flickers, suspended by some unknown force. " +
                 "As you approach, transfixed, a quiet voice beckons...");
         Thread.sleep(300);
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'... Who are you?' ");
@@ -49,19 +49,22 @@ public class Main{
         Thread.sleep(200);
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'BEGONE!'");
         Thread.sleep(300);
-        System.out.println("You awaken, groggily, to find yourself in a strange room. Along each wall are items.");
+        System.out.println();
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You awaken, groggily, to find yourself in a strange room. Along each wall are items.");
 
         // this continues until the user types 'exit'
         do {
             System.out.println();
             System.out.print(ConsoleColors.YELLOW+"Enter input (or 'help' for a list of available commands): "+ConsoleColors.RESET);
             input = scanner.nextLine(); // user input
-            log.debug("user input received");
-            System.out.println();
+            log.debug(ConsoleColors.PURPLE+"user input received"+ConsoleColors.RESET);
 
             // processes user input
+            /// ------------------------------------------------{ LOOK ACTION HANDLER }--------------------
             if (input.startsWith("look ")) {
-                log.debug("player selected look");
+                log.debug(ConsoleColors.PURPLE+"player selected look"+ConsoleColors.RESET);
+                System.out.println();
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
@@ -73,10 +76,10 @@ public class Main{
                                 item.setObserved(true);
                             }
                             // displays item in chosen direction
-                            System.out.println("You look " + direction.getDescription() + " and see: " + room.describeItemsToPlayer(room.getItemsAtDirection(direction)));
+                            System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You look " + direction.getDescription() + " and see " + room.describeItemsToPlayer(room.getItemsAtDirection(direction)));
                         }
                         else{
-                            System.out.println("You look " + direction.getDescription() + " and see a blank wall");
+                            System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You look " + direction.getDescription() + " and see a blank wall");
                         }
                     } catch (IllegalArgumentException e) {
                         System.out.println("Invalid direction. Please enter one of the following: north, south, east, west."); // handles input issues
@@ -84,8 +87,10 @@ public class Main{
                 } else {
                     System.out.println("Invalid input. Please use the format 'look <direction>'."); // handles formatting issues
                 }
+                /// ------------------------------------------------{INSPECT ACTION HANDLER}--------------------
             } else if(input.startsWith("inspect ")) {
-                log.debug("player selected inspect");
+                log.debug(ConsoleColors.PURPLE+"player selected inspect"+ConsoleColors.RESET);
+                System.out.println();
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
@@ -96,20 +101,22 @@ public class Main{
                             System.out.print(item.getInspection());
                         }
                         else{
-                            System.out.println("You do not see any " + parts[1]);
+                            System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
                         }
                     }
                     // Handles input of unknown item
                     catch (Exception e) {
-                        System.out.println("You do not see any " + parts[1]);
+                        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
                     }
                 }
                 else {
                     System.out.println("Invalid input. Please use the format 'inspect <item>'."); // handles formatting issues
                 }
             }
+            /// ------------------------------------------------{ USE ACTION HANDLER }--------------------
             else if (input.startsWith("use ")) {
-                log.debug("player selected use");
+                log.debug(ConsoleColors.PURPLE+"player selected use"+ConsoleColors.RESET);
+                System.out.println();
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
@@ -126,7 +133,7 @@ public class Main{
                                     room.GetExitDoor().unlockDoor();
                                 }
                                 else{
-                                    System.out.println("You have not seen anything to unlock");
+                                    System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You have not seen anything to unlock");
                                 }
                             }
                             else{
@@ -135,20 +142,21 @@ public class Main{
                             }
                         }
                         else{
-                            System.out.println("You do not see any " + parts[1]);
+                            System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
                         }
                     }
                     // Handles input of unknown item
                     catch (Exception e) {
-                        System.out.println("You do not see any " + parts[1]);
+                        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+":You do not see any " + parts[1]);
                     }
                 }
                 else {
                     System.out.println("Invalid input. Please use the format 'use <item>'."); // handles formatting issues
                 }
             }
+            /// ------------------------------------------------{ OPEN ACTION HANDLER }--------------------
             else if (input.startsWith("open ")) {
-                log.debug("player selected open");
+                log.debug(ConsoleColors.PURPLE+"player selected open"+ConsoleColors.RESET);
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
@@ -156,31 +164,32 @@ public class Main{
 
                             if(room.GetExitDoor().isObserved()) {
                                 if (!room.GetExitDoor().getIsLocked()) {
-                                    room = SetNewRoom(log, "labRoom");
+                                    room = SetNewRoom(log, "The Lab"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
 
-                                    System.out.println("You open the door and enter a new room. Welcome to " + room.getName());
+                                    System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
                                 }
                                 else{
-                                    System.out.println("The door is locked");
+                                    System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The door is locked");
                                 }
                             }
                             else{
-                                System.out.println("You do not see any " + parts[1]);
+                                System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
                             }
                         }
                         // tracks user score
                         player.setScore(player.getScore() + 1);
                     } catch(Exception e){
-                        System.out.println("You do not see any " + parts[1]);
+                        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
                     }
                 }
             }
+            /// ------------------------------------------------{ HELP ACTION HANDLER }--------------------
             else if (input.equalsIgnoreCase("help") || input.equalsIgnoreCase("?")) {
                 printCommands();
             }
-            else if (input.equalsIgnoreCase("highscores")) {
-                printHighScores(scoreDB);
-
+            /// ------------------------------------------------{ HISCORES ACTION HANDLER }--------------------
+            else if (input.equalsIgnoreCase("hiscores")) {
+                printHiScores(scoreDB);
             }
             else if (!input.equalsIgnoreCase("exit")) { // handles incorrect commands
                 System.out.println("Unknown input. Please enter 'look <direction>' or 'exit'.");
@@ -202,7 +211,7 @@ public class Main{
         System.out.println(ConsoleColors.YELLOW+"2. inspect <item>"+ConsoleColors.RESET+": inspects the specified item");
         System.out.println(ConsoleColors.YELLOW+"3. use <item>"+ConsoleColors.RESET+": attempts to use the specified item");
         System.out.println(ConsoleColors.YELLOW+"4. open <item>"+ConsoleColors.RESET+": attempts to open the specified item");
-        System.out.println(ConsoleColors.YELLOW+"5. highscores"+ConsoleColors.RESET+": displays the high scores");
+        System.out.println(ConsoleColors.YELLOW+"5. hiscores"+ConsoleColors.RESET+": displays the high scores");
         System.out.println(ConsoleColors.YELLOW+"6. help"+ConsoleColors.RESET+": prints this message");
         System.out.println(ConsoleColors.YELLOW+"7. exit"+ConsoleColors.RESET+": exits the game");
     }
@@ -227,7 +236,7 @@ public class Main{
         }
     };
 
-    private static void printHighScores(ScoreDB scoreDB) throws Exception {
+    private static void printHiScores(ScoreDB scoreDB) throws Exception {
 
 
         System.out.println("\n" +
@@ -284,16 +293,21 @@ public class Main{
         // Assign previously declared room variable to a new room depending on roomName input
         if(roomName.equalsIgnoreCase("Tutorial Room")) {
             // Assigns room to return of roomSetup's makeRooms method
-            room = roomSetup.MakeTutorialRoom();
+            room = roomSetup.MakeRoom_TutorialRoom();
         }
         else if (roomName.equalsIgnoreCase("The Conservatory")) {
-            room = roomSetup.MakeConservatoryRoom();
+            room = roomSetup.MakeRoom_Conservatory();
         }
-        else if (roomName.equalsIgnoreCase("labRoom")) {
-            room = roomSetup.MakeLabRoom();
+        else if (roomName.equalsIgnoreCase("The Lab")) {
+            room = roomSetup.MakeRoom_Lab();
         }
         // Sets room name
-        room.setName(roomName);
+        if (room != null) {
+            room.setName(roomName);
+        }
+        else {
+            throw new Exception("Room does not exist"); // error handling in case room doesn't exist
+        }
 
         log.info("instantiating " + room.getName());
 

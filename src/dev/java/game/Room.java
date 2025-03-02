@@ -25,7 +25,7 @@ public class Room {
 
     public void setItem(Main.Direction direction, Item item) {
 
-        // Adds item to wall specified by direction paramater
+        // Adds item to wall specified by direction parameter
         List<Item> itemList = walls.get(direction);
         itemList.add(item);
         items.put(item.getName(), item); // adds item to item list
@@ -50,9 +50,19 @@ public class Room {
     public String describeItemsToPlayer(List<Item> items) {
         StringBuilder desc = new StringBuilder();
 
-        // Add each item's description to string.
+        ///  GRAMMAR FORMATTER
         for (int i =0; i<items.size(); i++) {
-            desc.append(items.get(i).getDescription()).append(" ");
+            // if i is the second to last item in the list
+            if (i == items.size() - 2) {
+                // appends second to last item with a comma and 'and'
+                desc.append(items.get(i).getDescription()).append(", and ");
+            } else if (i == items.size() - 1) {
+                // appends last item
+                desc.append(items.get(i).getDescription()).append(".");
+            } else {
+                // appends other items with a comma
+                desc.append(items.get(i).getDescription()).append(", ");
+            }
         }
         return desc.toString();
     }
