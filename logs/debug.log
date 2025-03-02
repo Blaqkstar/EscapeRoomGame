@@ -604,3 +604,13 @@
 03-01-2025 14:32:01.597 DEBUG [game.Main] - player selected use
 03-01-2025 14:32:03.819 DEBUG [game.Main] - user input received
 03-01-2025 14:32:03.820 DEBUG [game.Main] - player selected inspect
+03-01-2025 18:24:16.108 INFO  [game.Main] - instantiating Tutorial Room
+03-01-2025 18:24:16.111 DEBUG [game.Main] - adding items to Tutorial Room
+03-01-2025 18:24:20.353 DEBUG [game.Main] - user input received
+03-01-2025 18:24:20.354 DEBUG [game.Main] - player selected look
+03-01-2025 18:24:23.118 DEBUG [game.Main] - user input received
+03-01-2025 18:24:23.118 DEBUG [game.Main] - player selected look
+03-01-2025 18:24:29.130 DEBUG [game.Main] - user input received
+03-01-2025 18:24:29.131 DEBUG [game.Main] - player selected look
+03-01-2025 18:24:42.222 DEBUG [game.Main] - user input received
+03-01-2025 18:24:42.222 DEBUG [game.Main] - player selected look
