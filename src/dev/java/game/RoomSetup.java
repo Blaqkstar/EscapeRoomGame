@@ -25,16 +25,16 @@ public class RoomSetup {
 
         Room tutorialRoom = new Room();
 
-        exitDoor = new Door(tutorialRoom,1, "a wooden door with a rusty handle",
+        exitDoor = new Door(tutorialRoom,1, "a wooden "+ConsoleColors.CYAN+"door"+ConsoleColors.RESET+" with a rusty handle",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": There is a deadbolt that looks like it would accept an old key.", "door");
 
         tutorialRoom.SetExitDoor(exitDoor);
 
         Desk itemDesk = new Desk("desk",
-                "a desk with a lamp",
+                "a "+ConsoleColors.CYAN+"desk"+ConsoleColors.RESET+" with a "+ConsoleColors.CYAN+"lamp"+ConsoleColors.RESET,
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You notice the shape of a hand in the dust on the surface of the desk. Someone has been here.");
 
-        Painting itemPainting = new Painting("painting", "a painting of an old house surrounded by neatly-trimmed hedges, askew and dust-covered from years of neglect",
+        Painting itemPainting = new Painting("painting", "a "+ConsoleColors.CYAN+"painting"+ConsoleColors.RESET+" of an old house surrounded by neatly-trimmed hedges, askew and dust-covered from years of neglect",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The painter's signature is inscribed in the corner: 'F.L. Romulus'.", tutorialRoom);
 
         Lamp itemLamp = new Lamp("lamp", "judging by the occasional flickering of the bulb, it's on its last leg",
@@ -160,16 +160,16 @@ public class RoomSetup {
     // Method for randomly assigning prebuilt items to walls
     public void AssignRandomItems(Room room) {
         Window itemWindow = new Window("window",
-                "a window overlooking a garden",
+                "a "+ConsoleColors.CYAN+"window"+ConsoleColors.RESET+" overlooking a garden",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": It's too foggy to see very far. What little you're able to make out of the garden appears to be guarded \n" +
                         "by a scarecrow with a tattered black hat.");
 
         PottedPlant itemPlant = new PottedPlant("plant",
-                "a plant in a pot",
+                "a "+ConsoleColors.CYAN+"plant"+ConsoleColors.RESET+" in a pot",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": A vibrant plant sits in a polished ceramic pot. Its lush green leaves stretch upward, and the soil looks rich and well-watered.");
 
         Bookshelf itemBookshelf = new Bookshelf("bookshelf",
-                "a bookshelf filled with books about the occult",
+                "a "+ConsoleColors.CYAN+"bookshelf"+ConsoleColors.RESET+" filled with books about the occult",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": A pungent aura of aged paper and leather pervades the air around the bookshelf. Among the many tomes, several of \n" +
                         "Aleister Crowley's occult works stand out; their dark, worn spines hinting at secrets and mysteries bound within.");
 
