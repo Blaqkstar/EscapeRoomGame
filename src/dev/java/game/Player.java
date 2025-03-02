@@ -9,6 +9,11 @@ public class Player implements Comparable<Player>{
         this.score = score;
     }
     public String getName() {return name;}
+    public String getUpperName() {
+        UpperNameOperator<String> playerUpperName = String::toUpperCase;
+        return playerUpperName.apply(name);
+    }
+
     public int getScore() {return score;}
 
     public void setName(String newName) {

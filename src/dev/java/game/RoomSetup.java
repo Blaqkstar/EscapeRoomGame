@@ -1,6 +1,7 @@
 package game;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class RoomSetup {
@@ -101,6 +102,16 @@ public class RoomSetup {
         Door exitDoor = null;
 
         Room labRoom = new Room();
+
+        List<Item> items = new ArrayList<Item>();
+
+        Sandwich sandwich = new Sandwich("sandwich","a moldy ham sandwich on rye bread","The sandwich don't smell like something you'd eat");
+
+        items.add(sandwich);
+
+        Transmorgrifier transmorgrifier = new Transmorgrifier("transmorgrifier","An odd machine with a large vat for converting objects","You notice how odd looking this machine is",labRoom);
+
+        transmorgrifier.printMenu(items);
 
         exitDoor = new Door(labRoom,1, "A wooden door with a rusty handle.",
                 "There is a deadbolt that looks like it would accept an old key.", "door");
