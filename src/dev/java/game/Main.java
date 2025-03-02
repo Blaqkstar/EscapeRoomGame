@@ -36,6 +36,7 @@ public class Main{
         // Welcome message
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": Shadows encapsulate your ephemeral form. In the distance, a dim candle flickers, suspended by some unknown force. " +
                 "As you approach, transfixed, a quiet voice beckons...");
+        System.out.println();
         Thread.sleep(300);
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'... Who are you?' ");
         System.out.print(ConsoleColors.YELLOW+"Enter your name: "+ConsoleColors.RESET);
@@ -45,6 +46,7 @@ public class Main{
         Player player = new Player(playerName, 0);
 
         /// player.getUpperName uses our function and unaryOperator examples
+        System.out.println();
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
         Thread.sleep(200);
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'BEGONE!'");

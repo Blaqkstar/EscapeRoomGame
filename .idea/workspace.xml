@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Some further cleanup work to diegetic feedback to improve player experience and readability">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Some further (I swear to god actual final update of the night) cleanup work to diegetic feedback to improve player experience and readability">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +40,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/twilight921/EscapeRoomGame.git&quot;,
-    &quot;accountId&quot;: &quot;2b5c2ac4-1c51-4cc6-8208-9d053c3ced33&quot;
+    &quot;url&quot;: &quot;https://github.com/Blaqkstar/EscapeRoomGame.git&quot;,
+    &quot;accountId&quot;: &quot;33bf5a69-71e6-4530-b179-74da27333e68&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -91,8 +93,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.39" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.39" />
       </set>
     </attachedChunks>
   </component>
@@ -122,6 +124,8 @@
       <workItem from="1740693369857" duration="814000" />
       <workItem from="1740874126466" duration="9906000" />
       <workItem from="1740886184220" duration="12000" />
+      <workItem from="1740897031310" duration="39000" />
+      <workItem from="1740937103305" duration="1243000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -179,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740896618456</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Some further (I swear to god actual final update of the night) cleanup work to diegetic feedback to improve player experience and readability">
+      <option name="closed" value="true" />
+      <created>1740896893797</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740896893797</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +214,8 @@
     <MESSAGE value="Got my changes finished which implement the RoomSetup Class to streamline room creation. Hope you guys like it!" />
     <MESSAGE value="Fixed Transmorgrifier interaction menu loop to behave as expected.&#10;Modified Room.describeItemsToPlayer to include a grammar formatter&#10;Cleaned up perceptual feedback output generally. Debug output is now purple, and any time the player receives some kind of perceptual feedback, it is now preceded by an 'PERCEPTION' indicator. &#10;Grouped up debug messages and created space between them and perceptual feedback&#10;Changed 'highscores' command to 'hiscores' to reduce player keystroke requirements&#10;Changed MakeRoom method naming conventions to allow for greater uniformity in our method calls (syntax is now MakeRoom_RoomName)" />
     <MESSAGE value="Some further cleanup work to diegetic feedback to improve player experience and readability" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some further cleanup work to diegetic feedback to improve player experience and readability" />
+    <MESSAGE value="Some further (I swear to god actual final update of the night) cleanup work to diegetic feedback to improve player experience and readability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some further (I swear to god actual final update of the night) cleanup work to diegetic feedback to improve player experience and readability" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -50,7 +50,7 @@ public abstract class Item {
         return name + ": " + description;
     }
 
-    //TODO: -------------------------------------------[ METHODS BELOW ]---------------------------------
+    /// -------------------------------------------{ METHODS BELOW }---------------------------------
 
     // abstract use method to be implemented by subclasses
     public abstract void use();
