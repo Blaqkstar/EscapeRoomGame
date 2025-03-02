@@ -96,6 +96,53 @@ public class RoomSetup {
         return conservatoryRoom;
     }
 
+    /// -------------------------------------------- { LAB ROOM } ----------------------------
+    public Room MakeLabRoom() {
+        Door exitDoor = null;
+
+        Room labRoom = new Room();
+
+        exitDoor = new Door(labRoom,1, "A wooden door with a rusty handle.",
+                "There is a deadbolt that looks like it would accept an old key.", "door");
+
+        labRoom.SetExitDoor(exitDoor);
+
+        // create items here
+
+        ///  ITEMS WE NEED
+        // transmorgrifier: quest item
+
+
+
+        // machine attached to a wall. Player doesn't know how to use it (diegetically) until they inspect() on the scientist's research notebook
+        // if they try to use transmorg before they read the notebook, they'll fall in and GAME OVER
+        // when player uses transmorg, game prompts them to pick an item from the list of observed items we're already tracking
+
+        // scientist's research notebook
+
+
+
+        // deck of cards
+
+        // vat of strange liquid
+
+        // sandwich (consumer functional interface: placing the sandwich into transmorg causes liquid in vat to bubble)
+        // placing sandwich into transmorg gives player the flask
+        // placing flask into transmorg gives player chunk of lead ore
+
+        // Organic Chemistry textbook
+
+        // bunson burner
+
+        // add items using room.setItem here
+        //labRoom.setItem(Main.Direction.north, );
+
+
+        AssignRandomItems(labRoom);
+
+        return labRoom;
+    }
+
     // Method for randomly assigning prebuilt items to walls
     public void AssignRandomItems(Room room) {
         Window itemWindow = new Window("window",
