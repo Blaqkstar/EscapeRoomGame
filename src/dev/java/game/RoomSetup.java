@@ -113,11 +113,10 @@ public class RoomSetup {
         Transmorgrifier transmorgrifier = new Transmorgrifier("transmorgrifier","An odd machine with a large vat for converting objects",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You notice how odd looking this machine is",labRoom);
 
-        // the room, temporarily immediately prints the transmorgrifier's interaction menu to demonstrate our use of functional interfaces
-        transmorgrifier.printMenu(items);
 
-        exitDoor = new Door(labRoom,1, "a wooden door with a rusty handle",
-                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": There is a deadbolt that looks like it would accept an old key.", "door");
+
+        exitDoor = new Door(labRoom,1, "A heavy metal door etched withs strange runes",
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": There is a mechanism that looks like it would accept a key.", "door");
 
         labRoom.SetExitDoor(exitDoor);
 
@@ -133,7 +132,8 @@ public class RoomSetup {
         // when player uses transmorg, game prompts them to pick an item from the list of observed items we're already tracking
 
         // scientist's research notebook
-
+        Notebook notebook  = new Notebook("notebook", "A scientist's research notebook", "The notebook documents experiments conducted by" +
+                "a scientist experimenting with alchemy. Through the incoherent ramblings about 'proving wrongs his ghastly skeptics', you learn how to use his cunning machine.");
 
 
         // deck of cards
@@ -149,7 +149,9 @@ public class RoomSetup {
         // bunson burner
 
         // add items using room.setItem here
-        //labRoom.setItem(Main.Direction.north, );
+        labRoom.setItem(Main.Direction.west, exitDoor);
+        labRoom.setItem(Main.Direction.north, notebook );
+        labRoom.setItem(Main.Direction.south, transmorgrifier);
 
 
         AssignRandomItems(labRoom);

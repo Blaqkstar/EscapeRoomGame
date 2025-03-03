@@ -189,6 +189,11 @@ public class Main{
                     }
                 }
             }
+            /// SPEEDRUN OPTION --------ONLY FOR USE IN DEVELOPMENT-----------------------
+            else if (input.equalsIgnoreCase("speedrun to lab")){
+                room = SetNewRoom(log, "The Lab"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
+                System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
+            }
             /// ------------------------------------------------{ HELP ACTION HANDLER }--------------------
             else if (input.equalsIgnoreCase("help") || input.equalsIgnoreCase("?")) {
                 printCommands();
