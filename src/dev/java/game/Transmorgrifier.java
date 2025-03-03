@@ -1,6 +1,7 @@
 package game;
 
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.function.Consumer;
@@ -11,6 +12,12 @@ public class Transmorgrifier extends Item {
 
     private Item itemToUse;
 
+    private ArrayList<Item> itemsToTransmorgrify = new ArrayList<>();
+
+    public void setItemsToTransmorgrify(ArrayList<Item> itemsToTransmorgrify) {
+            this.itemsToTransmorgrify = itemsToTransmorgrify;
+    }
+
     public Transmorgrifier(String name, String description, String inspection, Room room) {
         super(name, description, inspection);
         this.room = room;
@@ -18,10 +25,13 @@ public class Transmorgrifier extends Item {
     @Override
     public void use() {
         setUsed(true); // used!
+        printMenu(itemsToTransmorgrify);
 
+    }
+
+    public void Transmorgrify() {
         Consumer<Item> itemConsumer = Item::use;
-                itemConsumer.accept(this.itemToUse);
-
+        itemConsumer.accept(this.itemToUse);
     }
 
     public void printMenu(List<Item> items)
@@ -50,7 +60,7 @@ public class Transmorgrifier extends Item {
                 if (nameTester.test(item))  {
                     isValid = true;
                     this.itemToUse = item;
-                    this.use();
+                    this.Transmorgrify();
                     break;
                 }
             }
