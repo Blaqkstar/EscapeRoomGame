@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Color-coded usable items in tutorial room descriptions">
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/ConsoleColors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/ConsoleColors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +230,8 @@
     <MESSAGE value="Some further (I swear to god actual final update of the night) cleanup work to diegetic feedback to improve player experience and readability" />
     <MESSAGE value="Some additional narrative output spacing cleanup" />
     <MESSAGE value="Color-coded usable items in tutorial room descriptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Color-coded usable items in tutorial room descriptions" />
+    <MESSAGE value="clarified color coding methodology in ConsoleColors class" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
