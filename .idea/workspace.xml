@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Color-coded usable items in tutorial room descriptions">
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Added option to speedrun the first room for purposes of developing lab">
+      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Notebook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Transmorgrifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Transmorgrifier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -204,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740939100455</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added option to speedrun the first room for purposes of developing lab">
+      <option name="closed" value="true" />
+      <created>1740963310574</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1740963310574</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +242,8 @@
     <MESSAGE value="Some additional narrative output spacing cleanup" />
     <MESSAGE value="Color-coded usable items in tutorial room descriptions" />
     <MESSAGE value="clarified color coding methodology in ConsoleColors class" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Added option to speedrun the first room for purposes of developing lab" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added option to speedrun the first room for purposes of developing lab" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
