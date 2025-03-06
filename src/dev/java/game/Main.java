@@ -122,7 +122,6 @@ public class Main{
             /// ------------------------------------------------{ USE ACTION HANDLER }--------------------
             else if (input.startsWith("use ")) {
                 log.debug(ConsoleColors.PURPLE+"player selected use"+ConsoleColors.RESET);
-                System.out.println();
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
@@ -133,8 +132,10 @@ public class Main{
                         Item item = room.getItems().get(itemName);
                         if (item != null) {
                             log.debug(ConsoleColors.PURPLE+"Found item '" + item.getName() + "'"+ConsoleColors.RESET);
+                            System.out.println();
                         } else {
                             log.debug(ConsoleColors.PURPLE+"Item not found in room's items map"+ConsoleColors.RESET);
+                            System.out.println();
                         }
                         // Check if player has observed the item yet
                         if (item != null && item.isObserved()) {

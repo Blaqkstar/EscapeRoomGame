@@ -55,16 +55,10 @@ public class RoomSetup {
     /// -------------------------------------------- { THE CONSERVATORY } ----------------------------
     public Room MakeRoom_Conservatory(){
         Room conservatoryRoom = new Room();
-        // for the moment, this room will contain the same items as tutorial room
-        // mechanically, maybe this could be more of a MYST style puzzle. No key, but some kind of config trigger that results in the door unlocking
-        // three levers??
-
         Door exitDoor = null;
-
         // creates exit door
         exitDoor = new Door(conservatoryRoom,2, "a steel door with no handle",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You search for a keyhole but find none. It's a smooth, thick, steel plate.", "door");
-
         // defines SetExitDoor()
         conservatoryRoom.SetExitDoor(exitDoor);
 
@@ -90,15 +84,10 @@ public class RoomSetup {
         conservatoryRoom.setItem(Main.Direction.west, leverB);
         conservatoryRoom.setItem(Main.Direction.west, leverC);
         conservatoryRoom.setItem(Main.Direction.east, exitDoor);
-
         // registers room as an observer for each lever
         leverA.addObserver(conservatoryRoom);
         leverB.addObserver(conservatoryRoom);
         leverC.addObserver(conservatoryRoom);
-
-
-
-        //AssignRandomItems(tutorialRoom);
 
         return conservatoryRoom;
     }
