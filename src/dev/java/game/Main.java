@@ -126,25 +126,53 @@ public class Main{
                 final String[] parts = input.split(" "); // splits input into parts, storing in an array
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
+                        // normalizes input to lowercase and trims whitespace
+                        String itemName = parts[1].trim().toLowerCase();
+                        log.debug(ConsoleColors.PURPLE+"Searching for item with key '" + itemName + "'"+ConsoleColors.RESET); // for debug purposes
                         // declare item that is being inspected
-                        Item item = room.getItems().get(parts[1].toLowerCase());
+                        Item item = room.getItems().get(itemName);
+                        if (item != null) {
+                            log.debug(ConsoleColors.PURPLE+"Found item '" + item.getName() + "'"+ConsoleColors.RESET);
+                        } else {
+                            log.debug(ConsoleColors.PURPLE+"Item not found in room's items map"+ConsoleColors.RESET);
+                        }
                         // Check if player has observed the item yet
-                        if (item.isObserved()) {
+                        if (item != null && item.isObserved()) {
                             // tracks user score
                             player.setScore(player.getScore() + 1);
-                            if (item.getName().equals("key")) {
 
+                            ///  ------ BEGIN NEW ITEM HANDLING
+                            // key item handling
+                            if (item instanceof Key) {
                                 if (room.GetExitDoor().isObserved()) {
-                                    item.use();
-                                    room.GetExitDoor().unlockDoor();
-                                }
-                                else{
-                                    System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You have not seen anything to unlock");
+                                    item.use(); // uses the key
+                                    room.GetExitDoor().unlockDoor(); // unlocks the door
+                                } else {
+                                    System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": You have not seen anything to unlock");
                                 }
                             }
-                            else{
-                                item.use();
+                            // lever handling
+                            else if (item instanceof Lever) {
+                                item.use(); // toggles lever
                             }
+                            // handles other items
+                            else {
+                                item.use(); // default use behavior
+                            }
+                            ///  ------ END NEW ITEM HANDLING
+//                            if (item.getName().equals("key")) {
+//
+//                                if (room.GetExitDoor().isObserved()) {
+//                                    item.use();
+//                                    room.GetExitDoor().unlockDoor();
+//                                }
+//                                else{
+//                                    System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You have not seen anything to unlock");
+//                                }
+//                            }
+//                            else{
+//                                item.use();
+//                            }
                         }
                         else{
                             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
@@ -170,7 +198,7 @@ public class Main{
 
                             if(room.GetExitDoor().isObserved()) {
                                 if (!room.GetExitDoor().getIsLocked()) {
-                                    room = SetNewRoom(log, "The Lab"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
+                                    room = SetNewRoom(log, "The Conservatory"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
 
                                     System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
                                 }

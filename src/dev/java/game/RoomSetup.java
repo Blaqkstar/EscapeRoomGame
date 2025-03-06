@@ -68,7 +68,7 @@ public class RoomSetup {
         // defines SetExitDoor()
         conservatoryRoom.SetExitDoor(exitDoor);
 
-        // creates levers. Need to figure out a way to distinguish between them for player input
+        // creates levers and uses observer pattern to call checkLevers() automatically whenever a lever's position changes
         ///  LEVER A
         Lever leverA = new Lever("lever1", "An ancient, mechanical lever ("+ConsoleColors.YELLOW + "Lever1" + ConsoleColors.RESET +")",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The left-most lever.");
@@ -85,17 +85,26 @@ public class RoomSetup {
         leverC.setPositionalIndicator("The right-most lever. "); // sets right position relative to other levers
         leverC.setInspection(leverC.getPositionalIndicator() + " It's currently in the " + leverC.getPosition() + " position.");
 
-
         // adds items to their respective walls
         conservatoryRoom.setItem(Main.Direction.west, leverA);
         conservatoryRoom.setItem(Main.Direction.west, leverB);
         conservatoryRoom.setItem(Main.Direction.west, leverC);
         conservatoryRoom.setItem(Main.Direction.east, exitDoor);
 
+        // registers room as an observer for each lever
+        leverA.addObserver(conservatoryRoom);
+        leverB.addObserver(conservatoryRoom);
+        leverC.addObserver(conservatoryRoom);
+
+
+
         //AssignRandomItems(tutorialRoom);
 
         return conservatoryRoom;
     }
+
+
+
 
     /// -------------------------------------------- { THE LAB } ----------------------------
     public Room MakeRoom_Lab() {
@@ -115,7 +124,7 @@ public class RoomSetup {
 
 
 
-        exitDoor = new Door(labRoom,1, "A heavy metal door etched withs strange runes",
+        exitDoor = new Door(labRoom,1, "a heavy metal door etched withs strange runes",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": There is a mechanism that looks like it would accept a key.", "door");
 
         labRoom.SetExitDoor(exitDoor);
@@ -132,7 +141,7 @@ public class RoomSetup {
         // when player uses transmorg, game prompts them to pick an item from the list of observed items we're already tracking
 
         // scientist's research notebook
-        Notebook notebook  = new Notebook("notebook", "A scientist's research notebook", "The notebook documents experiments conducted by" +
+        Notebook notebook  = new Notebook("notebook", "a scientist's research notebook", "The notebook documents experiments conducted by" +
                 "a scientist experimenting with alchemy. Through the incoherent ramblings about 'proving wrongs his ghastly skeptics', you learn how to use his cunning machine.");
 
 

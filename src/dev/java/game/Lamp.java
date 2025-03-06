@@ -23,8 +23,8 @@ public class Lamp extends Item {
                 counter++;
                 powered = false; // lamp is off
                 destroyed = true; // lamp is now broken
-                this.setDescription("a broken lamp");
-                this.setInspection(ConsoleColors.GREEN+"PERCEPTION"+": A lamp with a broken bulb.");
+                this.setDescription("now broken - nice job");
+                this.setInspection(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": A lamp with a broken bulb.");
             }
             else {
                 if (powered) {
@@ -33,7 +33,7 @@ public class Lamp extends Item {
                             "shadows deepen and the lamp stands quietly, awaiting your next command.");
                     counter++;
                     powered = false; // lamp is off
-                    this.setDescription("it's off");
+                    this.setDescription("now cold and lifeless, a silent sentinel in the encroaching darkness");
                 } else {
                     this.setUsed(true); // used!
                     System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You flip the lamp's power switch. The light flickers briefly before casting a warm glow across the room. Shadows recede \n" +
