@@ -179,8 +179,9 @@ public class RoomSetup {
     public void AssignRandomItems(Room room) {
         Window itemWindow = new Window("window",
                 "a "+ConsoleColors.CYAN+"window"+ConsoleColors.RESET+" overlooking a garden",
-                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": It's too foggy to see very far. What little you're able to make out of the garden appears to be guarded \n" +
-                        "by a scarecrow with a tattered black hat.");
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                        ": The window is streaked with rain, the glass fogged and cold to the touch. Beyond it, the fog churns - tendrils curling and twisting, defying the wind like something alive.\n" +
+                        "Occasionally, you think you see shapes moving within - tall, slender shapes with too many limbs, or perhaps it's just the play of light and shadow.");
 
         PottedPlant itemPlant = new PottedPlant("plant",
                 "a "+ConsoleColors.CYAN+"plant"+ConsoleColors.RESET+" in a pot",
