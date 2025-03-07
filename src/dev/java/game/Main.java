@@ -206,7 +206,8 @@ public class Main{
                         if (parts[1].equals("door")) {
                             // if player has observed the door
                             if(room.GetExitDoor().isObserved()) {
-                                if (!room.GetExitDoor().getIsLocked()) {
+                                // if door is not locked and not locked forever
+                                if (!room.GetExitDoor().getIsLocked() && !room.GetExitDoor().getLockedForever()) {
                                     if (room.getName().equalsIgnoreCase("Tutorial Room")) {
                                         room = SetNewRoom(log, "The Conservatory"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                                     } else if (room.getName().equalsIgnoreCase("The Conservatory")) {

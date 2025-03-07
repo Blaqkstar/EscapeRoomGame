@@ -5,6 +5,7 @@ public class Door extends Item{
     private Room currentRoom;
     private Room nextRoom;
     private boolean isLocked = true;
+    private boolean lockedForever = false;
 
     private String description;
 
@@ -29,6 +30,13 @@ public class Door extends Item{
         return isLocked;
     }
 
+    public boolean getLockedForever() {
+        return lockedForever;
+    }
+    public void setLockedForever(boolean lockedForever) {
+        this.lockedForever = lockedForever;
+    }
+
     public void OpenDoor(Room roomToMoveTo) {
         if(!isLocked) {
             currentRoom = nextRoom;
@@ -44,8 +52,8 @@ public class Door extends Item{
             counter++;
             if (counter >= 5) {
                 // door is broken and can no longer be opened
-                if (!this.isLocked) {
-                    this.isLocked = true;
+                if (!this.lockedForever) {
+                    this.setLockedForever(true); // locks forever
                 }
                 if (counter == 5) {
                     System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": The door seems to glaze over. You can sense it's grown dormant and will no longer open.");
