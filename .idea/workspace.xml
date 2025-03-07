@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Added introBlurb, setIntroBlurb(), and getIntroBlurb() to Room class&#10;Created intro for Conservatory">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Created Phonograph use() behavior and added to Conservatory room constructor. &#10;Added some door use() behavior specific to Tutorial Room.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Door.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Phonograph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Phonograph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,14 +262,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741313321768</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Created Phonograph use() behavior and added to Conservatory room constructor. &#10;Added some door use() behavior specific to Tutorial Room.">
+      <option name="closed" value="true" />
+      <created>1741385056338</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1741385056338</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moved main.java into correct folder" />
     <MESSAGE value="added logging. Yay!" />
     <MESSAGE value="fixed broken logging/package issue. This should work again" />
     <MESSAGE value="added property: name to the Room class to allow for further extensibility" />
@@ -294,7 +301,8 @@
     <MESSAGE value="Added Lantern, LargePortrait, Orrery, and Phonograph item stubs. Began finishing touches on Conservatory room decoration/props and puzzle clues. &#10;Implemented a series of conditional checks to correctly determine the next room based on the room the player is in when they interact with the exit door" />
     <MESSAGE value="Got player score incrementing appropriately for relevant successful actions. &#10;Implemented a method to print player score&#10;Updated help method with new 'score' command" />
     <MESSAGE value="Added introBlurb, setIntroBlurb(), and getIntroBlurb() to Room class&#10;Created intro for Conservatory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added introBlurb, setIntroBlurb(), and getIntroBlurb() to Room class&#10;Created intro for Conservatory" />
+    <MESSAGE value="Created Phonograph use() behavior and added to Conservatory room constructor. &#10;Added some door use() behavior specific to Tutorial Room." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Phonograph use() behavior and added to Conservatory room constructor. &#10;Added some door use() behavior specific to Tutorial Room." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
