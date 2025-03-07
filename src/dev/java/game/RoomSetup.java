@@ -54,6 +54,8 @@ public class RoomSetup {
 
     /// -------------------------------------------- { THE CONSERVATORY } ----------------------------
     public Room MakeRoom_Conservatory(){
+        /// PLAYER ENTERS FROM THE NORTH!
+
         Room conservatoryRoom = new Room();
         Door exitDoor = null;
         // creates exit door
@@ -64,30 +66,46 @@ public class RoomSetup {
 
         // creates levers and uses observer pattern to call checkLevers() automatically whenever a lever's position changes
         ///  LEVER A
-        Lever leverA = new Lever("lever1", "An ancient, mechanical lever ("+ConsoleColors.YELLOW + "Lever1" + ConsoleColors.RESET +")",
+        Lever leverA = new Lever("lever1", "a lever ("+ConsoleColors.YELLOW + "Lever1" + ConsoleColors.RESET +") with an onyx grip",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The left-most lever.");
         leverA.setPositionalIndicator("The left-most lever. "); // sets left position relative to other levers
         leverA.setInspection(leverA.getPositionalIndicator() + " It's currently in the " + leverA.getPosition() + " position.");
         ///  LEVER B
-        Lever leverB = new Lever("lever2", "An ancient, mechanical lever ("+ConsoleColors.YELLOW + "Lever2" + ConsoleColors.RESET +")",
+        Lever leverB = new Lever("lever2", "a lever ("+ConsoleColors.YELLOW + "Lever2" + ConsoleColors.RESET +") with a jade grip",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The middle lever.");
         leverB.setPositionalIndicator("The middle lever. "); // sets center position relative to other levers
         leverB.setInspection(leverB.getPositionalIndicator() + " It's currently in the " + leverB.getPosition() + " position.");
         ///  LEVER C
-        Lever leverC = new Lever("lever3", "An ancient, mechanical lever ("+ConsoleColors.YELLOW + "Lever3" + ConsoleColors.RESET +")",
+        Lever leverC = new Lever("lever3", "a lever ("+ConsoleColors.YELLOW + "Lever3" + ConsoleColors.RESET +") with an emerald grip",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The right-most lever.");
         leverC.setPositionalIndicator("The right-most lever. "); // sets right position relative to other levers
         leverC.setInspection(leverC.getPositionalIndicator() + " It's currently in the " + leverC.getPosition() + " position.");
 
-        // adds items to their respective walls
-        conservatoryRoom.setItem(Main.Direction.west, leverA);
-        conservatoryRoom.setItem(Main.Direction.west, leverB);
-        conservatoryRoom.setItem(Main.Direction.west, leverC);
-        conservatoryRoom.setItem(Main.Direction.east, exitDoor);
         // registers room as an observer for each lever
         leverA.addObserver(conservatoryRoom);
         leverB.addObserver(conservatoryRoom);
         leverC.addObserver(conservatoryRoom);
+
+        // creates other room props
+        LargePortrait portraitPainting = new LargePortrait("portrait", "a large, dusty, "+ConsoleColors.CYAN+"portrait"+ConsoleColors.RESET+" looming imposingly on the wall where the door you just entered through should be",
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": A grand painting stands before you. Its subject appears to be a shadowy figure cloaked in darkness, their form indistinct save\n" +
+                        "for a single glowing eye that seems to pierce your soul. Around them, three stones are suspended in the air, each radiating an otherworldly energy.\n" +
+                        "The onyx stone dominates the upper portion of the painting, its dark surface shimmering with an eerie, almost predatory light.\n" +
+                        "Below it, the jade and emerald stones rest side by side, their glow subdued as if overshadowed by the onyx. The arrangement feels deliberate, as if\n" +
+                        "the stones are locked in a silent, eternal struggle.\n\n" +
+                        "A faint inscription at the bottom of the frame reads: \"The void ascends; the others kneel.\"",
+                conservatoryRoom);
+
+
+
+
+        // adds items to their respective walls
+        conservatoryRoom.setItem(Main.Direction.north, portraitPainting);
+        conservatoryRoom.setItem(Main.Direction.west, leverA);
+        conservatoryRoom.setItem(Main.Direction.west, leverB);
+        conservatoryRoom.setItem(Main.Direction.west, leverC);
+        conservatoryRoom.setItem(Main.Direction.east, exitDoor);
+
 
         return conservatoryRoom;
     }

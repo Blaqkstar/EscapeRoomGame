@@ -8,7 +8,6 @@ public class Room implements LeverObserver {
 
     // Keeps track of items in separate map not associated with direction
     // This way player can inspect item without specifying direction
-    // TODO: Are we adding items to this map after player "discovers" them via look?
     private Map<String, Item> items = new HashMap<>();
 
     private String name = "Undefined Room Name";
