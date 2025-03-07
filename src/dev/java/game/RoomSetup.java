@@ -47,8 +47,6 @@ public class RoomSetup {
         tutorialRoom.setItem(Main.Direction.east, itemLamp);
         tutorialRoom.setItem(Main.Direction.south, exitDoor);
 
-        AssignRandomItems(tutorialRoom);
-
         return tutorialRoom;
     }
 
@@ -182,6 +180,15 @@ public class RoomSetup {
 
     // Method for randomly assigning prebuilt items to walls
     public void AssignRandomItems(Room room) {
+        ArrayList<Item> items = new ArrayList<Item>(); // items will be added to this array for randomizing placement
+        ArrayList<Main.Direction> dirs = new ArrayList<Main.Direction>(); // placeholder array for directions
+        // adds directional refs to placeholder
+        dirs.add(Main.Direction.north);
+        dirs.add(Main.Direction.south);
+        dirs.add(Main.Direction.east);
+        dirs.add(Main.Direction.west);
+
+        // builds out items
         Window itemWindow = new Window("window",
                 "a "+ConsoleColors.CYAN+"window"+ConsoleColors.RESET+" overlooking a garden",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
@@ -197,22 +204,26 @@ public class RoomSetup {
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": A pungent aura of aged paper and leather pervades the air around the bookshelf. Among the many tomes, several of \n" +
                         "Aleister Crowley's occult works stand out; their dark, worn spines hinting at secrets and mysteries bound within.");
 
+        /// TODO: NEED TO PREBAKE CONSTRUCTORS FOR SOME ADDITIONAL TUTORIAL ROOM ITEMS AS WELL AS ITEMS FOR OTHER ROOMS. MAYBE AIM FOR >= 5 NON-QUEST PROPS IN EACH ROOM??
+        /// WE CAN BUILD THEM OUT ABOVE AND THEN ADD THEM TO THEIR RESPECTIVE ROOMS BELOW
 
-        ArrayList<Item> items = new ArrayList<Item>() {
-        };
+        //  items added is dependent upon the room being passed into params
+        if (room.getName().equalsIgnoreCase("Tutorial Room")) {
+            items.add(itemPlant);
+            items.add(itemWindow);
+            items.add(itemBookshelf);
+            randomizePropSpawnDirection(room, items, dirs);
+        } else if (room.getName().equalsIgnoreCase("The Conservatory")) {
+            // adds relevant room items
 
-        items.add(itemPlant);
-        items.add(itemWindow);
-        items.add(itemBookshelf);
+        } else if (room.getName().equalsIgnoreCase("The Lab")) {
+            // adds relevant room items
 
-        ArrayList<Main.Direction> dirs = new ArrayList<Main.Direction>() {
-        };
+        }
 
-        dirs.add(Main.Direction.north);
-        dirs.add(Main.Direction.south);
-        dirs.add(Main.Direction.east);
-        dirs.add(Main.Direction.west);
-
+    }
+    private void randomizePropSpawnDirection(Room room, ArrayList<Item> items, ArrayList<Main.Direction> dirs) {
+        // picks a random dir and assigns a random item from items to it
         int itemIndex;
         int dirIndex;
 

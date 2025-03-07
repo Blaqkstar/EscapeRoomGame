@@ -376,9 +376,10 @@ public class Main{
         // Sets room name
         if (room != null) {
             room.setName(roomName);
+            roomSetup.AssignRandomItems(room); // waits until after room is named before randomizing props
         }
         else {
-            throw new Exception("Room does not exist"); // error handling in case room doesn't exist
+            throw new Exception("Room does not exist!"); // error handling in case room doesn't exist
         }
 
         // prints logs

@@ -1,7 +1,0 @@
-02-14-2025 18:14:45.546 INFO  [game.Main] - instantiating Tutorial Room
-02-14-2025 18:14:45.555 DEBUG [game.Main] - adding items to Tutorial Room
-02-14-2025 18:14:55.862 INFO  [game.Main] - user input received
-02-14-2025 18:15:13.987 INFO  [game.Main] - user input received
-02-14-2025 18:15:13.988 INFO  [game.Main] - player selected look
-02-14-2025 18:15:36.863 INFO  [game.Main] - user input received
-02-14-2025 18:15:36.864 INFO  [game.Main] - exiting game...
