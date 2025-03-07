@@ -693,3 +693,34 @@
 03-06-2025 20:03:42.439 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
 03-06-2025 20:05:04.568 DEBUG [game.Main] - [0;35muser input received[0m
 03-06-2025 20:05:04.569 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-06-2025 21:03:22.934 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-06-2025 21:03:22.937 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-06-2025 21:13:00.475 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-06-2025 21:13:00.476 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-06-2025 21:14:08.096 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-06-2025 21:14:08.099 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-06-2025 21:16:41.269 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-06-2025 21:23:21.806 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-06-2025 21:23:21.814 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-06-2025 21:26:25.515 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-06-2025 21:26:25.517 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-06-2025 21:26:30.794 DEBUG [game.Main] - [0;35muser input received[0m
+03-06-2025 21:26:30.794 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-06-2025 21:26:32.405 DEBUG [game.Main] - [0;35muser input received[0m
+03-06-2025 21:26:32.405 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-06-2025 21:26:34.558 DEBUG [game.Main] - [0;35muser input received[0m
+03-06-2025 21:26:34.558 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-06-2025 21:26:36.258 DEBUG [game.Main] - [0;35muser input received[0m
+03-06-2025 21:26:36.258 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-06-2025 21:27:26.410 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-06-2025 21:27:26.411 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-06-2025 21:27:32.148 DEBUG [game.Main] - [0;35muser input received[0m
+03-06-2025 21:27:32.148 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-06-2025 21:30:24.297 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-06-2025 21:30:24.300 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-06-2025 21:30:29.159 DEBUG [game.Main] - [0;35muser input received[0m
+03-06-2025 21:30:29.160 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-06-2025 21:43:14.446 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-06-2025 21:43:14.449 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-06-2025 21:43:18.639 DEBUG [game.Main] - [0;35muser input received[0m
+03-06-2025 21:43:18.639 DEBUG [game.Main] - [0;35mplayer selected look[0m

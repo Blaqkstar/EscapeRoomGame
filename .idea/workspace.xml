@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Got player score incrementing appropriately for relevant successful actions. &#10;Implemented a method to print player score&#10;Updated help method with new 'score' command">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Added introBlurb, setIntroBlurb(), and getIntroBlurb() to Room class&#10;Created intro for Conservatory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug_02-01-2025.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug_02-11-2025.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug_02-14-2025.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug_02-15-2025.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug_02-19-2025.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug_02-22-2025.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug_02-25-2025.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug_02-27-2025.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,29 +63,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ScoreDB.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/resources/derbyclient.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.ScoreDB.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/resources/derbyclient.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Personal\School\NWTC\2025\2025 Spring Semester\8W1\Java 2\Group Project\EscapeRoomGame\Logging" />
@@ -93,8 +100,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.39" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.39" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
       </set>
     </attachedChunks>
   </component>
@@ -132,7 +139,8 @@
       <workItem from="1741217898217" duration="4000" />
       <workItem from="1741218185937" duration="23000" />
       <workItem from="1741270727293" duration="8047000" />
-      <workItem from="1741288699428" duration="15741000" />
+      <workItem from="1741288699428" duration="16047000" />
+      <workItem from="1741313647426" duration="4334000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -254,14 +262,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741311359917</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added introBlurb, setIntroBlurb(), and getIntroBlurb() to Room class&#10;Created intro for Conservatory">
+      <option name="closed" value="true" />
+      <created>1741313321768</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1741313321768</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="starting point" />
     <MESSAGE value="moved main.java into correct folder" />
     <MESSAGE value="added logging. Yay!" />
     <MESSAGE value="fixed broken logging/package issue. This should work again" />
@@ -286,7 +301,8 @@
     <MESSAGE value="Fixed spacing of debug messages relative to diegetic feedback" />
     <MESSAGE value="Added Lantern, LargePortrait, Orrery, and Phonograph item stubs. Began finishing touches on Conservatory room decoration/props and puzzle clues. &#10;Implemented a series of conditional checks to correctly determine the next room based on the room the player is in when they interact with the exit door" />
     <MESSAGE value="Got player score incrementing appropriately for relevant successful actions. &#10;Implemented a method to print player score&#10;Updated help method with new 'score' command" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got player score incrementing appropriately for relevant successful actions. &#10;Implemented a method to print player score&#10;Updated help method with new 'score' command" />
+    <MESSAGE value="Added introBlurb, setIntroBlurb(), and getIntroBlurb() to Room class&#10;Created intro for Conservatory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added introBlurb, setIntroBlurb(), and getIntroBlurb() to Room class&#10;Created intro for Conservatory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
