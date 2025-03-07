@@ -161,19 +161,19 @@ public class Main{
                                 item.use(); // default use behavior
                             }
                             ///  ------ END NEW ITEM HANDLING
-//                            if (item.getName().equals("key")) {
-//
-//                                if (room.GetExitDoor().isObserved()) {
-//                                    item.use();
-//                                    room.GetExitDoor().unlockDoor();
-//                                }
-//                                else{
-//                                    System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You have not seen anything to unlock");
-//                                }
-//                            }
-//                            else{
-//                                item.use();
-//                            }
+                            /*if (item.getName().equals("key")) {
+
+                                if (room.GetExitDoor().isObserved()) {
+                                    item.use();
+                                    room.GetExitDoor().unlockDoor();
+                                }
+                                else{
+                                    System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You have not seen anything to unlock");
+                                }
+                            }
+                            else{
+                                item.use();
+                            }*/
                         }
                         else{
                             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
@@ -199,9 +199,12 @@ public class Main{
 
                             if(room.GetExitDoor().isObserved()) {
                                 if (!room.GetExitDoor().getIsLocked()) {
-                                    room = SetNewRoom(log, "The Conservatory"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
-
-                                    System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
+                                    if (room.getName().equalsIgnoreCase("Tutorial Room")) {
+                                        room = SetNewRoom(log, "The Conservatory"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
+                                    } else if (room.getName().equalsIgnoreCase("The Conservatory")) {
+                                        room = SetNewRoom(log, "The Lab");
+                                    }
+                                    System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
                                 }
                                 else{
                                     System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The door is locked");
