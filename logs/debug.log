@@ -724,3 +724,114 @@
 03-06-2025 21:43:14.449 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
 03-06-2025 21:43:18.639 DEBUG [game.Main] - [0;35muser input received[0m
 03-06-2025 21:43:18.639 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-07-2025 15:46:57.094 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-07-2025 15:46:57.097 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-07-2025 15:47:01.632 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:47:01.632 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-07-2025 15:47:03.109 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:47:03.109 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-07-2025 15:47:14.589 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:47:14.589 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:47:14.589 DEBUG [game.Main] - [0;35mSearching for item with key 'painting'[0m
+03-07-2025 15:47:14.589 DEBUG [game.Main] - [0;35mFound item 'painting'[0m
+03-07-2025 15:47:17.629 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:47:17.629 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:47:17.629 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-07-2025 15:47:17.629 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-07-2025 15:47:19.261 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:47:19.261 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-07-2025 15:47:19.263 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-07-2025 15:47:19.263 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-07-2025 15:49:05.305 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-07-2025 15:49:05.308 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-07-2025 15:49:09.267 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:49:09.267 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-07-2025 15:49:10.654 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:49:10.654 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-07-2025 15:49:12.135 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:49:12.135 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:49:12.135 DEBUG [game.Main] - [0;35mSearching for item with key 'painting'[0m
+03-07-2025 15:49:12.136 DEBUG [game.Main] - [0;35mFound item 'painting'[0m
+03-07-2025 15:49:13.563 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:49:13.563 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:49:13.563 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-07-2025 15:49:13.565 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-07-2025 15:49:14.862 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:49:14.862 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-07-2025 15:49:14.863 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-07-2025 15:49:14.863 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-07-2025 15:55:12.377 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-07-2025 15:55:12.380 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-07-2025 15:55:17.457 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:55:17.459 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-07-2025 15:55:18.945 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:55:18.945 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-07-2025 15:55:20.410 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:55:20.410 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:55:20.411 DEBUG [game.Main] - [0;35mSearching for item with key 'door'[0m
+03-07-2025 15:55:20.411 DEBUG [game.Main] - [0;35mFound item 'door'[0m
+03-07-2025 15:55:22.753 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:55:22.753 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:55:22.753 DEBUG [game.Main] - [0;35mSearching for item with key 'door'[0m
+03-07-2025 15:55:22.753 DEBUG [game.Main] - [0;35mFound item 'door'[0m
+03-07-2025 15:55:24.114 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:55:24.114 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:55:24.115 DEBUG [game.Main] - [0;35mSearching for item with key 'door'[0m
+03-07-2025 15:55:24.115 DEBUG [game.Main] - [0;35mFound item 'door'[0m
+03-07-2025 15:55:25.487 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:55:25.487 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:55:25.487 DEBUG [game.Main] - [0;35mSearching for item with key 'door'[0m
+03-07-2025 15:55:25.487 DEBUG [game.Main] - [0;35mFound item 'door'[0m
+03-07-2025 15:55:27.289 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:55:27.289 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:55:27.289 DEBUG [game.Main] - [0;35mSearching for item with key 'door'[0m
+03-07-2025 15:55:27.289 DEBUG [game.Main] - [0;35mFound item 'door'[0m
+03-07-2025 15:55:30.619 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:55:30.619 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:55:30.619 DEBUG [game.Main] - [0;35mSearching for item with key 'door'[0m
+03-07-2025 15:55:30.619 DEBUG [game.Main] - [0;35mFound item 'door'[0m
+03-07-2025 15:56:43.923 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-07-2025 15:56:43.927 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-07-2025 15:56:48.135 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:56:49.699 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:56:49.699 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-07-2025 15:56:51.591 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:56:51.591 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-07-2025 15:56:54.863 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:56:54.863 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:56:54.863 DEBUG [game.Main] - [0;35mSearching for item with key 'painting'[0m
+03-07-2025 15:56:54.863 DEBUG [game.Main] - [0;35mFound item 'painting'[0m
+03-07-2025 15:57:05.159 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:57:05.160 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:57:05.160 DEBUG [game.Main] - [0;35mSearching for item with key 'door'[0m
+03-07-2025 15:57:05.160 DEBUG [game.Main] - [0;35mFound item 'door'[0m
+03-07-2025 15:57:07.151 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:57:07.151 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:57:07.152 DEBUG [game.Main] - [0;35mSearching for item with key 'door'[0m
+03-07-2025 15:57:07.152 DEBUG [game.Main] - [0;35mFound item 'door'[0m
+03-07-2025 15:57:08.509 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:57:08.510 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:57:08.510 DEBUG [game.Main] - [0;35mSearching for item with key 'door'[0m
+03-07-2025 15:57:08.510 DEBUG [game.Main] - [0;35mFound item 'door'[0m
+03-07-2025 15:57:09.796 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:57:09.796 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:57:09.796 DEBUG [game.Main] - [0;35mSearching for item with key 'door'[0m
+03-07-2025 15:57:09.796 DEBUG [game.Main] - [0;35mFound item 'door'[0m
+03-07-2025 15:57:11.039 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:57:11.039 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:57:11.039 DEBUG [game.Main] - [0;35mSearching for item with key 'door'[0m
+03-07-2025 15:57:11.039 DEBUG [game.Main] - [0;35mFound item 'door'[0m
+03-07-2025 15:57:12.317 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:57:12.317 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:57:12.317 DEBUG [game.Main] - [0;35mSearching for item with key 'door'[0m
+03-07-2025 15:57:12.317 DEBUG [game.Main] - [0;35mFound item 'door'[0m
+03-07-2025 15:57:17.025 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:57:17.027 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-07-2025 15:57:19.760 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:57:19.761 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-07-2025 15:57:19.761 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-07-2025 15:57:19.761 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-07-2025 15:57:21.343 DEBUG [game.Main] - [0;35muser input received[0m
+03-07-2025 15:57:21.343 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-07-2025 15:57:21.344 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-07-2025 15:57:21.344 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
