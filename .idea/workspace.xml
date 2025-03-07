@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed spacing of debug messages relative to diegetic feedback">
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Lantern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/LargePortrait.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Orrery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Phonograph.java" afterDir="false" />
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Added Lantern, LargePortrait, Orrery, and Phonograph item stubs. Began finishing touches on Conservatory room decoration/props and puzzle clues. &#10;Implemented a series of conditional checks to correctly determine the next room based on the room the player is in when they interact with the exit door">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +131,7 @@
       <workItem from="1741217898217" duration="4000" />
       <workItem from="1741218185937" duration="23000" />
       <workItem from="1741270727293" duration="8047000" />
-      <workItem from="1741288699428" duration="9590000" />
+      <workItem from="1741288699428" duration="13771000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -242,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741278789925</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added Lantern, LargePortrait, Orrery, and Phonograph item stubs. Began finishing touches on Conservatory room decoration/props and puzzle clues. &#10;Implemented a series of conditional checks to correctly determine the next room based on the room the player is in when they interact with the exit door">
+      <option name="closed" value="true" />
+      <created>1741306271244</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741306271244</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +275,8 @@
     <MESSAGE value="Added option to speedrun the first room for purposes of developing lab" />
     <MESSAGE value="Implemented some very slightly different item handling to ref. item instead of name where relevant&#10;Implemented Observer pattern to compare relative toggled status of Conservatory levers&#10;Fixed usable item coloring of key in Tutorial Room&#10;Added some additional debug feedback for item usage info" />
     <MESSAGE value="Fixed spacing of debug messages relative to diegetic feedback" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed spacing of debug messages relative to diegetic feedback" />
+    <MESSAGE value="Added Lantern, LargePortrait, Orrery, and Phonograph item stubs. Began finishing touches on Conservatory room decoration/props and puzzle clues. &#10;Implemented a series of conditional checks to correctly determine the next room based on the room the player is in when they interact with the exit door" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Lantern, LargePortrait, Orrery, and Phonograph item stubs. Began finishing touches on Conservatory room decoration/props and puzzle clues. &#10;Implemented a series of conditional checks to correctly determine the next room based on the room the player is in when they interact with the exit door" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

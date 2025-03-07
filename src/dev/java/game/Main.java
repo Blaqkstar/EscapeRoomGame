@@ -40,7 +40,7 @@ public class Main{
         Thread.sleep(300);
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'... Who are you?' ");
         System.out.print(ConsoleColors.YELLOW+"Enter your name: "+ConsoleColors.RESET);
-        Thread.sleep(200);
+        Thread.sleep(300);
         String playerName = scanner.nextLine(); // collects player name
         // instantiates player
         Player player = new Player(playerName, 0);
@@ -48,12 +48,18 @@ public class Main{
         /// player.getUpperName uses our function and unaryOperator examples
         System.out.println();
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
-        Thread.sleep(200);
+        Thread.sleep(300);
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'BEGONE!'");
         Thread.sleep(300);
         System.out.println();
         System.out.println();
-        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You awaken, groggily, to find yourself in a strange room. Along each wall are items.");
+        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                ": You awaken, groggily, to the sound of rain tapping against a fogged window. The air is heavy, thick with the scent of damp wood and something faintly metallic,\n" +
+                "like the tang of old blood. The room around you is dimly lit, its edges blurred by shadows that seem to shift when you aren't looking. A faint hum fills the air,\n" +
+                "low and resonant, as though the walls themselves are alive. The rain outside falls in a steady rhythm, but the fog beyond the window moves unnaturally, swirling and\n" +
+                "coiling like a living thing. The wallpaper peels at the edges, revealing patterns beneath that seem to shift when you look away. Your head throbs faintly, as though you've\n" +
+                "forgotten something important. This place feels like a threshold - a space between worlds - and you can't tell if you're meant to escape or if something is waiting for you to\n" +
+                "step further in...");
 
         // this continues until the user types 'exit'
         do {
@@ -83,6 +89,7 @@ public class Main{
                         else{
                             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You look " + direction.getDescription() + " and see a blank wall");
                         }
+                        player.setScore(player.getScore() + 1); // successful action increments player score by one
                     } catch (IllegalArgumentException e) {
                         System.out.println("Invalid direction. Please enter one of the following: north, south, east, west."); // handles input issues
                     }
@@ -107,6 +114,7 @@ public class Main{
                             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
                             System.out.println();
                         }
+                        player.setScore(player.getScore() + 1); // successful action increments player score by one
                     }
                     // Handles input of unknown item
                     catch (Exception e) {
@@ -130,6 +138,7 @@ public class Main{
                         log.debug(ConsoleColors.PURPLE+"Searching for item with key '" + itemName + "'"+ConsoleColors.RESET); // for debug purposes
                         // declare item that is being inspected
                         Item item = room.getItems().get(itemName);
+                        ///  DEBUG MESSAGES BEGIN
                         if (item != null) {
                             log.debug(ConsoleColors.PURPLE+"Found item '" + item.getName() + "'"+ConsoleColors.RESET);
                             System.out.println();
@@ -137,11 +146,9 @@ public class Main{
                             log.debug(ConsoleColors.PURPLE+"Item not found in room's items map"+ConsoleColors.RESET);
                             System.out.println();
                         }
+                        ///  DEBUG MESSAGES END
                         // Check if player has observed the item yet
                         if (item != null && item.isObserved()) {
-                            // tracks user score
-                            player.setScore(player.getScore() + 1);
-
                             ///  ------ BEGIN NEW ITEM HANDLING
                             // key item handling
                             if (item instanceof Key) {
@@ -160,6 +167,7 @@ public class Main{
                             else {
                                 item.use(); // default use behavior
                             }
+                            player.setScore(player.getScore() + 1); // successful action increments player score by one
                             ///  ------ END NEW ITEM HANDLING
                             /*if (item.getName().equals("key")) {
 
@@ -196,7 +204,7 @@ public class Main{
                 if (parts.length == 2) { // ensures that input consists of two parts
                     try {
                         if (parts[1].equals("door")) {
-
+                            // if player has observed the door
                             if(room.GetExitDoor().isObserved()) {
                                 if (!room.GetExitDoor().getIsLocked()) {
                                     if (room.getName().equalsIgnoreCase("Tutorial Room")) {
@@ -205,6 +213,17 @@ public class Main{
                                         room = SetNewRoom(log, "The Lab");
                                     }
                                     System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
+
+                                    // room intro blurb dependent on the room being entered. Tutorial room intro handled at start of main()
+                                    if (room.getName().equalsIgnoreCase("The Conservatory")) {
+                                        // prints conservatory intro
+
+                                    } else if (room.getName().equalsIgnoreCase("The Lab")) {
+                                        // prints lab intro
+                                    }
+                                    else {
+                                        // prints final room intro
+                                    }
                                 }
                                 else{
                                     System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The door is locked");
@@ -214,8 +233,7 @@ public class Main{
                                 System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
                             }
                         }
-                        // tracks user score
-                        player.setScore(player.getScore() + 1);
+                        player.setScore(player.getScore() + 1); // successful action increments player score by one
                     } catch(Exception e){
                         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
                     }
@@ -229,6 +247,9 @@ public class Main{
             /// ------------------------------------------------{ HELP ACTION HANDLER }--------------------
             else if (input.equalsIgnoreCase("help") || input.equalsIgnoreCase("?")) {
                 printCommands();
+            }
+            else if (input.equalsIgnoreCase("score")) {
+                printScore(player);
             }
             /// ------------------------------------------------{ HISCORES ACTION HANDLER }--------------------
             else if (input.equalsIgnoreCase("hiscores")) {
@@ -254,9 +275,10 @@ public class Main{
         System.out.println(ConsoleColors.YELLOW+"2. inspect <item>"+ConsoleColors.RESET+": inspects the specified item");
         System.out.println(ConsoleColors.YELLOW+"3. use <item>"+ConsoleColors.RESET+": attempts to use the specified item");
         System.out.println(ConsoleColors.YELLOW+"4. open <item>"+ConsoleColors.RESET+": attempts to open the specified item");
-        System.out.println(ConsoleColors.YELLOW+"5. hiscores"+ConsoleColors.RESET+": displays the high scores");
-        System.out.println(ConsoleColors.YELLOW+"6. help"+ConsoleColors.RESET+": prints this message");
-        System.out.println(ConsoleColors.YELLOW+"7. exit"+ConsoleColors.RESET+": exits the game");
+        System.out.println(ConsoleColors.YELLOW+"5. score"+ConsoleColors.RESET+": prints player score");
+        System.out.println(ConsoleColors.YELLOW+"6. hiscores"+ConsoleColors.RESET+": displays the high scores");
+        System.out.println(ConsoleColors.YELLOW+"7. help"+ConsoleColors.RESET+": prints this message");
+        System.out.println(ConsoleColors.YELLOW+"8. exit"+ConsoleColors.RESET+": exits the game");
     }
     private static void printTitle(){
         // text generated via https://patorjk.com/software/taag. This is the "Slant" font
@@ -278,6 +300,12 @@ public class Main{
             return p1.getName().compareTo(p2.getName());
         }
     };
+
+    private static void printScore(Player player) {
+        int playerScore = player.getScore();
+        System.out.println();
+        System.out.println(ConsoleColors.YELLOW+"Player Score"+ConsoleColors.RESET+": " + playerScore);
+    }
 
     private static void printHiScores(ScoreDB scoreDB) throws Exception {
 
