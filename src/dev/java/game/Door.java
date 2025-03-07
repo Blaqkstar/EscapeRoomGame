@@ -36,10 +36,33 @@ public class Door extends Item{
             System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You have moved to a new room!");
         }
     }
+    int counter = 0;
 
     public  void use(){
         this.setUsed(true); // used!
-        System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": There is nothing to use.");
+        if (this.currentRoom.getName().equalsIgnoreCase("Tutorial Room")) {
+            counter++;
+            if (counter >= 5) {
+                // door is broken and can no longer be opened
+                if (!this.isLocked) {
+                    this.isLocked = true;
+                }
+                if (counter == 5) {
+                    System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": The door seems to glaze over. You can sense it's grown dormant and will no longer open.");
+                } else {
+                    System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": Nothing happens.");
+                }
+
+            } else if (counter == 4) {
+                // the door feels soft
+                System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": It looks... Soft?.");
+            } else if (counter == 3) {
+                // door leaks a strange liquid
+                System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": A strange pool of glowing liquid slowly forms beneath the door.");
+            } else {
+                System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": The door moans lightly.");
+            }
+        }
     };
 }
 
