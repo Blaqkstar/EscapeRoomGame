@@ -13,6 +13,7 @@ public class Room implements LeverObserver {
     private String name = "Undefined Room Name";
 
     private Door exitDoor;
+    private String introBlurb = "UNDEFINED INTRO BLURB";
 
     public Room() {
         walls = new EnumMap<>(Main.Direction.class); // initializes map
@@ -45,7 +46,12 @@ public class Room implements LeverObserver {
     public void SetExitDoor(Door exitDoor) {
         this.exitDoor = exitDoor;
     }
-
+    public String getIntroBlurb() {
+        return introBlurb;
+    }
+    public void setIntroBlurb(String introBlurb) {
+        this.introBlurb = introBlurb;
+    }
     public List<Item> getItemsAtDirection(Main.Direction direction) {
         return walls.get(direction); // gets items at the specified direction
     }

@@ -55,7 +55,6 @@ public class RoomSetup {
     /// -------------------------------------------- { THE CONSERVATORY } ----------------------------
     public Room MakeRoom_Conservatory(){
         /// PLAYER ENTERS FROM THE NORTH!
-
         Room conservatoryRoom = new Room();
         Door exitDoor = null;
         // creates exit door
@@ -106,6 +105,12 @@ public class RoomSetup {
         conservatoryRoom.setItem(Main.Direction.west, leverC);
         conservatoryRoom.setItem(Main.Direction.east, exitDoor);
 
+        conservatoryRoom.setIntroBlurb(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                ": The air here is cold and still, carrying the faint scent of ozone and old parchment. The conservatory feels like a cathedral to the unknown, its domed\n" +
+                "ceiling lost in shadow, save for faint pinpricks of light that might be stars. The walls are lined with shelves, their contents obscured by layers of dust and time,\n" +
+                "and the floor is a mosaic of cracked tiles, their patterns swirling in ways that make your head ache if you stare too long. A low hum fills the air, unsettling in\n" +
+                "the way it seems to reverberate through your body. This room feels alive with some ancient, dormant power. You can't shake the feeling that this place was not built\n" +
+                "to study the stars, but to commune with something far, far older.");
 
         return conservatoryRoom;
     }

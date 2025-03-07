@@ -213,11 +213,12 @@ public class Main{
                                         room = SetNewRoom(log, "The Lab");
                                     }
                                     System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
-
+                                    System.out.println();
+                                    Thread.sleep(300);
                                     // room intro blurb dependent on the room being entered. Tutorial room intro handled at start of main()
                                     if (room.getName().equalsIgnoreCase("The Conservatory")) {
                                         // prints conservatory intro
-
+                                        System.out.println(room.getIntroBlurb());
                                     } else if (room.getName().equalsIgnoreCase("The Lab")) {
                                         // prints lab intro
                                     }
