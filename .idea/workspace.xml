@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed bug where Tutorial Room door could be opened when it should be perma-locked">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed door interactivity issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Door.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/LargePortrait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/LargePortrait.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Phonograph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Phonograph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Telescope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Telescope.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +136,8 @@
       <workItem from="1741270727293" duration="8047000" />
       <workItem from="1741288699428" duration="16047000" />
       <workItem from="1741313647426" duration="4334000" />
-      <workItem from="1741392002382" duration="165000" />
+      <workItem from="1741392002382" duration="1632000" />
+      <workItem from="1741411082479" duration="3051000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -278,14 +283,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741386584657</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Fixed door interactivity issue">
+      <option name="closed" value="true" />
+      <created>1741392195378</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1741392195378</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed broken logging/package issue. This should work again" />
     <MESSAGE value="added property: name to the Room class to allow for further extensibility" />
     <MESSAGE value="Implemented printCommands() method and handling for input: &quot;help&quot; or &quot;?&quot;.&#10;Added some color and spacial formatting to text output to improve legibility" />
     <MESSAGE value="Implemented printTitle() method and placeholder title &quot;ESCAPE ROOM&quot; with rad ASCII font.&#10;Some additional cleanup of unnecessary line breaks which disrupted text flow" />
@@ -310,7 +322,8 @@
     <MESSAGE value="Added introBlurb, setIntroBlurb(), and getIntroBlurb() to Room class&#10;Created intro for Conservatory" />
     <MESSAGE value="Created Phonograph use() behavior and added to Conservatory room constructor. &#10;Added some door use() behavior specific to Tutorial Room." />
     <MESSAGE value="Fixed bug where Tutorial Room door could be opened when it should be perma-locked" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug where Tutorial Room door could be opened when it should be perma-locked" />
+    <MESSAGE value="Fixed door interactivity issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed door interactivity issue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

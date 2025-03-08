@@ -34,7 +34,7 @@ public class Phonograph extends Item{
                     "but the sense of unease remains.");
             this.setUsed(true);
         } else {
-            System.out.println("Nothing happens.");
+            System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": Nothing happens.");
         }
     }
 }
