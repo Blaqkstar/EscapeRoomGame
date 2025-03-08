@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 ///  TODO: REMAINING FEATURES FOR CORE FUNCTIONALITY
 ///  TODO: 1. FIGURE OUT AN ACCEPTABLE PAR FOR EACH ROOM AND AN ACCEPTABLE MAX SCORE BEFORE GAMEOVER
 ///  TODO: 2. BUILD OUT GAMEOVER() METHOD
+///  TODO: 3. NEED TO WORK OUT A METHOD TO RESET EVERYTHING IF PLAYER CHOOSES TO PLAY AGAIN
 
 public class Main{
     public static void main(final String[] args) throws Exception {
@@ -280,6 +281,8 @@ public class Main{
             if (input.equalsIgnoreCase("n")) {
                 input = "exit"; // exits game
             }
+            System.out.println();
+            System.out.println();
             // else loop repeats due to intrinsic do-while rules
         } while (!input.equalsIgnoreCase("exit")); // repeats loop until user types 'exit'
 

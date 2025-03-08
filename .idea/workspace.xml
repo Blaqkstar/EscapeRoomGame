@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed door interactivity issue">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed some text formatting inconsistencies&#10;Created placeholder gameOver() method&#10;Created lose conditions (player score exceeds predefined gameOverScore)&#10;Created some logic after game over to ask player if they'd like to play again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/LargePortrait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/LargePortrait.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Phonograph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Phonograph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Telescope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Telescope.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +133,7 @@
       <workItem from="1741288699428" duration="16047000" />
       <workItem from="1741313647426" duration="4334000" />
       <workItem from="1741392002382" duration="1632000" />
-      <workItem from="1741411082479" duration="3051000" />
+      <workItem from="1741411082479" duration="3412000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -291,14 +287,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741392195378</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Fixed some text formatting inconsistencies&#10;Created placeholder gameOver() method&#10;Created lose conditions (player score exceeds predefined gameOverScore)&#10;Created some logic after game over to ask player if they'd like to play again">
+      <option name="closed" value="true" />
+      <created>1741414310942</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1741414310942</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added property: name to the Room class to allow for further extensibility" />
     <MESSAGE value="Implemented printCommands() method and handling for input: &quot;help&quot; or &quot;?&quot;.&#10;Added some color and spacial formatting to text output to improve legibility" />
     <MESSAGE value="Implemented printTitle() method and placeholder title &quot;ESCAPE ROOM&quot; with rad ASCII font.&#10;Some additional cleanup of unnecessary line breaks which disrupted text flow" />
     <MESSAGE value="Moved ANSI color values into ConsoleColors class to mitigate redundant use of variables.&#10;Updated references to color variables to point at the ConsoleColors class." />
@@ -323,7 +326,8 @@
     <MESSAGE value="Created Phonograph use() behavior and added to Conservatory room constructor. &#10;Added some door use() behavior specific to Tutorial Room." />
     <MESSAGE value="Fixed bug where Tutorial Room door could be opened when it should be perma-locked" />
     <MESSAGE value="Fixed door interactivity issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed door interactivity issue" />
+    <MESSAGE value="Fixed some text formatting inconsistencies&#10;Created placeholder gameOver() method&#10;Created lose conditions (player score exceeds predefined gameOverScore)&#10;Created some logic after game over to ask player if they'd like to play again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some text formatting inconsistencies&#10;Created placeholder gameOver() method&#10;Created lose conditions (player score exceeds predefined gameOverScore)&#10;Created some logic after game over to ask player if they'd like to play again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
