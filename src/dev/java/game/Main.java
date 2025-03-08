@@ -398,7 +398,7 @@ public class Main{
             Thread.sleep(3000);
             System.out.println();
             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                    ": As the darkness envelops you completely, you feel a presence - fast, ancient, and utterly alien. It reaches for you, not with hands but with something indescribable - something that twists\n" +
+                    ": As the darkness envelops you completely, you feel a presence - vast, ancient, and utterly alien. It reaches for you, not with hands but with something indescribable - something that twists\n" +
                     "your very essence. You realize, too late, that death would have been a mercy. What comes next is not an end, but a beginning... An eternity as part of something far greater and far, far more\n" +
                     "terrible than you could ever comprehend...");
             System.out.println();
