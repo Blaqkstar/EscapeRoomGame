@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Got painting description and inspection updating to properly reflect diegetic changes after player 'uses' it.&#10;Fixed bug where player could spawn an infinite number of keys from behind the painting.">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="updated TODO list to account for work I just did">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
     </list>
@@ -133,7 +133,7 @@
       <workItem from="1741313647426" duration="4334000" />
       <workItem from="1741392002382" duration="1632000" />
       <workItem from="1741411082479" duration="3442000" />
-      <workItem from="1741458159030" duration="11823000" />
+      <workItem from="1741458159030" duration="12090000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -327,14 +327,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741470674032</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="updated TODO list to account for work I just did">
+      <option name="closed" value="true" />
+      <created>1741470762753</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1741470762753</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="implemented Item.use() method.&#10;Separated items out as children of the Item class.&#10;Got the Key item to fall out from behind the painting onto the floor but that logic is not yet complete." />
     <MESSAGE value="added some contextual awareness to the message provided to player when they attempt to use or inspect an item they haven't yet observed." />
     <MESSAGE value="Worked on finishing the system for moving the player between rooms. I had to rework some of the exit door code, but now have it working properly. Cheers!" />
     <MESSAGE value="Worked on finishing the system for our assignment 5 by implementing a Comparable and Comparator in the high scores system." />
@@ -359,7 +366,8 @@
     <MESSAGE value="Built out gameOver() method&#10;Clarified failure conditions&#10;Created a variable in Room called roomPar (with relevant getter/setter) that is used to determine gameOverScore. If player score exceeds gameOverScore, gameOver() is called. &#10;Cleaned up some more output text" />
     <MESSAGE value="Additional text cleanup" />
     <MESSAGE value="Got painting description and inspection updating to properly reflect diegetic changes after player 'uses' it.&#10;Fixed bug where player could spawn an infinite number of keys from behind the painting." />
-    <option name="LAST_COMMIT_MESSAGE" value="Got painting description and inspection updating to properly reflect diegetic changes after player 'uses' it.&#10;Fixed bug where player could spawn an infinite number of keys from behind the painting." />
+    <MESSAGE value="updated TODO list to account for work I just did" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated TODO list to account for work I just did" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
