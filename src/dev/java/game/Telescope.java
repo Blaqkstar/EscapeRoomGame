@@ -11,6 +11,6 @@ public class Telescope extends Item {
     }
     @Override
     public void use() {
-        System.out.println("You peer through the telescope but it's too foggy to see anything.");
+        System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You peer through the telescope but it's too foggy to see anything.");
     }
 }
