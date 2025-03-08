@@ -297,7 +297,7 @@ public class Main{
     //This is our example of the comparator. The difference between a comparator and comparable is that
     //a comparator is used to compare different aspects between two specific objects of a certain type. Whereas a
     //a comparable defines how you can sort a large collection of objects.
-    Comparator<Player> nameComparator = new Comparator<Player>() {
+    Comparator<Player> nameComparator = new Comparator<>() {
         public int compare(Player p1, Player p2) {
             return p1.getName().compareTo(p2.getName());
         }
