@@ -70,9 +70,7 @@ public class Main{
 
             // this one loops until gameOverScore has been reached
             do {
-                if (gameOverScore == 0) {
-                    gameOverScore = room.getRoomPar() * 3;
-                }
+                setGameOverScore(gameOverScore, room); // setsGameOverScore
                 System.out.println();
                 System.out.print(ConsoleColors.YELLOW+"Enter input (or 'help' for a list of available commands): "+ConsoleColors.RESET);
                 input = scanner.nextLine(); // user input
@@ -371,7 +369,9 @@ public class Main{
             }
         }
     }
-
+    private static void setGameOverScore(Integer gameOverScore, Room room) {
+        gameOverScore = room.getRoomPar() * 3;
+    }
     private static void gameOver(Player player) {
         // game over logic here
         // could contain some kind of narrative text about being dragged back into the shadows where the game starts but this time the candle extinguishes and the last
