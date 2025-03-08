@@ -62,13 +62,12 @@ public class Door extends Item{
                 }
 
             } else if (counter == 4) {
-                // the door feels soft
-                System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": It looks... Soft?.");
+                System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": The door appears to have sunken in on itself.");
             } else if (counter == 3) {
                 // door leaks a strange liquid
                 System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": A strange pool of glowing liquid slowly forms beneath the door.");
             } else {
-                System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": The door moans lightly.");
+                System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": The door groans lightly.");
             }
         }
     };
