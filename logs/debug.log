@@ -1015,3 +1015,43 @@
 03-08-2025 15:48:53.955 DEBUG [game.Main] - [0;35mplayer selected open[0m
 03-08-2025 15:48:53.955 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
 03-08-2025 15:48:53.955 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-08-2025 17:06:00.628 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:06:00.631 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:06:18.932 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:06:18.935 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:07:54.694 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:07:54.696 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:08:35.941 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:08:35.944 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:09:39.287 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:09:39.290 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:10:33.131 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:10:33.133 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:11:04.981 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:11:04.984 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:11:39.220 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:11:39.222 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:12:03.243 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:12:03.246 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:12:52.256 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:12:52.259 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:13:08.390 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:13:08.393 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:15:34.796 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:15:34.797 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:16:06.281 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:16:06.283 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:17:33.229 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:17:33.230 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:18:01.037 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:18:01.039 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:18:35.837 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:18:35.838 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:19:40.717 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:19:40.718 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:20:53.320 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:20:53.323 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:21:06.763 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:21:06.765 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 17:21:33.111 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 17:21:33.113 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
