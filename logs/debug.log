@@ -10,3 +10,49 @@
 03-08-2025 00:05:32.808 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
 03-08-2025 00:05:35.081 DEBUG [game.Main] - [0;35muser input received[0m
 03-08-2025 00:05:35.081 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-08-2025 00:12:04.802 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 00:12:04.804 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 00:12:12.721 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:12:12.721 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-08-2025 00:12:15.018 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:12:15.018 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-08-2025 00:12:17.147 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:12:17.147 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-08-2025 00:12:19.444 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:12:19.444 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-08-2025 00:12:23.706 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:12:23.706 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-08-2025 00:12:23.706 DEBUG [game.Main] - [0;35mSearching for item with key 'bookshelf'[0m
+03-08-2025 00:12:23.706 DEBUG [game.Main] - [0;35mFound item 'bookshelf'[0m
+03-08-2025 00:13:09.610 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-08-2025 00:13:09.613 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-08-2025 00:13:13.584 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:13:13.584 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-08-2025 00:13:15.370 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:13:15.370 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-08-2025 00:13:17.567 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:13:17.567 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-08-2025 00:13:18.994 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:13:18.996 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-08-2025 00:13:21.667 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:13:21.667 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-08-2025 00:13:21.669 DEBUG [game.Main] - [0;35mSearching for item with key 'desk'[0m
+03-08-2025 00:13:21.669 DEBUG [game.Main] - [0;35mFound item 'desk'[0m
+03-08-2025 00:13:40.268 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:13:40.268 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-08-2025 00:13:48.307 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:13:48.307 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-08-2025 00:13:52.337 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:13:52.337 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-08-2025 00:13:52.338 DEBUG [game.Main] - [0;35mSearching for item with key 'plant'[0m
+03-08-2025 00:13:52.338 DEBUG [game.Main] - [0;35mFound item 'plant'[0m
+03-08-2025 00:13:57.617 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:13:57.618 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-08-2025 00:14:00.625 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:14:00.625 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-08-2025 00:14:14.458 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:14:14.458 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-08-2025 00:14:16.956 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:14:16.956 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-08-2025 00:14:25.674 DEBUG [game.Main] - [0;35muser input received[0m
+03-08-2025 00:14:25.675 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
