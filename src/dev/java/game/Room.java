@@ -14,6 +14,7 @@ public class Room implements LeverObserver {
 
     private Door exitDoor;
     private String introBlurb = "UNDEFINED INTRO BLURB";
+    private int roomPar = 0;
 
     public Room() {
         walls = new EnumMap<>(Main.Direction.class); // initializes map
@@ -37,6 +38,13 @@ public class Room implements LeverObserver {
 
     public String getName() {
         return name;
+    }
+    public void setRoomPar(Integer roomPar) {
+        this.roomPar = roomPar;
+    }
+
+    public Integer getRoomPar() {
+        return roomPar;
     }
 
     public Door GetExitDoor() {
