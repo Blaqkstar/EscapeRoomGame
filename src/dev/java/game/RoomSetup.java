@@ -29,6 +29,7 @@ public class RoomSetup {
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": There is a deadbolt that looks like it would accept an old key.", "door");
 
         tutorialRoom.SetExitDoor(exitDoor);
+        tutorialRoom.setRoomPar(5);
 
         Desk itemDesk = new Desk("desk",
                 "a "+ConsoleColors.CYAN+"desk"+ConsoleColors.RESET+" with a "+ConsoleColors.CYAN+"lamp"+ConsoleColors.RESET,
@@ -60,7 +61,7 @@ public class RoomSetup {
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You search for a keyhole but find none. It's a smooth, thick, steel plate.", "door");
         // defines SetExitDoor()
         conservatoryRoom.SetExitDoor(exitDoor);
-
+        conservatoryRoom.setRoomPar(15);
         // creates levers and uses observer pattern to call checkLevers() automatically whenever a lever's position changes
         ///  LEVER A
         Lever leverA = new Lever("lever1", "a lever ("+ConsoleColors.YELLOW + "Lever1" + ConsoleColors.RESET +") with an onyx grip",
@@ -93,11 +94,14 @@ public class RoomSetup {
                         "A faint inscription at the bottom of the frame reads: \"The void ascends; the others kneel.\"",
                 conservatoryRoom);
 
-
-
+        Phonograph itemPhonograph = new Phonograph("phonograph",
+                "an antique "+ConsoleColors.CYAN+"phonograph"+ConsoleColors.RESET+", its brass horn tarnished and its surface etched with strange, angular symbols",
+                "The phonograph is a relic of another era, its brass horn tarnished to a dull green and its wooden base cracked with age. The surface is etched with strange, angular symbols that make your\n" +
+                        "stomach churn when looking directly at them. A record rests on the turntable, its label faded and illegible, except for a single word scrawled in jagged handwriting: \"Ascension.\"");
 
         // adds items to their respective walls
         conservatoryRoom.setItem(Main.Direction.north, portraitPainting);
+        conservatoryRoom.setItem(Main.Direction.south, itemPhonograph);
         conservatoryRoom.setItem(Main.Direction.west, leverA);
         conservatoryRoom.setItem(Main.Direction.west, leverB);
         conservatoryRoom.setItem(Main.Direction.west, leverC);
@@ -112,9 +116,6 @@ public class RoomSetup {
 
         return conservatoryRoom;
     }
-
-
-
 
     /// -------------------------------------------- { THE LAB } ----------------------------
     public Room MakeRoom_Lab() {
@@ -204,6 +205,7 @@ public class RoomSetup {
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": A pungent aura of aged paper and leather pervades the air around the bookshelf. Among the many tomes, several of \n" +
                         "Aleister Crowley's occult works stand out; their dark, worn spines hinting at secrets and mysteries bound within.");
 
+
         /// TODO: NEED TO PREBAKE CONSTRUCTORS FOR SOME ADDITIONAL TUTORIAL ROOM ITEMS AS WELL AS ITEMS FOR OTHER ROOMS. MAYBE AIM FOR >= 5 NON-QUEST PROPS IN EACH ROOM??
         /// WE CAN BUILD THEM OUT ABOVE AND THEN ADD THEM TO THEIR RESPECTIVE ROOMS BELOW
 
@@ -215,10 +217,14 @@ public class RoomSetup {
             randomizePropSpawnDirection(room, items, dirs);
         } else if (room.getName().equalsIgnoreCase("The Conservatory")) {
             // adds relevant room items
-
+            ///  for some reason, exitDoor cannot be found if less than three items are added to items. Worth looking into if we have time but not gamebreaking as long as we have
+           ///  enough room items randomly spawning in
+//            items.add(itemPhonograph);
+//            items.add(itemWindow);
+//            items.add(itemBookshelf);
+//            randomizePropSpawnDirection(room, items, dirs);
         } else if (room.getName().equalsIgnoreCase("The Lab")) {
             // adds relevant room items
-
         }
 
     }

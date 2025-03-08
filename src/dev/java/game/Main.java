@@ -17,8 +17,7 @@ public class Main{
         final Logger log = LogManager.getLogger(Main.class.getName());
 
         ScoreDB scoreDB = new ScoreDB();
-
-        int gameOverScore = 5;
+        int gameOverScore = 0;
 
         // prints game title
         printTitle();
@@ -73,6 +72,9 @@ public class Main{
 
             // this one loops until gameOverScore has been reached
             do {
+                if (gameOverScore == 0) {
+                    gameOverScore = room.getRoomPar() * 3;
+                }
                 System.out.println();
                 System.out.print(ConsoleColors.YELLOW+"Enter input (or 'help' for a list of available commands): "+ConsoleColors.RESET);
                 input = scanner.nextLine(); // user input
@@ -218,8 +220,11 @@ public class Main{
                                 if(room.GetExitDoor().isObserved()) {
                                     // if door is not locked and not locked forever
                                     if (!room.GetExitDoor().getIsLocked() && !room.GetExitDoor().getLockedForever()) {
+                                        // recoups points to player relative to the predetermined par for the room they're leaving
+                                        player.setScore(player.getScore() - room.getRoomPar());
+                                        /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                                         if (room.getName().equalsIgnoreCase("Tutorial Room")) {
-                                            room = SetNewRoom(log, "The Conservatory"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
+                                            room = SetNewRoom(log, "The Conservatory");
                                         } else if (room.getName().equalsIgnoreCase("The Conservatory")) {
                                             room = SetNewRoom(log, "The Lab");
                                         }
@@ -251,10 +256,16 @@ public class Main{
                         }
                     }
                 }
-                /// SPEEDRUN OPTION --------ONLY FOR USE IN DEVELOPMENT-----------------------
+                /// SPEEDRUN OPTIONS --------ONLY FOR USE IN DEVELOPMENT-----------------------
                 else if (input.equalsIgnoreCase("speedrun to lab")){
                     room = SetNewRoom(log, "The Lab"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
-                    System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
+                    System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
+                }
+                else if (input.equalsIgnoreCase("speedrun to conservatory")){
+                    room = SetNewRoom(log, "The Conservatory"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
+                    System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
+                    System.out.println();
+                    System.out.println(room.getIntroBlurb());
                 }
                 /// ------------------------------------------------{ HELP ACTION HANDLER }--------------------
                 else if (input.equalsIgnoreCase("help") || input.equalsIgnoreCase("?")) {
@@ -267,15 +278,19 @@ public class Main{
                 else if (input.equalsIgnoreCase("hiscores")) {
                     printHiScores(scoreDB);
                 }
+                /// ------------------------------------------------{ ABOUT ACTION HANDLER }--------------------
+                else if (input.equalsIgnoreCase("about")) {
+                    // run the printAbout() cmd
+                }
                 else if (!input.equalsIgnoreCase("exit")) { // handles incorrect commands
                     System.out.println("Unknown input. Please enter 'look <direction>' or 'exit'.");
                 }
             } while (player.getScore() < gameOverScore); // basic lose conditions
             if (player.getScore() >= gameOverScore) {
-                gameOver();
+                gameOver(player);
             }
             do {
-                System.out.print("Would you like to play again? (Y / N): "+ConsoleColors.RESET);
+                System.out.print(ConsoleColors.YELLOW+"Would you like to play again? (Y / N): "+ConsoleColors.RESET);
                 input = scanner.nextLine().trim().toLowerCase(); // collects player choice
             } while (!input.equalsIgnoreCase("y") && !input.equalsIgnoreCase("n"));
             if (input.equalsIgnoreCase("n")) {
@@ -303,7 +318,8 @@ public class Main{
         System.out.println(ConsoleColors.YELLOW+"5. score"+ConsoleColors.RESET+": prints player score");
         System.out.println(ConsoleColors.YELLOW+"6. hiscores"+ConsoleColors.RESET+": displays the high scores");
         System.out.println(ConsoleColors.YELLOW+"7. help"+ConsoleColors.RESET+": prints this message");
-        System.out.println(ConsoleColors.YELLOW+"8. exit"+ConsoleColors.RESET+": exits the game");
+        System.out.println(ConsoleColors.YELLOW+"8. about"+ConsoleColors.RESET+": prints game info");
+        System.out.println(ConsoleColors.YELLOW+"9. exit"+ConsoleColors.RESET+": exits the game");
     }
     private static void printTitle(){
         // text generated via https://patorjk.com/software/taag. This is the "Slant" font
@@ -358,16 +374,42 @@ public class Main{
         }
     }
 
-    private static void gameOver() {
+    private static void gameOver(Player player) {
         // game over logic here
         // could contain some kind of narrative text about being dragged back into the shadows where the game starts but this time the candle extinguishes and the last
         // thing player 'hears' is a diabolical laugh from the disembodied voice
 
         // if we have time, maybe some logic to add player score to hiscores DB if applicable (really only relevant on beating game)
-
-        // placeholder logic here:
-        System.out.println(ConsoleColors.YELLOW+"YOU DEAD!");
+        try {
+            Thread.sleep(3000);
+            System.out.println();
+            System.out.println();
+            System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                    ": The shadows in the room deepen, their edges sharpening as they creep toward you. The air grows heavy, pressing down on your chest like a weight you can't shake. The faint hum that has haunted you\n" +
+                    "since you arrived now rises to a deafening roar, and the walls seem to close in, their surfaces rippling like liquid darkness.");
+            Thread.sleep(3000);
+            System.out.println();
+            System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+
+                    ": You try to move, but your body refuses to obey. The shadows coil around you, their touch cold - unyielding. The last thing you see is the faint flicker of a candle in the distance, its light\n" +
+                    "extinguished as the void consumes all. The last thing you hear is a low, hungry laugh - a sound that echoes in your mind long after everything else fades to black.");
+            Thread.sleep(3000);
+            System.out.println();
+            System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"\""+player.getUpperName()+"... I told you to be gone. Now you will stay... Forever.");
+            Thread.sleep(3000);
+            System.out.println();
+            System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                    ": As the darkness envelops you completely, you feel a presence - fast, ancient, and utterly alien. It reaches for you, not with hands but with something indescribable - something that twists\n" +
+                    "your very essence. You realize, too late, that death would have been a mercy. What comes next is not an end, but a beginning... An eternity as part of something far greater and far, far more\n" +
+                    "terrible than you could ever comprehend...");
+            System.out.println();
+            System.out.println();
+        } catch (InterruptedException ex) {
+            System.out.println("Game Over Method Error");
+        }
     }
+
+
+
 
 
     /// ---------------------------------------{ INLINE CLASSES AND ENUMS BEGIN HERE }--------------------------------------------------------
@@ -419,7 +461,6 @@ public class Main{
         // prints logs
         log.debug(ConsoleColors.PURPLE+"instantiating " + room.getName()+ConsoleColors.RESET);
         log.debug(ConsoleColors.PURPLE+"adding items to " + room.getName()+ConsoleColors.RESET);
-
         System.out.println();
 
         return room;

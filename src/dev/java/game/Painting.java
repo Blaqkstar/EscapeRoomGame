@@ -15,7 +15,7 @@ public class Painting extends Item {
         System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You straighten the painting on its hangar and a "+ConsoleColors.CYAN+"key"+ConsoleColors.RESET+" tumbles out from behind the frame!");
 
         // creates a new instance of Key
-        Item key = new Key("key", "a rusty old key", ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": The key appears to be quite old. The shine of the metal has dulled with oxidation.");
+        Item key = new Key("key", "a rusty old "+ConsoleColors.CYAN+"key"+ConsoleColors.RESET, ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": The key appears to be quite old. The shine of the metal has dulled with oxidation.");
         key.setObserved(true); // sets key as observed
         room.setItem(Main.Direction.north, key); // adds key to the north
     }
