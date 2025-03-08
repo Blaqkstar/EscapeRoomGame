@@ -318,15 +318,28 @@ public class Main{
         System.out.println(ConsoleColors.YELLOW+"9. exit"+ConsoleColors.RESET+": exits the game");
     }
     private static void printTitle(){
+        String ver = "v0.8.5"; // this is just a rough estimate based on what we've done so far vs what remains. Will say v1.0 when we hand in
+        // text generated via https://patorjk.com/software/taag. This is the "Invita" font
+        final String title = ConsoleColors.BLUE+"\n"+
+                "\n" +
+                "     _____)                   ______                        ______)         __    __)      \n" +
+                "   /        /)               (, /    )               /)    (, /  /)        (, )  /    , /) \n" +
+                "   )__   _ (/  ___ _  _        /---(   _     ____  _(/       /  (/   _        | /  _   //  \n" +
+                " /      (__/ )(_)_(/_/_)_   ) / ____)_(/_(_/(_)/ ((_(_    ) /   / )_(/_       |/ _(/_((/_  \n" +
+                "(_____)                    (_/ (        .-/              (_/                  |            \n" +
+                "                                       (_/                                                 \n"+
+                "                                                                                 "+ver+ConsoleColors.RESET;
+
         // text generated via https://patorjk.com/software/taag. This is the "Slant" font
-        final String title = ConsoleColors.RED+"\n" +
-                "    ___________ _________    ____  ______   ____  ____  ____  __  ___\n" +
-                "   / ____/ ___// ____/   |  / __ \\/ ____/  / __ \\/ __ \\/ __ \\/  |/  /\n" +
-                "  / __/  \\__ \\/ /   / /| | / /_/ / __/    / /_/ / / / / / / / /|_/ / \n" +
-                " / /___ ___/ / /___/ ___ |/ ____/ /___   / _, _/ /_/ / /_/ / /  / /  \n" +
-                "/_____//____/\\____/_/  |_/_/   /_____/  /_/ |_|\\____/\\____/_/  /_/   \n" +
-                "====================================================================\n"+ConsoleColors.RESET;
+//        final String oldTitle = ConsoleColors.RED+"\n" +
+//                "    ___________ _________    ____  ______   ____  ____  ____  __  ___\n" +
+//                "   / ____/ ___// ____/   |  / __ \\/ ____/  / __ \\/ __ \\/ __ \\/  |/  /\n" +
+//                "  / __/  \\__ \\/ /   / /| | / /_/ / __/    / /_/ / / / / / / / /|_/ / \n" +
+//                " / /___ ___/ / /___/ ___ |/ ____/ /___   / _, _/ /_/ / /_/ / /  / /  \n" +
+//                "/_____//____/\\____/_/  |_/_/   /_____/  /_/ |_|\\____/\\____/_/  /_/   \n" +
+//                "====================================================================\n"+ConsoleColors.RESET;
         System.out.println(title);
+        System.out.println();
     }
 
     //This is our example of the comparator. The difference between a comparator and comparable is that
