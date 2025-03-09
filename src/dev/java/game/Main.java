@@ -57,7 +57,7 @@ public class Main{
             /// player.getUpperName uses our function and unaryOperator examples
             System.out.println();
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
-            Thread.sleep(2000);
+            Thread.sleep(500);
             playIntro(); // plays narrative intro
             gameOverScore = setGameOverScore(room); // setsGameOverScore
 

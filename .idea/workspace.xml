@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Created playIntro() function to abstract all the narrative stuff between name entry and first cmd entry into something that can be commented out in a single line for continued dev purposes.">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_1_2025_6_09_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_1_2025_6_09_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_1_2025_7_14_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_1_2025_7_14_PM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Cleaned up some typos in output text&#10;Changed timing between intro narrative messages to give player more time to read before next one prints">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +136,7 @@
       <workItem from="1741411082479" duration="3442000" />
       <workItem from="1741458159030" duration="12511000" />
       <workItem from="1741474640677" duration="16683000" />
-      <workItem from="1741499112863" duration="469000" />
+      <workItem from="1741499112863" duration="1770000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -383,14 +378,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741495482070</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Cleaned up some typos in output text&#10;Changed timing between intro narrative messages to give player more time to read before next one prints">
+      <option name="closed" value="true" />
+      <created>1741499641458</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1741499641458</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Some further cleanup work to diegetic feedback to improve player experience and readability" />
     <MESSAGE value="Some further (I swear to god actual final update of the night) cleanup work to diegetic feedback to improve player experience and readability" />
     <MESSAGE value="Some additional narrative output spacing cleanup" />
     <MESSAGE value="Color-coded usable items in tutorial room descriptions" />
@@ -415,7 +417,8 @@
     <MESSAGE value="Fixed issue w/ gameOverScore not correctly setting" />
     <MESSAGE value="Created printAboutInfo() function&#10;Placed a TODO at the spot in our loops where the reset() method should occur&#10;Cleaned up some output text formatting" />
     <MESSAGE value="Created playIntro() function to abstract all the narrative stuff between name entry and first cmd entry into something that can be commented out in a single line for continued dev purposes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created playIntro() function to abstract all the narrative stuff between name entry and first cmd entry into something that can be commented out in a single line for continued dev purposes." />
+    <MESSAGE value="Cleaned up some typos in output text&#10;Changed timing between intro narrative messages to give player more time to read before next one prints" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up some typos in output text&#10;Changed timing between intro narrative messages to give player more time to read before next one prints" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
