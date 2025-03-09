@@ -355,23 +355,23 @@ public class Main{
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                 ": The voice's command reverberates through the astral plane, shaking the very fabric of your being. The dim candle flares violently, its light expanding into a blinding, otherworldly\n" +
                 "radiance. Shadows writhe and twist as if alive, stretching toward you like grasping tendrils. The air grows heavy, pressing against your soul with an almost tangible weight.");
-        Thread.sleep(2000);
+        Thread.sleep(6000);
         System.out.println();
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                 ": A low, resonant hum begins to build, vibrating through your essence. It grows louder and louder, until it feels as though the sound is coming from within you. The candle's light intensifies,\n" +
                 "its glow shifting from warm yellow to an eerie, pulsating blue. As the shadows around you fracture and splinter, you catch brief glimpses of impossible geometries - angles that shouldn't exist, colors\n" +
                 "that have no name.");
-        Thread.sleep(2000);
+        Thread.sleep(7000);
         System.out.println();
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                ": The voice echoes again, but this time it is not a alone - it is a chorus - a cacophony of whispers and blood-curdling screams, all in unison: \""+ConsoleColors.RED+"BEGONE!, BEGONE!, BEGONE!"+ConsoleColors.RESET+"\" The sound is\n" +
+                ": The voice echoes again, but this time it is not alone - it is a chorus - a cacophony of whispers and blood-curdling screams, all in unison: \""+ConsoleColors.RED+"BEGONE!, BEGONE!, BEGONE!"+ConsoleColors.RESET+"\" The sound is\n" +
                 "deafening, overwhelming, as if the very fabric of the astral plane is rejecting you.");
-        Thread.sleep(2000);
+        Thread.sleep(6000);
         System.out.println();
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                 ": The light from the candle explodes outward in a blinding wave, engulfing everything. For a moment, you are weightless, suspended in a void of pure sensation. Colors and sounds blur together,\n" +
                 "indistinguishable from one another. You feel as though you are being pulled apart and reassembled, your essence scattered across the cosmos and then drawn back together. And then... ");
-        Thread.sleep(2000);
+        Thread.sleep(6000);
         System.out.println();
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                 ": ... Silence...");
@@ -383,8 +383,8 @@ public class Main{
                 ": ... A single, faint pulse of light - like a heartbeat - and then...");
         Thread.sleep(3000);
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                ": ... Nothing...");
-        Thread.sleep(3000);
+                ": ... ");
+        Thread.sleep(4000);
         System.out.println();
         System.out.println();
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+

@@ -40,7 +40,7 @@ public class RoomSetup {
                         ": The painting is a haunting depiction of an old house, its weathered facade looming against a backdrop of stormy skies. The house is surrounded by neatly-trimmed hedges, their precise lines contrasting\n" +
                         "sharply with the chaos of the clouds above. The brushstrokes are meticulous, capturing every detail of the house's cracked windows and sagging porch, but there's something unnerving about the scene - \n" +
                         "something that makes your skin crawl.\n\n" +
-                        "The painting hangs askew, its frame think with dust and cobwebs, as though it hasn't been touched in decades. As you lean closer, you notice faint details you hadn't seen before: shadows in the windows\n" +
+                        "The painting hangs askew, its frame thick with dust and cobwebs, as though it hasn't been touched in decades. As you lean closer, you notice faint details you hadn't seen before: shadows in the windows\n" +
                         "and a figure standing in the doorway, barely visible but unmistakably there. The figure's face is obscured, but you can feel its heavy gaze on you.",
                 tutorialRoom);
 
