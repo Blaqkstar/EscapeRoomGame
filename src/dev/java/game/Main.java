@@ -46,7 +46,7 @@ public class Main{
             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": Shadows encapsulate your ephemeral form. In the distance, a dim candle flickers, suspended by some unknown force. " +
                     "As you approach, transfixed, a quiet voice beckons...");
             System.out.println();
-            Thread.sleep(300);
+            Thread.sleep(1300);
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'... Who are you?' ");
             System.out.print(ConsoleColors.YELLOW+"Enter your name: "+ConsoleColors.RESET);
             Thread.sleep(300);
@@ -57,18 +57,8 @@ public class Main{
             /// player.getUpperName uses our function and unaryOperator examples
             System.out.println();
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
-            Thread.sleep(300);
-            System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'BEGONE!'");
-            Thread.sleep(300);
-            System.out.println();
-            System.out.println();
-            System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                    ": You awaken, groggily, to the sound of rain tapping against a fogged window. The air is heavy, thick with the scent of damp wood and something faintly metallic,\n" +
-                    "like the tang of old blood. The room around you is dimly lit, its edges blurred by shadows that seem to shift when you aren't looking. A faint hum fills the air,\n" +
-                    "low and resonant, as though the walls themselves are alive. The rain outside falls in a steady rhythm, but the fog beyond the window moves unnaturally, swirling and\n" +
-                    "coiling like a living thing. The wallpaper peels at the edges, revealing patterns beneath that seem to shift when you look away. Your head throbs faintly, as though you've\n" +
-                    "forgotten something important. This place feels like a threshold - a space between worlds - and you can't tell if you're meant to escape or if something is waiting for you to\n" +
-                    "step further in...");
+            Thread.sleep(2000);
+            playIntro(); // plays narrative intro
             gameOverScore = setGameOverScore(room); // setsGameOverScore
 
             // this one loops until gameOverScore has been reached
@@ -357,6 +347,53 @@ public class Main{
         int playerScore = player.getScore();
         System.out.println();
         System.out.println(ConsoleColors.YELLOW+"Player Score"+ConsoleColors.RESET+": " + playerScore);
+    }
+    private static void playIntro() throws InterruptedException {
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'BEGONE!'");
+        Thread.sleep(2000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                ": The voice's command reverberates through the astral plane, shaking the very fabric of your being. The dim candle flares violently, its light expanding into a blinding, otherworldly\n" +
+                "radiance. Shadows writhe and twist as if alive, stretching toward you like grasping tendrils. The air grows heavy, pressing against your soul with an almost tangible weight.");
+        Thread.sleep(2000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                ": A low, resonant hum begins to build, vibrating through your essence. It grows louder and louder, until it feels as though the sound is coming from within you. The candle's light intensifies,\n" +
+                "its glow shifting from warm yellow to an eerie, pulsating blue. As the shadows around you fracture and splinter, you catch brief glimpses of impossible geometries - angles that shouldn't exist, colors\n" +
+                "that have no name.");
+        Thread.sleep(2000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                ": The voice echoes again, but this time it is not a alone - it is a chorus - a cacophony of whispers and blood-curdling screams, all in unison: \""+ConsoleColors.RED+"BEGONE!, BEGONE!, BEGONE!"+ConsoleColors.RESET+"\" The sound is\n" +
+                "deafening, overwhelming, as if the very fabric of the astral plane is rejecting you.");
+        Thread.sleep(2000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                ": The light from the candle explodes outward in a blinding wave, engulfing everything. For a moment, you are weightless, suspended in a void of pure sensation. Colors and sounds blur together,\n" +
+                "indistinguishable from one another. You feel as though you are being pulled apart and reassembled, your essence scattered across the cosmos and then drawn back together. And then... ");
+        Thread.sleep(2000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                ": ... Silence...");
+        Thread.sleep(3000);
+        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                ": ... Darkness...");
+        Thread.sleep(3000);
+        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                ": ... A single, faint pulse of light - like a heartbeat - and then...");
+        Thread.sleep(3000);
+        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                ": ... Nothing...");
+        Thread.sleep(3000);
+        System.out.println();
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                ": You awaken, groggily, to the sound of rain tapping against a fogged window. The air is heavy, thick with the scent of damp wood and something faintly metallic,\n" +
+                "like the tang of old blood. The room around you is dimly lit, its edges blurred by shadows that seem to shift when you aren't looking. A faint hum fills the air,\n" +
+                "low and resonant, as though the walls themselves are alive. The rain outside falls in a steady rhythm, but the fog beyond the window moves unnaturally, swirling and\n" +
+                "coiling like a living thing. The wallpaper peels at the edges, revealing patterns beneath that seem to shift when you look away. Your head throbs faintly, as though you've\n" +
+                "forgotten something important. This place feels like a threshold - a space between worlds - and you can't tell if you're meant to escape or if something is waiting for you to\n" +
+                "step further in...");
     }
 
     private static void printHiScores(ScoreDB scoreDB) throws Exception {
