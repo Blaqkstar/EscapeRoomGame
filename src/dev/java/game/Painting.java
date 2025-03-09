@@ -22,7 +22,7 @@ public class Painting extends Item {
                     "The painting hangs straight, thanks to you. As you lean closer, you notice faint details you hadn't seen before: shadows in the windows and a figure standing in the doorway, barely visible but unmistakably there.\n" +
                     "The figure's face is obscured, but you can feel its heavy gaze on you.");
             // creates a new instance of Key
-            Item key = new Key("key", "a rusty old "+ConsoleColors.CYAN+"key"+ConsoleColors.RESET, ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": The key appears to be quite old. The shine of the metal has dulled with oxidation.");
+            Item key = new Key("key", "a rusty old "+ConsoleColors.CYAN+"key"+ConsoleColors.RESET, ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": The key appears to be quite old. The shine of the metal has dulled with oxidation.", room);
             key.setObserved(true); // sets key as observed
             room.setItem(Main.Direction.north, key); // adds key to the north
             setUsed(true); // used!

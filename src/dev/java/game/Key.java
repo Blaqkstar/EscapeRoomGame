@@ -1,8 +1,12 @@
 package game;
 
 public class Key extends Item {
-    public Key(String name, String description, String inspection) {
+
+    private Room room;
+
+    public Key(String name, String description, String inspection,Room room) {
         super(name, description, inspection);
+        this.room = room;
     }
 
     @Override
