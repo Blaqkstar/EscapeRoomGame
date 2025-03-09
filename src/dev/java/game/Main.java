@@ -67,10 +67,10 @@ public class Main{
                     "coiling like a living thing. The wallpaper peels at the edges, revealing patterns beneath that seem to shift when you look away. Your head throbs faintly, as though you've\n" +
                     "forgotten something important. This place feels like a threshold - a space between worlds - and you can't tell if you're meant to escape or if something is waiting for you to\n" +
                     "step further in...");
+            gameOverScore = setGameOverScore(room); // setsGameOverScore
 
             // this one loops until gameOverScore has been reached
             do {
-                setGameOverScore(gameOverScore, room); // setsGameOverScore
                 System.out.println();
                 System.out.print(ConsoleColors.YELLOW+"Enter input (or 'help' for a list of available commands): "+ConsoleColors.RESET);
                 input = scanner.nextLine(); // user input
@@ -382,8 +382,8 @@ public class Main{
             }
         }
     }
-    private static void setGameOverScore(Integer gameOverScore, Room room) {
-        gameOverScore = room.getRoomPar() * 3;
+    private static Integer setGameOverScore(Room room) {
+        return room.getRoomPar() * 3;
     }
     private static void gameOver(Player player) {
         // game over logic here

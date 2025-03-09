@@ -29,7 +29,7 @@ public class RoomSetup {
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": There is a deadbolt that looks like it would accept an old key.", "door");
 
         tutorialRoom.SetExitDoor(exitDoor);
-        tutorialRoom.setRoomPar(5);
+        tutorialRoom.setRoomPar(5); // ROOM PAR
 
         Desk itemDesk = new Desk("desk",
                 "a "+ConsoleColors.CYAN+"desk"+ConsoleColors.RESET+" with a "+ConsoleColors.CYAN+"lamp"+ConsoleColors.RESET,
