@@ -136,6 +136,10 @@ public class Main{
                             // normalizes input to lowercase and trims whitespace
                             String itemName = parts[1].trim().toLowerCase();
                             log.debug(ConsoleColors.PURPLE+"Searching for item with key '" + itemName + "'"+ConsoleColors.RESET); // for debug purposes
+
+                            // Allow player to use transmorgrifer by calling it a "machine"
+                            if (itemName.equalsIgnoreCase("machine")) {itemName="transmorgrifier";}
+
                             // declare item that is being inspected
                             Item item = room.getItems().get(itemName);
                             ///  DEBUG MESSAGES BEGIN
@@ -215,6 +219,10 @@ public class Main{
                                             room = SetNewRoom(log, "The Conservatory");
                                         } else if (room.getName().equalsIgnoreCase("The Conservatory")) {
                                             room = SetNewRoom(log, "The Lab");
+
+                                            ///  TODO: Create the room that the Lab leads to
+                                        } else if (room.getName().equalsIgnoreCase("The Lab")) {
+                                            room = SetNewRoom(log, "Undefined");
                                         }
                                         System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
                                         System.out.println();
@@ -224,10 +232,11 @@ public class Main{
                                             // prints conservatory intro
                                             System.out.println(room.getIntroBlurb());
                                         } else if (room.getName().equalsIgnoreCase("The Lab")) {
-                                            // prints lab intro
-                                        }
-                                        else {
-                                            // prints final room intro
+                                            System.out.println(room.getIntroBlurb());
+
+                                            ///  TODO: Change condition to fourth room name
+                                        } else if (room.getName().equalsIgnoreCase("Undefined")) {
+                                            System.out.println(room.getIntroBlurb());
                                         }
                                     }
                                     else{
@@ -556,6 +565,9 @@ public class Main{
         }
         else if (roomName.equalsIgnoreCase("The Lab")) {
             room = roomSetup.MakeRoom_Lab();
+        }
+        else if (roomName.equalsIgnoreCase("Undefined")) {
+            room = roomSetup.MakeRoom_Undefined();
         }
         // Sets room name
         if (room != null) {
