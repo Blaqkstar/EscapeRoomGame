@@ -12,21 +12,42 @@ public class Transmorgrifier extends Item {
 
     private Item itemToUse;
 
-    private ArrayList<Item> itemsToTransmorgrify = new ArrayList<>();
+    private Boolean usable=false;
 
-    public void setItemsToTransmorgrify(ArrayList<Item> itemsToTransmorgrify) {
-            this.itemsToTransmorgrify = itemsToTransmorgrify;
-    }
+    private ArrayList<Item> itemsToTransmorgrify = new ArrayList<>();
 
     public Transmorgrifier(String name, String description, String inspection, Room room) {
         super(name, description, inspection);
         this.room = room;
     }
+
+    public ArrayList<Item> getItemsToTransmorgrify() {
+        return itemsToTransmorgrify;
+    }
+
+    public void setUsable(Boolean usable) {
+        this.usable = usable;
+    }
+
+    public Boolean isUsable() {
+        return usable;
+    }
+
+    public void setItemsToTransmorgrify(ArrayList<Item> itemsToTransmorgrify) {
+            this.itemsToTransmorgrify = itemsToTransmorgrify;
+    }
+
+
     @Override
     public void use() {
         setUsed(true); // used!
-        printMenu(itemsToTransmorgrify);
 
+        if (usable) {
+            printMenu(itemsToTransmorgrify);
+        }
+        else{
+            System.out.println("You don't even know where to begin using such a strange machine.");
+        }
     }
 
     public void Transmorgrify() {
@@ -37,16 +58,20 @@ public class Transmorgrifier extends Item {
     public void printMenu(List<Item> items)
     {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please choose the item you want to use in the machine");
+        System.out.println("Items to use in the transmorgrifier:");
         // prints a list of available items to use
         for (Item item : items) {
-            System.out.println(ConsoleColors.YELLOW+"AVAILABLE ITEM"+ConsoleColors.RESET + ": " + item.getName());
+            if (item.isObserved()) {
+                System.out.println(ConsoleColors.YELLOW + "AVAILABLE ITEM" + ConsoleColors.RESET + ": " + item.getName());
+            }
         }
         String input;
         boolean isValid = false;
         do {
             System.out.print("Please enter item name (or 'stop' to leave interaction menu): ");
             input = scanner.nextLine();
+            System.out.println();
+
             // checks for stop first to allow skipping of the code below if player wants to leave menu
             if (input.equalsIgnoreCase("stop")) {
                 break;
@@ -55,13 +80,15 @@ public class Transmorgrifier extends Item {
             final String finalInput = input; // copies input as a final String for use in Predicate Functional Interface
             // iterates through item list and compares to nearby available valid usable objects
             for (Item item : items) {
-                ValidItemPredicate<Item> nameTester = n -> n.getName().equals(finalInput); // tests that player input matches the name of the currently item in iteration
-                // if the item name matches the name of the current item in items list
-                if (nameTester.test(item))  {
-                    isValid = true;
-                    this.itemToUse = item;
-                    this.Transmorgrify();
-                    break;
+                if (item.isObserved()) {
+                    ValidItemPredicate<Item> nameTester = n -> n.getName().equals(finalInput); // tests that player input matches the name of the currently item in iteration
+                    // if the item name matches the name of the current item in items list
+                    if (nameTester.test(item)) {
+                        isValid = true;
+                        this.itemToUse = item;
+                        this.Transmorgrify();
+                        break;
+                    }
                 }
             }
             // if not a valid item

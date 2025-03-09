@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Cleaned up some typos in output text&#10;Changed timing between intro narrative messages to give player more time to read before next one prints">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Came up with a better placeholder name, pending group feedback.&#10;Added placeholder for about command&#10;Updated title font&#10;Some additional text output cleanup">
+      <change afterPath="$PROJECT_DIR$/src/dev/java/game/BallOfLead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/java/game/DeckOfCards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Paper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/java/game/QuickMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Thermometer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/java/game/VatOfLiquid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Flask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Flask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Key.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Notebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Notebook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Painting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Painting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Sandwich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Transmorgrifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Transmorgrifier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,29 +67,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ScoreDB.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/resources/derbyclient.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Debug",
+    "Application.QuickMain.executor": "Debug",
+    "Application.ScoreDB.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/resources/derbyclient.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Personal\School\NWTC\2025\2025 Spring Semester\8W1\Java 2\Group Project\EscapeRoomGame\Logging" />
@@ -135,8 +149,7 @@
       <workItem from="1741392002382" duration="1632000" />
       <workItem from="1741411082479" duration="3442000" />
       <workItem from="1741458159030" duration="12511000" />
-      <workItem from="1741474640677" duration="16683000" />
-      <workItem from="1741499112863" duration="1770000" />
+      <workItem from="1741474640677" duration="5086000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -354,45 +367,17 @@
       <option name="project" value="LOCAL" />
       <updated>1741476294225</updated>
     </task>
-    <task id="LOCAL-00028" summary="Fixed issue w/ gameOverScore not correctly setting">
-      <option name="closed" value="true" />
-      <created>1741481443948</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1741481443948</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Created printAboutInfo() function&#10;Placed a TODO at the spot in our loops where the reset() method should occur&#10;Cleaned up some output text formatting">
-      <option name="closed" value="true" />
-      <created>1741492741052</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1741492741052</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Created playIntro() function to abstract all the narrative stuff between name entry and first cmd entry into something that can be commented out in a single line for continued dev purposes.">
-      <option name="closed" value="true" />
-      <created>1741495482070</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1741495482070</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Cleaned up some typos in output text&#10;Changed timing between intro narrative messages to give player more time to read before next one prints">
-      <option name="closed" value="true" />
-      <created>1741499641458</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1741499641458</updated>
-    </task>
-    <option name="localTasksCounter" value="32" />
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Worked on finishing the system for our assignment 5 by implementing a Comparable and Comparator in the high scores system." />
+    <MESSAGE value="Got my changes finished which implement the RoomSetup Class to streamline room creation. Hope you guys like it!" />
+    <MESSAGE value="Fixed Transmorgrifier interaction menu loop to behave as expected.&#10;Modified Room.describeItemsToPlayer to include a grammar formatter&#10;Cleaned up perceptual feedback output generally. Debug output is now purple, and any time the player receives some kind of perceptual feedback, it is now preceded by an 'PERCEPTION' indicator. &#10;Grouped up debug messages and created space between them and perceptual feedback&#10;Changed 'highscores' command to 'hiscores' to reduce player keystroke requirements&#10;Changed MakeRoom method naming conventions to allow for greater uniformity in our method calls (syntax is now MakeRoom_RoomName)" />
+    <MESSAGE value="Some further cleanup work to diegetic feedback to improve player experience and readability" />
     <MESSAGE value="Some further (I swear to god actual final update of the night) cleanup work to diegetic feedback to improve player experience and readability" />
     <MESSAGE value="Some additional narrative output spacing cleanup" />
     <MESSAGE value="Color-coded usable items in tutorial room descriptions" />
@@ -414,11 +399,7 @@
     <MESSAGE value="updated TODO list to account for work I just did" />
     <MESSAGE value="Abstracted logic to set game over score into its own method, setGameOverScore()" />
     <MESSAGE value="Came up with a better placeholder name, pending group feedback.&#10;Added placeholder for about command&#10;Updated title font&#10;Some additional text output cleanup" />
-    <MESSAGE value="Fixed issue w/ gameOverScore not correctly setting" />
-    <MESSAGE value="Created printAboutInfo() function&#10;Placed a TODO at the spot in our loops where the reset() method should occur&#10;Cleaned up some output text formatting" />
-    <MESSAGE value="Created playIntro() function to abstract all the narrative stuff between name entry and first cmd entry into something that can be commented out in a single line for continued dev purposes." />
-    <MESSAGE value="Cleaned up some typos in output text&#10;Changed timing between intro narrative messages to give player more time to read before next one prints" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up some typos in output text&#10;Changed timing between intro narrative messages to give player more time to read before next one prints" />
+    <option name="LAST_COMMIT_MESSAGE" value="Came up with a better placeholder name, pending group feedback.&#10;Added placeholder for about command&#10;Updated title font&#10;Some additional text output cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -427,6 +408,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dev/java/game/Main.java</url>
+          <line>204</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

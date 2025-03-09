@@ -102,7 +102,7 @@ public class RoomSetup {
 
         Phonograph itemPhonograph = new Phonograph("phonograph",
                 "an antique "+ConsoleColors.CYAN+"phonograph"+ConsoleColors.RESET+", its brass horn tarnished and its surface etched with strange, angular symbols",
-                "The phonograph is a relic of another era, its brass horn tarnished to a dull green and its wooden base cracked with age. The surface is etched with strange, angular symbols that make your\n" +
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The phonograph is a relic of another era, its brass horn tarnished to a dull green and its wooden base cracked with age. The surface is etched with strange, angular symbols that make your\n" +
                         "stomach churn when looking directly at them. A record rests on the turntable, its label faded and illegible, except for a single word scrawled in jagged handwriting: \"Ascension.\"");
 
         // adds items to their respective walls
@@ -129,60 +129,76 @@ public class RoomSetup {
 
         Room labRoom = new Room();
 
-        List<Item> items = new ArrayList<Item>();
+        ArrayList<Item> items = new ArrayList<Item>();
 
-        Sandwich sandwich = new Sandwich("sandwich","a moldy ham sandwich on rye bread",
-                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The sandwich doesn't smell like something you'd eat.");
-
-        items.add(sandwich);
-
-        Transmorgrifier transmorgrifier = new Transmorgrifier("transmorgrifier","An odd machine with a large vat for converting objects",
-                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You notice how odd looking this machine is",labRoom);
-
-
-
-        exitDoor = new Door(labRoom,1, "a heavy metal door etched withs strange runes",
-                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": There is a mechanism that looks like it would accept a key.", "door");
-
-        labRoom.SetExitDoor(exitDoor);
-
-        // create items here
-
-        ///  ITEMS WE NEED
-        // transmorgrifier: quest item
-
-
+        labRoom.setRoomPar(10);
 
         // machine attached to a wall. Player doesn't know how to use it (diegetically) until they inspect() on the scientist's research notebook
         // if they try to use transmorg before they read the notebook, they'll fall in and GAME OVER
         // when player uses transmorg, game prompts them to pick an item from the list of observed items we're already tracking
+        Transmorgrifier transmorgrifier = new Transmorgrifier("transmorgrifier","An odd " +ConsoleColors.CYAN+"machine"+ConsoleColors.RESET +" with many knobs, levers, and buttons",
+                ConsoleColors.GREEN+ "PERCEPTION: " +ConsoleColors.RESET+": You notice how odd looking this machine is",labRoom);
+
+
+        Sandwich sandwich = new Sandwich("sandwich","a moldy ham " +ConsoleColors.CYAN+"sandwich"+ConsoleColors.RESET +" on rye bread",
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The sandwich doesn't smell like something you'd eat.", transmorgrifier);
+
+        exitDoor = new Door(labRoom,1, "a heavy metal " +ConsoleColors.CYAN+"door"+ConsoleColors.RESET +" etched withs strange runes",
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": There is a mechanism that looks like it would accept a key.", "door");
+
+        labRoom.SetExitDoor(exitDoor);
 
         // scientist's research notebook
-        Notebook notebook  = new Notebook("notebook", "a scientist's research notebook", "The notebook documents experiments conducted by" +
-                "a scientist experimenting with alchemy. Through the incoherent ramblings about 'proving wrongs his ghastly skeptics', you learn how to use his cunning machine.");
+        Notebook notebook  = new Notebook("notebook", "a scientist's research " +ConsoleColors.CYAN+"notebook"+ConsoleColors.RESET,
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The notebook documents experiments conducted by" +
+                " a scientist experimenting with alchemy. You perceive that you could use it to learn his ways.", transmorgrifier);
 
+        Flask flask = new Flask("flask","a clear crystal " +ConsoleColors.CYAN+"flask"+ConsoleColors.RESET,
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You notice the flask has a tangy smell to it", transmorgrifier, labRoom);
 
         // deck of cards
+        DeckOfCards deckOfCards = new DeckOfCards("cards","a deck of " +ConsoleColors.CYAN+"cards"+ConsoleColors.RESET,
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": Stained with signs of use, the deck may have been used by lab workers to pass the time.", transmorgrifier, labRoom);
 
         // vat of strange liquid
+        VatOfLiquid vatOfLiquid = new VatOfLiquid("vat", "a " +ConsoleColors.CYAN+"vat"+ConsoleColors.RESET +" of green of liquid",
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The liquid bubbles ominously and smells awful.");
 
-        // sandwich (consumer functional interface: placing the sandwich into transmorg causes liquid in vat to bubble)
-        // placing sandwich into transmorg gives player the flask
-        // placing flask into transmorg gives player chunk of lead ore
+        Thermometer thermometer = new Thermometer("thermometer", "a dusty " +ConsoleColors.CYAN+"thermometer"+ConsoleColors.RESET +" sitting in a cup",
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The thermometer's red mercury reads at a level much higher than the \n"+
+                "temperature of the room. It must be broken.", transmorgrifier);
 
-        // Organic Chemistry textbook
-
-        // bunson burner
+        items.add(sandwich);
+        items.add(flask);
+        items.add(deckOfCards);
+        items.add(thermometer);
+        transmorgrifier.setItemsToTransmorgrify(items);
 
         // add items using room.setItem here
         labRoom.setItem(Main.Direction.west, exitDoor);
         labRoom.setItem(Main.Direction.north, notebook );
+        labRoom.setItem(Main.Direction.north, sandwich);
+        labRoom.setItem(Main.Direction.east, deckOfCards);
+        labRoom.setItem(Main.Direction.south, vatOfLiquid);
+        labRoom.setItem(Main.Direction.east, thermometer);
+        labRoom.setItem(Main.Direction.north, flask);
         labRoom.setItem(Main.Direction.south, transmorgrifier);
 
+        labRoom.setIntroBlurb(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                ": Dust hangs in the air as you enter the lab. Scientific instruments that have clearly gone unused for a long time are haphazardly arranged on tables. \n"+
+                "You hear the sound of bubbling liquid and the whirring of machines. You are careful as you step slowly forward, making sure to dodge the broken glass \n"+
+                "and strange chemicals littered around the floor. The walls are lined with mold that stretches up to the ceiling. The room feels wicked and dangerous, as if a \n"+
+                "single wrong step could cause you to join the decay.");
 
         AssignRandomItems(labRoom);
 
         return labRoom;
+    }
+
+    public Room MakeRoom_Undefined() {
+        Room room = new Room();
+
+        return room;
     }
 
     // Method for randomly assigning prebuilt items to walls
