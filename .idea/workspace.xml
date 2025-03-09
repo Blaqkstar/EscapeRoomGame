@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Came up with a better placeholder name, pending group feedback.&#10;Added placeholder for about command&#10;Updated title font&#10;Some additional text output cleanup">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed issue w/ gameOverScore not correctly setting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Application.ScoreDB.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -136,7 +135,7 @@
       <workItem from="1741392002382" duration="1632000" />
       <workItem from="1741411082479" duration="3442000" />
       <workItem from="1741458159030" duration="12511000" />
-      <workItem from="1741474640677" duration="5086000" />
+      <workItem from="1741474640677" duration="13786000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -354,14 +353,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741476294225</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Fixed issue w/ gameOverScore not correctly setting">
+      <option name="closed" value="true" />
+      <created>1741481443948</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1741481443948</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Worked on finishing the system for our assignment 5 by implementing a Comparable and Comparator in the high scores system." />
     <MESSAGE value="Got my changes finished which implement the RoomSetup Class to streamline room creation. Hope you guys like it!" />
     <MESSAGE value="Fixed Transmorgrifier interaction menu loop to behave as expected.&#10;Modified Room.describeItemsToPlayer to include a grammar formatter&#10;Cleaned up perceptual feedback output generally. Debug output is now purple, and any time the player receives some kind of perceptual feedback, it is now preceded by an 'PERCEPTION' indicator. &#10;Grouped up debug messages and created space between them and perceptual feedback&#10;Changed 'highscores' command to 'hiscores' to reduce player keystroke requirements&#10;Changed MakeRoom method naming conventions to allow for greater uniformity in our method calls (syntax is now MakeRoom_RoomName)" />
     <MESSAGE value="Some further cleanup work to diegetic feedback to improve player experience and readability" />
@@ -386,7 +392,8 @@
     <MESSAGE value="updated TODO list to account for work I just did" />
     <MESSAGE value="Abstracted logic to set game over score into its own method, setGameOverScore()" />
     <MESSAGE value="Came up with a better placeholder name, pending group feedback.&#10;Added placeholder for about command&#10;Updated title font&#10;Some additional text output cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Came up with a better placeholder name, pending group feedback.&#10;Added placeholder for about command&#10;Updated title font&#10;Some additional text output cleanup" />
+    <MESSAGE value="Fixed issue w/ gameOverScore not correctly setting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue w/ gameOverScore not correctly setting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

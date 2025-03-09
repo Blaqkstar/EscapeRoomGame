@@ -40,6 +40,8 @@ public class Main{
 
         // this loops until the user types 'exit'
         do {
+            /// TODO: method call to reset game state should go here
+
             // Welcome message
             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": Shadows encapsulate your ephemeral form. In the distance, a dim candle flickers, suspended by some unknown force. " +
                     "As you approach, transfixed, a quiet voice beckons...");
@@ -276,7 +278,7 @@ public class Main{
                 }
                 /// ------------------------------------------------{ ABOUT ACTION HANDLER }--------------------
                 else if (input.equalsIgnoreCase("about")) {
-                    // run the printAbout() cmd
+                    printAboutInfo();
                 }
                 else if (!input.equalsIgnoreCase("exit")) { // handles incorrect commands
                     System.out.println("Unknown input. Please enter 'look <direction>' or 'exit'.");
@@ -382,15 +384,73 @@ public class Main{
             }
         }
     }
+    private static void printAboutInfo() {
+        String aboutHeader =
+                        ConsoleColors.BLUE+"==========================================\n"+ConsoleColors.RESET+
+                        "            ABOUT THIS GAME\n" +
+                                ConsoleColors.BLUE+"=========================================="+ConsoleColors.RESET;
+        String aboutInfo = "Game Title: Echoes Beyond The Veil\n" +
+                "Version: 1.0\n" +
+                "Release Date: March 12 2025";
+        String descHeader =
+                ConsoleColors.BLUE+"==========================================\n"+ConsoleColors.RESET +
+                        "            GAME DESCRIPTION\n" +
+                        ConsoleColors.BLUE+"=========================================="+ConsoleColors.RESET;
+        String descInfo =
+                "Echoes Beyond The Veil is a text-based adventure game with strong cosmic horror / noir overtones. The player takes on the role of an unwitting explorer who finds themselves\n" +
+                        "in a strange space between worlds with limited time to escape untold eldritch horrors and a fate worse than death.\n" +
+                        "With every decision, you shape the story and dive deeper into this strange, liminal, place.";
+        String devTeamHeader =
+                ConsoleColors.BLUE+"==========================================\n"+ConsoleColors.RESET +
+                        "            DEVELOPMENT TEAM\n" +
+                        ConsoleColors.BLUE+"=========================================="+ConsoleColors.RESET;
+        String devInfo =
+                "Developed collaboratively by:\n" +
+                        "- Joey Diestler\n" +
+                        "- Kyle Favorite\n" +
+                        "- Sean Lane\n" +
+                        "- Hunter Pasterski";
+        String thanksInfoHeader =
+                ConsoleColors.BLUE+"==========================================\n"+ConsoleColors.RESET +
+                        "            SPECIAL THANKS\n" +
+                        ConsoleColors.BLUE+"=========================================="+ConsoleColors.RESET;
+        String thanksInfo =
+                "- Our families, for putting up with late nights and cranky mornings.\n" +
+                        "- StackOverflow, for always sending us on a wild goose chase for an obscure forum post with the wrong answer.\n" +
+                        "- Coffee, for doing what coffee do.\n" +
+                        "- Josh, for helping us all nail down our understanding of interfaces.";
+        String legalHeader =
+                ConsoleColors.BLUE+"==========================================\n"+ConsoleColors.RESET +
+                        "            LEGAL INFORMATION\n" +
+                        ConsoleColors.BLUE+"=========================================="+ConsoleColors.RESET;
+        String legalInfo =
+                "© 2025 Echoes Beyond The Veil. All rights reserved.\n" +
+                        "This game is a work of fiction. Any resemblance to actual events or persons, living or dead, is purely coincidental.";
+        String thanksMessage =
+                ConsoleColors.BLUE+"==========================================\n"+ConsoleColors.RESET +
+                        "            THANK YOU FOR PLAYING!\n" +
+                        ConsoleColors.BLUE+"=========================================="+ConsoleColors.RESET;
+        System.out.println(aboutHeader);
+        System.out.println(aboutInfo);
+        System.out.println();
+        System.out.println(descHeader);
+        System.out.println(descInfo);
+        System.out.println();
+        System.out.println(devTeamHeader);
+        System.out.println(devInfo);
+        System.out.println();
+        System.out.println(thanksInfoHeader);
+        System.out.println(thanksInfo);
+        System.out.println();
+        System.out.println(legalHeader);
+        System.out.println(legalInfo);
+        System.out.println();
+        System.out.println(thanksMessage);
+    }
     private static Integer setGameOverScore(Room room) {
         return room.getRoomPar() * 3;
     }
     private static void gameOver(Player player) {
-        // game over logic here
-        // could contain some kind of narrative text about being dragged back into the shadows where the game starts but this time the candle extinguishes and the last
-        // thing player 'hears' is a diabolical laugh from the disembodied voice
-
-        // if we have time, maybe some logic to add player score to hiscores DB if applicable (really only relevant on beating game)
         try {
             Thread.sleep(3000);
             System.out.println();
