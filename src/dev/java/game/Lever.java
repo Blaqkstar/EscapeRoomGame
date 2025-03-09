@@ -18,15 +18,15 @@ public class Lever extends Item{
     @Override
     public void use() {
         if (positionUp) {
+            setInspection(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": "+getPositionalIndicator() + " It's currently in the " + getPosition() + " position.");
+            System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You pull down on the lever. It settles into place with a heavy clunk.");
             // swaps position
             setPosition("down"); // lever is now down
-            setInspection(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": "+getPositionalIndicator() + " It's currently in the " + getPosition() + " position.");
-            System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You pull " + position + " on the lever. It settles into place with a heavy clunk.");
         } else {
+            setInspection(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": "+getPositionalIndicator() + " It's currently in the " + getPosition() + " position.");
+            System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You push the lever back up. It clicks into place with a sharp, metallic sound.");
             // swaps position
             setPosition("up"); // lever is now up
-            setInspection(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": "+getPositionalIndicator() + " It's currently in the " + getPosition() + " position.");
-            System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You push the lever back " + position +". It clicks into place with a sharp, metallic sound.");
         }
     }
     public String getPosition() {return position;}

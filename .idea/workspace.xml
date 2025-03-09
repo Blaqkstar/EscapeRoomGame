@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Came up with a better placeholder name, pending group feedback.&#10;Added placeholder for about command&#10;Updated title font&#10;Some additional text output cleanup">
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/BallOfLead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/DeckOfCards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Paper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/QuickMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/Thermometer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/VatOfLiquid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Flask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Flask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Key.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Notebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Notebook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Painting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Painting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Sandwich.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Transmorgrifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Transmorgrifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Lever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Lever.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +58,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Application.QuickMain.executor": "Debug",
     "Application.ScoreDB.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -408,11 +397,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dev/java/game/Main.java</url>
-          <line>204</line>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

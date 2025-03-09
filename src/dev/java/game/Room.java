@@ -110,10 +110,13 @@ public class Room implements LeverObserver {
         Lever leverC = (Lever) items.get("lever3");
 
         if (checkLevers(leverA, leverB, leverC)) {
-            System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": The puzzle is solved! The door unlocks.");
+            System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET +
+                    ": The walls seem to ripple, their surfaces alive with faint, pulsating light. A heavy clunk ecoes from the door, followed by the sound of grinding gears and the hiss of releasing pressure. THe door creaks open, revealing a dimly-lit\n" +
+                    "corridor beyond. THe air from the corridor carries a faint, acrid smell - chemicals, ozone, and something else, metallic and sharp. The room's ambient hum fades, leaving only the sound of your heartbeat and the faint, almost\n" +
+                    "imperceptible whisper of something waiting.");
             exitDoor.unlockDoor();
         } else {
-            System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": The puzzle is not yet solved.");
+            System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": A distant, rhythmic thud begins, like the heartbeat of some colossal machine. The sound fades, leaving the room in a silence that feels almost expectant.");
         }
     }
 }
