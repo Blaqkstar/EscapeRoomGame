@@ -423,3 +423,5 @@
 03-10-2025 02:19:51.567 DEBUG [game.Main] - [0;35mplayer selected use[0m
 03-10-2025 02:19:51.567 DEBUG [game.Main] - [0;35mSearching for item with key 'lever3'[0m
 03-10-2025 02:19:51.567 DEBUG [game.Main] - [0;35mFound item 'lever3'[0m
+03-10-2025 02:22:50.018 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 02:22:50.021 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
