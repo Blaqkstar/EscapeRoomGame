@@ -40,5 +40,6 @@ public class BackgroundMusic implements Runnable{
         } catch (InterruptedException ex) {
             System.err.println("Music playback interrupted: " + ex.getMessage());
         }
+
     }
 }
