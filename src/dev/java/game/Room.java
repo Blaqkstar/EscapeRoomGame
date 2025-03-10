@@ -174,67 +174,67 @@ public class Room implements LeverObserver {
     }
     ///  DIALOG FOR FINAL ROOM
     public static void FinalRoomDialog() throws InterruptedException {
-        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"DEEP EVIL LAUGHTER");
+        System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": A deep, resonant chuckle fills the air, echoing as if emanating from everywhere and nowhere at once.");
         Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"Did you really think you would be able to just leave?! HA!");
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+
+                ": 'Did you truly believe you could leave so easily? How... amusing.'");
         Thread.sleep(2000);
-        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"I must confess myself impressed, you greatly exceeded my expectations.");
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+
+                ": 'I must confess, you've surprised me. Your resilience is... remarkable. But now, the true test begins. Can you withstand what lies ahead? Or will you crumble beneath the weight of your own past?'");
         Thread.sleep(2000);
-        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"But now, will you withstand this final challenge?!");
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": The voice grows colder, sharper, each word cutting like a blade.");
+        Thread.sleep(1500);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+
+                ": 'You think you've outrun your sins? NO! They walk beside you, step for step, shadow for shadow. The friend you abandoned, the lover you failed, the child who died in your arms... they are not gone.\n" +
+                "They are here, in the cracks of your mind. In the marrow of your bones.'");
         Thread.sleep(2000);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'You have walked far, yet your past does not trail behind you—it walks beside you, step for step.");
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +
+                ": 'You've changed, you say? NO! You've merely buried the truth beneath layers of time and dust. But now, it rises. And when you stand before the weight of your own sins, will you face them? Or will you\n" +
+                "break beneath them?'");
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": The voice grows shifts, becoming almost melodic, like a dirge.");
         Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'The voices of the fallen still call your name.");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'The friend you abandoned, the lover you failed, the child who never saw the dawn… they are not gone.");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'They are here. In the cracks of your mind, in the marrow of your bones.");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'You have changed? No. You have only buried the truth beneath time and dust.");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'But now, it rises.");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'When you stand before the weight of your own sins, will you face them… or will you break beneath them?'");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"Only one of these four doors will lead to freedom, here is your clue, so listen closely!");
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +
+                ": 'Four doors stand before you. Only one leads to freedom. The others? They lead to truths you may not wish to face. Listen closely, for this is your clue...'");
         Thread.sleep(1000);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'Four paths stretch where silence calls,");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'One to rise and three to fall.");
-        Thread.sleep(1500);
         System.out.println();
-
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'North still echoes cries of pain,");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'The friend you left, their plea in vain.");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'South drips red where guilt once bled,");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'A lover’s words, the last you said.");
-        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": The voice grows recites, each line dripping with menace.");
         System.out.println();
-
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'East holds ghosts with hollow tongues,");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'A debt unpaid, but not yet done.");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'West is weighed with bones you bear,");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'someone's fate you did not spare.");
-        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +
+                ":\n'Four paths stretch where silence calls,\n" +
+                "One to rise and three to fall.\n\n" +
+                "North echoes cries of pain,\n" +
+                "A friend's plea, left in vain.\n\n" +
+                "South drips red with guilt's refrain,\n" +
+                "A lover's words, your final stain.\n\n" +
+                "East holds ghosts with hollow tongues,\n" +
+                "A debt unpaid, yet still unsung.\n\n" +
+                "West is weighted with bones you bear,\n" +
+                "A fate you chose, yet did not spare.\n\n" +
+                "One road mends, though scars remain,\n" +
+                "The rest will break you once again.\n" +
+                "Mark the cost of what you've done,\n" +
+                "Choose with care, or be undone.'");
+        Thread.sleep(2000);
         System.out.println();
-
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'One road mends, though scars remain,");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'The rest will break you once again.");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'Mark the cost of what you've done,");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'Choose with care, or be undone.");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "Understand this player, this is my pact with you, you either solve the riddle and choose the right door,");
-        Thread.sleep(1500);
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "or you'll be stuck entering doors like this for eternity! And no rush, I'm not going anywhere! HAHAHA!");
+        System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": The voice returns to its cold, mocking tone.");
+        Thread.sleep(1000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +
+                ": 'Solve the riddle, choose wisely, and perhaps you'll find your way out. But be warned: failure is not an end. It is an eternity. And I? I have all the time in the world.'");
+        Thread.sleep(1000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": A deep, resonant laugh echoes, fading into silence.");
     }
 }
 
