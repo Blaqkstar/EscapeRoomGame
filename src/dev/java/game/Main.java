@@ -61,7 +61,7 @@ public class Main{
             System.out.println();
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
             Thread.sleep(500);
-            playIntro(); /// plays narrative intro
+            //playIntro(); /// plays narrative intro
             gameOverScore = setGameOverScore(room); // setsGameOverScore
 
             // this one loops until gameOverScore has been reached
@@ -157,7 +157,7 @@ public class Main{
                             // Check if player has observed the item yet
                             if (item != null && item.isObserved()) {
                                 ///  ------ BEGIN NEW ITEM HANDLING
-                                // key item handling
+                                /// -------------------------------------------------------------{ KEY USE HANDLER } ----------------------------------------
                                 if (item instanceof Key) {
                                     if (room.GetExitDoor().isObserved()) {
                                         item.use(); // uses the key
@@ -166,15 +166,16 @@ public class Main{
                                         System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": You have not seen anything to unlock");
                                     }
                                 }
-                                // lever handling
+                                /// -------------------------------------------------------------{ LEVER USE HANDLER } ----------------------------------------
                                 else if (item instanceof Lever) {
                                     item.use(); // toggles lever
                                 }
                                 // handles other items
+                                /// -------------------------------------------------------------{ DEFAULT USE HANDLER } ----------------------------------------
                                 else {
                                     item.use(); // default use behavior
                                 }
-                                player.setScore(player.getScore() + 1); // successful action increments player score by one
+                                player.setScore(player.getScore() + 1); // successful action of any kind increments player score by one
                                 ///  ------ END NEW ITEM HANDLING
                             /*if (item.getName().equals("key")) {
 

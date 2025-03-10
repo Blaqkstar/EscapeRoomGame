@@ -110,13 +110,39 @@ public class Room implements LeverObserver {
         Lever leverC = (Lever) items.get("lever3");
 
         if (checkLevers(leverA, leverB, leverC)) {
-            System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET +
-                    ": The walls seem to ripple, their surfaces alive with faint, pulsating light. A heavy clunk ecoes from the door, followed by the sound of grinding gears and the hiss of releasing pressure. THe door creaks open, revealing a dimly-lit\n" +
-                    "corridor beyond. THe air from the corridor carries a faint, acrid smell - chemicals, ozone, and something else, metallic and sharp. The room's ambient hum fades, leaving only the sound of your heartbeat and the faint, almost\n" +
-                    "imperceptible whisper of something waiting.");
-            exitDoor.unlockDoor();
+            if (lever.getPosition().equalsIgnoreCase("up")) {
+                System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You push the lever back up. It clicks into place with a sharp, metallic sound.");
+            } else {
+                System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You pull down on the lever. It settles into place with a heavy clunk.");
+                try {
+                    Thread.sleep(1300);
+                } catch (InterruptedException e) {
+                    System.out.println("LOOK AT ROOM.onLeverStateChange() PLEASE");
+                }
+                System.out.println();
+                System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET +
+                        ": ...");
+                try {
+                    Thread.sleep(1300);
+                } catch (InterruptedException e) {
+                    System.out.println("LOOK AT ROOM.onLeverStateChange() PLEASE");
+                }
+                System.out.println();
+                System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET +
+                        ": The walls seem to ripple, their surfaces alive with faint, pulsating light. A heavy CLUNK echoes from the "+ConsoleColors.CYAN+"door"+ConsoleColors.RESET+", followed by the sound of grinding gears and the hiss of releasing pressure. The door creaks \n" +
+                        "open, revealing a dimly-lit corridor beyond. The air from the corridor carries a faint, acrid smell - chemicals, ozone, and something else, metallic and sharp. The room's ambient hum fades, leaving only the sound of your heartbeat and the\n" +
+                        "faint, almost imperceptible whisper of something waiting.");
+                System.out.println();
+                exitDoor.unlockDoor();
+            }
         } else {
-            System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": A distant, rhythmic thud begins, like the heartbeat of some colossal machine. The sound fades, leaving the room in a silence that feels almost expectant.");
+            if (lever.getPosition().equalsIgnoreCase("up")) {
+                System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You push the lever back up. It clicks into place with a sharp, metallic sound.");
+            } else {
+                System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You pull down on the lever. It settles into place with a heavy clunk.");
+                System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": A distant, rhythmic thud begins, like the heartbeat of some colossal machine. The sound fades, leaving the room in a silence that feels almost expectant.");
+            }
+
         }
     }
 }

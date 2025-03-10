@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Some more narrative text output cleanup&#10;Implemented background music">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="removed audio debug message from game start. figured issue out.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/BackgroundMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/BackgroundMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Lever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Lever.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Telescope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Telescope.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -440,14 +443,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741586599075</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="removed audio debug message from game start. figured issue out.">
+      <option name="closed" value="true" />
+      <created>1741587506936</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1741587506936</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="clarified color coding methodology in ConsoleColors class" />
     <MESSAGE value="Added option to speedrun the first room for purposes of developing lab" />
     <MESSAGE value="Implemented some very slightly different item handling to ref. item instead of name where relevant&#10;Implemented Observer pattern to compare relative toggled status of Conservatory levers&#10;Fixed usable item coloring of key in Tutorial Room&#10;Added some additional debug feedback for item usage info" />
     <MESSAGE value="Fixed spacing of debug messages relative to diegetic feedback" />
@@ -472,7 +482,8 @@
     <MESSAGE value="Cleaned up diary and corpse text output" />
     <MESSAGE value="Lots more narrative output cleanup" />
     <MESSAGE value="Some more narrative text output cleanup&#10;Implemented background music" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some more narrative text output cleanup&#10;Implemented background music" />
+    <MESSAGE value="removed audio debug message from game start. figured issue out." />
+    <option name="LAST_COMMIT_MESSAGE" value="removed audio debug message from game start. figured issue out." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

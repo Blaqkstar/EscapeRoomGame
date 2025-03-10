@@ -6,3 +6,420 @@
 03-10-2025 01:12:08.004 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
 03-10-2025 01:15:02.850 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
 03-10-2025 01:15:02.853 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 01:18:48.804 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 01:18:49.428 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 01:20:08.874 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:20:08.874 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:20:14.631 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:20:14.631 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:20:14.631 DEBUG [game.Main] - [0;35mSearching for item with key 'painting'[0m
+03-10-2025 01:20:14.631 DEBUG [game.Main] - [0;35mFound item 'painting'[0m
+03-10-2025 01:20:16.719 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:20:16.719 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:20:16.719 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-10-2025 01:20:16.719 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-10-2025 01:20:18.181 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:20:18.181 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:20:21.682 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:20:21.682 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-10-2025 01:20:24.258 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:20:24.258 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:20:24.258 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-10-2025 01:20:24.258 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-10-2025 01:20:25.671 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:20:25.671 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-10-2025 01:20:25.671 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 01:20:25.671 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 01:20:43.335 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:20:43.335 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:20:48.642 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:20:48.642 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:20:53.629 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:20:53.629 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:21:16.177 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:21:16.178 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:21:20.674 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:21:20.676 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:23:35.955 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:23:35.957 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:24:03.082 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:24:03.082 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:24:10.902 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:24:10.903 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:24:35.167 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:24:35.167 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:24:35.168 DEBUG [game.Main] - [0;35mSearching for item with key 'telescope'[0m
+03-10-2025 01:24:35.168 DEBUG [game.Main] - [0;35mFound item 'telescope'[0m
+03-10-2025 01:26:37.685 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:26:37.685 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:26:37.686 DEBUG [game.Main] - [0;35mSearching for item with key 'telescope'[0m
+03-10-2025 01:26:37.686 DEBUG [game.Main] - [0;35mFound item 'telescope'[0m
+03-10-2025 01:26:56.383 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 01:26:56.385 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 01:28:19.816 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:28:19.817 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:28:22.532 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:28:22.532 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:28:22.532 DEBUG [game.Main] - [0;35mSearching for item with key 'painting'[0m
+03-10-2025 01:28:22.532 DEBUG [game.Main] - [0;35mFound item 'painting'[0m
+03-10-2025 01:28:25.930 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:28:25.930 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:28:27.587 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:28:27.587 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:28:27.587 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-10-2025 01:28:27.587 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-10-2025 01:28:29.280 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:28:29.280 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-10-2025 01:28:29.282 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 01:28:29.282 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 01:28:40.159 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:28:40.159 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:28:45.500 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:28:45.500 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:28:57.730 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:28:57.730 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:29:01.067 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:29:01.069 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:29:03.961 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:29:03.961 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:29:06.052 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:29:06.053 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:29:06.053 DEBUG [game.Main] - [0;35mSearching for item with key 'orrery'[0m
+03-10-2025 01:29:06.053 DEBUG [game.Main] - [0;35mFound item 'orrery'[0m
+03-10-2025 01:30:34.720 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:30:34.720 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:30:38.567 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:30:38.567 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:30:58.696 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:30:58.696 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:30:58.696 DEBUG [game.Main] - [0;35mSearching for item with key 'telescope'[0m
+03-10-2025 01:30:58.696 DEBUG [game.Main] - [0;35mFound item 'telescope'[0m
+03-10-2025 01:31:22.384 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:31:22.384 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:31:26.484 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:31:26.484 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:31:47.580 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:31:47.580 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:31:47.580 DEBUG [game.Main] - [0;35mSearching for item with key 'lantern'[0m
+03-10-2025 01:31:47.581 DEBUG [game.Main] - [0;35mFound item 'lantern'[0m
+03-10-2025 01:31:57.419 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:31:57.419 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:31:57.421 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 01:31:57.421 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 01:32:07.195 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:32:07.195 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:32:21.753 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:32:21.753 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:33:31.573 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 01:33:31.576 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 01:34:45.744 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:34:45.745 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 01:34:45.745 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 01:34:50.808 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:34:50.808 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:34:54.157 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:34:54.157 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:34:55.456 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:34:55.456 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:35:04.788 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:35:04.788 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:35:09.356 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:35:09.356 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:35:09.356 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 01:35:09.356 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 01:35:13.069 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:35:13.071 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:35:22.239 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:35:22.239 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:35:29.704 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:35:29.704 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:35:29.704 DEBUG [game.Main] - [0;35mSearching for item with key 'lever3'[0m
+03-10-2025 01:35:29.704 DEBUG [game.Main] - [0;35mFound item 'lever3'[0m
+03-10-2025 01:39:56.766 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 01:39:56.768 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 01:41:29.534 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:41:29.536 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 01:41:29.536 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 01:41:40.679 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:41:40.679 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:41:42.277 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:41:42.277 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:41:55.974 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:41:55.974 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:41:55.974 DEBUG [game.Main] - [0;35mSearching for item with key 'lver2'[0m
+03-10-2025 01:41:55.974 DEBUG [game.Main] - [0;35mItem not found in room's items map[0m
+03-10-2025 01:41:59.137 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:41:59.137 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:41:59.137 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 01:41:59.137 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 01:42:33.764 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 01:42:33.766 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 01:42:48.035 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 01:42:48.038 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 01:42:56.824 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:42:56.825 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 01:42:56.825 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 01:42:59.577 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:42:59.577 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:43:01.016 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:43:01.016 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:43:04.370 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:43:04.371 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:43:04.371 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 01:43:04.371 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 01:44:31.238 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:44:39.259 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:44:46.609 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 01:45:11.065 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 01:49:07.668 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 01:49:07.671 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 01:49:17.068 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:49:17.069 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 01:49:17.069 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 01:49:20.388 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:49:20.388 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:49:21.690 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:49:21.690 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:49:23.763 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:49:23.763 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:49:23.763 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 01:49:23.763 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 01:49:40.324 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:49:40.324 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:49:43.915 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:49:43.915 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:49:43.917 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 01:49:43.917 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 01:50:15.801 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 01:50:15.804 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 01:50:24.035 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:50:24.035 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 01:50:24.035 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 01:50:26.601 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:50:26.601 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:50:28.467 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:50:28.467 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:50:32.554 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:50:32.554 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:50:35.314 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:50:35.314 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:50:35.314 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 01:50:35.314 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 01:50:44.356 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:50:44.356 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:56:11.370 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 01:56:11.372 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 01:56:19.984 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:56:19.986 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 01:56:19.986 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 01:56:23.900 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:56:23.900 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:56:25.370 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:56:25.370 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:56:28.491 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:56:28.491 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:56:28.493 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 01:56:28.493 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 01:56:58.366 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:56:58.366 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 01:57:02.597 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:57:02.597 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:57:02.597 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 01:57:02.598 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 01:58:03.459 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 01:58:03.463 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 01:58:12.392 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:58:12.394 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 01:58:12.395 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 01:58:16.577 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:58:16.577 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:58:18.255 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:58:18.255 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 01:58:21.580 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:58:21.580 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:58:21.580 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 01:58:21.582 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 01:59:13.506 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 01:59:19.978 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 01:59:22.122 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 01:59:26.716 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 02:00:49.233 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 02:00:49.236 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 02:00:56.136 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:00:56.136 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 02:00:56.136 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 02:00:59.276 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:00:59.276 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:01:00.864 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:01:00.864 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:01:04.371 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:01:04.371 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 02:01:08.035 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:01:08.035 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:01:08.035 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 02:01:08.036 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 02:02:26.020 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 02:02:26.023 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 02:02:36.441 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:02:36.441 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 02:02:36.443 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 02:02:39.353 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:02:39.355 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:02:40.999 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:02:40.999 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:02:43.408 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:02:43.409 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:02:43.409 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 02:02:43.409 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 02:02:54.045 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:02:54.045 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:02:54.045 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 02:02:54.045 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 02:03:03.724 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:03:03.724 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:03:03.725 DEBUG [game.Main] - [0;35mSearching for item with key 'lever1'[0m
+03-10-2025 02:03:03.725 DEBUG [game.Main] - [0;35mFound item 'lever1'[0m
+03-10-2025 02:04:09.286 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 02:04:09.289 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 02:04:18.349 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:04:18.350 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 02:04:18.351 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 02:04:20.607 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:04:20.607 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:04:22.483 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:04:22.483 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:04:25.094 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:04:25.094 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:04:25.094 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 02:04:25.094 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 02:04:28.083 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:04:28.083 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:04:28.083 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 02:04:28.083 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 02:04:35.538 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:04:35.538 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:04:35.538 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 02:04:35.538 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 02:04:37.299 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:04:37.299 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:04:37.299 DEBUG [game.Main] - [0;35mSearching for item with key 'lever3'[0m
+03-10-2025 02:04:37.299 DEBUG [game.Main] - [0;35mFound item 'lever3'[0m
+03-10-2025 02:04:58.348 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:04:58.348 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:04:58.348 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 02:04:58.348 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 02:05:01.417 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:05:01.417 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:05:01.417 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 02:05:01.417 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 02:06:07.443 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 02:06:07.446 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 02:06:16.445 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:06:16.447 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 02:06:16.448 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 02:06:22.462 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:06:22.462 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:06:23.988 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:06:23.988 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:06:28.017 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:06:28.017 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 02:06:31.085 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:06:32.053 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:06:32.054 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 02:06:32.054 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 02:06:37.924 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:06:37.924 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 02:06:41.280 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:06:41.281 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:06:41.281 DEBUG [game.Main] - [0;35mSearching for item with key 'lever3'[0m
+03-10-2025 02:06:41.281 DEBUG [game.Main] - [0;35mFound item 'lever3'[0m
+03-10-2025 02:12:33.693 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 02:12:33.697 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 02:12:52.846 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:12:52.847 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 02:12:52.847 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 02:12:56.512 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:12:56.512 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:12:57.962 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:12:57.962 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:13:00.678 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:13:00.678 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:13:00.679 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 02:13:00.679 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 02:13:02.779 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:13:02.779 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:13:02.779 DEBUG [game.Main] - [0;35mSearching for item with key 'lever3'[0m
+03-10-2025 02:13:02.779 DEBUG [game.Main] - [0;35mFound item 'lever3'[0m
+03-10-2025 02:14:28.253 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 02:14:28.256 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 02:14:36.728 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:14:36.729 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 02:14:36.729 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 02:14:43.840 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:14:43.840 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:14:45.197 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:14:45.198 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:14:48.534 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:14:48.534 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:14:48.534 DEBUG [game.Main] - [0;35mSearching for item with key 'lever1'[0m
+03-10-2025 02:14:48.534 DEBUG [game.Main] - [0;35mFound item 'lever1'[0m
+03-10-2025 02:14:54.677 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:14:54.677 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:14:54.677 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 02:14:54.679 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 02:15:03.219 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:15:03.219 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:15:03.220 DEBUG [game.Main] - [0;35mSearching for item with key 'lever3'[0m
+03-10-2025 02:15:03.220 DEBUG [game.Main] - [0;35mFound item 'lever3'[0m
+03-10-2025 02:15:09.060 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:15:09.060 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:15:09.060 DEBUG [game.Main] - [0;35mSearching for item with key 'lever3'[0m
+03-10-2025 02:15:09.060 DEBUG [game.Main] - [0;35mFound item 'lever3'[0m
+03-10-2025 02:15:12.007 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:15:12.007 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:15:12.007 DEBUG [game.Main] - [0;35mSearching for item with key 'lever1'[0m
+03-10-2025 02:15:12.007 DEBUG [game.Main] - [0;35mFound item 'lever1'[0m
+03-10-2025 02:15:16.899 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:15:16.899 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 02:15:20.175 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:15:20.175 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 02:15:22.996 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:15:22.996 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 02:15:26.278 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:15:26.278 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:15:26.278 DEBUG [game.Main] - [0;35mSearching for item with key 'lever3'[0m
+03-10-2025 02:15:26.278 DEBUG [game.Main] - [0;35mFound item 'lever3'[0m
+03-10-2025 02:18:13.118 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 02:18:13.121 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 02:18:23.549 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:18:23.550 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 02:18:23.550 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 02:18:25.932 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:18:25.932 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:18:28.156 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:18:28.156 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:18:31.472 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:18:31.472 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:18:31.473 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 02:18:31.473 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 02:18:34.166 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:18:34.166 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:18:34.166 DEBUG [game.Main] - [0;35mSearching for item with key 'lever3'[0m
+03-10-2025 02:18:34.166 DEBUG [game.Main] - [0;35mFound item 'lever3'[0m
+03-10-2025 02:19:37.827 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 02:19:37.830 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 02:19:44.721 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:19:44.722 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-10-2025 02:19:44.723 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-10-2025 02:19:47.098 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:19:47.099 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:19:48.438 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:19:48.438 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:19:49.935 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:19:49.935 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:19:49.935 DEBUG [game.Main] - [0;35mSearching for item with key 'lever2'[0m
+03-10-2025 02:19:49.936 DEBUG [game.Main] - [0;35mFound item 'lever2'[0m
+03-10-2025 02:19:51.567 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:19:51.567 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:19:51.567 DEBUG [game.Main] - [0;35mSearching for item with key 'lever3'[0m
+03-10-2025 02:19:51.567 DEBUG [game.Main] - [0;35mFound item 'lever3'[0m
