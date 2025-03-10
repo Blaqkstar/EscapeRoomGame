@@ -342,3 +342,5 @@
 03-09-2025 21:06:58.495 DEBUG [game.Main] - [0;35mplayer selected look[0m
 03-09-2025 21:07:00.233 DEBUG [game.Main] - [0;35muser input received[0m
 03-09-2025 21:07:00.233 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 21:09:31.881 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-09-2025 21:09:31.883 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
