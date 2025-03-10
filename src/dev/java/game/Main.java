@@ -53,6 +53,9 @@ public class Main{
 
             // this one loops until gameOverScore has been reached
             do {
+                if (room.getName().equalsIgnoreCase("Consequences")) {
+                    gameOverSuccess(); /// PLAYER WINS!
+                }
                 System.out.println();
                 System.out.print(ConsoleColors.YELLOW+"Enter input (or 'help' for a list of available commands): "+ConsoleColors.RESET);
                 input = scanner.nextLine(); // user input
@@ -207,10 +210,11 @@ public class Main{
                                             room = SetNewRoom(log, "The Conservatory");
                                         } else if (room.getName().equalsIgnoreCase("The Conservatory")) {
                                             room = SetNewRoom(log, "The Lab");
-
                                             ///  TODO: Create the room that the Lab leads to
                                         } else if (room.getName().equalsIgnoreCase("The Lab")) {
                                             room = SetNewRoom(log, "Undefined");
+                                        } else if (room.getName().equalsIgnoreCase("Undefined")) {
+                                            room = SetNewRoom(log, "Consequences");
                                         }
                                         System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
                                         System.out.println();
@@ -234,6 +238,8 @@ public class Main{
                                 else{
                                     System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
                                 }
+                            } else {
+                                System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You can't open that.");
                             }
                             player.setScore(player.getScore() + 1); // successful action increments player score by one
                         } catch(Exception e){
@@ -250,6 +256,10 @@ public class Main{
                     room = SetNewRoom(log, "The Conservatory"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                     System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
                     System.out.println();
+                    System.out.println(room.getIntroBlurb());
+                }
+                else if (input.equalsIgnoreCase("speedrun to ending")){
+                    room = SetNewRoom(log, "Consequences"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                     System.out.println(room.getIntroBlurb());
                 }
                 /// ------------------------------------------------{ HELP ACTION HANDLER }--------------------
@@ -279,7 +289,8 @@ public class Main{
                 input = scanner.nextLine().trim().toLowerCase(); // collects player choice
             } while (!input.equalsIgnoreCase("y") && !input.equalsIgnoreCase("n"));
             if (input.equalsIgnoreCase("n")) {
-                input = "exit"; // exits game
+                System.exit(0);
+                //input = "exit"; // exits game
             }
             System.out.println();
             System.out.println();
@@ -514,7 +525,76 @@ public class Main{
             System.out.println("Game Over Method Error");
         }
     }
+    private static void gameOverSuccess() {
 
+        try {
+            System.out.println();
+            ///  the revelation
+            System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                    ": As you step forward, a voice echoes through the void - a voice that is both familiar and alien, as if it is speaking from within your own mind.");
+            Thread.sleep(3000);
+            System.out.println();
+            //  voice speaks
+            System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
+                    ": 'You have done well to escape the labyrinth but tell me, wanderer... Do you truly believe you have won?'");
+            Thread.sleep(3000);
+            System.out.println();
+            System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
+                    ": 'You are already dead. The rooms you traversed were not a prison of flesh and stone, but a purgatory of your own making. A final test of your will, your resilience, your desire to escape.'");
+            Thread.sleep(3000);
+            System.out.println();
+            System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                    ": The words sink into your mind like stones dropped into a still pond. Memories flood back - fragmented, disjointed. A car crash. A hospital bed. The sound of a flatlining heart monitor.\n" +
+                    "The realization hits you like a tidal wave - you never escaped death. You have been here all along.");
+            Thread.sleep(3000);
+            System.out.println();
+            ///  the choice
+            System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                    ": The voice speaks again, its tone shifting from cold indifference to something almost... pitying.");
+            Thread.sleep(3000);
+            System.out.println();
+            System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
+                    ": 'You have two choices, wanderer. You may step forward into the void and cease to exist - no pain, no fear, no memory. Or you may turn back and face the darkness that awaits. A darkness that\n" +
+                    "will consume you, body and soul, for all eternity.'");
+            Thread.sleep(3000);
+            System.out.println();
+            // player choice
+            Scanner scanner = new Scanner(System.in);
+            String input = "UNDEFINED FINAL CHOICE";
+            do {
+                // prompt for decision
+                System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
+                        ": 'Make your choice.'");
+                System.out.println();
+                System.out.println(ConsoleColors.BLUE+"OPTION 1"+ConsoleColors.RESET+": Step forward into the void\n" +
+                        ConsoleColors.BLUE+"OPTION 2"+ConsoleColors.RESET+": Turn back and face the darkness");
+                System.out.println();
+                System.out.print(ConsoleColors.YELLOW+"Enter input (1 or 2): "+ConsoleColors.RESET);
+                // take in user input
+                input = scanner.nextLine().toLowerCase().trim();
+            } while (!input.equalsIgnoreCase("1") && !input.equalsIgnoreCase("2"));
+            ///  the consequences
+            // different ending depending on final choice
+            if (input.equalsIgnoreCase("1")) {
+                System.out.println("Consequence 1");
+            } else if (input.equalsIgnoreCase("2")) {
+                System.out.println("Consequence 2");
+            }
+            // play again prompt
+            do {
+                System.out.print(ConsoleColors.YELLOW+"Would you like to play again? (Y / N): "+ConsoleColors.RESET);
+                input = scanner.nextLine().trim().toLowerCase(); // collects player choice
+            } while (!input.equalsIgnoreCase("y") && !input.equalsIgnoreCase("n"));
+            if (input.equalsIgnoreCase("n")) {
+                System.exit(0);
+                //input = "exit"; // exits game
+            } else {
+                // need to restart the game... so we actually might need that method after all
+            }
+        } catch (InterruptedException ex) {
+            System.out.println("Game Over (Success) Method Error");
+        }
+    }
 
 
 
@@ -558,6 +638,9 @@ public class Main{
         }
         else if (roomName.equalsIgnoreCase("Undefined")) {
             room = roomSetup.MakeRoom_Undefined();
+        }
+        else if (roomName.equalsIgnoreCase("Consequences")) {
+            room = roomSetup.MakeRoom_Consequences();
         }
         // Sets room name
         if (room != null) {
