@@ -190,11 +190,11 @@ public class Room implements LeverObserver {
         Thread.sleep(1500);
         System.out.println();
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+
-                ": 'You think you've outrun your sins? NO! They walk beside you, step for step, shadow for shadow. The friend you abandoned, the lover you failed, the child who died in your arms... they are not gone.\n" +
+                ": 'You think you've outrun your sins? "+ConsoleColors.RED+"NO!"+ConsoleColors.RESET+" They walk beside you, step for step, shadow for shadow. The friend you abandoned, the lover you failed, the child who died in your arms... they are not gone.\n" +
                 "They are here, in the cracks of your mind. In the marrow of your bones.'");
         Thread.sleep(2000);
         System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +
-                ": 'You've changed, you say? NO! You've merely buried the truth beneath layers of time and dust. But now, it rises. And when you stand before the weight of your own sins, will you face them? Or will you\n" +
+                ": 'You've changed, you say? "+ConsoleColors.RED+"NO!"+ConsoleColors.RESET+" You've merely buried the truth beneath layers of time and dust. But now, it rises. And when you stand before the weight of your own sins, will you face them? Or will you\n" +
                 "break beneath them?'");
         System.out.println();
         System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+

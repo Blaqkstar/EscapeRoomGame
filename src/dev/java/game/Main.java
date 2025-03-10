@@ -603,12 +603,17 @@ public class Main{
                 Thread.sleep(3000);
                 System.out.println();
                 System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                        ": You take a step forward, and the void envelops you. There is no pain, no fear - only a profound sense of peace. The darkness closes in and, for a moment, you feel as though you are floating.\n\n" +
-                        "Then, nothing.\n\n" +
-                        "No thoughts.\n\n" +
-                        "No memories\n\n" +
-                        "No self\n\n" +
-                        "You are gone.");
+                        ": You take a step forward, and the void envelops you. There is no pain, no fear - only a profound sense of peace. The darkness closes in and, for a moment, you feel as though you are floating.");
+                Thread.sleep(3000);
+                System.out.println("Then, nothing.");
+                Thread.sleep(1500);
+                System.out.println("No thoughts.");
+                Thread.sleep(1500);
+                System.out.println("No memories");
+                Thread.sleep(1500);
+                System.out.println("No self");
+                Thread.sleep(1500);
+                System.out.println("You are gone.");
                 Thread.sleep(3000);
                 System.out.println();
             } else if (input.equalsIgnoreCase("2")) {
@@ -631,6 +636,7 @@ public class Main{
             System.out.println();
             System.out.println(ConsoleColors.BLUE+ "IN THE END, THERE IS NO ESCAPE. ONLY THE CHOICES WE MAKE, AND THE CONSEQUENCES WE MUST ENDURE."+ConsoleColors.RESET);
             Thread.sleep(8000);
+            /// TODO: NEED TO GET THE PLAY AGAIN PROMPT WORKING AGAIN!
             // play again prompt
             do {
                 System.out.print(ConsoleColors.YELLOW+"Would you like to play again? (Y / N): "+ConsoleColors.RESET);

@@ -1162,3 +1162,101 @@
 03-10-2025 18:10:28.349 DEBUG [game.Main] - [0;35mplayer selected open[0m
 03-10-2025 18:10:28.349 DEBUG [game.Main] - [0;35minstantiating Final Room[0m
 03-10-2025 18:10:28.349 DEBUG [game.Main] - [0;35madding items to Final Room[0m
+03-10-2025 18:16:58.383 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 18:16:58.386 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 18:17:07.180 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:17:07.181 DEBUG [game.Main] - [0;35minstantiating The Lab[0m
+03-10-2025 18:17:07.181 DEBUG [game.Main] - [0;35madding items to The Lab[0m
+03-10-2025 18:17:10.055 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:17:10.055 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:17:11.266 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:17:11.266 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:17:12.463 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:17:12.463 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:17:13.754 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:17:13.754 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:17:17.264 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:17:17.265 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 18:17:17.265 DEBUG [game.Main] - [0;35mSearching for item with key 'notebook'[0m
+03-10-2025 18:17:17.265 DEBUG [game.Main] - [0;35mFound item 'notebook'[0m
+03-10-2025 18:17:19.318 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:17:19.318 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 18:17:19.318 DEBUG [game.Main] - [0;35mSearching for item with key 'machine'[0m
+03-10-2025 18:17:19.318 DEBUG [game.Main] - [0;35mFound item 'transmorgrifier'[0m
+03-10-2025 18:17:23.465 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:17:23.466 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 18:17:23.466 DEBUG [game.Main] - [0;35mSearching for item with key 'machine'[0m
+03-10-2025 18:17:23.466 DEBUG [game.Main] - [0;35mFound item 'transmorgrifier'[0m
+03-10-2025 18:17:27.370 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:17:27.370 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 18:17:27.370 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-10-2025 18:17:27.370 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-10-2025 18:17:30.657 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:17:30.659 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-10-2025 18:17:30.659 DEBUG [game.Main] - [0;35minstantiating Final Room[0m
+03-10-2025 18:17:30.659 DEBUG [game.Main] - [0;35madding items to Final Room[0m
+03-10-2025 18:19:36.237 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:19:36.237 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:19:38.086 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:19:38.086 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:20:01.398 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:20:01.398 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:20:03.495 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:20:03.495 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 18:20:03.495 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-10-2025 18:20:03.495 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-10-2025 18:20:05.911 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:20:05.912 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-10-2025 18:20:05.912 DEBUG [game.Main] - [0;35minstantiating Consequences[0m
+03-10-2025 18:20:05.912 DEBUG [game.Main] - [0;35madding items to Consequences[0m
+03-10-2025 18:26:39.755 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 18:26:39.758 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 18:26:50.666 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:26:50.666 DEBUG [game.Main] - [0;35minstantiating The Lab[0m
+03-10-2025 18:26:50.666 DEBUG [game.Main] - [0;35madding items to The Lab[0m
+03-10-2025 18:26:52.591 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:26:52.591 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:26:54.119 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:26:54.119 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:26:55.245 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:26:55.245 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:26:59.009 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:26:59.009 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:27:01.843 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:27:01.843 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 18:27:01.843 DEBUG [game.Main] - [0;35mSearching for item with key 'notebook'[0m
+03-10-2025 18:27:01.843 DEBUG [game.Main] - [0;35mFound item 'notebook'[0m
+03-10-2025 18:27:05.919 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:27:05.919 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 18:27:05.919 DEBUG [game.Main] - [0;35mSearching for item with key 'machine'[0m
+03-10-2025 18:27:05.919 DEBUG [game.Main] - [0;35mFound item 'transmorgrifier'[0m
+03-10-2025 18:27:08.215 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:27:08.215 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 18:27:08.215 DEBUG [game.Main] - [0;35mSearching for item with key 'machine'[0m
+03-10-2025 18:27:08.215 DEBUG [game.Main] - [0;35mFound item 'transmorgrifier'[0m
+03-10-2025 18:27:10.703 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:27:10.703 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 18:27:10.703 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-10-2025 18:27:10.704 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-10-2025 18:27:27.569 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:27:27.571 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-10-2025 18:27:27.571 DEBUG [game.Main] - [0;35minstantiating Final Room[0m
+03-10-2025 18:27:27.571 DEBUG [game.Main] - [0;35madding items to Final Room[0m
+03-10-2025 18:27:51.134 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:27:51.134 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:27:53.067 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:27:53.067 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:27:54.960 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:27:54.960 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:27:56.264 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:27:56.264 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:27:58.242 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:27:58.242 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 18:27:59.955 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:27:59.957 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 18:27:59.957 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-10-2025 18:27:59.957 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-10-2025 18:28:01.874 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 18:28:01.874 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-10-2025 18:28:01.874 DEBUG [game.Main] - [0;35minstantiating Consequences[0m
+03-10-2025 18:28:01.874 DEBUG [game.Main] - [0;35madding items to Consequences[0m
