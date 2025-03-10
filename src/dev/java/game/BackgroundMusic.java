@@ -13,7 +13,7 @@ public class BackgroundMusic implements Runnable{
     public void run() {
         try {
             File audioFile = new File(filePath);
-            System.out.println("Audio filepath: " + audioFile.getAbsolutePath());
+            //System.out.println("Audio filepath: " + audioFile.getAbsolutePath());
             // ensures file exists
             if (!audioFile.exists()) {
                 System.err.println("Audio file not found!");
