@@ -115,19 +115,16 @@ public class Main{
                             }
                             else{
                                 System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
-                                System.out.println();
                             }
                             player.setScore(player.getScore() + 1); // successful action increments player score by one
                         }
                         // Handles input of unknown item
                         catch (Exception e) {
                             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
-                            System.out.println();
                         }
                     }
                     else {
                         System.out.println("Invalid input. Please use the format 'inspect <item>'."); // handles formatting issues
-                        System.out.println();
                     }
                 }
                 /// ------------------------------------------------{ USE ACTION HANDLER }--------------------
@@ -143,9 +140,9 @@ public class Main{
                             // Allow player to use transmorgrifer by calling it a "machine"
                             if (itemName.equalsIgnoreCase("machine")) {itemName="transmorgrifier";}
 
+                            ///  DEBUG MESSAGES BEGIN
                             // declare item that is being inspected
                             Item item = room.getItems().get(itemName);
-                            ///  DEBUG MESSAGES BEGIN
                             if (item != null) {
                                 log.debug(ConsoleColors.PURPLE+"Found item '" + item.getName() + "'"+ConsoleColors.RESET);
                                 System.out.println();
@@ -361,6 +358,7 @@ public class Main{
         System.out.println();
         System.out.println(ConsoleColors.YELLOW+"Player Score"+ConsoleColors.RESET+": " + playerScore);
     }
+
     private static void playIntro() throws InterruptedException {
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'BEGONE!'");
         Thread.sleep(2000);
