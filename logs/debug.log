@@ -173,3 +173,129 @@
 03-09-2025 13:28:20.259 DEBUG [game.Main] - [0;35mplayer selected open[0m
 03-09-2025 13:28:20.260 DEBUG [game.Main] - [0;35minstantiating The Lab[0m
 03-09-2025 13:28:20.260 DEBUG [game.Main] - [0;35madding items to The Lab[0m
+03-09-2025 19:30:37.827 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-09-2025 19:30:37.830 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-09-2025 19:30:53.644 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-09-2025 19:30:53.648 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-09-2025 19:30:59.285 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 19:30:59.286 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 19:31:00.604 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 19:31:00.604 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 19:31:03.584 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 19:31:03.584 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-09-2025 19:31:03.584 DEBUG [game.Main] - [0;35mSearching for item with key 'painting'[0m
+03-09-2025 19:31:03.586 DEBUG [game.Main] - [0;35mFound item 'painting'[0m
+03-09-2025 19:31:07.322 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 19:31:07.324 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-09-2025 19:31:07.324 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-09-2025 19:31:07.324 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-09-2025 19:31:09.194 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 19:31:09.194 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-09-2025 19:31:09.196 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-09-2025 19:31:09.196 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-09-2025 19:32:10.653 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 19:32:10.653 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 19:32:13.554 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 19:32:13.554 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 19:32:15.346 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 19:32:15.346 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 19:32:17.566 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 19:32:17.566 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:12:49.412 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-09-2025 20:12:49.415 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-09-2025 20:13:00.418 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:13:00.418 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:13:01.891 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:13:01.891 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:13:03.649 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:13:03.649 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-09-2025 20:13:03.649 DEBUG [game.Main] - [0;35mSearching for item with key 'painting'[0m
+03-09-2025 20:13:03.651 DEBUG [game.Main] - [0;35mFound item 'painting'[0m
+03-09-2025 20:13:04.853 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:13:04.853 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-09-2025 20:13:04.853 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-09-2025 20:13:04.855 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-09-2025 20:13:06.146 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:13:06.146 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-09-2025 20:13:06.148 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-09-2025 20:13:06.148 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-09-2025 20:13:09.039 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:13:09.039 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:14:18.106 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-09-2025 20:14:18.109 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-09-2025 20:14:22.657 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:14:22.658 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:14:24.097 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:14:24.098 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:14:26.431 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:14:26.431 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-09-2025 20:14:26.431 DEBUG [game.Main] - [0;35mSearching for item with key 'painting'[0m
+03-09-2025 20:14:26.431 DEBUG [game.Main] - [0;35mFound item 'painting'[0m
+03-09-2025 20:14:27.582 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:14:27.582 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-09-2025 20:14:27.582 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-09-2025 20:14:27.582 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-09-2025 20:14:29.965 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:14:29.965 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-09-2025 20:14:29.965 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-09-2025 20:14:29.966 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-09-2025 20:14:32.472 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:14:32.472 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:14:38.646 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:14:38.647 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:14:41.469 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:14:41.469 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:14:43.263 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:14:43.263 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:21:46.494 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-09-2025 20:21:46.497 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-09-2025 20:21:52.465 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:21:52.466 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:21:53.709 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:21:53.709 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:21:55.102 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:21:55.102 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-09-2025 20:21:55.102 DEBUG [game.Main] - [0;35mSearching for item with key 'painting'[0m
+03-09-2025 20:21:55.102 DEBUG [game.Main] - [0;35mFound item 'painting'[0m
+03-09-2025 20:21:56.182 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:21:56.182 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-09-2025 20:21:56.182 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-09-2025 20:21:56.183 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-09-2025 20:21:57.585 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:21:57.587 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-09-2025 20:21:57.587 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-09-2025 20:21:57.588 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-09-2025 20:22:00.812 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:22:00.812 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:22:02.281 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:22:02.281 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:22:03.937 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:22:03.937 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:22:05.267 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:22:05.491 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:22:31.852 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-09-2025 20:22:31.855 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-09-2025 20:22:36.953 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:22:36.953 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:22:38.172 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:22:38.173 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:22:40.097 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:22:40.097 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-09-2025 20:22:40.099 DEBUG [game.Main] - [0;35mSearching for item with key 'painting'[0m
+03-09-2025 20:22:40.099 DEBUG [game.Main] - [0;35mFound item 'painting'[0m
+03-09-2025 20:22:41.444 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:22:41.444 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-09-2025 20:22:41.444 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-09-2025 20:22:41.446 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-09-2025 20:22:42.993 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:22:42.993 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-09-2025 20:22:42.993 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-09-2025 20:22:42.994 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-09-2025 20:22:45.070 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:22:45.070 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:22:46.777 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:22:46.777 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:22:50.919 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:22:50.919 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-09-2025 20:22:54.159 DEBUG [game.Main] - [0;35muser input received[0m
+03-09-2025 20:22:54.160 DEBUG [game.Main] - [0;35mplayer selected look[0m
