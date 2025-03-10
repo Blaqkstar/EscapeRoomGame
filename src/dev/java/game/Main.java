@@ -59,6 +59,14 @@ public class Main{
                 System.out.println();
                 System.out.print(ConsoleColors.YELLOW+"Enter input (or 'help' for a list of available commands): "+ConsoleColors.RESET);
                 input = scanner.nextLine(); // user input
+                if (input.equalsIgnoreCase("exit")) {
+                    // exit message
+                    log.debug(ConsoleColors.PURPLE+"exiting game"+ConsoleColors.RESET);
+                    System.out.println("Thanks for playing!");
+                    Thread.sleep(2000);
+                    scanner.close();
+                    System.exit(0); // quits
+                }
                 log.debug(ConsoleColors.PURPLE+"user input received"+ConsoleColors.RESET);
 
                 // processes user input
@@ -173,19 +181,6 @@ public class Main{
                                 }
                                 player.setScore(player.getScore() + 1); // successful action of any kind increments player score by one
                                 ///  ------ END NEW ITEM HANDLING
-                            /*if (item.getName().equals("key")) {
-
-                                if (room.GetExitDoor().isObserved()) {
-                                    item.use();
-                                    room.GetExitDoor().unlockDoor();
-                                }
-                                else{
-                                    System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You have not seen anything to unlock");
-                                }
-                            }
-                            else{
-                                item.use();
-                            }*/
                             }
                             else{
                                 System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
@@ -321,7 +316,7 @@ public class Main{
             System.out.println();
             System.out.println();
             // else loop repeats due to intrinsic do-while rules
-        } while (!input.equalsIgnoreCase("exit")); // repeats loop until user types 'exit'
+        } while (!input.equalsIgnoreCase("exit")); // repeats loop until user types 'exit'... this is always true but I created a band aid by adding a check for 'exit' just after user input is accepted
 
         // exit message
         log.info("exiting game...");
@@ -677,10 +672,8 @@ public class Main{
     private static Room SetNewRoom(Logger log, String roomName, boolean rightDoor) throws Exception {
         // Create RoomSetup object
         RoomSetup roomSetup = new RoomSetup();
-
         // Declare room variable
         Room room = null;
-
         // Assign previously declared room variable to a new room depending on roomName input
         if(roomName.equalsIgnoreCase("Tutorial Room")) {
             // Assigns room to return of roomSetup's makeRooms method
@@ -709,12 +702,10 @@ public class Main{
         else {
             throw new Exception("Room does not exist!"); // error handling in case room doesn't exist
         }
-
         // prints logs
         log.debug(ConsoleColors.PURPLE+"instantiating " + room.getName()+ConsoleColors.RESET);
         log.debug(ConsoleColors.PURPLE+"adding items to " + room.getName()+ConsoleColors.RESET);
         System.out.println();
-
         return room;
     }
 

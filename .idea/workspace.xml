@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed bug with Consequences room not being created&#10;Began work on implementing multiple endings by tying my ending in with Joey's. If player uses the wrong door, they'll get my Consequences room.">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Moved FinalRoom dialog method into Room class to keep room-specific duties either in Room or RoomSetup.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -482,14 +480,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741633844118</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Moved FinalRoom dialog method into Room class to keep room-specific duties either in Room or RoomSetup.">
+      <option name="closed" value="true" />
+      <created>1741638113180</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1741638113180</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Got player score incrementing appropriately for relevant successful actions. &#10;Implemented a method to print player score&#10;Updated help method with new 'score' command" />
     <MESSAGE value="Added introBlurb, setIntroBlurb(), and getIntroBlurb() to Room class&#10;Created intro for Conservatory" />
     <MESSAGE value="Created Phonograph use() behavior and added to Conservatory room constructor. &#10;Added some door use() behavior specific to Tutorial Room." />
     <MESSAGE value="Fixed bug where Tutorial Room door could be opened when it should be perma-locked" />
@@ -514,7 +519,8 @@
     <MESSAGE value="Forgot to re-enable intro" />
     <MESSAGE value="Some formatting corrections" />
     <MESSAGE value="Fixed bug with Consequences room not being created&#10;Began work on implementing multiple endings by tying my ending in with Joey's. If player uses the wrong door, they'll get my Consequences room." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with Consequences room not being created&#10;Began work on implementing multiple endings by tying my ending in with Joey's. If player uses the wrong door, they'll get my Consequences room." />
+    <MESSAGE value="Moved FinalRoom dialog method into Room class to keep room-specific duties either in Room or RoomSetup." />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved FinalRoom dialog method into Room class to keep room-specific duties either in Room or RoomSetup." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
