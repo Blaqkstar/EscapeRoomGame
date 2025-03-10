@@ -238,6 +238,10 @@ public class RoomSetup {
         finalRoom.setItem(Main.Direction.south,southDoor);
         finalRoom.setItem(Main.Direction.east,exitDoor);
 
+
+        /// room should contain an intro blurb that spits out when player enters. This can be like the Consequences room where that blurb is the start of dialog
+        //finalRoom.setIntroBlurb();
+
         return finalRoom;
     }
 
@@ -248,12 +252,12 @@ public class RoomSetup {
 
         if(rightDoor) {
             theEndRoom.setIntroBlurb(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                    "You step through the door into a blinding light and realize you are lying in a bed. After a minute you can see and" +
+                    ": You step through the door into a blinding light and realize you are lying in a bed. After a minute you can see and" +
                     " realize that your in a hospital and your body is in extreme pain.");
         }
         else {
             theEndRoom.setIntroBlurb(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                    "You hear evil laughter and immediately are filled with the most intense fear you've ever felt. You feel this disembodied presence press towards you with evil glee and realize you are doomed!");
+                    ": You hear evil laughter and immediately are filled with the most intense fear you've ever felt. You feel this disembodied presence press towards you with evil glee and realize you are doomed!");
         }
 
         return theEndRoom;

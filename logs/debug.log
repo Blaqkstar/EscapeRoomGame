@@ -748,3 +748,77 @@
 03-10-2025 14:09:29.431 DEBUG [game.Main] - [0;35mplayer selected look[0m
 03-10-2025 14:09:31.172 DEBUG [game.Main] - [0;35muser input received[0m
 03-10-2025 14:09:31.172 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 14:12:34.954 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 14:12:34.956 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 14:13:53.928 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:13:53.929 DEBUG [game.Main] - [0;35minstantiating The Lab[0m
+03-10-2025 14:13:53.929 DEBUG [game.Main] - [0;35madding items to The Lab[0m
+03-10-2025 14:13:56.921 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:13:56.921 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 14:13:58.104 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:13:58.105 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 14:13:59.384 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:13:59.384 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 14:14:00.629 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:14:00.629 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 14:14:04.019 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:14:04.020 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 14:14:04.020 DEBUG [game.Main] - [0;35mSearching for item with key 'notebook'[0m
+03-10-2025 14:14:04.021 DEBUG [game.Main] - [0;35mFound item 'notebook'[0m
+03-10-2025 14:14:09.206 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:14:09.206 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 14:14:09.206 DEBUG [game.Main] - [0;35mSearching for item with key 'machine'[0m
+03-10-2025 14:14:09.206 DEBUG [game.Main] - [0;35mFound item 'transmorgrifier'[0m
+03-10-2025 14:14:13.535 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:14:13.535 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 14:14:13.535 DEBUG [game.Main] - [0;35mSearching for item with key 'machine'[0m
+03-10-2025 14:14:13.535 DEBUG [game.Main] - [0;35mFound item 'transmorgrifier'[0m
+03-10-2025 14:14:17.145 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:14:17.145 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 14:14:17.146 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-10-2025 14:14:17.146 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-10-2025 14:14:18.730 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:14:18.730 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-10-2025 14:14:18.730 DEBUG [game.Main] - [0;35minstantiating Final Room[0m
+03-10-2025 14:14:18.730 DEBUG [game.Main] - [0;35madding items to Final Room[0m
+03-10-2025 14:35:27.668 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 14:35:27.671 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 14:35:33.055 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:35:33.056 DEBUG [game.Main] - [0;35minstantiating Final Room[0m
+03-10-2025 14:35:33.056 DEBUG [game.Main] - [0;35madding items to Final Room[0m
+03-10-2025 14:46:47.317 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 14:46:47.687 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 14:46:53.348 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:46:53.350 DEBUG [game.Main] - [0;35minstantiating Final Room[0m
+03-10-2025 14:46:53.350 DEBUG [game.Main] - [0;35madding items to Final Room[0m
+03-10-2025 14:46:59.257 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:46:59.258 DEBUG [game.Main] - [0;35minstantiating The Lab[0m
+03-10-2025 14:46:59.258 DEBUG [game.Main] - [0;35madding items to The Lab[0m
+03-10-2025 14:47:02.862 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:47:02.862 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 14:47:04.162 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:47:04.162 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 14:47:05.377 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:47:05.378 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 14:47:08.115 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:47:08.115 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 14:47:10.599 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:47:10.599 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 14:47:10.599 DEBUG [game.Main] - [0;35mSearching for item with key 'notebook'[0m
+03-10-2025 14:47:10.600 DEBUG [game.Main] - [0;35mFound item 'notebook'[0m
+03-10-2025 14:47:12.366 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:47:12.366 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 14:47:12.366 DEBUG [game.Main] - [0;35mSearching for item with key 'machine'[0m
+03-10-2025 14:47:12.367 DEBUG [game.Main] - [0;35mFound item 'transmorgrifier'[0m
+03-10-2025 14:47:15.236 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:47:15.236 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 14:47:15.236 DEBUG [game.Main] - [0;35mSearching for item with key 'machine'[0m
+03-10-2025 14:47:15.236 DEBUG [game.Main] - [0;35mFound item 'transmorgrifier'[0m
+03-10-2025 14:47:25.271 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:47:25.271 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 14:47:25.271 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-10-2025 14:47:25.272 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-10-2025 14:47:27.520 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 14:47:27.520 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-10-2025 14:47:27.520 DEBUG [game.Main] - [0;35minstantiating Final Room[0m
+03-10-2025 14:47:27.520 DEBUG [game.Main] - [0;35madding items to Final Room[0m

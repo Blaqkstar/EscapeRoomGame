@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Some formatting corrections">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed bug with Consequences room not being created&#10;Began work on implementing multiple endings by tying my ending in with Joey's. If player uses the wrong door, they'll get my Consequences room.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -474,14 +474,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741592825055</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Fixed bug with Consequences room not being created&#10;Began work on implementing multiple endings by tying my ending in with Joey's. If player uses the wrong door, they'll get my Consequences room.">
+      <option name="closed" value="true" />
+      <created>1741633844118</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1741633844118</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Lantern, LargePortrait, Orrery, and Phonograph item stubs. Began finishing touches on Conservatory room decoration/props and puzzle clues. &#10;Implemented a series of conditional checks to correctly determine the next room based on the room the player is in when they interact with the exit door" />
     <MESSAGE value="Got player score incrementing appropriately for relevant successful actions. &#10;Implemented a method to print player score&#10;Updated help method with new 'score' command" />
     <MESSAGE value="Added introBlurb, setIntroBlurb(), and getIntroBlurb() to Room class&#10;Created intro for Conservatory" />
     <MESSAGE value="Created Phonograph use() behavior and added to Conservatory room constructor. &#10;Added some door use() behavior specific to Tutorial Room." />
@@ -506,7 +513,8 @@
     <MESSAGE value="Fixed some lever output text logic&#10;Cleaned up some more narrative output text" />
     <MESSAGE value="Forgot to re-enable intro" />
     <MESSAGE value="Some formatting corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some formatting corrections" />
+    <MESSAGE value="Fixed bug with Consequences room not being created&#10;Began work on implementing multiple endings by tying my ending in with Joey's. If player uses the wrong door, they'll get my Consequences room." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with Consequences room not being created&#10;Began work on implementing multiple endings by tying my ending in with Joey's. If player uses the wrong door, they'll get my Consequences room." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

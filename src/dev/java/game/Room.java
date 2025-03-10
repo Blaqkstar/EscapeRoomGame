@@ -172,5 +172,69 @@ public class Room implements LeverObserver {
 
         }
     }
+    ///  DIALOG FOR FINAL ROOM
+    public static void FinalRoomDialog() throws InterruptedException {
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"DEEP EVIL LAUGHTER");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"Did you really think you would be able to just leave?! HA!");
+        Thread.sleep(2000);
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"I must confess myself impressed, you greatly exceeded my expectations.");
+        Thread.sleep(2000);
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"But now, will you withstand this final challenge?!");
+        Thread.sleep(2000);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'You have walked far, yet your past does not trail behind you—it walks beside you, step for step.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'The voices of the fallen still call your name.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'The friend you abandoned, the lover you failed, the child who never saw the dawn… they are not gone.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'They are here. In the cracks of your mind, in the marrow of your bones.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'You have changed? No. You have only buried the truth beneath time and dust.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'But now, it rises.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'When you stand before the weight of your own sins, will you face them… or will you break beneath them?'");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"Only one of these four doors will lead to freedom, here is your clue, so listen closely!");
+        Thread.sleep(1000);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'Four paths stretch where silence calls,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'One to rise and three to fall.");
+        Thread.sleep(1500);
+        System.out.println();
+
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'North still echoes cries of pain,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'The friend you left, their plea in vain.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'South drips red where guilt once bled,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'A lover’s words, the last you said.");
+        Thread.sleep(1500);
+        System.out.println();
+
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'East holds ghosts with hollow tongues,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'A debt unpaid, but not yet done.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'West is weighed with bones you bear,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'someone's fate you did not spare.");
+        Thread.sleep(1500);
+        System.out.println();
+
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'One road mends, though scars remain,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'The rest will break you once again.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'Mark the cost of what you've done,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'Choose with care, or be undone.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "Understand this player, this is my pact with you, you either solve the riddle and choose the right door,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "or you'll be stuck entering doors like this for eternity! And no rush, I'm not going anywhere! HAHAHA!");
+    }
 }
 
