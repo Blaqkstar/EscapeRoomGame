@@ -44,10 +44,10 @@ public class RoomSetup {
                         "and a figure standing in the doorway, barely visible but unmistakably there. The figure's face is obscured, but you can feel its heavy gaze on you.",
                 tutorialRoom);
 
-        Lamp itemLamp = new Lamp("lamp", "a "+ConsoleColors.CYAN+"lantern"+ConsoleColors.RESET+", flickering faintly as its ethereal glow casts sharp, unnatural shadows.",
-                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The lamp's once polished brass base now shows signs of tarnish and wear. The bulb flickers intermittently, casting unsettling \n" +
-                        "shadows that dance across the room. The switch, slightly loose and worn from years of use, hints at the lamp's frailty. It's as if \n" +
-                        "the lamp is holding on by a thread, inviting you to test its resilience one last time.");
+        Lamp itemLamp = new Lamp("lamp", "judging by the flickering of the bulb its on its last leg",
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                        ": The lamp's once polished brass base shows signs of tarnish and wear. The bulb flickers intermittently, casting unsettling shadows that dance across the room. The switch, slightly loose and worn from years\n" +
+                        "of use, hints at the lamp's frailty. It's as if the lamp is holding on by a thread, inviting you to test its resilience one last time.");
 
 
         tutorialRoom.setItem(Main.Direction.north, itemPainting);
@@ -64,24 +64,24 @@ public class RoomSetup {
         Room conservatoryRoom = new Room();
         Door exitDoor = null;
         // creates exit door
-        exitDoor = new Door(conservatoryRoom,2, "a steel door with no handle",
+        exitDoor = new Door(conservatoryRoom,2, "a smooth steel "+ConsoleColors.CYAN+"door"+ConsoleColors.RESET+" with no handle",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You search for a keyhole but find none. It's a smooth, thick, steel plate.", "door");
         // defines SetExitDoor()
         conservatoryRoom.SetExitDoor(exitDoor);
         conservatoryRoom.setRoomPar(15);
         // creates levers and uses observer pattern to call checkLevers() automatically whenever a lever's position changes
         ///  LEVER A
-        Lever leverA = new Lever("lever1", "a lever ("+ConsoleColors.YELLOW + "Lever1" + ConsoleColors.RESET +") with an onyx grip",
+        Lever leverA = new Lever("lever1", "a lever ("+ConsoleColors.CYAN + "Lever1" + ConsoleColors.RESET +") with an onyx grip",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The left-most lever.");
         leverA.setPositionalIndicator("The left-most lever. "); // sets left position relative to other levers
         leverA.setInspection(leverA.getPositionalIndicator() + " It's currently in the " + leverA.getPosition() + " position.");
         ///  LEVER B
-        Lever leverB = new Lever("lever2", "a lever ("+ConsoleColors.YELLOW + "Lever2" + ConsoleColors.RESET +") with a jade grip",
+        Lever leverB = new Lever("lever2", "a lever ("+ConsoleColors.CYAN + "Lever2" + ConsoleColors.RESET +") with a jade grip",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The middle lever.");
         leverB.setPositionalIndicator("The middle lever. "); // sets center position relative to other levers
         leverB.setInspection(leverB.getPositionalIndicator() + " It's currently in the " + leverB.getPosition() + " position.");
         ///  LEVER C
-        Lever leverC = new Lever("lever3", "a lever ("+ConsoleColors.YELLOW + "Lever3" + ConsoleColors.RESET +") with an emerald grip",
+        Lever leverC = new Lever("lever3", "a lever ("+ConsoleColors.CYAN + "Lever3" + ConsoleColors.RESET +") with an emerald grip",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The right-most lever.");
         leverC.setPositionalIndicator("The right-most lever. "); // sets right position relative to other levers
         leverC.setInspection(leverC.getPositionalIndicator() + " It's currently in the " + leverC.getPosition() + " position.");

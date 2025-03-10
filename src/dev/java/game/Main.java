@@ -389,10 +389,10 @@ public class Main{
                 ": ... Darkness...");
         Thread.sleep(3000);
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                ": ... A single, faint pulse of light - like a heartbeat - and then...");
+                ": A single, faint pulse of light, like a heartbeat...");
         Thread.sleep(3000);
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                ": ... ");
+                ": And then... ");
         Thread.sleep(4000);
         System.out.println();
         System.out.println();

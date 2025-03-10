@@ -11,6 +11,6 @@ public class Corpse extends Item {
 
     @Override
     public void use() {
-        System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+"You're a real freak, aren't ya?");
+        System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You're a real freak, aren't ya?");
     }
 }
