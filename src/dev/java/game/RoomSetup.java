@@ -6,18 +6,6 @@ import java.util.Random;
 
 public class RoomSetup {
 
-    /// Kyle commented this out on 3/1 update because it wasn't being used -- if it had a purpose that I didn't realize please correct me!
-//    public Room setGameRoom(Item item1, Item item2, Item item3, Item item4) {
-//
-//        Room newRoom = new Room();
-//
-//        newRoom.setItem(Main.Direction.east, item1);
-//        newRoom.setItem(Main.Direction.west, item2);
-//        newRoom.setItem(Main.Direction.north, item3);
-//        newRoom.setItem(Main.Direction.south, item4);
-//
-//        return newRoom;
-//    }
 
     /// -------------------------------------------- { TUTORIAL ROOM } ----------------------------
     public Room MakeRoom_TutorialRoom() {
@@ -215,26 +203,62 @@ public class RoomSetup {
         return labRoom;
     }
 
-    public Room MakeRoom_Undefined() {
-        Room room = new Room();
+    public Room MakeRoom_FinalRoom() {
+        Door exitDoor = null;
+        Door westDoor = null;
+        Door northDoor = null;
+        Door southDoor = null;
 
-        return room;
+        Room finalRoom = new Room();
+
+        ArrayList<Item> items = new ArrayList<Item>();
+
+        finalRoom.setRoomPar(10);
+
+        exitDoor = new Door(finalRoom,1, "The mirror-like surface of the " +ConsoleColors.CYAN+"door"+ConsoleColors.RESET +" shows you a scene you faintly remember from long ago. You see a scene where you are refusing help from your friend who is worried for you. They leave with a sad look as you throw a bottle at the wall in anger.",
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": There is a mechanism that looks like it would accept a key.", "door");
+
+        finalRoom.SetExitDoor(exitDoor);
+
+        westDoor = new Door(finalRoom, 2, "The mirror-like surface of the " +ConsoleColors.CYAN+"door"+ConsoleColors.RESET +" shows you a scene you faintly remember from long ago. You see your childhood friend laying in a hospital bed, and the doctors scrambling because their heart has stopped.",
+                "You do not want to inspect this door any further","eastDoor");
+
+        northDoor = new Door(finalRoom, 2, "The mirror-like surface of the " +ConsoleColors.CYAN+"door"+ConsoleColors.RESET +" shows you a scene you faintly remember from long ago. You see the person you loved, storming out angry and sad after a bad fight, and you crumpling to the ground in despair.",
+                "You do not want to inspect this door any further","northDoor");
+
+        southDoor = new Door(finalRoom, 2, "The mirror-like surface of the " +ConsoleColors.CYAN+"door"+ConsoleColors.RESET +" shows you a scene you faintly remember from long ago. You see the lady at your doorstep, with her tear-streaked face. You remember she asked you for a ride to the hospital for her son, but you refused. Her son ended up dying in the ambulance because it was too late.",
+                "You do not want to inspect this door any further","door");
+
+        Key key = new Key("key","A mirror-like key","The key seems to swirl in and out of your hand when your holding it.", finalRoom);
+        key.setObserved(true);
+
+        finalRoom.setItem(Main.Direction.east, key);
+        finalRoom.setItem(Main.Direction.west,westDoor);
+        finalRoom.setItem(Main.Direction.north,northDoor);
+        finalRoom.setItem(Main.Direction.south,southDoor);
+        finalRoom.setItem(Main.Direction.east,exitDoor);
+
+        return finalRoom;
     }
 
-    /// -------------------------------------------- { CONSEQUENCES ROOM } ----------------------------
-    public Room MakeRoom_Consequences() {
-        Door exitDoor = null;
 
-        Room consequences = new Room();
+    public Room MakeRoom_TheEnd(boolean rightDoor) {
 
-        consequences.setIntroBlurb(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+
-                ": As you step through the door, you find yourself in a vast, endless void. The room behind dissolves into nothingness. The air is cold and still.\n\n"+
-                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                ": The void stretches endlessly in all directions, a sea of darkness so profound that it feels as though it might swallow you whole. There is no light, no sound, no sense of time or space - only the\n" +
-                "faint, lingering memory of the rooms you left behind. The air is heavy, oppressive, as if the void itself is alive and watching.");
+        Room theEndRoom = new Room();
+
+        if(rightDoor) {
+            theEndRoom.setIntroBlurb(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                    "You step through the door into a blinding light and realize you are lying in a bed. After a minute you can see and" +
+                    " realize that your in a hospital and your body is in extreme pain.");
+        }
+        else {
+            theEndRoom.setIntroBlurb(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                    "You hear evil laughter and immediately are filled with the most intense fear you've ever felt. You feel this disembodied presence press towards you with evil glee and realize you are doomed!");
+        }
 
 
-        return consequences;
+
+        return theEndRoom;
     }
 
     // Method for randomly assigning prebuilt items to walls

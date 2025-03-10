@@ -27,7 +27,7 @@ public class Main{
             ArrayList<Room> rooms = new ArrayList<Room>();
             int gameOverScore = 0; // sets gameOverScore to 0 at the top of the loop instead of outside of it
             // Create tutorial room using SetNewRoom
-            Room room = SetNewRoom(log, "Tutorial Room");
+            Room room = SetNewRoom(log, "Tutorial Room",false);
             //You could loop this and have an infinite number of rooms
             //Check out the RoomSetup Class for how it works!
             rooms.add(room);
@@ -70,6 +70,14 @@ public class Main{
                     if (parts.length == 2) { // ensures that input consists of two parts
                         try {
                             final Direction direction = Direction.valueOf(parts[1].toLowerCase()); // gets direction
+
+                            /// Joey added this to assign a direction variable to the player cause I need it for my final room
+                            player.setFacing(direction);
+
+                            if(room.getName().equalsIgnoreCase("Final Room")) {
+                                room.SetExitDoor(room.getDoorAtDirection(direction).getFirst());
+                                System.out.println("Exit door is now on the " + direction + " wall.");
+                            }
 
                             if (!room.getItemsAtDirection(direction).isEmpty()) {
                                 // Set all items in this direction to observed
@@ -149,7 +157,8 @@ public class Main{
                                     if (room.GetExitDoor().isObserved()) {
                                         item.use(); // uses the key
                                         room.GetExitDoor().unlockDoor(); // unlocks the door
-                                    } else {
+                                    }
+                                    else {
                                         System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": You have not seen anything to unlock");
                                     }
                                 }
@@ -207,14 +216,20 @@ public class Main{
                                         player.setScore(player.getScore() - room.getRoomPar());
                                         /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                                         if (room.getName().equalsIgnoreCase("Tutorial Room")) {
-                                            room = SetNewRoom(log, "The Conservatory");
+                                            room = SetNewRoom(log, "The Conservatory",false);
                                         } else if (room.getName().equalsIgnoreCase("The Conservatory")) {
-                                            room = SetNewRoom(log, "The Lab");
+                                            room = SetNewRoom(log, "The Lab",false);
                                             ///  TODO: Create the room that the Lab leads to
                                         } else if (room.getName().equalsIgnoreCase("The Lab")) {
-                                            room = SetNewRoom(log, "Undefined");
+                                            room = SetNewRoom(log, "Final Room",false);
+                                        }
+                                        else if (room.getName().equalsIgnoreCase("Final Room") && player.getFacing() == Direction.east) {
+                                            room = SetNewRoom(log, "THE END",true);
+                                        }
+                                        else if(room.getName().equalsIgnoreCase("Final Room") && player.getFacing() != Direction.east) {
+                                            room = SetNewRoom(log, "THE END",false);
                                         } else if (room.getName().equalsIgnoreCase("Undefined")) {
-                                            room = SetNewRoom(log, "Consequences");
+                                            room = SetNewRoom(log, "Consequences",false);
                                         }
                                         System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
                                         System.out.println();
@@ -227,7 +242,10 @@ public class Main{
                                             System.out.println(room.getIntroBlurb());
 
                                             ///  TODO: Change condition to fourth room name
-                                        } else if (room.getName().equalsIgnoreCase("Undefined")) {
+                                        } else if (room.getName().equalsIgnoreCase("Final Room")) {
+                                            FinalRoomDialog();
+                                        }
+                                        else if (room.getName().equalsIgnoreCase("THE END")) {
                                             System.out.println(room.getIntroBlurb());
                                         }
                                     }
@@ -249,17 +267,17 @@ public class Main{
                 }
                 /// SPEEDRUN OPTIONS --------ONLY FOR USE IN DEVELOPMENT-----------------------
                 else if (input.equalsIgnoreCase("speedrun to lab")){
-                    room = SetNewRoom(log, "The Lab"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
+                    room = SetNewRoom(log, "The Lab",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                     System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
                 }
                 else if (input.equalsIgnoreCase("speedrun to conservatory")){
-                    room = SetNewRoom(log, "The Conservatory"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
+                    room = SetNewRoom(log, "The Conservatory",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                     System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
                     System.out.println();
                     System.out.println(room.getIntroBlurb());
                 }
                 else if (input.equalsIgnoreCase("speedrun to ending")){
-                    room = SetNewRoom(log, "Consequences"); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
+                    room = SetNewRoom(log, "Consequences",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                     System.out.println(room.getIntroBlurb());
                 }
                 /// ------------------------------------------------{ HELP ACTION HANDLER }--------------------
@@ -618,7 +636,7 @@ public class Main{
         }
     }
 
-    private static Room SetNewRoom(Logger log, String roomName) throws Exception {
+    private static Room SetNewRoom(Logger log, String roomName, boolean rightDoor) throws Exception {
         // Create RoomSetup object
         RoomSetup roomSetup = new RoomSetup();
 
@@ -636,11 +654,14 @@ public class Main{
         else if (roomName.equalsIgnoreCase("The Lab")) {
             room = roomSetup.MakeRoom_Lab();
         }
-        else if (roomName.equalsIgnoreCase("Undefined")) {
-            room = roomSetup.MakeRoom_Undefined();
+        else if (roomName.equalsIgnoreCase("Final Room")) {
+            room = roomSetup.MakeRoom_FinalRoom();
+        }
+        else if (roomName.equalsIgnoreCase("THE END")) {
+            room = roomSetup.MakeRoom_TheEnd(rightDoor);
         }
         else if (roomName.equalsIgnoreCase("Consequences")) {
-            room = roomSetup.MakeRoom_Consequences();
+            //room = roomSetup.MakeRoom_Consequences();
         }
         // Sets room name
         if (room != null) {
@@ -662,6 +683,70 @@ public class Main{
 
     private static void ShowRoomName(Room currentRoom) {
         System.out.println(currentRoom.getName());
+    }
+
+    private static void FinalRoomDialog() throws InterruptedException {
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"DEEP EVIL LAUGHTER");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"Did you really think you would be able to just leave?! HA!");
+        Thread.sleep(2000);
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"I must confess myself impressed, you greatly exceeded my expectations.");
+        Thread.sleep(2000);
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"But now, will you withstand this final challenge?!");
+        Thread.sleep(2000);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'You have walked far, yet your past does not trail behind you—it walks beside you, step for step.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'The voices of the fallen still call your name.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'The friend you abandoned, the lover you failed, the child who never saw the dawn… they are not gone.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'They are here. In the cracks of your mind, in the marrow of your bones.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'You have changed? No. You have only buried the truth beneath time and dust.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'But now, it rises.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "'When you stand before the weight of your own sins, will you face them… or will you break beneath them?'");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"Only one of these four doors will lead to freedom, here is your clue, so listen closely!");
+        Thread.sleep(1000);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'Four paths stretch where silence calls,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'One to rise and three to fall.");
+        Thread.sleep(1500);
+        System.out.println();
+
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'North still echoes cries of pain,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'The friend you left, their plea in vain.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'South drips red where guilt once bled,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'A lover’s words, the last you said.");
+        Thread.sleep(1500);
+        System.out.println();
+
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'East holds ghosts with hollow tongues,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'A debt unpaid, but not yet done.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'West is weighed with bones you bear,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'someone's fate you did not spare.");
+        Thread.sleep(1500);
+        System.out.println();
+
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'One road mends, though scars remain,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'The rest will break you once again.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'Mark the cost of what you've done,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.CYAN + "'Choose with care, or be undone.");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "Understand this player, this is my pact with you, you either solve the riddle and choose the right door,");
+        Thread.sleep(1500);
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE: " + ConsoleColors.RESET + "or you'll be stuck entering doors like this for eternity! And no rush, I'm not going anywhere! HAHAHA!");
     }
 }
 

@@ -16,12 +16,25 @@ public class Room implements LeverObserver {
     private String introBlurb = "UNDEFINED INTRO BLURB";
     private int roomPar = 0;
 
+    private boolean chooseRightEnding;
+
+
     public Room() {
         walls = new EnumMap<>(Main.Direction.class); // initializes map
 
         for (Main.Direction direction : Main.Direction.values()) {
             walls.put(direction, new ArrayList<>());
         }
+    }
+
+    public Room(boolean chooseRightEnding) {
+        walls = new EnumMap<>(Main.Direction.class); // initializes map
+
+        for (Main.Direction direction : Main.Direction.values()) {
+            walls.put(direction, new ArrayList<>());
+        }
+
+        this.chooseRightEnding = chooseRightEnding;
     }
 
     public void setItem(Main.Direction direction, Item item) {
@@ -54,14 +67,28 @@ public class Room implements LeverObserver {
     public void SetExitDoor(Door exitDoor) {
         this.exitDoor = exitDoor;
     }
+
     public String getIntroBlurb() {
         return introBlurb;
     }
+
     public void setIntroBlurb(String introBlurb) {
         this.introBlurb = introBlurb;
     }
+
     public List<Item> getItemsAtDirection(Main.Direction direction) {
         return walls.get(direction); // gets items at the specified direction
+    }
+
+    public List<Door> getDoorAtDirection(Main.Direction direction) {
+        List<Door> doors = new ArrayList<>();
+
+        for(Item item : walls.get(direction)) {
+            if(item instanceof Door) {
+                doors.add((Door)item);
+            }
+        }
+        return doors;
     }
 
     public String describeItemsToPlayer(List<Item> items) {
