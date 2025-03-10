@@ -107,18 +107,18 @@ public class RoomSetup {
                         "stomach churn when looking directly at them. A record rests on the turntable, its label faded and illegible, except for a single word scrawled in jagged handwriting: \"Ascension.\"");
         Diary itemDiary = new Diary("diary", "a small, leather-bound "+ConsoleColors.CYAN+"diary"+ConsoleColors.RESET,
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                        "The diary is a small, leather-bound book, its cover cracked and brittle with age. The pages are yellowed and fragile, filled with neat, precise handwriting that crows increasingly erratic as you read. The\n" +
-                        "entries tell the story of a scientist who once occupied this room:\n\n" +
-                        "\"Day1: I've finally deciphered the symbols on the levers. There's a pattern here, a logic to this madness. If I can just align them correctly, I might unlock the door. I can feel it. I'm so close.\"\n\n" +
-                        "\"Day 7: The levers are only part of it. The telescope, the orrery, the phonograph... They're all connected. I've spent hours staring at the stars through that damned telescope, and I swear they're\n" +
+                        ": The diary is a small, leather-bound book, its cover cracked and brittle with age. The pages are yellowed and fragile, filled with neat, precise handwriting that crows increasingly erratic as you read. The\n" +
+                        "entries tell the story of a scientist who once occupied this room.\n\n" +
+                        "\""+ConsoleColors.BLUE+"Day 1"+ConsoleColors.RESET+": I've finally deciphered the symbols on the levers. There's a pattern here, a logic to this madness. If I can just align them correctly, I might unlock the door. I can feel it. I'm so close.\"\n\n" +
+                        "\""+ConsoleColors.BLUE+"Day 7"+ConsoleColors.RESET+": The levers are only part of it. The telescope, the orrery, the phonograph... They're all connected. I've spent hours staring at the stars through that damned telescope, and I swear they're\n" +
                         "watching me back. And that god damned hum... It grows louder every day. I can't sleep...\"\n\n" +
-                        "\"Day 14: The shadows are moving. I see them out of the corner of my eye, laughing at me. The lantern's light doesn't keep them at bay anymore. I think they're waiting for me to make a mistake.\"\n\n" +
-                        "\"Day 21: I was wrong. There is no escape. The levers, the telescope, the damned orrery, that cursed phonograph; they aren't puzzles. They're traps. The shadows are closer now, whispering things I\n" +
+                        "\""+ConsoleColors.BLUE+"Day 14"+ConsoleColors.RESET+": The shadows are moving. I see them out of the corner of my eye, laughing at me. The lantern's light doesn't keep them at bay anymore. I think they're waiting for me to make a mistake.\"\n\n" +
+                        "\""+ConsoleColors.BLUE+"Day 21"+ConsoleColors.RESET+": I was wrong. There is no escape. The levers, the telescope, the damned orrery, that cursed phonograph; they aren't puzzles. They're traps. The shadows are closer now, whispering things I\n" +
                         "can't understand. I can't do this anymore.\"\n\n" +
-                        "The final entry is scrawled in a shaky hand, the ink smeared as though written in haste: \"I'm so sorry. I can't hold on. The shadows are here, inside me. Forgive me... \"\n\n");
+                        "The final entry is scrawled in a shaky hand, the ink smeared as though written in haste: \"I'm so sorry. I can't hold on. The shadows are here, inside me. Forgive me... \"");
         Corpse itemCorpse = new Corpse("corpse", "a mostly-decomposed "+ConsoleColors.CYAN+"corpse"+ConsoleColors.RESET,
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                        "The corpse is slumped against the wall, its skeletal frame draped in the tattered remains of a lab coat. The bones are brittle and discolored, the flesh long-since decayed, but the posture is\n" +
+                        ": The corpse is slumped against the wall, its skeletal frame draped in the tattered remains of a lab coat. The bones are brittle and discolored, the flesh long-since decayed, but the posture is\n" +
                         "unmistakable - head bowed, hands clutching a rusted scalpel embedded in its chest. The air around the body is cold, and the shadows seem to gather here, thicker and darker than elsewhere in the room.\n" +
                         "A faint, almost imperceptible hum lingers in the air, as if the scientist's despair has left an indelible mark on this place.");
 
