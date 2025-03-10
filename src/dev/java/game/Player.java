@@ -3,6 +3,7 @@ package game;
 public class Player implements Comparable<Player>{
     private String name;
     private int score;
+    private Main.Direction facing;
 
     public Player(String name, int score) {
         this.name = name;
@@ -21,6 +22,14 @@ public class Player implements Comparable<Player>{
     }
     public void setScore(int newScore) {
         this.score = newScore;
+    }
+
+    public Main.Direction getFacing() {
+        return facing;
+    }
+
+    public void setFacing(Main.Direction newFacing) {
+        this.facing = newFacing;
     }
 
     //This is the our example of the comparable. The difference bewtween a comparator and comparable is that
