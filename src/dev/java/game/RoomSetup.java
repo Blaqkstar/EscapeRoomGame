@@ -256,10 +256,21 @@ public class RoomSetup {
                     "You hear evil laughter and immediately are filled with the most intense fear you've ever felt. You feel this disembodied presence press towards you with evil glee and realize you are doomed!");
         }
 
-
-
         return theEndRoom;
     }
+
+    /// -------------------------------------------- { CONSEQUENCES ROOM } ----------------------------
+    public Room MakeRoom_Consequences() {
+        Room consequences = new Room();
+        consequences.setIntroBlurb(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+
+                ": As you step through the door, you find yourself in a vast, endless void. The room behind dissolves into nothingness. The air is cold and still\n\n" +
+                ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": The void stretches endlessly in all directions, a sea of darkness so profound that it feels as though it might swallow you whole. There is no light, no sound, no sense of time or space - only the\n" +
+                "faint, lingering memory of the rooms you left behind. The air is heavy, oppressive, as if the void itself is alive and watching.");
+
+        return consequences;
+    }
+
 
     // Method for randomly assigning prebuilt items to walls
     public void AssignRandomItems(Room room) {

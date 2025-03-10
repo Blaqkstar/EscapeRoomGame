@@ -48,7 +48,7 @@ public class Main{
             System.out.println();
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
             Thread.sleep(500);
-            playIntro(); /// plays narrative intro
+            //playIntro(); /// plays narrative intro
             gameOverScore = setGameOverScore(room); // setsGameOverScore
 
             // this one loops until gameOverScore has been reached
@@ -219,16 +219,14 @@ public class Main{
                                             room = SetNewRoom(log, "The Conservatory",false);
                                         } else if (room.getName().equalsIgnoreCase("The Conservatory")) {
                                             room = SetNewRoom(log, "The Lab",false);
-                                            ///  TODO: Create the room that the Lab leads to
                                         } else if (room.getName().equalsIgnoreCase("The Lab")) {
                                             room = SetNewRoom(log, "Final Room",false);
                                         }
+                                        ///  FINAL ROOM AND MULTIPLE ENDINGS
                                         else if (room.getName().equalsIgnoreCase("Final Room") && player.getFacing() == Direction.east) {
                                             room = SetNewRoom(log, "THE END",true);
                                         }
                                         else if(room.getName().equalsIgnoreCase("Final Room") && player.getFacing() != Direction.east) {
-                                            room = SetNewRoom(log, "THE END",false);
-                                        } else if (room.getName().equalsIgnoreCase("Undefined")) {
                                             room = SetNewRoom(log, "Consequences",false);
                                         }
                                         System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
@@ -269,6 +267,8 @@ public class Main{
                 else if (input.equalsIgnoreCase("speedrun to lab")){
                     room = SetNewRoom(log, "The Lab",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                     System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
+                    System.out.println();
+                    System.out.println(room.getIntroBlurb());
                 }
                 else if (input.equalsIgnoreCase("speedrun to conservatory")){
                     room = SetNewRoom(log, "The Conservatory",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
@@ -278,6 +278,7 @@ public class Main{
                 }
                 else if (input.equalsIgnoreCase("speedrun to ending")){
                     room = SetNewRoom(log, "Consequences",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
+                    System.out.println();
                     System.out.println(room.getIntroBlurb());
                 }
                 /// ------------------------------------------------{ HELP ACTION HANDLER }--------------------
@@ -594,10 +595,40 @@ public class Main{
             ///  the consequences
             // different ending depending on final choice
             if (input.equalsIgnoreCase("1")) {
-                System.out.println("Consequence 1");
+                ///  STEP INTO THE VOID
+                System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
+                        ": 'And so, you choose oblivion. A fitting end for one who sought escape above all else.'");
+                Thread.sleep(3000);
+                System.out.println();
+                System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                        ": You take a step forward, and the void envelops you. There is no pain, no fear - only a profound sense of peace. The darkness closes in and, for a moment, you feel as though you are floating.\n\n" +
+                        "Then, nothing.\n\n" +
+                        "No thoughts.\n\n" +
+                        "No memories\n\n" +
+                        "No self\n\n" +
+                        "You are gone.");
+                Thread.sleep(3000);
+                System.out.println();
             } else if (input.equalsIgnoreCase("2")) {
-                System.out.println("Consequence 2");
+                ///  RETREAT TO DARKNESS
+                System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
+                        ": 'You have chosen... Poorly.'");
+                Thread.sleep(3000);
+                System.out.println();
+                System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                        ": The darkness engulfs you, and the pain begins. It is not a physical pain, but something deeper, more primal. It is the pain of being known, of being consumed, of being torn apart and reassembled\n" +
+                        "over and over again for all eternity.\n\n"+
+                        "You scream, but no sound escapes.\n\n" +
+                        "You struggle, but there is no way out.\n\n" +
+                        "The darkness is endless, and so is your torment.");
+                Thread.sleep(3000);
+                System.out.println();
             }
+            System.out.println();
+            Thread.sleep(3000);
+            System.out.println();
+            System.out.println(ConsoleColors.BLUE+ "IN THE END, THERE IS NO ESCAPE. ONLY THE CHOICES WE MAKE, AND THE CONSEQUENCES WE MUST ENDURE."+ConsoleColors.RESET);
+            Thread.sleep(8000);
             // play again prompt
             do {
                 System.out.print(ConsoleColors.YELLOW+"Would you like to play again? (Y / N): "+ConsoleColors.RESET);
@@ -661,7 +692,7 @@ public class Main{
             room = roomSetup.MakeRoom_TheEnd(rightDoor);
         }
         else if (roomName.equalsIgnoreCase("Consequences")) {
-            //room = roomSetup.MakeRoom_Consequences();
+            room = roomSetup.MakeRoom_Consequences();
         }
         // Sets room name
         if (room != null) {
