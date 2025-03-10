@@ -459,3 +459,55 @@
 03-10-2025 02:41:25.411 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
 03-10-2025 02:45:36.248 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
 03-10-2025 02:45:36.249 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 02:49:24.442 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 02:49:24.445 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 02:50:19.637 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:50:19.638 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:50:22.431 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:50:22.431 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:50:29.695 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:50:29.695 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:50:29.695 DEBUG [game.Main] - [0;35mSearching for item with key 'painting'[0m
+03-10-2025 02:50:29.695 DEBUG [game.Main] - [0;35mFound item 'painting'[0m
+03-10-2025 02:50:32.216 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:50:32.216 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:50:36.449 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:50:36.449 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:50:36.449 DEBUG [game.Main] - [0;35mSearching for item with key 'plant'[0m
+03-10-2025 02:50:36.449 DEBUG [game.Main] - [0;35mFound item 'plant'[0m
+03-10-2025 02:50:41.936 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:50:41.937 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:50:47.034 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:50:47.034 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:50:47.034 DEBUG [game.Main] - [0;35mSearching for item with key 'lamp'[0m
+03-10-2025 02:50:47.034 DEBUG [game.Main] - [0;35mFound item 'lamp'[0m
+03-10-2025 02:50:53.948 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:50:53.950 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:50:58.754 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:50:58.754 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 02:51:04.490 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:51:04.490 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:51:04.490 DEBUG [game.Main] - [0;35mSearching for item with key 'lamp'[0m
+03-10-2025 02:51:04.490 DEBUG [game.Main] - [0;35mFound item 'lamp'[0m
+03-10-2025 02:51:05.820 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:51:05.820 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:51:05.820 DEBUG [game.Main] - [0;35mSearching for item with key 'lamp'[0m
+03-10-2025 02:51:05.820 DEBUG [game.Main] - [0;35mFound item 'lamp'[0m
+03-10-2025 02:51:07.143 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:51:07.143 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:51:07.143 DEBUG [game.Main] - [0;35mSearching for item with key 'lamp'[0m
+03-10-2025 02:51:07.143 DEBUG [game.Main] - [0;35mFound item 'lamp'[0m
+03-10-2025 02:51:09.154 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:51:09.155 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-10-2025 02:51:09.155 DEBUG [game.Main] - [0;35mSearching for item with key 'lamp'[0m
+03-10-2025 02:51:09.156 DEBUG [game.Main] - [0;35mFound item 'lamp'[0m
+03-10-2025 02:51:22.292 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:51:22.292 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:51:27.683 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:51:27.684 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-10-2025 02:51:44.577 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-10-2025 02:51:44.577 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-10-2025 02:52:36.511 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:52:36.512 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-10-2025 02:52:39.901 DEBUG [game.Main] - [0;35muser input received[0m
+03-10-2025 02:52:39.901 DEBUG [game.Main] - [0;35mplayer selected inspect[0m

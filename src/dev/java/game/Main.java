@@ -6,44 +6,31 @@ import java.util.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-///  TODO: REMAINING FEATURES FOR CORE FUNCTIONALITY
-///  TODO: 1. NEED TO WORK OUT A METHOD TO RESET EVERYTHING IF PLAYER CHOOSES TO PLAY AGAIN
-
 public class Main{
     public static void main(final String[] args) throws Exception {
-
         final Logger log = LogManager.getLogger(Main.class.getName());
-
         ScoreDB scoreDB = new ScoreDB();
-        int gameOverScore = 0;
-
-        // prints game title
-        printTitle();
         // starts background music before the game loop to ensure that it plays in the background while the game is running
         Thread musicThread = new Thread(new BackgroundMusic("resources/music/bgmusic.wav")); // sets up thread and defines a filepath
         musicThread.start(); // begins music
-
-        // Create list of rooms
-        ArrayList<Room> rooms = new ArrayList<Room>();
-
-        // Create tutorial room using SetNewRoom
-        Room room = SetNewRoom(log, "Tutorial Room");
-        // creates conservatory room
-        //Room conservatoryRoom = SetNewRoom(log, "The Conservatory");
-
-        //You could loop this and have an infinite number of rooms
-        //Check out the RoomSetup Class for how it works!
-        rooms.add(room);
-        //rooms.add(conservatoryRoom);
-
         // this is going to read user input
         Scanner scanner = new Scanner(System.in);
         String input;
 
-
         // this loops until the user types 'exit'
         do {
-            /// TODO: method call to reset game state should go here
+            ///  moved these inside of the main loop. Might alleviate the need for caching a lot of the stuff we were going to have to in order to create a restart() method
+            ///  YEP, I THINK THIS RESOLVED THE ISSUE. WE MIGHT NOT NEED THAT RESTART() METHOD AT ALL NOW. WORTH SOME TESTING ON BUT PRELIM TESTS ARE GOOD.
+            // prints game title
+            printTitle();
+            // Create list of rooms
+            ArrayList<Room> rooms = new ArrayList<Room>();
+            int gameOverScore = 0; // sets gameOverScore to 0 at the top of the loop instead of outside of it
+            // Create tutorial room using SetNewRoom
+            Room room = SetNewRoom(log, "Tutorial Room");
+            //You could loop this and have an infinite number of rooms
+            //Check out the RoomSetup Class for how it works!
+            rooms.add(room);
 
             // Welcome message
             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": Shadows encapsulate your ephemeral form. In the distance, a dim candle flickers, suspended by some unknown force. " +

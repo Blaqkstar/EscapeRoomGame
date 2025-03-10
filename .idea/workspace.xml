@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Forgot to re-enable intro">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Some formatting corrections">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
@@ -464,14 +464,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741591417268</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Some formatting corrections">
+      <option name="closed" value="true" />
+      <created>1741592825055</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1741592825055</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed spacing of debug messages relative to diegetic feedback" />
     <MESSAGE value="Added Lantern, LargePortrait, Orrery, and Phonograph item stubs. Began finishing touches on Conservatory room decoration/props and puzzle clues. &#10;Implemented a series of conditional checks to correctly determine the next room based on the room the player is in when they interact with the exit door" />
     <MESSAGE value="Got player score incrementing appropriately for relevant successful actions. &#10;Implemented a method to print player score&#10;Updated help method with new 'score' command" />
     <MESSAGE value="Added introBlurb, setIntroBlurb(), and getIntroBlurb() to Room class&#10;Created intro for Conservatory" />
@@ -496,7 +503,8 @@
     <MESSAGE value="removed audio debug message from game start. figured issue out." />
     <MESSAGE value="Fixed some lever output text logic&#10;Cleaned up some more narrative output text" />
     <MESSAGE value="Forgot to re-enable intro" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forgot to re-enable intro" />
+    <MESSAGE value="Some formatting corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some formatting corrections" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
