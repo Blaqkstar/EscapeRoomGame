@@ -1,0 +1,44 @@
+package game;
+import javax.sound.sampled.*;
+import java.io.File;
+import java.io.IOException;
+public class BackgroundMusic implements Runnable{
+    private String filePath = "UNDEFINED BG MUSIC FILEPATH";
+
+    public BackgroundMusic(String filePath) {
+        this.filePath = filePath;
+    }
+
+    @Override
+    public void run() {
+        try {
+            File audioFile = new File(filePath);
+            System.out.println("Audio filepath: " + audioFile.getAbsolutePath());
+            // ensures file exists
+            if (!audioFile.exists()) {
+                System.err.println("Audio file not found!");
+                return;
+            }
+            // defines an audio stream
+            AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
+            Clip audioClip = AudioSystem.getClip();
+            audioClip.open(audioStream);
+            audioClip.loop(Clip.LOOP_CONTINUOUSLY); // loops music
+            audioClip.start();
+            // keeps thread alive while music is playing
+            while (!Thread.currentThread().isInterrupted()) {
+                Thread.sleep(1000); // sleeps to avoid waiting
+            }
+            audioClip.stop();
+            audioClip.close();
+        } catch (UnsupportedAudioFileException ex){
+            System.err.println("Unsupported audio file format: " + ex.getMessage());
+        } catch (IOException ex) {
+            System.err.println("Error reading the audio file: " + ex.getMessage());
+        } catch (LineUnavailableException ex) {
+            System.err.println("Audio line unavailable: " + ex.getMessage());
+        } catch (InterruptedException ex) {
+            System.err.println("Music playback interrupted: " + ex.getMessage());
+        }
+    }
+}

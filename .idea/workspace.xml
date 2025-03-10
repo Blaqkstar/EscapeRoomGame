@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Cleaned up diary and corpse text output">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Lots more narrative output cleanup">
+      <change afterPath="$PROJECT_DIR$/resources/music/bgmusic.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/java/game/BackgroundMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Corpse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Corpse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
     </list>
@@ -139,7 +140,12 @@
       <workItem from="1741411082479" duration="3442000" />
       <workItem from="1741458159030" duration="12511000" />
       <workItem from="1741474640677" duration="5086000" />
-      <workItem from="1741566431544" duration="9943000" />
+      <workItem from="1741566431544" duration="10001000" />
+      <workItem from="1741577504601" duration="1311000" />
+      <workItem from="1741578857730" duration="56000" />
+      <workItem from="1741579288063" duration="202000" />
+      <workItem from="1741579673046" duration="227000" />
+      <workItem from="1741580422214" duration="2176000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -405,14 +411,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741573177035</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Lots more narrative output cleanup">
+      <option name="closed" value="true" />
+      <created>1741576478491</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1741576478491</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Some additional narrative output spacing cleanup" />
     <MESSAGE value="Color-coded usable items in tutorial room descriptions" />
     <MESSAGE value="clarified color coding methodology in ConsoleColors class" />
     <MESSAGE value="Added option to speedrun the first room for purposes of developing lab" />
@@ -437,7 +450,8 @@
     <MESSAGE value="Added final two items (diary, corpse) to Conservatory" />
     <MESSAGE value="Forgot to turn playIntro() back on" />
     <MESSAGE value="Cleaned up diary and corpse text output" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up diary and corpse text output" />
+    <MESSAGE value="Lots more narrative output cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lots more narrative output cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

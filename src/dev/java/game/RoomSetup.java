@@ -259,7 +259,7 @@ public class RoomSetup {
                         "depicting a reality far-removed from your own. The crank on the side feels cold to the touch.");
         Telescope itemTelescope = new Telescope("telescope", "a large, ornately-carved "+ConsoleColors.CYAN+"telescope"+ConsoleColors.RESET,
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                        "The telescope is a masterpiece of craftsmanship, its brass body adorned with intricate carvings of celestial bodies and angular, runic symbols. The eyepiece is cold to the touch and, when you peer through\n" +
+                        ": The telescope is a masterpiece of craftsmanship, its brass body adorned with intricate carvings of celestial bodies and angular, runic symbols. The eyepiece is cold to the touch and, when you peer through\n" +
                         "it, the stars outside seem closer, brighter. The carvings along the barrel depict scenes of astronomers gazing into the void, their faces twisted in expressions of awe and terror.");
 
 

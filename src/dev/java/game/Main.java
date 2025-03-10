@@ -19,6 +19,9 @@ public class Main{
 
         // prints game title
         printTitle();
+        // starts background music before the game loop to ensure that it plays in the background while the game is running
+        Thread musicThread = new Thread(new BackgroundMusic("resources/music/bgmusic.wav")); // sets up thread and defines a filepath
+        musicThread.start(); // begins music
 
         // Create list of rooms
         ArrayList<Room> rooms = new ArrayList<Room>();
@@ -471,7 +474,8 @@ public class Main{
                         ConsoleColors.BLUE+"=========================================="+ConsoleColors.RESET;
         String legalInfo =
                 "© 2025 Echoes Beyond The Veil. All rights reserved.\n" +
-                        "This game is a work of fiction. Any resemblance to actual events or persons, living or dead, is purely coincidental.";
+                        "This game is a work of fiction. Any resemblance to actual events or persons, living or dead, is purely coincidental.\n\n" +
+                        "Music © Cthulhu Mythos Music 2023";
         String thanksMessage =
                 ConsoleColors.BLUE+"==========================================\n"+ConsoleColors.RESET +
                         "            THANK YOU FOR PLAYING!\n" +
