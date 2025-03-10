@@ -44,10 +44,11 @@ public class RoomSetup {
                         "and a figure standing in the doorway, barely visible but unmistakably there. The figure's face is obscured, but you can feel its heavy gaze on you.",
                 tutorialRoom);
 
-        Lamp itemLamp = new Lamp("lamp", "judging by the occasional flickering of the bulb, it's on its last leg",
+        Lamp itemLamp = new Lamp("lamp", "a "+ConsoleColors.CYAN+"lantern"+ConsoleColors.RESET+", flickering faintly as its ethereal glow casts sharp, unnatural shadows.",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The lamp's once polished brass base now shows signs of tarnish and wear. The bulb flickers intermittently, casting unsettling \n" +
                         "shadows that dance across the room. The switch, slightly loose and worn from years of use, hints at the lamp's frailty. It's as if \n" +
                         "the lamp is holding on by a thread, inviting you to test its resilience one last time.");
+
 
         tutorialRoom.setItem(Main.Direction.north, itemPainting);
         tutorialRoom.setItem(Main.Direction.east, itemDesk);
@@ -104,6 +105,8 @@ public class RoomSetup {
                 "an antique "+ConsoleColors.CYAN+"phonograph"+ConsoleColors.RESET+", its brass horn tarnished and its surface etched with strange, angular symbols",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The phonograph is a relic of another era, its brass horn tarnished to a dull green and its wooden base cracked with age. The surface is etched with strange, angular symbols that make your\n" +
                         "stomach churn when looking directly at them. A record rests on the turntable, its label faded and illegible, except for a single word scrawled in jagged handwriting: \"Ascension.\"");
+
+
 
         // adds items to their respective walls
         conservatoryRoom.setItem(Main.Direction.north, portraitPainting);
@@ -211,7 +214,8 @@ public class RoomSetup {
         dirs.add(Main.Direction.east);
         dirs.add(Main.Direction.west);
 
-        // builds out items
+        /// builds out items
+        // Tutorial Room stuff
         Window itemWindow = new Window("window",
                 "a "+ConsoleColors.CYAN+"window"+ConsoleColors.RESET+" overlooking a garden",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
@@ -226,6 +230,20 @@ public class RoomSetup {
                 "a "+ConsoleColors.CYAN+"bookshelf"+ConsoleColors.RESET+" filled with books about the occult",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": A pungent aura of aged paper and leather pervades the air around the bookshelf. Among the many tomes, several of \n" +
                         "Aleister Crowley's occult works stand out; their dark, worn spines hinting at secrets and mysteries bound within.");
+        // Conservatory stuff
+        Lantern itemLantern = new Lantern("lantern", "a rusty "+ConsoleColors.CYAN+"lantern"+ConsoleColors.RESET,
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                        ": The lantern is an antique, its brass fittings tarnished and its glass panes cracked with age. The fuel inside glows faintly, even when unlit, with a color that defies description - something\n" +
+                        "between blue and violet, but not quite either. The handle is cold to the touch, and when you hold it, you feel a faint vibration.");
+        Orrery itemOrrery = new Orrery("orrery", "an old mechanical "+ConsoleColors.CYAN+"orrery"+ConsoleColors.RESET,
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                        ": The orrery is an intricate model of a solar system, its brass framework tarnished with age but still gleaming faintly in the dim light. The planets are crafted with meticulous detail, their surfaces\n" +
+                        "etched with faint, angular symbols like the others you've seen since you arrived. The solar system has fourteen planets, their orbits intersecting like nothing you've ever seen. The model seems to be \n" +
+                        "depicting a reality far-removed from your own. The crank on the side feels cold to the touch.");
+        Telescope itemTelescope = new Telescope("telescope", "a large, ornately-carved "+ConsoleColors.CYAN+"telescope"+ConsoleColors.RESET,
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                        "The telescope is a masterpiece of craftsmanship, its brass body adorned with intricate carvings of celestial bodies and angular, runic symbols. The eyepiece is cold to the touch and, when you peer through\n" +
+                        "it, the stars outside seem closer, brighter. The carvings along the barrel depict scenes of astronomers gazing into the void, their faces twisted in expressions of awe and terror.");
 
 
         /// TODO: NEED TO PREBAKE CONSTRUCTORS FOR SOME ADDITIONAL TUTORIAL ROOM ITEMS AS WELL AS ITEMS FOR OTHER ROOMS. MAYBE AIM FOR >= 5 NON-QUEST PROPS IN EACH ROOM??
@@ -241,10 +259,10 @@ public class RoomSetup {
             // adds relevant room items
             ///  for some reason, exitDoor cannot be found if less than three items are added to items. Worth looking into if we have time but not gamebreaking as long as we have
            ///  enough room items randomly spawning in
-//            items.add(itemPhonograph);
-//            items.add(itemWindow);
-//            items.add(itemBookshelf);
-//            randomizePropSpawnDirection(room, items, dirs);
+            items.add(itemOrrery);
+            items.add(itemLantern);
+            items.add(itemTelescope);
+            randomizePropSpawnDirection(room, items, dirs);
         } else if (room.getName().equalsIgnoreCase("The Lab")) {
             // adds relevant room items
         }
