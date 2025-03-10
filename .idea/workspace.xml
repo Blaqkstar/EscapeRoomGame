@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Lots more narrative output cleanup">
-      <change afterPath="$PROJECT_DIR$/resources/music/bgmusic.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/java/game/BackgroundMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
-    </list>
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Some more narrative text output cleanup&#10;Implemented background music" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,7 +138,7 @@
       <workItem from="1741578857730" duration="56000" />
       <workItem from="1741579288063" duration="202000" />
       <workItem from="1741579673046" duration="227000" />
-      <workItem from="1741580422214" duration="2176000" />
+      <workItem from="1741580422214" duration="2848000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -419,14 +412,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741576478491</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Some more narrative text output cleanup&#10;Implemented background music">
+      <option name="closed" value="true" />
+      <created>1741582684598</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1741582684598</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Color-coded usable items in tutorial room descriptions" />
     <MESSAGE value="clarified color coding methodology in ConsoleColors class" />
     <MESSAGE value="Added option to speedrun the first room for purposes of developing lab" />
     <MESSAGE value="Implemented some very slightly different item handling to ref. item instead of name where relevant&#10;Implemented Observer pattern to compare relative toggled status of Conservatory levers&#10;Fixed usable item coloring of key in Tutorial Room&#10;Added some additional debug feedback for item usage info" />
@@ -451,7 +451,8 @@
     <MESSAGE value="Forgot to turn playIntro() back on" />
     <MESSAGE value="Cleaned up diary and corpse text output" />
     <MESSAGE value="Lots more narrative output cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lots more narrative output cleanup" />
+    <MESSAGE value="Some more narrative text output cleanup&#10;Implemented background music" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some more narrative text output cleanup&#10;Implemented background music" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
