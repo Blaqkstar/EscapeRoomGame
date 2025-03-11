@@ -17,6 +17,7 @@ public class Main{
         // this is going to read user input
         Scanner scanner = new Scanner(System.in);
         String input;
+        Boolean thrown = false;
 
         // this loops until the user types 'exit'
         do {
@@ -61,7 +62,7 @@ public class Main{
                 if (player.getPlayerWins()) {
                     break;
                 }
-                checkScore(player, room);
+                checkScore(player, room, thrown);
                 System.out.println();
                 System.out.print(ConsoleColors.YELLOW+"Enter input (or 'help' for a list of available commands): "+ConsoleColors.RESET);
                 input = scanner.nextLine(); // user input
@@ -217,21 +218,26 @@ public class Main{
                                         if (room.getName().equalsIgnoreCase("Tutorial Room")) {
                                             room = SetNewRoom(log, "The Conservatory",false);
                                             backgroundMusic.changeMusic("resources/music/conservatoryMusic.wav"); /// -----------------  { MUSIC CHANGE }
+                                            thrown = false;
                                         } else if (room.getName().equalsIgnoreCase("The Conservatory")) {
                                             room = SetNewRoom(log, "The Lab",false);
+                                            thrown = false;
                                         } else if (room.getName().equalsIgnoreCase("The Lab")) {
                                             room = SetNewRoom(log, "Final Room",false);
                                             backgroundMusic.changeMusic("resources/music/finalRoomMusic.wav"); /// -----------------  { MUSIC CHANGE }
+                                            thrown = false;
                                         }
                                         ///  FINAL ROOM AND MULTIPLE ENDINGS
                                         // player picks correct door
                                         else if (room.getName().equalsIgnoreCase("Final Room") && player.getFacing() == Direction.east) {
                                             room = SetNewRoom(log, "THE END",true);
+                                            thrown = false;
                                         }
                                         // player picks incorrect door
                                         else if(room.getName().equalsIgnoreCase("Final Room") && player.getFacing() != Direction.east) {
                                             room = SetNewRoom(log, "Consequences",false);
                                             backgroundMusic.changeMusic("resources/music/consequencesMusic.wav"); /// -----------------  { MUSIC CHANGE }
+                                            thrown = false;
                                         }
                                         System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and step into the next room.");
                                         System.out.println();
@@ -316,6 +322,7 @@ public class Main{
                 else if (!input.equalsIgnoreCase("exit")) { // handles incorrect commands
                     System.out.println("Unknown input. Please enter 'look <direction>' or 'exit'.");
                 }
+                checkScore(player, room, thrown);
             } while (player.getScore() < gameOverScore && !player.getPlayerWins().equals(true)); // core failure conditions
 
             /// ------------------------------------------------------------------------- { <GAME OVER> } -----------------------------------------
@@ -538,12 +545,14 @@ public class Main{
     private static Integer setGameOverScore(Room room) {
         return room.getRoomPar() * 3;
     }
-    private static void checkScore(Player player, Room room) {
+    private static void checkScore(Player player, Room room, Boolean thrown) {
         int threshold = (room.getRoomPar()*3) / 2;
-        if (player.getScore() == threshold) {
+
+        if (player.getScore() == threshold && !thrown) {
             System.out.println();
             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                     ": The hair on the back of your neck stands on end, a primal instinct warning you of something unseen.");
+            thrown = true;
         }
     }
     private static void gameOver(Player player) {

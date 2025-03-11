@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed a bug where music would not reset when player opted to play again">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed a bug where checkScore warned player too early">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
@@ -147,22 +147,6 @@
       <workItem from="1741657965730" duration="28000" />
       <workItem from="1741669711736" duration="6473000" />
       <workItem from="1741712313895" duration="9488000" />
-    </task>
-    <task id="LOCAL-00006" summary="Fixed Transmorgrifier interaction menu loop to behave as expected.&#10;Modified Room.describeItemsToPlayer to include a grammar formatter&#10;Cleaned up perceptual feedback output generally. Debug output is now purple, and any time the player receives some kind of perceptual feedback, it is now preceded by an 'PERCEPTION' indicator. &#10;Grouped up debug messages and created space between them and perceptual feedback&#10;Changed 'highscores' command to 'hiscores' to reduce player keystroke requirements&#10;Changed MakeRoom method naming conventions to allow for greater uniformity in our method calls (syntax is now MakeRoom_RoomName)">
-      <option name="closed" value="true" />
-      <created>1740895307939</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1740895307939</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Some further cleanup work to diegetic feedback to improve player experience and readability">
-      <option name="closed" value="true" />
-      <created>1740896618456</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1740896618456</updated>
     </task>
     <task id="LOCAL-00008" summary="Some further (I swear to god actual final update of the night) cleanup work to diegetic feedback to improve player experience and readability">
       <option name="closed" value="true" />
@@ -540,15 +524,29 @@
       <option name="project" value="LOCAL" />
       <updated>1741727197170</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Created a system to warn player when their score reaches par for the given room">
+      <option name="closed" value="true" />
+      <created>1741727954995</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1741727954995</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Fixed a bug where checkScore warned player too early">
+      <option name="closed" value="true" />
+      <created>1741728244712</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1741728244712</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Got Conservatory padded out with first pass of all its flavor items&#10;Removed Room from the constructor of a couple of the item child classes that didn't need to know about room details." />
-    <MESSAGE value="Added final two items (diary, corpse) to Conservatory" />
     <MESSAGE value="Forgot to turn playIntro() back on" />
     <MESSAGE value="Cleaned up diary and corpse text output" />
     <MESSAGE value="Lots more narrative output cleanup" />
@@ -572,7 +570,9 @@
     <MESSAGE value="Fixed workspace XML bug" />
     <MESSAGE value="Added music for conservatory and consequences" />
     <MESSAGE value="Fixed a bug where music would not reset when player opted to play again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug where music would not reset when player opted to play again" />
+    <MESSAGE value="Created a system to warn player when their score reaches par for the given room" />
+    <MESSAGE value="Fixed a bug where checkScore warned player too early" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug where checkScore warned player too early" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
