@@ -14,6 +14,8 @@ public class Transmorgrifier extends Item {
 
     private Boolean usable=false;
 
+    private Boolean beingUsed=false;
+
     private ArrayList<Item> itemsToTransmorgrify = new ArrayList<>();
 
     public Transmorgrifier(String name, String description, String inspection, Room room) {
@@ -33,6 +35,10 @@ public class Transmorgrifier extends Item {
         return usable;
     }
 
+    public Boolean isBeingUsed() {
+        return beingUsed;
+    }
+
     public void setItemsToTransmorgrify(ArrayList<Item> itemsToTransmorgrify) {
             this.itemsToTransmorgrify = itemsToTransmorgrify;
     }
@@ -41,6 +47,8 @@ public class Transmorgrifier extends Item {
     @Override
     public void use() {
         setUsed(true); // used!
+
+        beingUsed=true;
 
         if (usable) {
             printMenu(itemsToTransmorgrify);
@@ -58,17 +66,19 @@ public class Transmorgrifier extends Item {
     public void printMenu(List<Item> items)
     {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Items to use in the transmorgrifier:");
+        System.out.println("==========================\n" +
+                           "      " + ConsoleColors.CYAN +"USABLE ITEMS\n"+ ConsoleColors.RESET +
+                           "==========================\n");
         // prints a list of available items to use
         for (Item item : items) {
             if (item.isObserved()) {
-                System.out.println(ConsoleColors.YELLOW + "AVAILABLE ITEM" + ConsoleColors.RESET + ": " + item.getName());
+                System.out.println(ConsoleColors.YELLOW + "AVAILABLE ITEM: " + ConsoleColors.CYAN  + item.getName());
             }
         }
         String input;
         boolean isValid = false;
         do {
-            System.out.print("Please enter item name (or 'stop' to leave interaction menu): ");
+            System.out.print(ConsoleColors.YELLOW +"\nPlease enter item name (or 'stop' to leave interaction menu): " +ConsoleColors.RESET);
             input = scanner.nextLine();
             System.out.println();
 
@@ -96,6 +106,8 @@ public class Transmorgrifier extends Item {
                 System.out.println("Invalid item name");
             }
         } while(!input.equalsIgnoreCase("stop") && !isValid);
+
+        beingUsed=false;
     }
 
 }

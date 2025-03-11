@@ -20,13 +20,19 @@ public class BallOfLead extends Item{
 
     @Override
     public void use() {
-        TransmorgSupplier<Key> keySupplier = () -> new Key("key","A shiny new key","The key has a faint glow as if it is brimming with energy.", room);
-        itemToSpitToUser = keySupplier.get();
-        itemToSpitToUser.setObserved(true);
-        room.setItem(Main.Direction.south, itemToSpitToUser); // adds key to the north
-        transmorgrifier.getItemsToTransmorgrify().remove(this);
-        ///  TODO: Add key to items to transmorgrify. If they transmorg it, they are locked in the room forever
+        if (transmorgrifier.isUsable() && transmorgrifier.isBeingUsed()) {
+            TransmorgSupplier<Key> keySupplier = () -> new Key("key", "A shiny new key", "The key has a faint glow as if it is brimming with energy.", room);
+            itemToSpitToUser = keySupplier.get();
+            itemToSpitToUser.setObserved(true);
+            room.setItem(Main.Direction.south, itemToSpitToUser); // adds key to the north
+            room.removeItem(Main.Direction.south, this);
+            transmorgrifier.getItemsToTransmorgrify().remove(this);
+            ///  TODO: Add key to items to transmorgrify. If they transmorg it, they are locked in the room forever
 
-        System.out.println("The ball of lead transforms into a shiny new key.");
+            System.out.println(ConsoleColors.RED + "ACTION" + ConsoleColors.RESET + ": The ball of " + ConsoleColors.CYAN + "lead" + ConsoleColors.RESET + " transforms into a " + ConsoleColors.CYAN + "key." + ConsoleColors.RESET);
+        }
+        else{
+            System.out.println("You look around the room but don't see anything this would be used for.");
+        }
     }
 }

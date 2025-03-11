@@ -20,16 +20,18 @@ public class DeckOfCards extends Item {
 
     @Override
     public void use() {
-        if (transmorgrifier.isUsable()) {
+        if (transmorgrifier.isUsable() && transmorgrifier.isBeingUsed()) {
             TransmorgSupplier<Paper> paperSupplier = () -> new Paper("paper", "a stack of papers", "a stack of papers with jumbled, incoherent lettering", transmorgrifier, room);
             itemToSpitToUser = paperSupplier.get();
             itemToSpitToUser.setObserved(true);
             transmorgrifier.getItemsToTransmorgrify().add(itemToSpitToUser);
             transmorgrifier.getItemsToTransmorgrify().remove(this);
-            System.out.println("The deck of cards transforms into a " + itemToSpitToUser.getDescription());
+            room.setItem(Main.Direction.south, itemToSpitToUser);
+            room.removeItem(Main.Direction.east, this);
+            System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": The deck of " + ConsoleColors.CYAN  +"cards" + ConsoleColors.RESET  +" transforms into a stack of " + ConsoleColors.CYAN  +"paper." + ConsoleColors.RESET);
         }
         else{
-            System.out.println("You play a game of solitaire. The smells of the room get stronger. You should probably get moving.");
+            System.out.println(ConsoleColors.RED+"ACTION" + ConsoleColors.RESET + ": You play a game of solitaire. The smells of the room get stronger. You should probably get moving.");
         }
     }
 }
