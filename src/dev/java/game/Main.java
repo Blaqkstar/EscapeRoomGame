@@ -43,7 +43,6 @@ public class Main{
             String playerName = scanner.nextLine(); // collects player name
             // instantiates player
             Player player = new Player(playerName, 0);
-
             /// player.getUpperName uses our function and unaryOperator examples
             System.out.println();
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
@@ -53,8 +52,8 @@ public class Main{
 
             // this one loops until gameOverScore has been reached
             do {
-                if (room.getName().equalsIgnoreCase("Consequences")) {
-                    gameOverSuccess(); /// PLAYER WINS!
+                if (player.getPlayerWins()) {
+                    break;
                 }
                 System.out.println();
                 System.out.print(ConsoleColors.YELLOW+"Enter input (or 'help' for a list of available commands): "+ConsoleColors.RESET);
@@ -218,9 +217,11 @@ public class Main{
                                             room = SetNewRoom(log, "Final Room",false);
                                         }
                                         ///  FINAL ROOM AND MULTIPLE ENDINGS
+                                        // player picks correct door
                                         else if (room.getName().equalsIgnoreCase("Final Room") && player.getFacing() == Direction.east) {
                                             room = SetNewRoom(log, "THE END",true);
                                         }
+                                        // player picks incorrect door
                                         else if(room.getName().equalsIgnoreCase("Final Room") && player.getFacing() != Direction.east) {
                                             room = SetNewRoom(log, "Consequences",false);
                                         }
@@ -242,6 +243,7 @@ public class Main{
                                         }
                                         else if (room.getName().equalsIgnoreCase("Consequences")) {
                                             System.out.println(room.getIntroBlurb());
+                                            gameOverSuccess(player); /// PLAYER WINS!
                                         }
                                     }
                                     else{
@@ -282,6 +284,7 @@ public class Main{
                     room = SetNewRoom(log, "Consequences",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                     System.out.println();
                     System.out.println(room.getIntroBlurb());
+                    gameOverSuccess(player);
                 }
                 /// ------------------------------------------------{ HELP ACTION HANDLER }--------------------
                 else if (input.equalsIgnoreCase("help") || input.equalsIgnoreCase("?")) {
@@ -301,7 +304,7 @@ public class Main{
                 else if (!input.equalsIgnoreCase("exit")) { // handles incorrect commands
                     System.out.println("Unknown input. Please enter 'look <direction>' or 'exit'.");
                 }
-            } while (player.getScore() < gameOverScore); // basic lose conditions
+            } while (player.getScore() < gameOverScore && !player.getPlayerWins().equals(true)); // basic lose conditions
             if (player.getScore() >= gameOverScore) {
                 gameOver(player);
             }
@@ -312,7 +315,7 @@ public class Main{
             if (input.equalsIgnoreCase("n")) {
                 System.exit(0);
                 //input = "exit"; // exits game
-            }
+            } else continue;
             System.out.println();
             System.out.println();
             // else loop repeats due to intrinsic do-while rules
@@ -546,7 +549,7 @@ public class Main{
             System.out.println("Game Over Method Error");
         }
     }
-    private static void gameOverSuccess() {
+    private static void gameOverSuccess(Player player) {
 
         try {
             System.out.println();
@@ -598,6 +601,7 @@ public class Main{
             // different ending depending on final choice
             if (input.equalsIgnoreCase("1")) {
                 ///  STEP INTO THE VOID
+                System.out.println();
                 System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
                         ": 'And so, you choose oblivion. A fitting end for one who sought escape above all else.'");
                 Thread.sleep(3000);
@@ -636,18 +640,20 @@ public class Main{
             System.out.println();
             System.out.println(ConsoleColors.BLUE+ "IN THE END, THERE IS NO ESCAPE. ONLY THE CHOICES WE MAKE, AND THE CONSEQUENCES WE MUST ENDURE."+ConsoleColors.RESET);
             Thread.sleep(8000);
+            player.setPlayerWins(true);
             /// TODO: NEED TO GET THE PLAY AGAIN PROMPT WORKING AGAIN!
+            ///  NOTABLY: PLAY AGAIN PROMPT TIED TO GAMEOVERSCORE STILL WORKS AS INTENDED, IT'S JUST THE PROMPT AT THE ENDINGS THAT WE NEED TO WORK OUT
             // play again prompt
-            do {
-                System.out.print(ConsoleColors.YELLOW+"Would you like to play again? (Y / N): "+ConsoleColors.RESET);
-                input = scanner.nextLine().trim().toLowerCase(); // collects player choice
-            } while (!input.equalsIgnoreCase("y") && !input.equalsIgnoreCase("n"));
-            if (input.equalsIgnoreCase("n")) {
-                System.exit(0);
-                //input = "exit"; // exits game
-            } else {
-                // need to restart the game... so we actually might need that method after all
-            }
+//            do {
+//                System.out.print(ConsoleColors.YELLOW+"Would you like to play again? (Y / N): "+ConsoleColors.RESET);
+//                input = scanner.nextLine().trim().toLowerCase(); // collects player choice
+//            } while (!input.equalsIgnoreCase("y") && !input.equalsIgnoreCase("n"));
+//            if (input.equalsIgnoreCase("n")) {
+//                System.exit(0);
+//                //input = "exit"; // exits game
+//            } else {
+//                // need to restart the game... so we actually might need that method after all
+//            }
         } catch (InterruptedException ex) {
             System.out.println("Game Over (Success) Method Error");
         }

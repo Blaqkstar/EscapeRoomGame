@@ -4,6 +4,7 @@ public class Player implements Comparable<Player>{
     private String name;
     private int score;
     private Main.Direction facing;
+    private Boolean playerWins = false;
 
     public Player(String name, int score) {
         this.name = name;
@@ -27,11 +28,14 @@ public class Player implements Comparable<Player>{
     public Main.Direction getFacing() {
         return facing;
     }
-
     public void setFacing(Main.Direction newFacing) {
         this.facing = newFacing;
     }
 
+    public Boolean getPlayerWins() {return playerWins;}
+    public void setPlayerWins(Boolean newPlayerWins) {
+        this.playerWins = newPlayerWins;
+    }
     //This is the our example of the comparable. The difference bewtween a comparator and comparable is that
     //a comparator is used to compare different aspects bewtween two specfic objects of a certain type. Whereas a
     //a comparable defines how you can sort a large collection of objects.
