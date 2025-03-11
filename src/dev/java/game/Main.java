@@ -110,8 +110,14 @@ public class Main{
                     final String[] parts = input.split(" "); // splits input into parts, storing in an array
                     if (parts.length == 2) { // ensures that input consists of two parts
                         try {
+
+                            String itemName = parts[1].trim().toLowerCase();
+
+                            // Allow player to inspect transmorgrifer by calling it a "machine"
+                            if (itemName.equalsIgnoreCase("machine")) {itemName="transmorgrifier";}
+
                             // declare item that is being inspected
-                            Item item = room.getItems().get(parts[1].toLowerCase());
+                            Item item = room.getItems().get(itemName);
                             // Check if player has observed the item yet
                             if (item.isObserved()) {
                                 System.out.print(item.getInspection());
@@ -145,7 +151,7 @@ public class Main{
                             if (itemName.equalsIgnoreCase("machine")) {itemName="transmorgrifier";}
 
                             ///  DEBUG MESSAGES BEGIN
-                            // declare item that is being inspected
+                            // declare item that is being used
                             Item item = room.getItems().get(itemName);
                             if (item != null) {
                                 log.debug(ConsoleColors.PURPLE+"Found item '" + item.getName() + "'"+ConsoleColors.RESET);

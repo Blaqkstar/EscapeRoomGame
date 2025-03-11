@@ -144,21 +144,21 @@ public class RoomSetup {
         // machine attached to a wall. Player doesn't know how to use it (diegetically) until they inspect() on the scientist's research notebook
         // if they try to use transmorg before they read the notebook, they'll fall in and GAME OVER
         // when player uses transmorg, game prompts them to pick an item from the list of observed items we're already tracking
-        Transmorgrifier transmorgrifier = new Transmorgrifier("transmorgrifier","An odd " +ConsoleColors.CYAN+"machine"+ConsoleColors.RESET +" with many knobs, levers, and buttons",
-                ConsoleColors.GREEN+ "PERCEPTION: " +ConsoleColors.RESET+": You notice how odd looking this machine is",labRoom);
+        Transmorgrifier transmorgrifier = new Transmorgrifier("transmorgrifier","an odd " +ConsoleColors.CYAN+"machine"+ConsoleColors.RESET +" with many knobs, levers, and buttons",
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": A small screen at the center of the "+ConsoleColors.CYAN+"machine"+ConsoleColors.RESET + " is covered with oily fingerprints.",labRoom);
 
 
         Sandwich sandwich = new Sandwich("sandwich","a moldy ham " +ConsoleColors.CYAN+"sandwich"+ConsoleColors.RESET +" on rye bread",
-                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The sandwich doesn't smell like something you'd eat.", transmorgrifier, labRoom);
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The "+ConsoleColors.CYAN+"sandwich"+ConsoleColors.RESET + " doesn't smell like something you'd eat.", transmorgrifier, labRoom);
 
         exitDoor = new Door(labRoom,1, "a heavy metal " +ConsoleColors.CYAN+"door"+ConsoleColors.RESET +" etched withs strange runes",
-                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": There is a mechanism that looks like it would accept a key.", "door");
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": There is a mechanism that looks like it would accept a " +ConsoleColors.CYAN+"key."+ConsoleColors.RESET, "door");
 
         labRoom.SetExitDoor(exitDoor);
 
         // scientist's research notebook
         Notebook notebook  = new Notebook("notebook", "a scientist's research " +ConsoleColors.CYAN+"notebook"+ConsoleColors.RESET,
-                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The notebook documents experiments conducted by" +
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The "+ConsoleColors.CYAN+"notebook"+ConsoleColors.RESET + " documents experiments conducted by" +
                 " a scientist experimenting with alchemy. You perceive that you could use it to learn his ways.", transmorgrifier);
 
         Flask flask = new Flask("flask","a clear crystal " +ConsoleColors.CYAN+"flask"+ConsoleColors.RESET,
@@ -173,7 +173,7 @@ public class RoomSetup {
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The liquid bubbles ominously and smells awful.");
 
         Thermometer thermometer = new Thermometer("thermometer", "a dusty " +ConsoleColors.CYAN+"thermometer"+ConsoleColors.RESET +" sitting in a cup",
-                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The thermometer's red mercury reads at a level much higher than the \n"+
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The "+ConsoleColors.CYAN+"thermometer"+ConsoleColors.RESET + "'s red mercury reads at a level much higher than the \n"+
                 "temperature of the room. It must be broken.", transmorgrifier, labRoom);
 
         items.add(sandwich);

@@ -54,7 +54,7 @@ public class Transmorgrifier extends Item {
             printMenu(itemsToTransmorgrify);
         }
         else{
-            System.out.println("You don't even know where to begin using such a strange machine.");
+            System.out.println("You don't even know where to begin using such a strange " + ConsoleColors.CYAN +"machine."+ ConsoleColors.RESET);
         }
     }
 
@@ -108,6 +108,7 @@ public class Transmorgrifier extends Item {
         } while(!input.equalsIgnoreCase("stop") && !isValid);
 
         beingUsed=false;
+        System.out.println(ConsoleColors.GREEN+ "\nPERCEPTION" +ConsoleColors.RESET+": The " + ConsoleColors.CYAN +"transmorgrifier"+ ConsoleColors.RESET + " switches off.");
     }
 
 }

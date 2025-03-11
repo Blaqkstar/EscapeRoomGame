@@ -21,7 +21,7 @@ public class DeckOfCards extends Item {
     @Override
     public void use() {
         if (transmorgrifier.isUsable() && transmorgrifier.isBeingUsed()) {
-            TransmorgSupplier<Paper> paperSupplier = () -> new Paper("paper", "a stack of papers", "a stack of papers with jumbled, incoherent lettering", transmorgrifier, room);
+            TransmorgSupplier<Paper> paperSupplier = () -> new Paper("paper", "a stack of "+ConsoleColors.CYAN+"paper."+ConsoleColors.RESET, ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": A stack of "+ConsoleColors.CYAN+"paper"+ConsoleColors.RESET + " with jumbled, incoherent lettering", transmorgrifier, room);
             itemToSpitToUser = paperSupplier.get();
             itemToSpitToUser.setObserved(true);
             transmorgrifier.getItemsToTransmorgrify().add(itemToSpitToUser);
