@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Updated about&#10;Some additional formatting/timing optimizations">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Additional output formatting cleanup">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,15 +145,8 @@
       <workItem from="1741580422214" duration="3552000" />
       <workItem from="1741651113341" duration="4095000" />
       <workItem from="1741657965730" duration="28000" />
-      <workItem from="1741669711736" duration="6473000" />
-    </task>
-    <task id="LOCAL-00001" summary="starting point">
-      <option name="closed" value="true" />
-      <created>1737601738920</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1737601738920</updated>
+      <workItem from="1741669711736" duration="6534000" />
+      <workItem from="1741709786058" duration="6991000" />
     </task>
     <task id="LOCAL-00002" summary="moved main.java into correct folder">
       <option name="closed" value="true" />
@@ -537,15 +532,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741676201211</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Forgot to uncomment playIntro()">
+      <option name="closed" value="true" />
+      <created>1741676233089</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1741676233089</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Built out gameOver() method&#10;Clarified failure conditions&#10;Created a variable in Room called roomPar (with relevant getter/setter) that is used to determine gameOverScore. If player score exceeds gameOverScore, gameOver() is called. &#10;Cleaned up some more output text" />
-    <MESSAGE value="Additional text cleanup" />
     <MESSAGE value="Got painting description and inspection updating to properly reflect diegetic changes after player 'uses' it.&#10;Fixed bug where player could spawn an infinite number of keys from behind the painting." />
     <MESSAGE value="updated TODO list to account for work I just did" />
     <MESSAGE value="Abstracted logic to set game over score into its own method, setGameOverScore()" />
@@ -569,7 +570,9 @@
     <MESSAGE value="Fixed 'play again' bug that would not allow player to actually play again" />
     <MESSAGE value="Lots of narrative and formatting cleanup&#10;Removed some vestigial code" />
     <MESSAGE value="Updated about&#10;Some additional formatting/timing optimizations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated about&#10;Some additional formatting/timing optimizations" />
+    <MESSAGE value="Forgot to uncomment playIntro()" />
+    <MESSAGE value="Additional output formatting cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Additional output formatting cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
