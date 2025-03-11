@@ -21,6 +21,7 @@ public class Main{
         // this loops until the user types 'exit'
         do {
             /// ------------------------------------------------------------------------- { <GAME START> } -----------------------------------------
+            // ensures that bg music is always set back to the intro song when player chooses to play again
             if (!backgroundMusic.getFilePath().equals("resources/music/bgmusic.wav")) {
                 backgroundMusic.changeMusic("resources/music/bgmusic.wav");
             }
@@ -60,6 +61,7 @@ public class Main{
                 if (player.getPlayerWins()) {
                     break;
                 }
+                checkScore(player, room);
                 System.out.println();
                 System.out.print(ConsoleColors.YELLOW+"Enter input (or 'help' for a list of available commands): "+ConsoleColors.RESET);
                 input = scanner.nextLine(); // user input
@@ -535,6 +537,14 @@ public class Main{
     }
     private static Integer setGameOverScore(Room room) {
         return room.getRoomPar() * 3;
+    }
+    private static void checkScore(Player player, Room room) {
+        int threshold = room.getRoomPar();
+        if (player.getScore() == threshold) {
+            System.out.println();
+            System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
+                    ": The hair on the back of your neck stands on end, a primal instinct warning you of something unseen.");
+        }
     }
     private static void gameOver(Player player) {
         String gameOver = ConsoleColors.RED+"\n" +
