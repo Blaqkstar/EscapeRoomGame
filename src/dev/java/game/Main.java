@@ -46,7 +46,7 @@ public class Main{
             System.out.println();
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
             Thread.sleep(500);
-            playIntro(); /// plays narrative intro
+//            playIntro(); /// plays narrative intro
             gameOverScore = setGameOverScore(room); // setsGameOverScore
 
             // this one loops until gameOverScore has been reached
@@ -94,7 +94,7 @@ public class Main{
                                 System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You look " + direction.getDescription() + " and see " + room.describeItemsToPlayer(room.getItemsAtDirection(direction)));
                             }
                             else{
-                                System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You look " + direction.getDescription() + " and see a blank wall");
+                                System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You look " + direction.getDescription() + " and see a blank wall.");
                             }
                             player.setScore(player.getScore() + 1); // successful action increments player score by one
                         } catch (IllegalArgumentException e) {
@@ -262,7 +262,7 @@ public class Main{
                     }
                 }
                 /// SPEEDRUN OPTIONS --------ONLY FOR USE IN DEVELOPMENT-----------------------
-                else if (input.equalsIgnoreCase("speedrun to lab")){
+                else if (input.equalsIgnoreCase("skip to lab")){
                     room = SetNewRoom(log, "The Lab",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                     System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
                     System.out.println();

@@ -20,16 +20,18 @@ public class Flask extends Item{
 
     @Override
     public void use() {
-        if (transmorgrifier.isUsable()) {
+        if (transmorgrifier.isUsable() && transmorgrifier.isBeingUsed()) {
             TransmorgSupplier<BallOfLead> ballOfLeadSupplier = () -> new BallOfLead("lead", "A misshapen hunk of lead", "Nothing interesting here. It's just a ball of lead.", transmorgrifier, room);
             itemToSpitToUser = ballOfLeadSupplier.get();
             itemToSpitToUser.setObserved(true);
             transmorgrifier.getItemsToTransmorgrify().add(itemToSpitToUser);
             transmorgrifier.getItemsToTransmorgrify().remove(this);
-            System.out.println("The flask transforms into a ball of lead.");
+            room.setItem(Main.Direction.south, itemToSpitToUser);
+            room.removeItem(Main.Direction.north, this);
+            System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": The " + ConsoleColors.CYAN  +"flask" + ConsoleColors.RESET  +" transforms into a ball of " + ConsoleColors.CYAN  +"lead." + ConsoleColors.RESET);
         }
         else{
-            System.out.println("You pour some liquid into the flask. Nothing happens.");
+            System.out.println(ConsoleColors.RED+"ACTION" + ConsoleColors.RESET + ": You pour some liquid into the flask. Nothing happens.");
         }
     }
 }

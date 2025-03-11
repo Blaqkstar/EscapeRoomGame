@@ -45,6 +45,13 @@ public class Room implements LeverObserver {
         items.put(item.getName().toLowerCase(), item); // adds item to item list - updated to ensure name is always lowercase
     }
 
+    public void removeItem(Main.Direction direction, Item item) {
+        items.remove(item.getName().toLowerCase());
+
+        List<Item> itemList = walls.get(direction);
+        itemList.remove(item);
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -135,6 +142,8 @@ public class Room implements LeverObserver {
         Lever leverA = (Lever) items.get("lever1");
         Lever leverB = (Lever) items.get("lever2");
         Lever leverC = (Lever) items.get("lever3");
+
+        boolean checkLevers = checkLevers(leverA, leverB, leverC);
 
         if (checkLevers(leverA, leverB, leverC)) {
             if (lever.getPosition().equalsIgnoreCase("up")) {

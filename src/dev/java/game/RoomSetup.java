@@ -149,7 +149,7 @@ public class RoomSetup {
 
 
         Sandwich sandwich = new Sandwich("sandwich","a moldy ham " +ConsoleColors.CYAN+"sandwich"+ConsoleColors.RESET +" on rye bread",
-                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The sandwich doesn't smell like something you'd eat.", transmorgrifier);
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The sandwich doesn't smell like something you'd eat.", transmorgrifier, labRoom);
 
         exitDoor = new Door(labRoom,1, "a heavy metal " +ConsoleColors.CYAN+"door"+ConsoleColors.RESET +" etched withs strange runes",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": There is a mechanism that looks like it would accept a key.", "door");
@@ -162,7 +162,7 @@ public class RoomSetup {
                 " a scientist experimenting with alchemy. You perceive that you could use it to learn his ways.", transmorgrifier);
 
         Flask flask = new Flask("flask","a clear crystal " +ConsoleColors.CYAN+"flask"+ConsoleColors.RESET,
-                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You notice the flask has a tangy smell to it", transmorgrifier, labRoom);
+                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You notice the flask has a tangy smell to it.", transmorgrifier, labRoom);
 
         // deck of cards
         DeckOfCards deckOfCards = new DeckOfCards("cards","a deck of " +ConsoleColors.CYAN+"cards"+ConsoleColors.RESET,
@@ -174,7 +174,7 @@ public class RoomSetup {
 
         Thermometer thermometer = new Thermometer("thermometer", "a dusty " +ConsoleColors.CYAN+"thermometer"+ConsoleColors.RESET +" sitting in a cup",
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The thermometer's red mercury reads at a level much higher than the \n"+
-                "temperature of the room. It must be broken.", transmorgrifier);
+                "temperature of the room. It must be broken.", transmorgrifier, labRoom);
 
         items.add(sandwich);
         items.add(flask);

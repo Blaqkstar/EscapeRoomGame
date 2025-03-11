@@ -15,7 +15,7 @@ public class Notebook extends Item {
     public void use() {
         this.setUsed(true);
         LearnTransmorgrifier();
-        System.out.println("Through incoherent ramblings about 'proving wrong his ghastly skeptics', you learn how to use the scientist's cunning machine. It is a " +ConsoleColors.CYAN+"transmorgrifier"+ConsoleColors.RESET +", a device \n"+
+        System.out.println(ConsoleColors.RED+"ACTION" + ConsoleColors.RESET + ": Through incoherent ramblings about 'proving wrong his ghastly skeptics', you learn how to use the scientist's cunning machine. It is a " +ConsoleColors.CYAN+"transmorgrifier"+ConsoleColors.RESET +", a device \n"+
                 "that has perfected the ancient goal of transforming one material into another.");
     }
 
