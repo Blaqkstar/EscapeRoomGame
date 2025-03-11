@@ -1,12 +1,22 @@
 package game;
+
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
+
+
 public class BackgroundMusic implements Runnable{
     private String filePath = "UNDEFINED BG MUSIC FILEPATH";
+    private Clip audioClip; // references the current audio clip
+    private volatile boolean isRunning = true; // this flag controls the music thread
 
+    // default constructor
     public BackgroundMusic(String filePath) {
         this.filePath = filePath;
+    }
+
+    public String getFilePath() {
+        return filePath;
     }
 
     @Override
@@ -21,7 +31,7 @@ public class BackgroundMusic implements Runnable{
             }
             // defines an audio stream
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
-            Clip audioClip = AudioSystem.getClip();
+            audioClip = AudioSystem.getClip();
             audioClip.open(audioStream);
             audioClip.loop(Clip.LOOP_CONTINUOUSLY); // loops music
             audioClip.start();
@@ -40,6 +50,21 @@ public class BackgroundMusic implements Runnable{
         } catch (InterruptedException ex) {
             System.err.println("Music playback interrupted: " + ex.getMessage());
         }
+    }
 
+    // stop method
+    public void stop() {
+        isRunning = false; // stops the loop
+        if (audioClip != null && audioClip.isRunning()){
+            audioClip.stop(); // stops music
+            audioClip.close(); // releases resources
+        }
+    }
+    // change music method
+    public void changeMusic(String newFilePath) {
+        stop(); // stops current music
+        this.filePath = newFilePath; // updates filepath
+        isRunning = true; // resets running flag
+        new Thread(this).start(); // begins new thread w/ updated music
     }
 }

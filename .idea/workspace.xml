@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Updates to lab&#10;&#10;-Text and formatting updates with correct game tags and colors&#10;&#10;-Fixed bug that allowed player to transmorg items without first entering transmorg menu by adding beingUsed field to Transmorgrifier and checking isBeingUsed in item use() method&#10;&#10;-Removed items from room after transmorgrifying by adding removeItem method to Room&#10;&#10;-Updates required a few changes to item constructors. Mentioning this in case there's any issues similar to the one Joey encountered the other day">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Updated about&#10;Some additional formatting/timing optimizations">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/BallOfLead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/BallOfLead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/DeckOfCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/DeckOfCards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Flask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Flask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Notebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Notebook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Paper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Paper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Sandwich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Thermometer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Thermometer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Transmorgrifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Transmorgrifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/VatOfLiquid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/VatOfLiquid.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +46,12 @@
     &quot;assignee&quot;: &quot;Blaqkstar&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/kylejfavorite/EscapeRoomGame.git&quot;,
-    &quot;accountId&quot;: &quot;86515775-36cf-415b-b0dd-8cb11382d995&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kylejfavorite/EscapeRoomGame.git",
+    "accountId": "86515775-36cf-415b-b0dd-8cb11382d995"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -61,30 +64,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.QuickMain.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.ScoreDB.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kyle/IdeaProjects/EscapeRoomGame/resources/derbyclient.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Debug",
+    "Application.QuickMain.executor": "Debug",
+    "Application.ScoreDB.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Kyle/IdeaProjects/EscapeRoomGame/resources/derbyclient.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Personal\School\NWTC\2025\2025 Spring Semester\8W1\Java 2\Group Project\EscapeRoomGame\Logging" />
@@ -153,8 +156,15 @@
       <workItem from="1741651113341" duration="4095000" />
       <workItem from="1741657965730" duration="28000" />
       <workItem from="1741669711736" duration="6473000" />
-      <workItem from="1741712313895" duration="10391000" />
-      <workItem from="1741732827426" duration="2810000" />
+      <workItem from="1741712313895" duration="9488000" />
+    </task>
+    <task id="LOCAL-00001" summary="starting point">
+      <option name="closed" value="true" />
+      <created>1737601738920</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737601738920</updated>
     </task>
     <task id="LOCAL-00002" summary="moved main.java into correct folder">
       <option name="closed" value="true" />
@@ -540,21 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1741676201211</updated>
     </task>
-    <task id="LOCAL-00050" summary="Updates to lab&#10;&#10;-Text and formatting updates with correct game tags and colors&#10;&#10;-Fixed bug that allowed player to transmorg items without first entering transmorg menu by adding beingUsed field to Transmorgrifier and checking isBeingUsed in item use() method&#10;&#10;-Removed items from room after transmorgrifying by adding removeItem method to Room&#10;&#10;-Updates required a few changes to item constructors. Mentioning this in case there's any issues similar to the one Joey encountered the other day">
-      <option name="closed" value="true" />
-      <created>1741722289882</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1741722289882</updated>
-    </task>
-    <option name="localTasksCounter" value="51" />
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Built out gameOver() method&#10;Clarified failure conditions&#10;Created a variable in Room called roomPar (with relevant getter/setter) that is used to determine gameOverScore. If player score exceeds gameOverScore, gameOver() is called. &#10;Cleaned up some more output text" />
     <MESSAGE value="Additional text cleanup" />
     <MESSAGE value="Got painting description and inspection updating to properly reflect diegetic changes after player 'uses' it.&#10;Fixed bug where player could spawn an infinite number of keys from behind the painting." />
     <MESSAGE value="updated TODO list to account for work I just did" />
@@ -579,8 +582,7 @@
     <MESSAGE value="Fixed 'play again' bug that would not allow player to actually play again" />
     <MESSAGE value="Lots of narrative and formatting cleanup&#10;Removed some vestigial code" />
     <MESSAGE value="Updated about&#10;Some additional formatting/timing optimizations" />
-    <MESSAGE value="Updates to lab&#10;&#10;-Text and formatting updates with correct game tags and colors&#10;&#10;-Fixed bug that allowed player to transmorg items without first entering transmorg menu by adding beingUsed field to Transmorgrifier and checking isBeingUsed in item use() method&#10;&#10;-Removed items from room after transmorgrifying by adding removeItem method to Room&#10;&#10;-Updates required a few changes to item constructors. Mentioning this in case there's any issues similar to the one Joey encountered the other day" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates to lab&#10;&#10;-Text and formatting updates with correct game tags and colors&#10;&#10;-Fixed bug that allowed player to transmorg items without first entering transmorg menu by adding beingUsed field to Transmorgrifier and checking isBeingUsed in item use() method&#10;&#10;-Removed items from room after transmorgrifying by adding removeItem method to Room&#10;&#10;-Updates required a few changes to item constructors. Mentioning this in case there's any issues similar to the one Joey encountered the other day" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated about&#10;Some additional formatting/timing optimizations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
