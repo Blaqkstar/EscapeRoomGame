@@ -527,3 +527,30 @@
 03-11-2025 15:03:52.882 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
 03-11-2025 15:04:40.991 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
 03-11-2025 15:04:40.994 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 15:23:33.969 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 15:23:33.972 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 15:25:18.453 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 15:25:18.455 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 15:25:28.658 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 15:25:28.658 DEBUG [game.Main] - [0;35minstantiating Final Room[0m
+03-11-2025 15:25:28.659 DEBUG [game.Main] - [0;35madding items to Final Room[0m
+03-11-2025 15:42:16.002 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 15:42:16.005 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 15:42:26.425 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 15:42:26.425 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-11-2025 15:42:26.425 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-11-2025 15:43:17.835 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 15:43:17.839 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 15:43:24.148 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 15:43:24.149 DEBUG [game.Main] - [0;35minstantiating The Conservatory[0m
+03-11-2025 15:43:24.149 DEBUG [game.Main] - [0;35madding items to The Conservatory[0m
+03-11-2025 15:51:27.117 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 15:51:27.120 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 15:51:38.899 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 15:51:38.899 DEBUG [game.Main] - [0;35minstantiating Consequences[0m
+03-11-2025 15:51:38.899 DEBUG [game.Main] - [0;35madding items to Consequences[0m
+03-11-2025 15:52:12.448 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 15:52:12.451 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 15:52:18.111 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 15:52:18.112 DEBUG [game.Main] - [0;35minstantiating Consequences[0m
+03-11-2025 15:52:18.113 DEBUG [game.Main] - [0;35madding items to Consequences[0m

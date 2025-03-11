@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Updated about&#10;Some additional formatting/timing optimizations">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/BallOfLead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/BallOfLead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/DeckOfCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/DeckOfCards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Flask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Flask.java" afterDir="false" />
-    </list>
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Updated help menu to include a CMD SYNTAX key">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed workspace XML bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/BackgroundMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/BackgroundMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Notebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Notebook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Paper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Paper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Sandwich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Sandwich.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Thermometer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Thermometer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Transmorgrifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Transmorgrifier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +36,12 @@
     &quot;assignee&quot;: &quot;Blaqkstar&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/kylejfavorite/EscapeRoomGame.git",
-    "accountId": "86515775-36cf-415b-b0dd-8cb11382d995"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kylejfavorite/EscapeRoomGame.git&quot;,
+    &quot;accountId&quot;: &quot;86515775-36cf-415b-b0dd-8cb11382d995&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -71,7 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Application.QuickMain.executor": "Debug",
     "Application.ScoreDB.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -162,32 +147,6 @@
       <workItem from="1741657965730" duration="28000" />
       <workItem from="1741669711736" duration="6473000" />
       <workItem from="1741712313895" duration="9488000" />
-    </task>
-    <task id="LOCAL-00001" summary="starting point">
-      <option name="closed" value="true" />
-      <created>1737601738920</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1737601738920</updated>
-    </task>
-    <task id="LOCAL-00002" summary="moved main.java into correct folder">
-      <option name="closed" value="true" />
-      <created>1737850767623</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1737850767623</updated>
-      <workItem from="1741669711736" duration="6534000" />
-      <workItem from="1741709786058" duration="9685000" />
-    </task>
-    <task id="LOCAL-00003" summary="Worked on finishing the system for moving the player between rooms. I had to rework some of the exit door code, but now have it working properly. Cheers!">
-      <option name="closed" value="true" />
-      <created>1740002342595</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1740002342595</updated>
     </task>
     <task id="LOCAL-00004" summary="Worked on finishing the system for our assignment 5 by implementing a Comparable and Comparator in the high scores system.">
       <option name="closed" value="true" />
@@ -573,15 +532,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741718593070</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Fixed workspace XML bug">
+      <option name="closed" value="true" />
+      <created>1741723510353</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1741723510353</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated TODO list to account for work I just did" />
-    <MESSAGE value="Abstracted logic to set game over score into its own method, setGameOverScore()" />
     <MESSAGE value="Came up with a better placeholder name, pending group feedback.&#10;Added placeholder for about command&#10;Updated title font&#10;Some additional text output cleanup" />
     <MESSAGE value="Embellished the lever success/failure messages to fit the vibe of the game." />
     <MESSAGE value="Got Conservatory padded out with first pass of all its flavor items&#10;Removed Room from the constructor of a couple of the item child classes that didn't need to know about room details." />
@@ -605,7 +570,9 @@
     <MESSAGE value="Forgot to uncomment playIntro()" />
     <MESSAGE value="Additional output formatting cleanup" />
     <MESSAGE value="Updated help menu to include a CMD SYNTAX key" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated help menu to include a CMD SYNTAX key" />
+    <MESSAGE value="Added logic to allow changing of music at will" />
+    <MESSAGE value="Fixed workspace XML bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed workspace XML bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

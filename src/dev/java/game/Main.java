@@ -48,7 +48,7 @@ public class Main{
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
             Thread.sleep(500);
 
-            playIntro(); /// plays narrative intro
+            //playIntro(); /// -------------------------------------------------------------------------------- {<NARRATIVE INTRO HERE>} ------------
 
             gameOverScore = setGameOverScore(room); // setsGameOverScore
 
@@ -211,11 +211,12 @@ public class Main{
                                         /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                                         if (room.getName().equalsIgnoreCase("Tutorial Room")) {
                                             room = SetNewRoom(log, "The Conservatory",false);
+                                            backgroundMusic.changeMusic("resources/music/conservatoryMusic.wav"); /// -----------------  { MUSIC CHANGE }
                                         } else if (room.getName().equalsIgnoreCase("The Conservatory")) {
                                             room = SetNewRoom(log, "The Lab",false);
                                         } else if (room.getName().equalsIgnoreCase("The Lab")) {
                                             room = SetNewRoom(log, "Final Room",false);
-                                            backgroundMusic.changeMusic("resources/music/finalRoomMusic.wav"); /// MUSIC CHANGE
+                                            backgroundMusic.changeMusic("resources/music/finalRoomMusic.wav"); /// -----------------  { MUSIC CHANGE }
                                         }
                                         ///  FINAL ROOM AND MULTIPLE ENDINGS
                                         // player picks correct door
@@ -225,6 +226,7 @@ public class Main{
                                         // player picks incorrect door
                                         else if(room.getName().equalsIgnoreCase("Final Room") && player.getFacing() != Direction.east) {
                                             room = SetNewRoom(log, "Consequences",false);
+                                            backgroundMusic.changeMusic("resources/music/consequencesMusic.wav"); /// -----------------  { MUSIC CHANGE }
                                         }
                                         System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and step into the next room.");
                                         System.out.println();
@@ -272,19 +274,21 @@ public class Main{
                 }
                 else if (input.equalsIgnoreCase("skip to conservatory")){
                     room = SetNewRoom(log, "The Conservatory",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
+                    backgroundMusic.changeMusic("resources/music/conservatoryMusic.wav"); /// -----------------  { <MUSIC CHANGE> }
                     System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
                     System.out.println();
                     System.out.println(room.getIntroBlurb());
                 }
                 else if (input.equalsIgnoreCase("skip to final")){
                     room = SetNewRoom(log, "Final Room",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
-                    backgroundMusic.changeMusic("resources/music/finalRoomMusic.wav"); /// MUSIC CHANGE
+                    backgroundMusic.changeMusic("resources/music/finalRoomMusic.wav"); /// -----------------  { <MUSIC CHANGE> }
                     System.out.println();
                     System.out.println(room.getIntroBlurb());
                     Room.FinalRoomDialog();
                 }
                 else if (input.equalsIgnoreCase("skip to ending")){
                     room = SetNewRoom(log, "Consequences",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
+                    backgroundMusic.changeMusic("resources/music/conservatoryMusic.wav"); /// -----------------  { <MUSIC CHANGE> }
                     System.out.println();
                     System.out.println(room.getIntroBlurb());
                     gameOverSuccess(player);
@@ -504,7 +508,7 @@ public class Main{
         String legalInfo =
                 "© 2025 Echoes Beyond The Veil. All rights reserved.\n" +
                         "This game is a work of fiction. Any resemblance to actual events or persons, living or dead, is purely coincidental.\n\n" +
-                        "Music © Cthulhu Mythos Music 2023";
+                        "Music by Cthulhu Mythos Music, Experia, Allan Ariza, & Iron Cthulhu Apocalypse. All rights reserved to their respective owners.";
         String thanksMessage =
                 ConsoleColors.BLUE+"==========================================\n"+ConsoleColors.RESET +
                         "            THANKS FOR PLAYING!\n" +
