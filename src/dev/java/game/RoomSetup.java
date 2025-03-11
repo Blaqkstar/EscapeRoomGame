@@ -215,21 +215,41 @@ public class RoomSetup {
 
         finalRoom.setRoomPar(10);
 
-        exitDoor = new Door(finalRoom,1, "The mirror-like surface of the " +ConsoleColors.CYAN+"door"+ConsoleColors.RESET +" shows you a scene you faintly remember from long ago. You see a scene where you are refusing help from your friend who is worried for you. They leave with a sad look as you throw a bottle at the wall in anger.",
-                ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": There is a mechanism that looks like it would accept a key.", "door");
+        exitDoor = new Door(finalRoom, 1,
+                "The mirror-like surface of the " + ConsoleColors.CYAN + "door" + ConsoleColors.RESET + " glows faintly, its surface fractured like cracked glass. As you step closer, the image within begins to take shape — a\n" +
+                        "moment you’ve tried to suppress. You see yourself at a crossroads, your hand clenched around an envelope containing words you never delivered. A shadowed figure stands before you, their face unreadable, as you\n" +
+                        "turn away and crumple the envelope into your pocket. The sound of footsteps receding and the weight of missed opportunity linger like an ache in your chest. The door’s surface seems to shift, almost imploring\n" +
+                        "you to face the choices you made — and the ones you didn’t.",
+                ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": A faint outline of a keyhole becomes visible in the fractured surface.",
+                "door");
+
 
         finalRoom.SetExitDoor(exitDoor);
 
-        westDoor = new Door(finalRoom, 2, "The mirror-like surface of the " +ConsoleColors.CYAN+"door"+ConsoleColors.RESET +" shows you a scene you faintly remember from long ago. You see your childhood friend laying in a hospital bed, and the doctors scrambling because their heart has stopped.",
-                "You do not want to inspect this door any further","eastDoor");
+        westDoor = new Door(finalRoom, 2,
+                "The mirror-like surface of the " + ConsoleColors.CYAN + "door" + ConsoleColors.RESET + " shimmers faintly, its surface rippling like liquid silver. As you approach, the image sharpens into a scene from your\n" +
+                        "past — a memory you’ve tried to bury. Your childhood friend lies in a hospital bed, their face pale and still, as doctors scramble frantically around them. The steady beep of the heart monitor falters, then\n" +
+                        "flat-lines, and the sound echoes in your mind like a hammer striking an anvil. The door’s surface seems to pulse faintly, as though it’s alive, and you can’t shake the feeling that it’s not just showing you the\n" +
+                        "past — it’s pulling you back into it.",
+                ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": A faint outline of a keyhole becomes visible in the fractured surface.",
+                "eastDoor");
 
-        northDoor = new Door(finalRoom, 2, "The mirror-like surface of the " +ConsoleColors.CYAN+"door"+ConsoleColors.RESET +" shows you a scene you faintly remember from long ago. You see the person you loved, storming out angry and sad after a bad fight, and you crumpling to the ground in despair.",
-                "You do not want to inspect this door any further","northDoor");
+        northDoor = new Door(finalRoom, 2,
+                "The mirror-like surface of the " + ConsoleColors.CYAN + "door" + ConsoleColors.RESET + " glimmers with an unnatural light, drawing you closer despite yourself. The image that forms is one you’ve tried to\n" +
+                        "forget: the person you loved, their face twisted in anger and sorrow, storming out after a bitter fight. You see yourself crumple to the ground, your hands clutching at empty air as the door slams shut behind them.\n" +
+                        "The memory is so vivid you can almost feel the cold floor beneath your knees and the ache in your chest. The door’s surface seems to ripple, as though it’s inviting you to step through and relive the moment — or perhaps\n" +
+                        "to change it.",
+                ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": A faint outline of a keyhole becomes visible in the fractured surface.",
+                "northDoor");
 
-        southDoor = new Door(finalRoom, 2, "The mirror-like surface of the " +ConsoleColors.CYAN+"door"+ConsoleColors.RESET +" shows you a scene you faintly remember from long ago. You see the lady at your doorstep, with her tear-streaked face. You remember she asked you for a ride to the hospital for her son, but you refused. Her son ended up dying in the ambulance because it was too late.",
-                "You do not want to inspect this door any further","door");
+        southDoor = new Door(finalRoom, 2,
+                "The mirror-like surface of the " + ConsoleColors.CYAN + "door" + ConsoleColors.RESET + " flickers faintly, its surface shifting like smoke. As you watch, the image resolves into a scene that haunts you still: a woman\n" +
+                        "stands at your doorstep, her face streaked with tears. She begs you for a ride to the hospital, her voice trembling with desperation, but you refuse. The memory shifts, showing her son in the back of an ambulance,\n" +
+                        "his small body lifeless as the paramedics work in vain. The door’s surface seems to hum faintly, as though it’s feeding on your guilt, and you can’t help but wonder if this is a memory — or a warning.",
+                ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": A faint outline of a keyhole becomes visible in the fractured surface.",
+                "southDoor");
 
-        Key key = new Key("key","A mirror-like key","The key seems to swirl in and out of your hand when your holding it.", finalRoom);
+        Key key = new Key("key","a mirror-like "+ConsoleColors.CYAN+"key"+ConsoleColors.RESET,"The key feels unnaturally cold in your hand, its surface shimmering faintly as if it exists just beyond the edge of reality.", finalRoom);
         key.setObserved(true);
 
         finalRoom.setItem(Main.Direction.east, key);
@@ -240,7 +260,9 @@ public class RoomSetup {
 
 
         /// room should contain an intro blurb that spits out when player enters. This can be like the Consequences room where that blurb is the start of dialog
-        //finalRoom.setIntroBlurb();
+        finalRoom.setIntroBlurb(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": The air in this room is thick and heavy, carrying the distinct scent of ozone and decay. Four doors loom before you, one on each wall, containing more of the strange etching you've\n" +
+                "seen elsewhere here. The walls are lined with dirt-caked tiles, and the, now all-too-familiar, low hum fills the air, its profane frequencies vibrating through your essence.");
 
         return finalRoom;
     }
@@ -252,8 +274,7 @@ public class RoomSetup {
 
         if(rightDoor) {
             theEndRoom.setIntroBlurb(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                    ": You step through the door into a blinding light and realize you are lying in a bed. After a minute you can see and" +
-                    " realize that your in a hospital and your body is in extreme pain.");
+                    ": You step through the door into a blinding light and realize you are lying in a bed. After a minute you can see and realize that your in a hospital and your body is in extreme pain.");
         }
         else {
             theEndRoom.setIntroBlurb(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+

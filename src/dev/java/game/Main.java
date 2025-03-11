@@ -47,7 +47,7 @@ public class Main{
             System.out.println();
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
             Thread.sleep(500);
-            //playIntro(); /// plays narrative intro
+            playIntro(); /// plays narrative intro
             gameOverScore = setGameOverScore(room); // setsGameOverScore
 
             // this one loops until gameOverScore has been reached
@@ -269,18 +269,19 @@ public class Main{
                     System.out.println();
                     System.out.println(room.getIntroBlurb());
                 }
-                else if (input.equalsIgnoreCase("speedrun to conservatory")){
+                else if (input.equalsIgnoreCase("skip to conservatory")){
                     room = SetNewRoom(log, "The Conservatory",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                     System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
                     System.out.println();
                     System.out.println(room.getIntroBlurb());
                 }
-                else if (input.equalsIgnoreCase("speedrun to final")){
+                else if (input.equalsIgnoreCase("skip to final")){
                     room = SetNewRoom(log, "Final Room",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                     System.out.println();
                     System.out.println(room.getIntroBlurb());
+                    Room.FinalRoomDialog();
                 }
-                else if (input.equalsIgnoreCase("speedrun to ending")){
+                else if (input.equalsIgnoreCase("skip to ending")){
                     room = SetNewRoom(log, "Consequences",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                     System.out.println();
                     System.out.println(room.getIntroBlurb());
@@ -522,6 +523,13 @@ public class Main{
         return room.getRoomPar() * 3;
     }
     private static void gameOver(Player player) {
+        String gameOver = ConsoleColors.RED+"\n" +
+                " ___   ___         ___        ___         ___   ___  \n" +
+                "|     |   | |\\ /| |          |   | |  /  |     |   | \n" +
+                "| +-  |-+-| | + | |-+-       |   | | +   |-+-  |-+-  \n" +
+                "|   | |   | |   | |          |   | |/    |     |  \\  \n" +
+                " ---               ---        ---         ---        \n" +
+                "                                                     \n"+ConsoleColors.RESET;
         try {
             Thread.sleep(3000);
             System.out.println();
@@ -545,12 +553,21 @@ public class Main{
                     "terrible than you could ever comprehend...");
             System.out.println();
             System.out.println();
+            Thread.sleep(3000);
+            System.out.println(gameOver);
+            Thread.sleep(8000);
         } catch (InterruptedException ex) {
             System.out.println("Game Over Method Error");
         }
     }
     private static void gameOverSuccess(Player player) {
-
+        String gameOver = ConsoleColors.RED+"\n" +
+                " ___   ___         ___        ___         ___   ___  \n" +
+                "|     |   | |\\ /| |          |   | |  /  |     |   | \n" +
+                "| +-  |-+-| | + | |-+-       |   | | +   |-+-  |-+-  \n" +
+                "|   | |   | |   | |          |   | |/    |     |  \\  \n" +
+                " ---               ---        ---         ---        \n" +
+                "                                                     \n"+ConsoleColors.RESET;
         try {
             System.out.println();
             ///  the revelation
@@ -609,14 +626,28 @@ public class Main{
                 System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                         ": You take a step forward, and the void envelops you. There is no pain, no fear - only a profound sense of peace. The darkness closes in and, for a moment, you feel as though you are floating.");
                 Thread.sleep(3000);
+                System.out.println();
+                System.out.println();
                 System.out.println("Then, nothing.");
-                Thread.sleep(1500);
+                Thread.sleep(1300);
+                System.out.println();
+                Thread.sleep(1300);
+                System.out.println();
                 System.out.println("No thoughts.");
-                Thread.sleep(1500);
-                System.out.println("No memories");
-                Thread.sleep(1500);
-                System.out.println("No self");
-                Thread.sleep(1500);
+                Thread.sleep(1300);
+                System.out.println();
+                Thread.sleep(1300);
+                System.out.println();
+                System.out.println("No memories.");
+                Thread.sleep(1300);
+                System.out.println();
+                Thread.sleep(1300);
+                System.out.println();
+                System.out.println("No self.");
+                Thread.sleep(1300);
+                System.out.println();
+                Thread.sleep(1300);
+                System.out.println();
                 System.out.println("You are gone.");
                 Thread.sleep(3000);
                 System.out.println();
@@ -637,23 +668,13 @@ public class Main{
             }
             System.out.println();
             Thread.sleep(3000);
-            System.out.println();
             System.out.println(ConsoleColors.BLUE+ "IN THE END, THERE IS NO ESCAPE. ONLY THE CHOICES WE MAKE, AND THE CONSEQUENCES WE MUST ENDURE."+ConsoleColors.RESET);
+            Thread.sleep(3000);
+            System.out.println();
+            System.out.println();
+            System.out.println(gameOver);
             Thread.sleep(8000);
             player.setPlayerWins(true);
-            /// TODO: NEED TO GET THE PLAY AGAIN PROMPT WORKING AGAIN!
-            ///  NOTABLY: PLAY AGAIN PROMPT TIED TO GAMEOVERSCORE STILL WORKS AS INTENDED, IT'S JUST THE PROMPT AT THE ENDINGS THAT WE NEED TO WORK OUT
-            // play again prompt
-//            do {
-//                System.out.print(ConsoleColors.YELLOW+"Would you like to play again? (Y / N): "+ConsoleColors.RESET);
-//                input = scanner.nextLine().trim().toLowerCase(); // collects player choice
-//            } while (!input.equalsIgnoreCase("y") && !input.equalsIgnoreCase("n"));
-//            if (input.equalsIgnoreCase("n")) {
-//                System.exit(0);
-//                //input = "exit"; // exits game
-//            } else {
-//                // need to restart the game... so we actually might need that method after all
-//            }
         } catch (InterruptedException ex) {
             System.out.println("Game Over (Success) Method Error");
         }

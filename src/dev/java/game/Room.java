@@ -174,6 +174,8 @@ public class Room implements LeverObserver {
     }
     ///  DIALOG FOR FINAL ROOM
     public static void FinalRoomDialog() throws InterruptedException {
+        Thread.sleep(2000);
+        System.out.println();
         System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
                 ": A deep, resonant chuckle fills the air, echoing as if emanating from everywhere and nowhere at once.");
         Thread.sleep(1500);
@@ -198,7 +200,7 @@ public class Room implements LeverObserver {
                 "break beneath them?'");
         System.out.println();
         System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
-                ": The voice grows shifts, becoming almost melodic, like a dirge.");
+                ": The voice shifts, becoming almost melodic, like a dirge.");
         Thread.sleep(1500);
         System.out.println();
         System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +
@@ -206,23 +208,44 @@ public class Room implements LeverObserver {
         Thread.sleep(1000);
         System.out.println();
         System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
-                ": The voice grows recites, each line dripping with menace.");
+                ": The voice recites, each line dripping with menace.");
         System.out.println();
-        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +
-                ":\n'Four paths stretch where silence calls,\n" +
-                "One to rise and three to fall.\n\n" +
-                "North echoes cries of pain,\n" +
-                "A friend's plea, left in vain.\n\n" +
-                "South drips red with guilt's refrain,\n" +
-                "A lover's words, your final stain.\n\n" +
-                "East holds ghosts with hollow tongues,\n" +
-                "A debt unpaid, yet still unsung.\n\n" +
-                "West is weighted with bones you bear,\n" +
-                "A fate you chose, yet did not spare.\n\n" +
-                "One road mends, though scars remain,\n" +
-                "The rest will break you once again.\n" +
-                "Mark the cost of what you've done,\n" +
-                "Choose with care, or be undone.'");
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +":");
+
+        System.out.println(ConsoleColors.BLUE+"Four paths stretch where silence calls,");
+        Thread.sleep(1500);
+        System.out.println("One to rise and three to fall.");
+        Thread.sleep(2000);
+        System.out.println();
+        System.out.println("North echoes cries of pain,");
+        Thread.sleep(1500);
+        System.out.println("A friend's plea, left in vain.");
+        Thread.sleep(2000);
+        System.out.println();
+        System.out.println("South drips red with guilt's refrain,");
+        Thread.sleep(1500);
+        System.out.println("A lover's words, your final stain.");
+        Thread.sleep(2000);
+        System.out.println();
+        System.out.println("East holds ghosts with hollow tongues,");
+        Thread.sleep(1500);
+        System.out.println("A debt unpaid, yet still unsung.");
+        Thread.sleep(2000);
+        System.out.println();
+        System.out.println("West is weighted with bones you bear,");
+        Thread.sleep(1500);
+        System.out.println("A fate you chose, yet did not spare.");
+        Thread.sleep(2000);
+        System.out.println();
+        System.out.println("One road mends, though scars remain,");
+        Thread.sleep(1500);
+        System.out.println("The rest will break you once again.");
+        Thread.sleep(2000);
+        System.out.println();
+        System.out.println("Mark the cost of what you've done,");
+        Thread.sleep(1500);
+        System.out.println("Choose with care, or be undone."+ ConsoleColors.RESET);
+        System.out.println();
         Thread.sleep(2000);
         System.out.println();
         System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
