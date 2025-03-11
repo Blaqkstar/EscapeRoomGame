@@ -21,6 +21,9 @@ public class Main{
         // this loops until the user types 'exit'
         do {
             /// ------------------------------------------------------------------------- { <GAME START> } -----------------------------------------
+            if (!backgroundMusic.getFilePath().equals("resources/music/bgmusic.wav")) {
+                backgroundMusic.changeMusic("resources/music/bgmusic.wav");
+            }
             // prints game title
             printTitle();
             // Create list of rooms

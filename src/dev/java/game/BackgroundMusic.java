@@ -15,6 +15,10 @@ public class BackgroundMusic implements Runnable{
         this.filePath = filePath;
     }
 
+    public String getFilePath() {
+        return filePath;
+    }
+
     @Override
     public void run() {
         try {

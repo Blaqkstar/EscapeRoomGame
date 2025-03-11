@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed workspace XML bug">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Added music for conservatory and consequences">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/BackgroundMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/BackgroundMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,14 +148,6 @@
       <workItem from="1741657965730" duration="28000" />
       <workItem from="1741669711736" duration="6473000" />
       <workItem from="1741712313895" duration="9488000" />
-    </task>
-    <task id="LOCAL-00004" summary="Worked on finishing the system for our assignment 5 by implementing a Comparable and Comparator in the high scores system.">
-      <option name="closed" value="true" />
-      <created>1740276621147</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1740276621148</updated>
     </task>
     <task id="LOCAL-00005" summary="Got my changes finished which implement the RoomSetup Class to streamline room creation. Hope you guys like it!">
       <option name="closed" value="true" />
@@ -540,14 +533,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741723510353</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Added music for conservatory and consequences">
+      <option name="closed" value="true" />
+      <created>1741726417600</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1741726417600</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Came up with a better placeholder name, pending group feedback.&#10;Added placeholder for about command&#10;Updated title font&#10;Some additional text output cleanup" />
     <MESSAGE value="Embellished the lever success/failure messages to fit the vibe of the game." />
     <MESSAGE value="Got Conservatory padded out with first pass of all its flavor items&#10;Removed Room from the constructor of a couple of the item child classes that didn't need to know about room details." />
     <MESSAGE value="Added final two items (diary, corpse) to Conservatory" />
@@ -572,7 +572,8 @@
     <MESSAGE value="Updated help menu to include a CMD SYNTAX key" />
     <MESSAGE value="Added logic to allow changing of music at will" />
     <MESSAGE value="Fixed workspace XML bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed workspace XML bug" />
+    <MESSAGE value="Added music for conservatory and consequences" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added music for conservatory and consequences" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

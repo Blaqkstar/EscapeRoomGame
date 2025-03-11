@@ -554,3 +554,25 @@
 03-11-2025 15:52:18.111 DEBUG [game.Main] - [0;35muser input received[0m
 03-11-2025 15:52:18.112 DEBUG [game.Main] - [0;35minstantiating Consequences[0m
 03-11-2025 15:52:18.113 DEBUG [game.Main] - [0;35madding items to Consequences[0m
+03-11-2025 15:57:29.399 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 15:57:29.403 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 15:57:55.143 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 15:57:55.143 DEBUG [game.Main] - [0;35minstantiating Final Room[0m
+03-11-2025 15:57:55.143 DEBUG [game.Main] - [0;35madding items to Final Room[0m
+03-11-2025 15:59:06.849 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 15:59:06.849 DEBUG [game.Main] - [0;35minstantiating Consequences[0m
+03-11-2025 15:59:06.850 DEBUG [game.Main] - [0;35madding items to Consequences[0m
+03-11-2025 16:01:02.342 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 16:01:02.342 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 16:02:21.289 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 16:02:21.292 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 16:02:29.627 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 16:02:29.627 DEBUG [game.Main] - [0;35minstantiating Consequences[0m
+03-11-2025 16:02:29.628 DEBUG [game.Main] - [0;35madding items to Consequences[0m
+03-11-2025 16:05:17.863 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 16:05:17.866 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 16:05:26.098 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 16:05:26.098 DEBUG [game.Main] - [0;35minstantiating Consequences[0m
+03-11-2025 16:05:26.098 DEBUG [game.Main] - [0;35madding items to Consequences[0m
+03-11-2025 16:06:08.093 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 16:06:08.093 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
