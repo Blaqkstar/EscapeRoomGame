@@ -19,8 +19,7 @@ public class Main{
 
         // this loops until the user types 'exit'
         do {
-            ///  moved these inside of the main loop. Might alleviate the need for caching a lot of the stuff we were going to have to in order to create a restart() method
-            ///  YEP, I THINK THIS RESOLVED THE ISSUE. WE MIGHT NOT NEED THAT RESTART() METHOD AT ALL NOW. WORTH SOME TESTING ON BUT PRELIM TESTS ARE GOOD.
+            /// ------------------------------------------------------------------------- { <GAME START> } -----------------------------------------
             // prints game title
             printTitle();
             // Create list of rooms
@@ -47,7 +46,7 @@ public class Main{
             System.out.println();
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
             Thread.sleep(500);
-            playIntro(); /// plays narrative intro
+            //playIntro(); /// plays narrative intro
             gameOverScore = setGameOverScore(room); // setsGameOverScore
 
             // this one loops until gameOverScore has been reached
@@ -305,7 +304,9 @@ public class Main{
                 else if (!input.equalsIgnoreCase("exit")) { // handles incorrect commands
                     System.out.println("Unknown input. Please enter 'look <direction>' or 'exit'.");
                 }
-            } while (player.getScore() < gameOverScore && !player.getPlayerWins().equals(true)); // basic lose conditions
+            } while (player.getScore() < gameOverScore && !player.getPlayerWins().equals(true)); // core failure conditions
+
+            /// ------------------------------------------------------------------------- { <GAME OVER> } -----------------------------------------
             if (player.getScore() >= gameOverScore) {
                 gameOver(player);
             }
@@ -320,7 +321,7 @@ public class Main{
             System.out.println();
             System.out.println();
             // else loop repeats due to intrinsic do-while rules
-        } while (!input.equalsIgnoreCase("exit")); // repeats loop until user types 'exit'... this is always true but I created a band aid by adding a check for 'exit' just after user input is accepted
+        } while (!input.equalsIgnoreCase("exit")); /// repeats loop until user types 'exit'... this is always true, but I created a band-aid by adding a check for 'exit' just after user input is accepted
 
         // exit message
         log.info("exiting game...");
@@ -343,7 +344,7 @@ public class Main{
         System.out.println(ConsoleColors.YELLOW+"9. exit"+ConsoleColors.RESET+": exits the game");
     }
     private static void printTitle(){
-        String ver = "v0.8.5"; // this is just a rough estimate based on what we've done so far vs what remains. Will say v1.0 when we hand in
+        String ver = "v1.0"; // this is just a rough estimate based on what we've done so far vs what remains. Will say v1.0 when we hand in
         // text generated via https://patorjk.com/software/taag. This is the "Invita" font
         final String title = ConsoleColors.BLUE+"\n"+
                 "\n" +
@@ -354,15 +355,6 @@ public class Main{
                 "(_____)                    (_/ (        .-/              (_/                  |            \n" +
                 "                                       (_/                                                 \n"+
                 "                                                                                 "+ver+ConsoleColors.RESET;
-
-        // text generated via https://patorjk.com/software/taag. This is the "Slant" font
-//        final String oldTitle = ConsoleColors.RED+"\n" +
-//                "    ___________ _________    ____  ______   ____  ____  ____  __  ___\n" +
-//                "   / ____/ ___// ____/   |  / __ \\/ ____/  / __ \\/ __ \\/ __ \\/  |/  /\n" +
-//                "  / __/  \\__ \\/ /   / /| | / /_/ / __/    / /_/ / / / / / / / /|_/ / \n" +
-//                " / /___ ___/ / /___/ ___ |/ ____/ /___   / _, _/ /_/ / /_/ / /  / /  \n" +
-//                "/_____//____/\\____/_/  |_/_/   /_____/  /_/ |_|\\____/\\____/_/  /_/   \n" +
-//                "====================================================================\n"+ConsoleColors.RESET;
         System.out.println(title);
         System.out.println();
     }
@@ -407,19 +399,25 @@ public class Main{
                 "indistinguishable from one another. You feel as though you are being pulled apart and reassembled, your essence scattered across the cosmos and then drawn back together. And then... ");
         Thread.sleep(6000);
         System.out.println();
-        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                ": ... Silence...");
+        System.out.println();
+        System.out.println("Silence...");
         Thread.sleep(3000);
-        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                ": ... Darkness...");
+        System.out.println();
+        System.out.println();
+        System.out.println("Darkness...");
         Thread.sleep(3000);
-        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                ": A single, faint pulse of light, like a heartbeat...");
+        System.out.println();
+        System.out.println();
+        System.out.println("A single, faint pulse of light, like a heartbeat...");
         Thread.sleep(3000);
-        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                ": And then... ");
+        System.out.println();
+        System.out.println();
+        System.out.println("And then... ");
         Thread.sleep(4000);
         System.out.println();
+        Thread.sleep(2000);
+        System.out.println();
+        Thread.sleep(2000);
         System.out.println();
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                 ": You awaken, groggily, to the sound of rain tapping against a fogged window. The air is heavy, thick with the scent of damp wood and something faintly metallic,\n" +
@@ -500,7 +498,7 @@ public class Main{
                         "Music © Cthulhu Mythos Music 2023";
         String thanksMessage =
                 ConsoleColors.BLUE+"==========================================\n"+ConsoleColors.RESET +
-                        "            THANK YOU FOR PLAYING!\n" +
+                        "            THANKS FOR PLAYING!\n" +
                         ConsoleColors.BLUE+"=========================================="+ConsoleColors.RESET;
         System.out.println(aboutHeader);
         System.out.println(aboutInfo);
@@ -555,6 +553,17 @@ public class Main{
             System.out.println();
             Thread.sleep(3000);
             System.out.println(gameOver);
+            System.out.println();
+            Thread.sleep(3000);
+            System.out.println();
+            Thread.sleep(300);
+            System.out.println();
+            Thread.sleep(300);
+            System.out.println();
+            Thread.sleep(300);
+            System.out.println();
+            Thread.sleep(300);
+            System.out.println();
             Thread.sleep(8000);
         } catch (InterruptedException ex) {
             System.out.println("Game Over Method Error");

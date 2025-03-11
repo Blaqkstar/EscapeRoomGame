@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed 'play again' bug that would not allow player to actually play again">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Lots of narrative and formatting cleanup&#10;Removed some vestigial code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +145,7 @@
       <workItem from="1741580422214" duration="3552000" />
       <workItem from="1741651113341" duration="4095000" />
       <workItem from="1741657965730" duration="28000" />
-      <workItem from="1741669711736" duration="4694000" />
+      <workItem from="1741669711736" duration="6426000" />
     </task>
     <task id="LOCAL-00001" summary="starting point">
       <option name="closed" value="true" />
@@ -525,14 +523,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741653558885</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Lots of narrative and formatting cleanup&#10;Removed some vestigial code">
+      <option name="closed" value="true" />
+      <created>1741674469047</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1741674469047</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed some text formatting inconsistencies&#10;Created placeholder gameOver() method&#10;Created lose conditions (player score exceeds predefined gameOverScore)&#10;Created some logic after game over to ask player if they'd like to play again" />
     <MESSAGE value="Fixed some text formatting inconsistencies" />
     <MESSAGE value="Built out gameOver() method&#10;Clarified failure conditions&#10;Created a variable in Room called roomPar (with relevant getter/setter) that is used to determine gameOverScore. If player score exceeds gameOverScore, gameOver() is called. &#10;Cleaned up some more output text" />
     <MESSAGE value="Additional text cleanup" />
@@ -557,7 +562,8 @@
     <MESSAGE value="Updated narrative language of Final Room dialog while maintaining message and much of the original phrasing.&#10;Cleaned up Final Room dialog formatting to match rest of the game thus far" />
     <MESSAGE value="Some additional narrative text cleanup in Conservatory and Consequences" />
     <MESSAGE value="Fixed 'play again' bug that would not allow player to actually play again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed 'play again' bug that would not allow player to actually play again" />
+    <MESSAGE value="Lots of narrative and formatting cleanup&#10;Removed some vestigial code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lots of narrative and formatting cleanup&#10;Removed some vestigial code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
