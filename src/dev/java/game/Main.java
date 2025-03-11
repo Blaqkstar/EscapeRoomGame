@@ -10,8 +10,9 @@ public class Main{
     public static void main(final String[] args) throws Exception {
         final Logger log = LogManager.getLogger(Main.class.getName());
         ScoreDB scoreDB = new ScoreDB();
-        // starts background music before the game loop to ensure that it plays in the background while the game is running
-        Thread musicThread = new Thread(new BackgroundMusic("resources/music/bgmusic.wav")); // sets up thread and defines a filepath
+        /// starts background music before the game loop to ensure that it plays in the background while the game is running
+        BackgroundMusic backgroundMusic = new BackgroundMusic("resources/music/bgmusic.wav"); // sets up music ref
+        Thread musicThread = new Thread(backgroundMusic); // creates thread for music
         musicThread.start(); // begins music
         // this is going to read user input
         Scanner scanner = new Scanner(System.in);
@@ -212,6 +213,7 @@ public class Main{
                                             room = SetNewRoom(log, "The Lab",false);
                                         } else if (room.getName().equalsIgnoreCase("The Lab")) {
                                             room = SetNewRoom(log, "Final Room",false);
+                                            backgroundMusic.changeMusic("resources/music/finalRoomMusic.wav"); /// MUSIC CHANGE
                                         }
                                         ///  FINAL ROOM AND MULTIPLE ENDINGS
                                         // player picks correct door
@@ -274,6 +276,7 @@ public class Main{
                 }
                 else if (input.equalsIgnoreCase("skip to final")){
                     room = SetNewRoom(log, "Final Room",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
+                    backgroundMusic.changeMusic("resources/music/finalRoomMusic.wav"); /// MUSIC CHANGE
                     System.out.println();
                     System.out.println(room.getIntroBlurb());
                     Room.FinalRoomDialog();
@@ -754,7 +757,6 @@ public class Main{
         System.out.println();
         return room;
     }
-
 
     private static void ShowRoomName(Room currentRoom) {
         System.out.println(currentRoom.getName());

@@ -505,3 +505,21 @@
 03-11-2025 13:41:25.623 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
 03-11-2025 13:41:25.625 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
 03-11-2025 13:41:31.337 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 13:43:33.322 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 13:43:33.324 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 13:43:42.537 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 14:24:52.198 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 14:24:52.201 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 14:24:59.930 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 14:24:59.932 DEBUG [game.Main] - [0;35minstantiating Final Room[0m
+03-11-2025 14:24:59.932 DEBUG [game.Main] - [0;35madding items to Final Room[0m
+03-11-2025 14:30:48.626 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 14:30:48.628 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 14:30:55.015 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 14:30:55.015 DEBUG [game.Main] - [0;35minstantiating Final Room[0m
+03-11-2025 14:30:55.017 DEBUG [game.Main] - [0;35madding items to Final Room[0m
+03-11-2025 14:34:08.564 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 14:34:08.567 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 14:34:13.658 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 14:34:13.659 DEBUG [game.Main] - [0;35minstantiating Final Room[0m
+03-11-2025 14:34:13.659 DEBUG [game.Main] - [0;35madding items to Final Room[0m
