@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/BallOfLead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/BallOfLead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/DeckOfCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/DeckOfCards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Flask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Flask.java" afterDir="false" />
+    </list>
     <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Updated help menu to include a CMD SYNTAX key">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
