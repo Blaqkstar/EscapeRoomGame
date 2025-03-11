@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed a bug where checkScore warned player too early">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
     </list>
@@ -147,14 +146,6 @@
       <workItem from="1741657965730" duration="28000" />
       <workItem from="1741669711736" duration="6473000" />
       <workItem from="1741712313895" duration="9488000" />
-    </task>
-    <task id="LOCAL-00008" summary="Some further (I swear to god actual final update of the night) cleanup work to diegetic feedback to improve player experience and readability">
-      <option name="closed" value="true" />
-      <created>1740896893797</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1740896893797</updated>
     </task>
     <task id="LOCAL-00009" summary="Some additional narrative output spacing cleanup">
       <option name="closed" value="true" />
@@ -540,7 +531,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741728244712</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Fixed a bug where checkScore warned player too early">
+      <option name="closed" value="true" />
+      <created>1741729186924</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1741729186924</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

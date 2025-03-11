@@ -62,7 +62,6 @@ public class Main{
                 if (player.getPlayerWins()) {
                     break;
                 }
-                checkScore(player, room, thrown);
                 System.out.println();
                 System.out.print(ConsoleColors.YELLOW+"Enter input (or 'help' for a list of available commands): "+ConsoleColors.RESET);
                 input = scanner.nextLine(); // user input
@@ -322,7 +321,7 @@ public class Main{
                 else if (!input.equalsIgnoreCase("exit")) { // handles incorrect commands
                     System.out.println("Unknown input. Please enter 'look <direction>' or 'exit'.");
                 }
-                checkScore(player, room, thrown);
+                checkScore(player, room, thrown); // for player warning
             } while (player.getScore() < gameOverScore && !player.getPlayerWins().equals(true)); // core failure conditions
 
             /// ------------------------------------------------------------------------- { <GAME OVER> } -----------------------------------------

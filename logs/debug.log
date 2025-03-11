@@ -686,3 +686,19 @@
 03-11-2025 16:36:57.084 DEBUG [game.Main] - [0;35mplayer selected look[0m
 03-11-2025 16:36:58.972 DEBUG [game.Main] - [0;35muser input received[0m
 03-11-2025 16:36:58.972 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-11-2025 16:40:06.904 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-11-2025 16:40:06.907 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-11-2025 16:40:11.637 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 16:40:11.637 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-11-2025 16:40:13.217 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 16:40:13.217 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-11-2025 16:40:14.540 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 16:40:14.541 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-11-2025 16:40:16.053 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 16:40:16.053 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-11-2025 16:40:18.378 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 16:40:18.378 DEBUG [game.Main] - [0;35mplayer selected inspect[0m
+03-11-2025 16:40:20.518 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 16:40:20.519 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-11-2025 16:40:22.470 DEBUG [game.Main] - [0;35muser input received[0m
+03-11-2025 16:40:22.470 DEBUG [game.Main] - [0;35mplayer selected look[0m
