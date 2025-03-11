@@ -10,8 +10,9 @@ public class Main{
     public static void main(final String[] args) throws Exception {
         final Logger log = LogManager.getLogger(Main.class.getName());
         ScoreDB scoreDB = new ScoreDB();
-        // starts background music before the game loop to ensure that it plays in the background while the game is running
-        Thread musicThread = new Thread(new BackgroundMusic("resources/music/bgmusic.wav")); // sets up thread and defines a filepath
+        /// starts background music before the game loop to ensure that it plays in the background while the game is running
+        BackgroundMusic backgroundMusic = new BackgroundMusic("resources/music/bgmusic.wav"); // sets up music ref
+        Thread musicThread = new Thread(backgroundMusic); // creates thread for music
         musicThread.start(); // begins music
         // this is going to read user input
         Scanner scanner = new Scanner(System.in);
@@ -46,7 +47,9 @@ public class Main{
             System.out.println();
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
             Thread.sleep(500);
-//            playIntro(); /// plays narrative intro
+
+            playIntro(); /// plays narrative intro
+
             gameOverScore = setGameOverScore(room); // setsGameOverScore
 
             // this one loops until gameOverScore has been reached
@@ -68,7 +71,7 @@ public class Main{
                 log.debug(ConsoleColors.PURPLE+"user input received"+ConsoleColors.RESET);
 
                 // processes user input
-                /// ------------------------------------------------{ LOOK ACTION HANDLER }--------------------
+                /// ------------------------------------------------------------------------ { <LOOK ACTION HANDLER> } --------------------
                 if (input.startsWith("look ")) {
                     log.debug(ConsoleColors.PURPLE+"player selected look"+ConsoleColors.RESET);
                     System.out.println();
@@ -103,7 +106,7 @@ public class Main{
                     } else {
                         System.out.println("Invalid input. Please use the format 'look <direction>'."); // handles formatting issues
                     }
-                    /// ------------------------------------------------{INSPECT ACTION HANDLER}--------------------
+                    /// -------------------------------------------------------------------- { <INSPECT ACTION HANDLER> } --------------------
                 } else if(input.startsWith("inspect ")) {
                     log.debug(ConsoleColors.PURPLE+"player selected inspect"+ConsoleColors.RESET);
                     System.out.println();
@@ -131,7 +134,7 @@ public class Main{
                         System.out.println("Invalid input. Please use the format 'inspect <item>'."); // handles formatting issues
                     }
                 }
-                /// ------------------------------------------------{ USE ACTION HANDLER }--------------------
+                /// ------------------------------------------------------------------------ { <USE ACTION HANDLER> } --------------------
                 else if (input.startsWith("use ")) {
                     log.debug(ConsoleColors.PURPLE+"player selected use"+ConsoleColors.RESET);
                     final String[] parts = input.split(" "); // splits input into parts, storing in an array
@@ -157,28 +160,26 @@ public class Main{
                             ///  DEBUG MESSAGES END
                             // Check if player has observed the item yet
                             if (item != null && item.isObserved()) {
-                                ///  ------ BEGIN NEW ITEM HANDLING
-                                /// -------------------------------------------------------------{ KEY USE HANDLER } ----------------------------------------
+                                /// -------------------------------------------------------------{ <KEY USE HANDLER> } ----------------------------------------
                                 if (item instanceof Key) {
                                     if (room.GetExitDoor().isObserved()) {
                                         item.use(); // uses the key
                                         room.GetExitDoor().unlockDoor(); // unlocks the door
                                     }
                                     else {
-                                        System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": You have not seen anything to unlock");
+                                        System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": You have not yet seen anything to unlock.");
                                     }
                                 }
-                                /// -------------------------------------------------------------{ LEVER USE HANDLER } ----------------------------------------
+                                /// -------------------------------------------------------------{ <LEVER USE HANDLER> } ----------------------------------------
                                 else if (item instanceof Lever) {
                                     item.use(); // toggles lever
                                 }
                                 // handles other items
-                                /// -------------------------------------------------------------{ DEFAULT USE HANDLER } ----------------------------------------
+                                /// -------------------------------------------------------------{ <DEFAULT USE HANDLER> } ----------------------------------------
                                 else {
                                     item.use(); // default use behavior
                                 }
                                 player.setScore(player.getScore() + 1); // successful action of any kind increments player score by one
-                                ///  ------ END NEW ITEM HANDLING
                             }
                             else{
                                 System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You do not see any " + parts[1]);
@@ -193,7 +194,7 @@ public class Main{
                         System.out.println("Invalid input. Please use the format 'use <item>'."); // handles formatting issues
                     }
                 }
-                /// ------------------------------------------------{ OPEN ACTION HANDLER }--------------------
+                /// ----------------------------------------------------------------------  { <OPEN ACTION HANDLER> }--------------------
                 else if (input.startsWith("open ")) {
                     log.debug(ConsoleColors.PURPLE+"player selected open"+ConsoleColors.RESET);
                     System.out.println();
@@ -214,6 +215,7 @@ public class Main{
                                             room = SetNewRoom(log, "The Lab",false);
                                         } else if (room.getName().equalsIgnoreCase("The Lab")) {
                                             room = SetNewRoom(log, "Final Room",false);
+                                            backgroundMusic.changeMusic("resources/music/finalRoomMusic.wav"); /// MUSIC CHANGE
                                         }
                                         ///  FINAL ROOM AND MULTIPLE ENDINGS
                                         // player picks correct door
@@ -224,7 +226,7 @@ public class Main{
                                         else if(room.getName().equalsIgnoreCase("Final Room") && player.getFacing() != Direction.east) {
                                             room = SetNewRoom(log, "Consequences",false);
                                         }
-                                        System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
+                                        System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and step into the next room.");
                                         System.out.println();
                                         Thread.sleep(300);
                                         // room intro blurb dependent on the room being entered. Tutorial room intro handled at start of main()
@@ -246,7 +248,7 @@ public class Main{
                                         }
                                     }
                                     else{
-                                        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The door is locked");
+                                        System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": It's locked.");
                                     }
                                 }
                                 else{
@@ -276,6 +278,7 @@ public class Main{
                 }
                 else if (input.equalsIgnoreCase("skip to final")){
                     room = SetNewRoom(log, "Final Room",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
+                    backgroundMusic.changeMusic("resources/music/finalRoomMusic.wav"); /// MUSIC CHANGE
                     System.out.println();
                     System.out.println(room.getIntroBlurb());
                     Room.FinalRoomDialog();
@@ -330,8 +333,13 @@ public class Main{
     }
 
     private static void printCommands() {
+        // how to play
+        System.out.println();
+        String howToPlayInfo = ConsoleColors.YELLOW+"CMD SYNTAX"+ConsoleColors.RESET+": verb (look/inspect/use/open) + noun (usable items are highlighted in "+ConsoleColors.CYAN+"CYAN"+ConsoleColors.RESET+" after using the 'look' command)";
+        System.out.println(howToPlayInfo);
+        System.out.println();
         // list of available commands
-        System.out.println("AVAILABLE COMMANDS:");
+        System.out.println(ConsoleColors.BLUE+"AVAILABLE COMMANDS"+ConsoleColors.RESET+":");
         System.out.println("--------------------");
         System.out.println(ConsoleColors.YELLOW+"1. look <direction>"+ConsoleColors.RESET+": looks at the specified direction");
         System.out.println(ConsoleColors.YELLOW+"2. inspect <item>"+ConsoleColors.RESET+": inspects the specified item");
@@ -454,6 +462,7 @@ public class Main{
         }
     }
     private static void printAboutInfo() {
+
         String aboutHeader =
                         ConsoleColors.BLUE+"==========================================\n"+ConsoleColors.RESET+
                         "            ABOUT THIS GAME\n" +
@@ -750,7 +759,6 @@ public class Main{
         System.out.println();
         return room;
     }
-
 
     private static void ShowRoomName(Room currentRoom) {
         System.out.println(currentRoom.getName());

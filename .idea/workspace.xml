@@ -10,6 +10,10 @@
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/BallOfLead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/BallOfLead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/DeckOfCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/DeckOfCards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Flask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Flask.java" afterDir="false" />
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Updated help menu to include a CMD SYNTAX key">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/BackgroundMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/BackgroundMusic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Notebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Notebook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Paper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Paper.java" afterDir="false" />
@@ -173,6 +177,8 @@
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
       <updated>1737850767623</updated>
+      <workItem from="1741669711736" duration="6534000" />
+      <workItem from="1741709786058" duration="9685000" />
     </task>
     <task id="LOCAL-00003" summary="Worked on finishing the system for moving the player between rooms. I had to rework some of the exit door code, but now have it working properly. Cheers!">
       <option name="closed" value="true" />
@@ -550,16 +556,29 @@
       <option name="project" value="LOCAL" />
       <updated>1741676201211</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Forgot to uncomment playIntro()">
+      <option name="closed" value="true" />
+      <created>1741676233089</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1741676233089</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Updated help menu to include a CMD SYNTAX key">
+      <option name="closed" value="true" />
+      <created>1741718593070</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1741718593070</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Built out gameOver() method&#10;Clarified failure conditions&#10;Created a variable in Room called roomPar (with relevant getter/setter) that is used to determine gameOverScore. If player score exceeds gameOverScore, gameOver() is called. &#10;Cleaned up some more output text" />
-    <MESSAGE value="Additional text cleanup" />
-    <MESSAGE value="Got painting description and inspection updating to properly reflect diegetic changes after player 'uses' it.&#10;Fixed bug where player could spawn an infinite number of keys from behind the painting." />
     <MESSAGE value="updated TODO list to account for work I just did" />
     <MESSAGE value="Abstracted logic to set game over score into its own method, setGameOverScore()" />
     <MESSAGE value="Came up with a better placeholder name, pending group feedback.&#10;Added placeholder for about command&#10;Updated title font&#10;Some additional text output cleanup" />
@@ -582,7 +601,10 @@
     <MESSAGE value="Fixed 'play again' bug that would not allow player to actually play again" />
     <MESSAGE value="Lots of narrative and formatting cleanup&#10;Removed some vestigial code" />
     <MESSAGE value="Updated about&#10;Some additional formatting/timing optimizations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated about&#10;Some additional formatting/timing optimizations" />
+    <MESSAGE value="Forgot to uncomment playIntro()" />
+    <MESSAGE value="Additional output formatting cleanup" />
+    <MESSAGE value="Updated help menu to include a CMD SYNTAX key" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated help menu to include a CMD SYNTAX key" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
