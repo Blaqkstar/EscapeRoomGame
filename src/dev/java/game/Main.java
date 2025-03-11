@@ -539,7 +539,7 @@ public class Main{
         return room.getRoomPar() * 3;
     }
     private static void checkScore(Player player, Room room) {
-        int threshold = room.getRoomPar();
+        int threshold = (room.getRoomPar()*3) / 2;
         if (player.getScore() == threshold) {
             System.out.println();
             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
