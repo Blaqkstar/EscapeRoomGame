@@ -53,7 +53,7 @@ public class Main{
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
             Thread.sleep(500);
 
-            //playIntro(); /// -------------------------------------------------------------------------------- {<NARRATIVE INTRO HERE>} ------------
+            playIntro(); /// -------------------------------------------------------------------------------- {<NARRATIVE INTRO HERE>} ------------
 
             gameOverScore = setGameOverScore(room); // setsGameOverScore
 
@@ -222,14 +222,15 @@ public class Main{
                                         /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                                         if (room.getName().equalsIgnoreCase("Tutorial Room")) {
                                             room = SetNewRoom(log, "The Conservatory",false);
-                                            backgroundMusic.changeMusic("resources/music/conservatoryMusic.wav"); /// -----------------  { MUSIC CHANGE }
+                                            backgroundMusic.changeMusic("resources/music/conservatoryMusic.wav"); /// -----------------  { <MUSIC CHANGE> }
                                             thrown = false;
                                         } else if (room.getName().equalsIgnoreCase("The Conservatory")) {
                                             room = SetNewRoom(log, "The Lab",false);
+                                            backgroundMusic.changeMusic("resources/music/labMusic.wav"); /// -----------------  { <MUSIC CHANGE> }
                                             thrown = false;
                                         } else if (room.getName().equalsIgnoreCase("The Lab")) {
                                             room = SetNewRoom(log, "Final Room",false);
-                                            backgroundMusic.changeMusic("resources/music/finalRoomMusic.wav"); /// -----------------  { MUSIC CHANGE }
+                                            backgroundMusic.changeMusic("resources/music/finalRoomMusic.wav"); /// -----------------  { <MUSIC CHANGE> }
                                             thrown = false;
                                         }
                                         ///  FINAL ROOM AND MULTIPLE ENDINGS
@@ -241,7 +242,7 @@ public class Main{
                                         // player picks incorrect door
                                         else if(room.getName().equalsIgnoreCase("Final Room") && player.getFacing() != Direction.east) {
                                             room = SetNewRoom(log, "Consequences",false);
-                                            backgroundMusic.changeMusic("resources/music/consequencesMusic.wav"); /// -----------------  { MUSIC CHANGE }
+                                            backgroundMusic.changeMusic("resources/music/consequencesMusic.wav"); /// -----------------  { <MUSIC CHANGE> }
                                             thrown = false;
                                         }
                                         System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and step into the next room.");
@@ -284,6 +285,7 @@ public class Main{
                 /// SPEEDRUN OPTIONS --------ONLY FOR USE IN DEVELOPMENT-----------------------
                 else if (input.equalsIgnoreCase("skip to lab")){
                     room = SetNewRoom(log, "The Lab",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
+                    backgroundMusic.changeMusic("resources/music/labMusic.wav"); /// -----------------  { <MUSIC CHANGE> }
                     System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": You open the door and enter a new room. Welcome to " + room.getName());
                     System.out.println();
                     System.out.println(room.getIntroBlurb());
