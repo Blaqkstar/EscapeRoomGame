@@ -289,8 +289,8 @@ public class RoomSetup {
     /// -------------------------------------------- { CONSEQUENCES ROOM } ----------------------------
     public Room MakeRoom_Consequences() {
         Room consequences = new Room();
-        consequences.setIntroBlurb(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+
-                ": As you step through the door, you find yourself in a vast, endless void. The room behind dissolves into nothingness. The air is cold and still\n\n" +
+        consequences.setIntroBlurb(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": As you step through the door, you find yourself in a vast, endless void. The room behind dissolves into nothingness. The air is cold and still.\n\n" +
                 ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
                 ": The void stretches endlessly in all directions, a sea of darkness so profound that it feels as though it might swallow you whole. There is no light, no sound, no sense of time or space - only the\n" +
                 "faint, lingering memory of the rooms you left behind. The air is heavy, oppressive, as if the void itself is alive and watching.");

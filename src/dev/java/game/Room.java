@@ -16,8 +16,6 @@ public class Room implements LeverObserver {
     private String introBlurb = "UNDEFINED INTRO BLURB";
     private int roomPar = 0;
 
-    private boolean chooseRightEnding;
-
 
     public Room() {
         walls = new EnumMap<>(Main.Direction.class); // initializes map
@@ -34,7 +32,6 @@ public class Room implements LeverObserver {
             walls.put(direction, new ArrayList<>());
         }
 
-        this.chooseRightEnding = chooseRightEnding;
     }
 
     public void setItem(Main.Direction direction, Item item) {

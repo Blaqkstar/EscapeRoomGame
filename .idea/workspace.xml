@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="text cleanup">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Text output cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,14 +152,6 @@
       <workItem from="1741732827426" duration="2810000" />
       <workItem from="1741753770210" duration="3328000" />
       <workItem from="1741790361158" duration="3030000" />
-    </task>
-    <task id="LOCAL-00005" summary="Got my changes finished which implement the RoomSetup Class to streamline room creation. Hope you guys like it!">
-      <option name="closed" value="true" />
-      <created>1740694157327</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1740694157327</updated>
     </task>
     <task id="LOCAL-00006" summary="Fixed Transmorgrifier interaction menu loop to behave as expected.&#10;Modified Room.describeItemsToPlayer to include a grammar formatter&#10;Cleaned up perceptual feedback output generally. Debug output is now purple, and any time the player receives some kind of perceptual feedback, it is now preceded by an 'PERCEPTION' indicator. &#10;Grouped up debug messages and created space between them and perceptual feedback&#10;Changed 'highscores' command to 'hiscores' to reduce player keystroke requirements&#10;Changed MakeRoom method naming conventions to allow for greater uniformity in our method calls (syntax is now MakeRoom_RoomName)">
       <option name="closed" value="true" />
@@ -543,14 +537,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741757727677</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Text output cleanup">
+      <option name="closed" value="true" />
+      <created>1741795080214</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1741795080214</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated TODO list to account for work I just did" />
     <MESSAGE value="Abstracted logic to set game over score into its own method, setGameOverScore()" />
     <MESSAGE value="Came up with a better placeholder name, pending group feedback.&#10;Added placeholder for about command&#10;Updated title font&#10;Some additional text output cleanup" />
     <MESSAGE value="Embellished the lever success/failure messages to fit the vibe of the game." />
@@ -575,7 +576,8 @@
     <MESSAGE value="Updates to lab&#10;&#10;-Text and formatting updates with correct game tags and colors&#10;&#10;-Fixed bug that allowed player to transmorg items without first entering transmorg menu by adding beingUsed field to Transmorgrifier and checking isBeingUsed in item use() method&#10;&#10;-Removed items from room after transmorgrifying by adding removeItem method to Room&#10;&#10;-Updates required a few changes to item constructors. Mentioning this in case there's any issues similar to the one Joey encountered the other day" />
     <MESSAGE value="Added lab music" />
     <MESSAGE value="text cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="text cleanup" />
+    <MESSAGE value="Text output cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Text output cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

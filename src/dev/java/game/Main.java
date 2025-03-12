@@ -61,7 +61,7 @@ public class Main{
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+": '"+player.getUpperName() + "... I do not know you...' ");
             Thread.sleep(500);
 
-            playIntro(); /// -------------------------------------------------------------------------------- {<NARRATIVE INTRO HERE>} ------------
+            //playIntro(); /// -------------------------------------------------------------------------------- {<NARRATIVE INTRO HERE>} ------------
 
             gameOverScore = setGameOverScore(room); // setsGameOverScore
 
@@ -224,7 +224,7 @@ public class Main{
                                 if(room.GetExitDoor().isObserved()) {
                                     // if door is not locked and not locked forever
                                     if (!room.GetExitDoor().getIsLocked() && !room.GetExitDoor().getLockedForever()) {
-                                        // recoups points to player relative to the predetermined par for the room they're leaving
+                                        /// recoups points to player relative to the predetermined par for the room they're leaving
                                         player.setScore(player.getScore() - room.getRoomPar());
                                         /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
                                         if (room.getName().equalsIgnoreCase("Tutorial Room")) {
@@ -336,7 +336,9 @@ public class Main{
                 else if (!input.equalsIgnoreCase("exit")) { // handles incorrect commands
                     System.out.println("Unknown input. Please enter 'look <direction>' or 'exit'.");
                 }
-                checkScore(player, room, thrown); // for player warning
+                if (!room.getName().equalsIgnoreCase("Consequences")) {
+                    checkScore(player, room, thrown); // for player warning
+                }
             } while (player.getScore() < gameOverScore && !player.getPlayerWins().equals(true)); // core failure conditions
 
             /// ------------------------------------------------------------------------- { <GAME OVER> } -----------------------------------------
@@ -710,7 +712,7 @@ public class Main{
             do {
                 // prompt for decision
                 System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
-                        ": 'Make your choice.'");
+                        ": 'Make your decision.'");
                 System.out.println();
                 System.out.println(ConsoleColors.BLUE+"OPTION 1"+ConsoleColors.RESET+": Step forward into the void\n" +
                         ConsoleColors.BLUE+"OPTION 2"+ConsoleColors.RESET+": Turn back and face the darkness");
@@ -734,48 +736,67 @@ public class Main{
                 System.out.println();
                 System.out.println();
                 System.out.println("Then, nothing.");
-                Thread.sleep(1300);
+                Thread.sleep(1500);
                 System.out.println();
-                Thread.sleep(1300);
+                Thread.sleep(1500);
                 System.out.println();
                 System.out.println("No thoughts.");
-                Thread.sleep(1300);
+                Thread.sleep(1500);
                 System.out.println();
-                Thread.sleep(1300);
+                Thread.sleep(1500);
                 System.out.println();
                 System.out.println("No memories.");
-                Thread.sleep(1300);
+                Thread.sleep(1500);
                 System.out.println();
-                Thread.sleep(1300);
+                Thread.sleep(1500);
                 System.out.println();
                 System.out.println("No self.");
-                Thread.sleep(1300);
+                Thread.sleep(1500);
                 System.out.println();
-                Thread.sleep(1300);
+                Thread.sleep(2500);
                 System.out.println();
                 System.out.println("You are gone.");
-                Thread.sleep(3000);
+                Thread.sleep(3500);
+                System.out.println();
+                Thread.sleep(1500);
+                System.out.println();
+                Thread.sleep(1500);
+                System.out.println();
+                Thread.sleep(1500);
+                System.out.println();
+                Thread.sleep(1500);
+                System.out.println();
+                Thread.sleep(1500);
                 System.out.println();
             } else if (input.equalsIgnoreCase("2")) {
                 ///  RETREAT TO DARKNESS
-                System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
-                        ": 'You have chosen... Poorly.'");
-                Thread.sleep(3000);
                 System.out.println();
+                System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
+                        ": 'You have chosen... poorly.'");
+                System.out.println();
+                Thread.sleep(3000);
                 System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                        ": The darkness engulfs you, and the pain begins. It is not a physical pain, but something deeper, more primal. It is the pain of being known, of being consumed, of being torn apart and reassembled\n" +
-                        "over and over again for all eternity.\n\n"+
-                        "You scream, but no sound escapes.\n\n" +
-                        "You struggle, but there is no way out.\n\n" +
-                        "The darkness is endless, and so is your torment.");
+                        ": The darkness engulfs you, and the pain begins. It is not a physical pain, but something deeper, more primal. It is the pain of being known, of being consumed, of being infinitely torn apart and reassembled.");
+                System.out.println();
+                Thread.sleep(3000);
+                System.out.println("You scream, but no sound escapes.");
+                System.out.println();
+                Thread.sleep(3000);
+                System.out.println("You struggle, but there is no way out.");
+                System.out.println();
+                Thread.sleep(3000);
+                System.out.println("The darkness is endless, and so is your torment.");
+                System.out.println();
                 Thread.sleep(3000);
                 System.out.println();
             }
-            System.out.println();
             Thread.sleep(3000);
             System.out.println(ConsoleColors.BLUE+ "IN THE END, THERE IS NO ESCAPE. ONLY THE CHOICES WE MAKE, AND THE CONSEQUENCES WE MUST ENDURE."+ConsoleColors.RESET);
             Thread.sleep(3000);
             System.out.println();
+            Thread.sleep(1500);
+            System.out.println();
+            Thread.sleep(1500);
             System.out.println();
             System.out.println(gameOver);
             Thread.sleep(8000);
