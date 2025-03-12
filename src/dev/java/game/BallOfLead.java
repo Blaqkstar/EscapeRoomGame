@@ -21,7 +21,7 @@ public class BallOfLead extends Item{
     @Override
     public void use() {
         if (transmorgrifier.isUsable() && transmorgrifier.isBeingUsed()) {
-            TransmorgSupplier<Key> keySupplier = () -> new Key("key", "A shiny new key", "The key has a faint glow as if it is brimming with energy.", room);
+            TransmorgSupplier<Key> keySupplier = () -> new Key("key", "a shiny new "+ConsoleColors.CYAN+"key."+ConsoleColors.RESET, ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The "+ConsoleColors.CYAN+"key"+ConsoleColors.RESET + " has a faint glow as if it is brimming with energy.", room);
             itemToSpitToUser = keySupplier.get();
             itemToSpitToUser.setObserved(true);
             room.setItem(Main.Direction.south, itemToSpitToUser); // adds key to the north

@@ -16,7 +16,6 @@ public class Paper extends Item {
     @Override
     public void use() {
         if (transmorgrifier.isBeingUsed()) {
-            TransmorgSupplier<BallOfLead> ballOfLeadSupplier = () -> new BallOfLead("lead", "A misshapen hunk of lead", "Nothing interesting here. It's just a ball of lead.", transmorgrifier, room);
             transmorgrifier.getItemsToTransmorgrify().remove(this);
             room.removeItem(Main.Direction.south, this);
             System.out.println(ConsoleColors.RED + "ACTION" + ConsoleColors.RESET + ": The stack of papers erupt in a ball of flame");

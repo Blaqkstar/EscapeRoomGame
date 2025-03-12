@@ -21,7 +21,7 @@ public class Flask extends Item{
     @Override
     public void use() {
         if (transmorgrifier.isUsable() && transmorgrifier.isBeingUsed()) {
-            TransmorgSupplier<BallOfLead> ballOfLeadSupplier = () -> new BallOfLead("lead", "A misshapen hunk of lead", "Nothing interesting here. It's just a ball of lead.", transmorgrifier, room);
+            TransmorgSupplier<BallOfLead> ballOfLeadSupplier = () -> new BallOfLead("lead", "a misshapen hunk of "+ConsoleColors.CYAN+"lead"+ConsoleColors.RESET, ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": Nothing interesting here. It's just a ball of "+ConsoleColors.CYAN+"lead."+ConsoleColors.RESET, transmorgrifier, room);
             itemToSpitToUser = ballOfLeadSupplier.get();
             itemToSpitToUser.setObserved(true);
             transmorgrifier.getItemsToTransmorgrify().add(itemToSpitToUser);
@@ -31,7 +31,7 @@ public class Flask extends Item{
             System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+": The " + ConsoleColors.CYAN  +"flask" + ConsoleColors.RESET  +" transforms into a ball of " + ConsoleColors.CYAN  +"lead." + ConsoleColors.RESET);
         }
         else{
-            System.out.println(ConsoleColors.RED+"ACTION" + ConsoleColors.RESET + ": You pour some liquid into the flask. Nothing happens.");
+            System.out.println(ConsoleColors.RED+"ACTION" + ConsoleColors.RESET + ": You pour some liquid into the "+ConsoleColors.CYAN+"flask"+ConsoleColors.RESET + ". Nothing happens.");
         }
     }
 }

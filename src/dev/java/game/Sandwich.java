@@ -22,7 +22,7 @@ public class Sandwich extends Item{
             room.removeItem(Main.Direction.north, this);
         }
         else{
-            System.out.println(ConsoleColors.RED+"ACTION" + ConsoleColors.RESET + ": You pick up the sandwich and it immediately starts crumbling as if made of gravel. You put it down.");
+            System.out.println(ConsoleColors.RED+"ACTION" + ConsoleColors.RESET + ": You pick up the " +ConsoleColors.CYAN+"sandwich"+ConsoleColors.RESET +" and it immediately starts crumbling as if made of gravel. You put it down.");
         }
     }
 }

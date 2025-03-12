@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Fixed a bug where checkScore warned player too early">
-      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Updates to lab&#10;&#10;-Text and formatting updates with correct game tags and colors&#10;&#10;-Fixed bug that allowed player to transmorg items without first entering transmorg menu by adding beingUsed field to Transmorgrifier and checking isBeingUsed in item use() method&#10;&#10;-Removed items from room after transmorgrifying by adding removeItem method to Room&#10;&#10;-Updates required a few changes to item constructors. Mentioning this in case there's any issues similar to the one Joey encountered the other day">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,30 +53,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.QuickMain.executor": "Debug",
-    "Application.ScoreDB.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Kyle/IdeaProjects/EscapeRoomGame/resources/derbyclient.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.QuickMain.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ScoreDB.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kyle/IdeaProjects/EscapeRoomGame/resources/derbyclient.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Personal\School\NWTC\2025\2025 Spring Semester\8W1\Java 2\Group Project\EscapeRoomGame\Logging" />
@@ -145,7 +145,64 @@
       <workItem from="1741651113341" duration="4095000" />
       <workItem from="1741657965730" duration="28000" />
       <workItem from="1741669711736" duration="6473000" />
-      <workItem from="1741712313895" duration="9488000" />
+      <workItem from="1741712313895" duration="10391000" />
+      <workItem from="1741732827426" duration="2810000" />
+    </task>
+    <task id="LOCAL-00002" summary="moved main.java into correct folder">
+      <option name="closed" value="true" />
+      <created>1737850767623</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737850767623</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Worked on finishing the system for moving the player between rooms. I had to rework some of the exit door code, but now have it working properly. Cheers!">
+      <option name="closed" value="true" />
+      <created>1740002342595</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740002342595</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Worked on finishing the system for our assignment 5 by implementing a Comparable and Comparator in the high scores system.">
+      <option name="closed" value="true" />
+      <created>1740276621147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740276621148</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Got my changes finished which implement the RoomSetup Class to streamline room creation. Hope you guys like it!">
+      <option name="closed" value="true" />
+      <created>1740694157327</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740694157327</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed Transmorgrifier interaction menu loop to behave as expected.&#10;Modified Room.describeItemsToPlayer to include a grammar formatter&#10;Cleaned up perceptual feedback output generally. Debug output is now purple, and any time the player receives some kind of perceptual feedback, it is now preceded by an 'PERCEPTION' indicator. &#10;Grouped up debug messages and created space between them and perceptual feedback&#10;Changed 'highscores' command to 'hiscores' to reduce player keystroke requirements&#10;Changed MakeRoom method naming conventions to allow for greater uniformity in our method calls (syntax is now MakeRoom_RoomName)">
+      <option name="closed" value="true" />
+      <created>1740895307939</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740895307939</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Some further cleanup work to diegetic feedback to improve player experience and readability">
+      <option name="closed" value="true" />
+      <created>1740896618456</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740896618456</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Some further (I swear to god actual final update of the night) cleanup work to diegetic feedback to improve player experience and readability">
+      <option name="closed" value="true" />
+      <created>1740896893797</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740896893797</updated>
     </task>
     <task id="LOCAL-00009" summary="Some additional narrative output spacing cleanup">
       <option name="closed" value="true" />
@@ -475,77 +532,29 @@
       <option name="project" value="LOCAL" />
       <updated>1741676201211</updated>
     </task>
-    <task id="LOCAL-00050" summary="Forgot to uncomment playIntro()">
+    <task id="LOCAL-00050" summary="Updates to lab&#10;&#10;-Text and formatting updates with correct game tags and colors&#10;&#10;-Fixed bug that allowed player to transmorg items without first entering transmorg menu by adding beingUsed field to Transmorgrifier and checking isBeingUsed in item use() method&#10;&#10;-Removed items from room after transmorgrifying by adding removeItem method to Room&#10;&#10;-Updates required a few changes to item constructors. Mentioning this in case there's any issues similar to the one Joey encountered the other day">
       <option name="closed" value="true" />
-      <created>1741676233089</created>
+      <created>1741722289882</created>
       <option name="number" value="00050" />
       <option name="presentableId" value="LOCAL-00050" />
       <option name="project" value="LOCAL" />
-      <updated>1741676233089</updated>
+      <updated>1741722289882</updated>
     </task>
-    <task id="LOCAL-00051" summary="Updated help menu to include a CMD SYNTAX key">
-      <option name="closed" value="true" />
-      <created>1741718593070</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1741718593070</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Fixed workspace XML bug">
-      <option name="closed" value="true" />
-      <created>1741723510353</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1741723510353</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Added music for conservatory and consequences">
-      <option name="closed" value="true" />
-      <created>1741726417600</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1741726417600</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Fixed a bug where music would not reset when player opted to play again">
-      <option name="closed" value="true" />
-      <created>1741727197170</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1741727197170</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Created a system to warn player when their score reaches par for the given room">
-      <option name="closed" value="true" />
-      <created>1741727954995</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1741727954995</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Fixed a bug where checkScore warned player too early">
-      <option name="closed" value="true" />
-      <created>1741728244712</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1741728244712</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Fixed a bug where checkScore warned player too early">
-      <option name="closed" value="true" />
-      <created>1741729186924</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1741729186924</updated>
-    </task>
-    <option name="localTasksCounter" value="58" />
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Additional text cleanup" />
+    <MESSAGE value="Got painting description and inspection updating to properly reflect diegetic changes after player 'uses' it.&#10;Fixed bug where player could spawn an infinite number of keys from behind the painting." />
+    <MESSAGE value="updated TODO list to account for work I just did" />
+    <MESSAGE value="Abstracted logic to set game over score into its own method, setGameOverScore()" />
+    <MESSAGE value="Came up with a better placeholder name, pending group feedback.&#10;Added placeholder for about command&#10;Updated title font&#10;Some additional text output cleanup" />
+    <MESSAGE value="Embellished the lever success/failure messages to fit the vibe of the game." />
+    <MESSAGE value="Got Conservatory padded out with first pass of all its flavor items&#10;Removed Room from the constructor of a couple of the item child classes that didn't need to know about room details." />
+    <MESSAGE value="Added final two items (diary, corpse) to Conservatory" />
     <MESSAGE value="Forgot to turn playIntro() back on" />
     <MESSAGE value="Cleaned up diary and corpse text output" />
     <MESSAGE value="Lots more narrative output cleanup" />
@@ -562,16 +571,8 @@
     <MESSAGE value="Fixed 'play again' bug that would not allow player to actually play again" />
     <MESSAGE value="Lots of narrative and formatting cleanup&#10;Removed some vestigial code" />
     <MESSAGE value="Updated about&#10;Some additional formatting/timing optimizations" />
-    <MESSAGE value="Forgot to uncomment playIntro()" />
-    <MESSAGE value="Additional output formatting cleanup" />
-    <MESSAGE value="Updated help menu to include a CMD SYNTAX key" />
-    <MESSAGE value="Added logic to allow changing of music at will" />
-    <MESSAGE value="Fixed workspace XML bug" />
-    <MESSAGE value="Added music for conservatory and consequences" />
-    <MESSAGE value="Fixed a bug where music would not reset when player opted to play again" />
-    <MESSAGE value="Created a system to warn player when their score reaches par for the given room" />
-    <MESSAGE value="Fixed a bug where checkScore warned player too early" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug where checkScore warned player too early" />
+    <MESSAGE value="Updates to lab&#10;&#10;-Text and formatting updates with correct game tags and colors&#10;&#10;-Fixed bug that allowed player to transmorg items without first entering transmorg menu by adding beingUsed field to Transmorgrifier and checking isBeingUsed in item use() method&#10;&#10;-Removed items from room after transmorgrifying by adding removeItem method to Room&#10;&#10;-Updates required a few changes to item constructors. Mentioning this in case there's any issues similar to the one Joey encountered the other day" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to lab&#10;&#10;-Text and formatting updates with correct game tags and colors&#10;&#10;-Fixed bug that allowed player to transmorg items without first entering transmorg menu by adding beingUsed field to Transmorgrifier and checking isBeingUsed in item use() method&#10;&#10;-Removed items from room after transmorgrifying by adding removeItem method to Room&#10;&#10;-Updates required a few changes to item constructors. Mentioning this in case there's any issues similar to the one Joey encountered the other day" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
