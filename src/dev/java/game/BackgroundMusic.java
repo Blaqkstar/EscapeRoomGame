@@ -4,7 +4,9 @@ import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
 
-
+/**
+ * Class for playing background music in the project
+ */
 public class BackgroundMusic implements Runnable{
     private String filePath = "UNDEFINED BG MUSIC FILEPATH";
     private Clip audioClip; // references the current audio clip

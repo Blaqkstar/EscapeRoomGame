@@ -2,6 +2,9 @@ package game;
 
 import java.awt.*;
 
+/**
+ * Game item class
+ */
 public class Painting extends Item {
     private Room room;
 

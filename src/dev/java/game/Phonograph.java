@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * Game item class
+ */
 public class Phonograph extends Item{
 
     public Phonograph(String name, String description, String inspection) {

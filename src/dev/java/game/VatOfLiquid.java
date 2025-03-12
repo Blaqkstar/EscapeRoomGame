@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * Game item class
+ */
 public class VatOfLiquid extends Item {
 
     public VatOfLiquid(String name, String description, String inspection) {

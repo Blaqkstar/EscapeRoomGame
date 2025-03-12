@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * Game item class
+ */
 public class Paper extends Item {
 
     private Transmorgrifier transmorgrifier;

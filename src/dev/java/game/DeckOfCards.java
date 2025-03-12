@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * Game item class
+ */
 public class DeckOfCards extends Item {
     private Item itemToSpitToUser;
 

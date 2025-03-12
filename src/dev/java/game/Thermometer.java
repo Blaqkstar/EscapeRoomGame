@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * Game item class
+ */
 public class Thermometer extends Item {
 
     private Transmorgrifier transmorgrifier;

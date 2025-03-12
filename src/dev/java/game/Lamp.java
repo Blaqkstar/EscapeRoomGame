@@ -2,6 +2,9 @@ package game;
 
 import java.util.Random;
 
+/**
+ * Game item class
+ */
 public class Lamp extends Item {
     public Lamp(String name, String description, String inspection) {
         super(name, description, inspection);

@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * Game item class
+ */
 public class LargePortrait extends Item {
     private Room room;
 

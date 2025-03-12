@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * Game item class
+ */
 public class Flask extends Item{
     private Item itemToSpitToUser;
 

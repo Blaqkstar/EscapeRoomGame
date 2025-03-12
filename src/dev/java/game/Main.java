@@ -61,7 +61,7 @@ public class Main{
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+": '"+player.getUpperName() + "... I do not know you...' ");
             Thread.sleep(500);
             /// ----------------------------------------------------------------------------------------------------------------------------- {<NARRATIVE INTRO HERE>} ------------
-            playIntro();
+            //playIntro();
 
             gameOverScore = setGameOverScore(room); // setsGameOverScore
 
@@ -165,6 +165,10 @@ public class Main{
                             // Allow player to use transmorgrifer by calling it a "machine"
                             if (itemName.equalsIgnoreCase("machine")) {itemName="transmorgrifier";}
 
+                            if (itemName.equalsIgnoreCase("door") && !room.getName().equalsIgnoreCase("Tutorial Room")) {
+                                System.out.println(ConsoleColors.GREEN+"PERCEPTION" + ConsoleColors.RESET+ ": You can't use it that way.");
+                            }
+
                             ///  DEBUG MESSAGES BEGIN
                             // declare item that is being used
                             Item item = room.getItems().get(itemName);
@@ -267,6 +271,7 @@ public class Main{
                                         }
                                         else if (room.getName().equalsIgnoreCase("THE END")) {
                                             System.out.println(room.getIntroBlurb());
+                                            gameOverSuccess(player);
                                         }
                                         else if (room.getName().equalsIgnoreCase("Consequences")) {
                                             System.out.println(room.getIntroBlurb());

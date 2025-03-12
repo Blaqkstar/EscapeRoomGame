@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * Game item class
+ */
 public class BallOfLead extends Item{
 
     private Room room;

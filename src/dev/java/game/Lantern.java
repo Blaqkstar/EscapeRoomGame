@@ -3,6 +3,9 @@ package game;
 import java.awt.*;
 import java.util.Random;
 
+/**
+ * Game item class
+ */
 public class Lantern extends Item {
 
     public Lantern(String name, String description, String inspection) {

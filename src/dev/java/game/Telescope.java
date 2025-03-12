@@ -2,6 +2,9 @@ package game;
 
 import java.awt.*;
 
+/**
+ * Game item class
+ */
 public class Telescope extends Item {
 
     public Telescope(String name, String description, String inspection) {

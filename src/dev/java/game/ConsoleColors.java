@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * Class for modifying the colors of console output
+ */
 public class ConsoleColors {
     // ANSI escape code to reset color
     public static final String RESET = "\033[0m";
