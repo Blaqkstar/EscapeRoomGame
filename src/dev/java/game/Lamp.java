@@ -29,15 +29,14 @@ public class Lamp extends Item {
             else {
                 if (powered) {
                     this.setUsed(true); // used!
-                    System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You flip the lamp's power switch. The light flickers briefly before settling into darkness. The room's \n" +
-                            "shadows deepen and the lamp stands quietly, awaiting your next command.");
+                    System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You flip the lamp's power switch. The light flickers briefly before settling into darkness. The room's shadows deepen and the lamp stands quietly, awaiting your next command.");
                     counter++;
                     powered = false; // lamp is off
                     this.setDescription("now cold and lifeless, a silent sentinel in the encroaching darkness");
                 } else {
                     this.setUsed(true); // used!
-                    System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You flip the lamp's power switch. The light flickers briefly before casting a warm glow across the room. Shadows recede \n" +
-                            "and the lamp stands quietly, illuminating the space and inviting your next move.");
+                    System.out.println(ConsoleColors.RED+"ACTION"+ConsoleColors.RESET+": You flip the lamp's power switch. The light flickers briefly before casting a warm glow across the room. Shadows recede and the lamp stands quietly,\n" +
+                            "illuminating the space and inviting your next move.");
                     counter++;
                     powered = true; // lamp is on
                     this.setDescription("judging by the occasional flickering of the bulb, it's on its last leg");
