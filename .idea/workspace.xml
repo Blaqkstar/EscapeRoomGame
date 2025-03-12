@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Ok, added quite a bit here. I added the fourth room and it seems stable at the moment. I will definetely change some of the placeholder text in the ending but for now it works. Added a variable in the player class that allows me to see which direction the player is facing currently. This ties into my final room functionality. There is also a THE_END room which is simply a stash for my game over logic. Enjoy!">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="text cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Door.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Key.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +38,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/twilight921/EscapeRoomGame.git&quot;,
-    &quot;accountId&quot;: &quot;2b5c2ac4-1c51-4cc6-8208-9d053c3ced33&quot;
+    &quot;url&quot;: &quot;https://github.com/Blaqkstar/EscapeRoomGame.git&quot;,
+    &quot;accountId&quot;: &quot;33bf5a69-71e6-4530-b179-74da27333e68&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -70,7 +65,7 @@
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/Personal/School/NWTC/2025/2025 Spring Semester/8W1/Java 2/Group Project/EscapeRoomGame/resources/derbyclient.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kyle/IdeaProjects/EscapeRoomGame/resources/derbyclient.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -97,8 +92,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
       </set>
     </attachedChunks>
   </component>
@@ -148,40 +143,13 @@
       <workItem from="1741579288063" duration="202000" />
       <workItem from="1741579673046" duration="227000" />
       <workItem from="1741580422214" duration="3552000" />
-      <workItem from="1741632533886" duration="731000" />
-      <workItem from="1741787670246" duration="6017000" />
-    </task>
-    <task id="LOCAL-00001" summary="starting point">
-      <option name="closed" value="true" />
-      <created>1737601738920</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1737601738920</updated>
-    </task>
-    <task id="LOCAL-00002" summary="moved main.java into correct folder">
-      <option name="closed" value="true" />
-      <created>1737850767623</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1737850767623</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Worked on finishing the system for moving the player between rooms. I had to rework some of the exit door code, but now have it working properly. Cheers!">
-      <option name="closed" value="true" />
-      <created>1740002342595</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1740002342595</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Worked on finishing the system for our assignment 5 by implementing a Comparable and Comparator in the high scores system.">
-      <option name="closed" value="true" />
-      <created>1740276621147</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1740276621148</updated>
+      <workItem from="1741651113341" duration="4095000" />
+      <workItem from="1741657965730" duration="28000" />
+      <workItem from="1741669711736" duration="6473000" />
+      <workItem from="1741712313895" duration="10391000" />
+      <workItem from="1741732827426" duration="2810000" />
+      <workItem from="1741753770210" duration="3328000" />
+      <workItem from="1741790361158" duration="3030000" />
     </task>
     <task id="LOCAL-00005" summary="Got my changes finished which implement the RoomSetup Class to streamline room creation. Hope you guys like it!">
       <option name="closed" value="true" />
@@ -479,31 +447,109 @@
       <option name="project" value="LOCAL" />
       <updated>1741592825055</updated>
     </task>
-    <task id="LOCAL-00042" summary="Ok, added quite a bit here. I added the fourth room and it seems stable at the moment. I will definetely change some of the placeholder text in the ending but for now it works. Added a variable in the player class that allows me to see which direction the player is facing currently. This ties into my final room functionality. There is also a THE_END room which is simply a stash for my game over logic. Enjoy!">
+    <task id="LOCAL-00042" summary="Fixed bug with Consequences room not being created&#10;Began work on implementing multiple endings by tying my ending in with Joey's. If player uses the wrong door, they'll get my Consequences room.">
       <option name="closed" value="true" />
-      <created>1741629936034</created>
+      <created>1741633844118</created>
       <option name="number" value="00042" />
       <option name="presentableId" value="LOCAL-00042" />
       <option name="project" value="LOCAL" />
-      <updated>1741629936034</updated>
+      <updated>1741633844118</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Moved FinalRoom dialog method into Room class to keep room-specific duties either in Room or RoomSetup.">
+      <option name="closed" value="true" />
+      <created>1741638113180</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1741638113180</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Fixed broken exit command (kind of)">
+      <option name="closed" value="true" />
+      <created>1741645275818</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1741645275818</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Updated narrative language of Final Room dialog while maintaining message and much of the original phrasing.&#10;Cleaned up Final Room dialog formatting to match rest of the game thus far">
+      <option name="closed" value="true" />
+      <created>1741648354307</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1741648354307</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Some additional narrative text cleanup in Conservatory and Consequences">
+      <option name="closed" value="true" />
+      <created>1741649428035</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1741649428035</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Fixed 'play again' bug that would not allow player to actually play again">
+      <option name="closed" value="true" />
+      <created>1741653558885</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1741653558885</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Lots of narrative and formatting cleanup&#10;Removed some vestigial code">
+      <option name="closed" value="true" />
+      <created>1741674469047</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1741674469047</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Updated about&#10;Some additional formatting/timing optimizations">
+      <option name="closed" value="true" />
+      <created>1741676201211</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1741676201211</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Updates to lab&#10;&#10;-Text and formatting updates with correct game tags and colors&#10;&#10;-Fixed bug that allowed player to transmorg items without first entering transmorg menu by adding beingUsed field to Transmorgrifier and checking isBeingUsed in item use() method&#10;&#10;-Removed items from room after transmorgrifying by adding removeItem method to Room&#10;&#10;-Updates required a few changes to item constructors. Mentioning this in case there's any issues similar to the one Joey encountered the other day">
+      <option name="closed" value="true" />
+      <created>1741722289882</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1741722289882</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Added lab music">
+      <option name="closed" value="true" />
+      <created>1741744307927</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1741744307927</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Added lab music">
+      <option name="closed" value="true" />
+      <created>1741744336672</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1741744336672</updated>
+    </task>
+    <task id="LOCAL-00053" summary="text cleanup">
+      <option name="closed" value="true" />
+      <created>1741757727677</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1741757727677</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Got player score incrementing appropriately for relevant successful actions. &#10;Implemented a method to print player score&#10;Updated help method with new 'score' command" />
-    <MESSAGE value="Added introBlurb, setIntroBlurb(), and getIntroBlurb() to Room class&#10;Created intro for Conservatory" />
-    <MESSAGE value="Created Phonograph use() behavior and added to Conservatory room constructor. &#10;Added some door use() behavior specific to Tutorial Room." />
-    <MESSAGE value="Fixed bug where Tutorial Room door could be opened when it should be perma-locked" />
-    <MESSAGE value="Fixed door interactivity issue" />
-    <MESSAGE value="Fixed some text formatting inconsistencies&#10;Created placeholder gameOver() method&#10;Created lose conditions (player score exceeds predefined gameOverScore)&#10;Created some logic after game over to ask player if they'd like to play again" />
-    <MESSAGE value="Fixed some text formatting inconsistencies" />
-    <MESSAGE value="Built out gameOver() method&#10;Clarified failure conditions&#10;Created a variable in Room called roomPar (with relevant getter/setter) that is used to determine gameOverScore. If player score exceeds gameOverScore, gameOver() is called. &#10;Cleaned up some more output text" />
-    <MESSAGE value="Additional text cleanup" />
-    <MESSAGE value="Got painting description and inspection updating to properly reflect diegetic changes after player 'uses' it.&#10;Fixed bug where player could spawn an infinite number of keys from behind the painting." />
     <MESSAGE value="updated TODO list to account for work I just did" />
     <MESSAGE value="Abstracted logic to set game over score into its own method, setGameOverScore()" />
     <MESSAGE value="Came up with a better placeholder name, pending group feedback.&#10;Added placeholder for about command&#10;Updated title font&#10;Some additional text output cleanup" />
@@ -518,8 +564,18 @@
     <MESSAGE value="Fixed some lever output text logic&#10;Cleaned up some more narrative output text" />
     <MESSAGE value="Forgot to re-enable intro" />
     <MESSAGE value="Some formatting corrections" />
-    <MESSAGE value="Ok, added quite a bit here. I added the fourth room and it seems stable at the moment. I will definetely change some of the placeholder text in the ending but for now it works. Added a variable in the player class that allows me to see which direction the player is facing currently. This ties into my final room functionality. There is also a THE_END room which is simply a stash for my game over logic. Enjoy!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ok, added quite a bit here. I added the fourth room and it seems stable at the moment. I will definetely change some of the placeholder text in the ending but for now it works. Added a variable in the player class that allows me to see which direction the player is facing currently. This ties into my final room functionality. There is also a THE_END room which is simply a stash for my game over logic. Enjoy!" />
+    <MESSAGE value="Fixed bug with Consequences room not being created&#10;Began work on implementing multiple endings by tying my ending in with Joey's. If player uses the wrong door, they'll get my Consequences room." />
+    <MESSAGE value="Moved FinalRoom dialog method into Room class to keep room-specific duties either in Room or RoomSetup." />
+    <MESSAGE value="Fixed broken exit command (kind of)" />
+    <MESSAGE value="Updated narrative language of Final Room dialog while maintaining message and much of the original phrasing.&#10;Cleaned up Final Room dialog formatting to match rest of the game thus far" />
+    <MESSAGE value="Some additional narrative text cleanup in Conservatory and Consequences" />
+    <MESSAGE value="Fixed 'play again' bug that would not allow player to actually play again" />
+    <MESSAGE value="Lots of narrative and formatting cleanup&#10;Removed some vestigial code" />
+    <MESSAGE value="Updated about&#10;Some additional formatting/timing optimizations" />
+    <MESSAGE value="Updates to lab&#10;&#10;-Text and formatting updates with correct game tags and colors&#10;&#10;-Fixed bug that allowed player to transmorg items without first entering transmorg menu by adding beingUsed field to Transmorgrifier and checking isBeingUsed in item use() method&#10;&#10;-Removed items from room after transmorgrifying by adding removeItem method to Room&#10;&#10;-Updates required a few changes to item constructors. Mentioning this in case there's any issues similar to the one Joey encountered the other day" />
+    <MESSAGE value="Added lab music" />
+    <MESSAGE value="text cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="text cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

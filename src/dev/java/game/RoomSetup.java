@@ -90,12 +90,12 @@ public class RoomSetup {
                 conservatoryRoom);
 
         Phonograph itemPhonograph = new Phonograph("phonograph",
-                "an tarnished antique "+ConsoleColors.CYAN+"phonograph"+ConsoleColors.RESET,
+                "a tarnished antique "+ConsoleColors.CYAN+"phonograph"+ConsoleColors.RESET,
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": The phonograph is a relic of another era, its brass horn tarnished to a dull green and its wooden base cracked with age. The surface is etched with strange, angular symbols that make your\n" +
                         "stomach churn when looking directly at them. A record rests on the turntable, its label faded and illegible, except for a single word scrawled in jagged handwriting: \"Ascension.\"");
         Diary itemDiary = new Diary("diary", "a small, leather-bound "+ConsoleColors.CYAN+"diary"+ConsoleColors.RESET,
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                        ": The diary is a small, leather-bound book, its cover cracked and brittle with age. The pages are yellowed and fragile, filled with neat, precise handwriting that crows increasingly erratic as you read. The\n" +
+                        ": The diary is a small, leather-bound book, its cover cracked and brittle with age. The pages are yellowed and fragile, filled with neat, precise handwriting that grows increasingly erratic as you read. The\n" +
                         "entries tell the story of a scientist who once occupied this room.\n\n" +
                         "\""+ConsoleColors.BLUE+"Day 1"+ConsoleColors.RESET+": I've finally deciphered the symbols on the levers. There's a pattern here, a logic to this madness. If I can just align them correctly, I might unlock the door. I can feel it. I'm so close.\"\n\n" +
                         "\""+ConsoleColors.BLUE+"Day 7"+ConsoleColors.RESET+": The levers are only part of it. The telescope, the orrery, the phonograph... They're all connected. I've spent hours staring at the stars through that damned telescope, and I swear they're\n" +
