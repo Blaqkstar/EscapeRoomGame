@@ -166,8 +166,8 @@ public class Room implements LeverObserver {
                 System.out.println();
                 System.out.println(ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET +
                         ": The walls seem to ripple, their surfaces alive with faint, pulsating light. A heavy CLUNK echoes from the "+ConsoleColors.CYAN+"door"+ConsoleColors.RESET+", followed by the sound of grinding gears and the hiss of releasing pressure. The door creaks \n" +
-                        "open, revealing a dimly-lit corridor beyond. The air from the corridor carries a faint, acrid smell - chemicals, ozone, and something else, metallic and sharp. The room's ambient hum fades, leaving only the sound of your heartbeat and the\n" +
-                        "faint, almost imperceptible whisper of something waiting.");
+                        "open, revealing a dimly-lit corridor beyond. The air from the corridor carries a faint, acrid smell - chemicals, ozone, and something else, metallic and sharp. The room's ambient hum fades, leaving only the sound\n" +
+                        "of your heartbeat and the faint, almost imperceptible whisper of something waiting.");
                 System.out.println();
                 exitDoor.unlockDoor();
             }

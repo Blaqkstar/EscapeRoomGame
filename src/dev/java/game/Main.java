@@ -42,15 +42,15 @@ public class Main{
                     "As you approach, transfixed, a quiet voice beckons...");
             System.out.println();
             Thread.sleep(1300);
-            System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'... Who are you?' ");
-            System.out.print(ConsoleColors.YELLOW+"Enter your name: "+ConsoleColors.RESET);
+            System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+": '... Who are you?' ");
+            System.out.print(ConsoleColors.YELLOW+"Enter your name"+ConsoleColors.RESET+": ");
             Thread.sleep(300);
             String playerName = scanner.nextLine(); // collects player name
             // instantiates player
             Player player = new Player(playerName, 0);
             /// player.getUpperName uses our function and unaryOperator examples
             System.out.println();
-            System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'"+player.getUpperName() + "... I do not know you...' ");
+            System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+": '"+player.getUpperName() + "... I do not know you...' ");
             Thread.sleep(500);
 
             playIntro(); /// -------------------------------------------------------------------------------- {<NARRATIVE INTRO HERE>} ------------
