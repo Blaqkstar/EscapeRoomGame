@@ -25,7 +25,8 @@ public class Main{
         // this is going to read user input
         Scanner scanner = new Scanner(System.in);
         String input;
-        Boolean thrown = false;
+        boolean thrown = false;
+
 
         // this loops until the user types 'exit'
         do {
@@ -104,9 +105,13 @@ public class Main{
                                 // Set all items in this direction to observed
                                 for (Item item : room.getItemsAtDirection(direction)) {
                                     item.setObserved(true);
+                                    if (item.getName().equalsIgnoreCase("painting")) {
+                                        player.setHasSeenPainting(true); // player has now seen painting
+                                    }
                                 }
                                 // displays item in chosen direction
-                                System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You look " + direction.getDescription() + " and see " + room.describeItemsToPlayer(room.getItemsAtDirection(direction)));
+                                System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You look " +
+                                        direction.getDescription() + " and see " + room.describeItemsToPlayer(room.getItemsAtDirection(direction)));
                             }
                             else{
                                 System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You look " + direction.getDescription() + " and see a blank wall.");
@@ -164,10 +169,6 @@ public class Main{
 
                             // Allow player to use transmorgrifer by calling it a "machine"
                             if (itemName.equalsIgnoreCase("machine")) {itemName="transmorgrifier";}
-
-                            if (itemName.equalsIgnoreCase("door") && !room.getName().equalsIgnoreCase("Tutorial Room")) {
-                                System.out.println(ConsoleColors.GREEN+"PERCEPTION" + ConsoleColors.RESET+ ": You can't use it that way.");
-                            }
 
                             ///  DEBUG MESSAGES BEGIN
                             // declare item that is being used
@@ -267,11 +268,11 @@ public class Main{
                                             System.out.println(room.getIntroBlurb());
 
                                         } else if (room.getName().equalsIgnoreCase("Final Room")) {
-                                            Room.FinalRoomDialog();
+                                            finalRoomDialog();
                                         }
                                         else if (room.getName().equalsIgnoreCase("THE END")) {
                                             System.out.println(room.getIntroBlurb());
-                                            gameOverSuccess(player);
+                                            gameOverPlain(player);
                                         }
                                         else if (room.getName().equalsIgnoreCase("Consequences")) {
                                             System.out.println(room.getIntroBlurb());
@@ -314,7 +315,7 @@ public class Main{
                     backgroundMusic.changeMusic("resources/music/finalRoomMusic.wav"); /// -----------------  { <MUSIC CHANGE> }
                     System.out.println();
                     System.out.println(room.getIntroBlurb());
-                    Room.FinalRoomDialog();
+                    finalRoomDialog();
                 }
                 else if (input.equalsIgnoreCase("skip to ending")){
                     room = SetNewRoom(log, "Consequences",false); /// DEFINES THE ROOM ON THE OTHER SIDE OF THE DOOR
@@ -838,8 +839,134 @@ public class Main{
             System.out.println("Game Over (Success) Method Error");
         }
     }
+    ///  DIALOG FOR FINAL ROOM
+    public static void finalRoomDialog() throws InterruptedException {
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": A deep, resonant chuckle fills the air, echoing as if emanating from everywhere and nowhere at once.");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+
+                ": 'Did you truly believe you could leave so easily? How... amusing.'");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+
+                ": 'I must confess, you've surprised me. Your resilience is... remarkable. But now, the true test begins. Can you withstand what lies ahead? Or will you crumble beneath the weight of your own past?'");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": The voice grows colder, sharper, each word cutting like a blade.");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+
+                ": 'You think you've outrun your sins? "+ConsoleColors.RED+"NO!"+ConsoleColors.RESET+" They walk beside you, step for step, shadow for shadow. The friend you abandoned, the lover you failed, the child who died in your arms... they are not gone.\n" +
+                "They are here, in the cracks of your mind. In the marrow of your bones.'");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +
+                ": 'You've changed, you say? "+ConsoleColors.RED+"NO!"+ConsoleColors.RESET+" You've merely buried the truth beneath layers of time and dust. But now, it rises. And when you stand before the weight of your own sins, will you face them? Or will you\n" +
+                "break beneath them?'");
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": The voice shifts, becoming almost melodic, like a dirge.");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +
+                ": 'Four doors stand before you. Only one leads to freedom. The others? They lead to truths you may not wish to face. Listen closely, for this is your clue...'");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": The voice recites, each line dripping with menace.");
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +":");
 
-
+        System.out.println(ConsoleColors.BLUE+"Four paths stretch where silence calls,");
+        Thread.sleep(1500);
+        System.out.println("One to rise and three to fall.");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println("North echoes cries of pain,");
+        Thread.sleep(1500);
+        System.out.println("A friend's plea, left in vain.");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println("South drips red with guilt's refrain,");
+        Thread.sleep(1500);
+        System.out.println("A lover's words, your final stain.");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println("East holds ghosts with hollow tongues,");
+        Thread.sleep(1500);
+        System.out.println("A debt unpaid, yet still unsung.");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println("West is weighted with bones you bear,");
+        Thread.sleep(1500);
+        System.out.println("A fate you chose, yet did not spare.");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println("One road mends, though scars remain,");
+        Thread.sleep(1500);
+        System.out.println("The rest will break you once again.");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println("Mark the cost of what you've done,");
+        Thread.sleep(1500);
+        System.out.println("Choose with care, or be undone."+ ConsoleColors.RESET);
+        System.out.println();
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": The voice returns to its cold, mocking tone.");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +
+                ": 'I give you this key, the key to either your freedom, or your doom.'");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": You feel a cold shiver like something passing through you, then you see a" +ConsoleColors.CYAN+" key " + ConsoleColors.RESET + "materialize on the floor.");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +
+                ": 'Choose wisely, and perhaps you'll find your way out. But be warned: failure is not an end. It is an eternity. And I? I have all the time in the world.'");
+        Thread.sleep(4000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
+                ": A deep, resonant laugh echoes, fading into silence.");
+    }
+    private static void gameOverPlain(Player player) {
+        String gameOver = ConsoleColors.RED+"\n" +
+                " ___   ___         ___        ___         ___   ___  \n" +
+                "|     |   | |\\ /| |          |   | |  /  |     |   | \n" +
+                "| +-  |-+-| | + | |-+-       |   | | +   |-+-  |-+-  \n" +
+                "|   | |   | |   | |          |   | |/    |     |  \\  \n" +
+                " ---               ---        ---         ---        \n" +
+                "                                                     \n"+ConsoleColors.RESET;
+        try {
+            Thread.sleep(4500);
+            System.out.println();
+            Thread.sleep(3000);
+            System.out.println(ConsoleColors.BLUE+ "IN THE END, THERE IS NO ESCAPE. ONLY THE CHOICES WE MAKE, AND THE CONSEQUENCES WE MUST ENDURE."+ConsoleColors.RESET);
+            Thread.sleep(3000);
+            System.out.println();
+            Thread.sleep(1500);
+            System.out.println();
+            Thread.sleep(1500);
+            System.out.println();
+            Thread.sleep(1500);
+            System.out.println();
+            Thread.sleep(1500);
+            System.out.println();
+            Thread.sleep(1500);
+            System.out.println();
+            System.out.println(gameOver);
+            Thread.sleep(8000);
+            player.setPlayerWins(true);
+        } catch (InterruptedException ex) {
+            System.out.println("Game Over (Plain) Method Error");
+        }
+    }
 
 
     /// ---------------------------------------{ INLINE CLASSES AND ENUMS BEGIN HERE }--------------------------------------------------------

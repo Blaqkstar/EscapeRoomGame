@@ -8,6 +8,7 @@ public class Player implements Comparable<Player>{
     private int score;
     private Main.Direction facing;
     private Boolean playerWins = false;
+    private Boolean hasSeenPainting = false;
 
     /**
      * Constructor with parameters for the player class.
@@ -39,6 +40,11 @@ public class Player implements Comparable<Player>{
      * @return Returns the player's score.
      */
     public int getScore() {return score;}
+
+    public Boolean getHasSeenPainting() {return hasSeenPainting;}
+    public void setHasSeenPainting(Boolean hasSeenPainting) {
+        this.hasSeenPainting = hasSeenPainting;
+    }
 
     /**
      * Method to set the player's name.

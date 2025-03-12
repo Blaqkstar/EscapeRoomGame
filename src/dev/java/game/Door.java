@@ -103,8 +103,10 @@ public class Door extends Item{
             } else {
                 System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": The door groans lightly.");
             }
+        } else {
+            System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": You can't use it like that.");
         }
-    };
+    }
 }
 
 
