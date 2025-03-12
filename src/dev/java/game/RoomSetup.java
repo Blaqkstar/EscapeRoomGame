@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Class for helping with automation or setting up rooms
+ */
 public class RoomSetup {
 
 
@@ -216,7 +219,7 @@ public class RoomSetup {
         finalRoom.setRoomPar(5); // ROOM PAR (5x3=15 turns to beat the room before game over)
 
         exitDoor = new Door(finalRoom, 1,
-                "The mirror-like surface of the " + ConsoleColors.CYAN + "door" + ConsoleColors.RESET + " glows faintly, its surface fractured like cracked glass. As you step closer, the image within begins to take shape — a\n" +
+                "the mirror-like surface of the " + ConsoleColors.CYAN + "door" + ConsoleColors.RESET + " glows faintly, its surface fractured like cracked glass. As you step closer, the image within begins to take shape — a\n" +
                         "moment you’ve tried to suppress. You see yourself at a crossroads, your hand clenched around an envelope containing words you never delivered. A shadowed figure stands before you, their face unreadable, as you\n" +
                         "turn away and crumple the envelope into your pocket. The sound of footsteps receding and the weight of missed opportunity linger like an ache in your chest. The door’s surface seems to shift, almost imploring\n" +
                         "you to face the choices you made — and the ones you didn’t.",
@@ -227,7 +230,7 @@ public class RoomSetup {
         finalRoom.SetExitDoor(exitDoor);
 
         westDoor = new Door(finalRoom, 2,
-                "The mirror-like surface of the " + ConsoleColors.CYAN + "door" + ConsoleColors.RESET + " shimmers faintly, its surface rippling like liquid silver. As you approach, the image sharpens into a scene from your\n" +
+                "the mirror-like surface of the " + ConsoleColors.CYAN + "door" + ConsoleColors.RESET + " shimmers faintly, its surface rippling like liquid silver. As you approach, the image sharpens into a scene from your\n" +
                         "past — a memory you’ve tried to bury. Your childhood friend lies in a hospital bed, their face pale and still, as doctors scramble frantically around them. The steady beep of the heart monitor falters, then\n" +
                         "flat-lines, and the sound echoes in your mind like a hammer striking an anvil. The door’s surface seems to pulse faintly, as though it’s alive, and you can’t shake the feeling that it’s not just showing you the\n" +
                         "past — it’s pulling you back into it.",
@@ -235,7 +238,7 @@ public class RoomSetup {
                 "eastDoor");
 
         northDoor = new Door(finalRoom, 2,
-                "The mirror-like surface of the " + ConsoleColors.CYAN + "door" + ConsoleColors.RESET + " glimmers with an unnatural light, drawing you closer despite yourself. The image that forms is one you’ve tried to\n" +
+                "the mirror-like surface of the " + ConsoleColors.CYAN + "door" + ConsoleColors.RESET + " glimmers with an unnatural light, drawing you closer despite yourself. The image that forms is one you’ve tried to\n" +
                         "forget: the person you loved, their face twisted in anger and sorrow, storming out after a bitter fight. You see yourself crumple to the ground, your hands clutching at empty air as the door slams shut behind them.\n" +
                         "The memory is so vivid you can almost feel the cold floor beneath your knees and the ache in your chest. The door’s surface seems to ripple, as though it’s inviting you to step through and relive the moment — or perhaps\n" +
                         "to change it.",
@@ -243,7 +246,7 @@ public class RoomSetup {
                 "northDoor");
 
         southDoor = new Door(finalRoom, 2,
-                "The mirror-like surface of the " + ConsoleColors.CYAN + "door" + ConsoleColors.RESET + " flickers faintly, its surface shifting like smoke. As you watch, the image resolves into a scene that haunts you still: a woman\n" +
+                "the mirror-like surface of the " + ConsoleColors.CYAN + "door" + ConsoleColors.RESET + " flickers faintly, its surface shifting like smoke. As you watch, the image resolves into a scene that haunts you still: a woman\n" +
                         "stands at your doorstep, her face streaked with tears. She begs you for a ride to the hospital, her voice trembling with desperation, but you refuse. The memory shifts, showing her son in the back of an ambulance,\n" +
                         "his small body lifeless as the paramedics work in vain. The door’s surface seems to hum faintly, as though it’s feeding on your guilt, and you can’t help but wonder if this is a memory — or a warning.",
                 ConsoleColors.GREEN + "PERCEPTION" + ConsoleColors.RESET + ": A faint outline of a keyhole becomes visible in the fractured surface.",
@@ -275,8 +278,8 @@ public class RoomSetup {
 
         if(rightDoor) {
             theEndRoom.setIntroBlurb(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                    ": You step through the door into a blinding light and realize you are lying in a bed. After a minute you can see and realize that your in a hospital and your body is in extreme pain." +
-                    " You are no longer sure what is reality and what is your mind playing tricks. You're in so much pain you start to think you'd rather go back, but that voice still reverberates in your mind." +
+                    ": You step through the door into a blinding light and realize you are lying in a bed. After a minute you can see and realize that your in a hospital \nand your body is in extreme pain." +
+                    " You are no longer sure what is reality and \nwhat is your mind playing tricks. You're in so much pain you start to think you'd rather go back, but that voice still reverberates in your mind.\n" +
                     "You start to shake with fear as your mind starts losing function again and you slip into unconsciousness.");
         }
         else {

@@ -3,6 +3,9 @@ package game;
 import javax.sound.midi.Track;
 import javax.sound.midi.Transmitter;
 
+/**
+ * Game item class
+ */
 public class Notebook extends Item {
 
     private Transmorgrifier transmorgrifier;

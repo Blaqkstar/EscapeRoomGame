@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * Game item class
+ */
 public class Bookshelf extends Item {
     public Bookshelf(String name, String description, String inspection) {
         super(name,description,inspection);

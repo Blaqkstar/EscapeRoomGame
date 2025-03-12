@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * Game item class
+ */
 public class Orrery extends Item{
 
     public Orrery(String name, String description, String inspection) {

@@ -2,6 +2,9 @@ package game;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Game item class
+ */
 public class Lever extends Item{
     private Boolean positionUp = true;
     private String position = "up";

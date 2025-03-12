@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * Base Item class for construction of game items
+ */
 public abstract class Item {
     private String name;
     private String description;

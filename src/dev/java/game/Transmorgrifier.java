@@ -7,6 +7,9 @@ import java.util.Scanner;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
+/**
+ * Game item class
+ */
 public class Transmorgrifier extends Item {
     private Room room;
 

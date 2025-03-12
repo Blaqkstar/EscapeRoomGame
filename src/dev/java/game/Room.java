@@ -2,6 +2,9 @@ package game;
 
 import java.util.*;
 
+/**
+ * Class to hold all logic for each specific room
+ */
 public class Room implements LeverObserver {
     // this is the logical representation of the "walls" of each room
     private EnumMap<Main.Direction, List<Item>> walls; // map of directions to items. syntax: <key, value>
@@ -264,7 +267,7 @@ public class Room implements LeverObserver {
                 ": 'I give you this key, the key to either your freedom, or your doom.'");
         Thread.sleep(1000);
         System.out.println();
-        System.out.println("You have received a: " +ConsoleColors.CYAN +"key" + ConsoleColors.RESET);
+        System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+": You feel a cold shiver like something passing through you, then you see a" +ConsoleColors.CYAN+" key " + ConsoleColors.RESET + "materialize on the floor.");
         Thread.sleep(1000);
         System.out.println();
         System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +

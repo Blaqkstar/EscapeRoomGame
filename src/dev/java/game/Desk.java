@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * Game item class
+ */
 public class Desk extends Item {
     public Desk(String name, String description, String inspection) {
         super(name, description, inspection);
