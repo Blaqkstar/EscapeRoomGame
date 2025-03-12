@@ -192,6 +192,7 @@ public class Room implements LeverObserver {
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+
                 ": 'Did you truly believe you could leave so easily? How... amusing.'");
         Thread.sleep(2000);
+        System.out.println();
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+
                 ": 'I must confess, you've surprised me. Your resilience is... remarkable. But now, the true test begins. Can you withstand what lies ahead? Or will you crumble beneath the weight of your own past?'");
         Thread.sleep(2000);
@@ -204,6 +205,7 @@ public class Room implements LeverObserver {
                 ": 'You think you've outrun your sins? "+ConsoleColors.RED+"NO!"+ConsoleColors.RESET+" They walk beside you, step for step, shadow for shadow. The friend you abandoned, the lover you failed, the child who died in your arms... they are not gone.\n" +
                 "They are here, in the cracks of your mind. In the marrow of your bones.'");
         Thread.sleep(2000);
+        System.out.println();
         System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +
                 ": 'You've changed, you say? "+ConsoleColors.RED+"NO!"+ConsoleColors.RESET+" You've merely buried the truth beneath layers of time and dust. But now, it rises. And when you stand before the weight of your own sins, will you face them? Or will you\n" +
                 "break beneath them?'");
@@ -259,6 +261,13 @@ public class Room implements LeverObserver {
         System.out.println();
         System.out.println(ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
                 ": The voice returns to its cold, mocking tone.");
+        Thread.sleep(1000);
+        System.out.println();
+        System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +
+                ": 'I give you this key, the key to either your freedom, or your doom.'");
+        Thread.sleep(1000);
+        System.out.println();
+        System.out.println("You have received a: " +ConsoleColors.CYAN +"key" + ConsoleColors.RESET);
         Thread.sleep(1000);
         System.out.println();
         System.out.println(ConsoleColors.GREEN + "DISEMBODIED VOICE" + ConsoleColors.RESET +
