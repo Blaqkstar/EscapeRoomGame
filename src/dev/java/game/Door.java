@@ -1,5 +1,8 @@
 package game;
 
+/**
+ * Class for our door logic which allows players to move between rooms
+ */
 public class Door extends Item{
     private int id;
     private Room currentRoom;
@@ -12,6 +15,14 @@ public class Door extends Item{
     // Detailed description that is given when inspected
     private String inspection;
 
+    /**
+     * Constructor with parameters for Door.
+     * @param currentRoom Takes in a room.
+     * @param id Takes in an Integer.
+     * @param description Takes in a string.
+     * @param inspection Takes in a string.
+     * @param name Takes in a string.
+     */
     public Door(Room currentRoom, int id, String description, String inspection, String name) {
 
         super(name, description, inspection);
@@ -21,22 +32,42 @@ public class Door extends Item{
         this.id = id;
     }
 
+    /**
+     * Method to unlock the door.
+     */
     public void unlockDoor() {
         isLocked = false;
 
     }
 
+    /**
+     * Method to see if a door is locked.
+     * @return Returns a boolean.
+     */
     public boolean getIsLocked() {
         return isLocked;
     }
 
+    /**
+     * Method to see if a door is locked forever.
+     * @return Returns a boolean.
+     */
     public boolean getLockedForever() {
         return lockedForever;
     }
+
+    /**
+     * Method to set whether a door is locked forever.
+     * @param lockedForever Takes in a boolean.
+     */
     public void setLockedForever(boolean lockedForever) {
         this.lockedForever = lockedForever;
     }
 
+    /**
+     * Method to open a door once it's unlocked.
+     * @param roomToMoveTo Takes in a room.
+     */
     public void OpenDoor(Room roomToMoveTo) {
         if(!isLocked) {
             currentRoom = nextRoom;
@@ -46,6 +77,9 @@ public class Door extends Item{
     }
     int counter = 0;
 
+    /**
+     * Use method for when someone uses the door
+     */
     public  void use(){
         this.setUsed(true); // used!
         if (this.currentRoom.getName().equalsIgnoreCase("Tutorial Room")) {

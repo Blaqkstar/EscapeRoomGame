@@ -252,7 +252,7 @@ public class RoomSetup {
         Key key = new Key("key","a mirror-like "+ConsoleColors.CYAN+"key"+ConsoleColors.RESET,"The key feels unnaturally cold in your hand, its surface shimmering faintly as if it exists just beyond the edge of reality.", finalRoom);
         key.setObserved(true);
 
-        finalRoom.setItem(Main.Direction.east, key);
+        finalRoom.setItem(Main.Direction.south, key);
         finalRoom.setItem(Main.Direction.west,westDoor);
         finalRoom.setItem(Main.Direction.north,northDoor);
         finalRoom.setItem(Main.Direction.south,southDoor);
@@ -274,7 +274,9 @@ public class RoomSetup {
 
         if(rightDoor) {
             theEndRoom.setIntroBlurb(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
-                    ": You step through the door into a blinding light and realize you are lying in a bed. After a minute you can see and realize that your in a hospital and your body is in extreme pain.");
+                    ": You step through the door into a blinding light and realize you are lying in a bed. After a minute you can see and realize that your in a hospital and your body is in extreme pain." +
+                    " You are no longer sure what is reality and what is your mind playing tricks. You're in so much pain you start to think you'd rather go back, but that voice still reverberates in your mind." +
+                    "You start to shake with fear as your mind starts losing function again and you slip into unconsciousness.");
         }
         else {
             theEndRoom.setIntroBlurb(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+

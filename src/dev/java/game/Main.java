@@ -6,7 +6,15 @@ import java.util.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * The main class that contains the majority of code for running our game
+ */
 public class Main{
+    /**
+     * Static void main to make our game runnable
+     * @param args
+     * @throws Exception
+     */
     public static void main(final String[] args) throws Exception {
         final Logger log = LogManager.getLogger(Main.class.getName());
         ScoreDB scoreDB = new ScoreDB();
@@ -90,7 +98,6 @@ public class Main{
 
                             if(room.getName().equalsIgnoreCase("Final Room")) {
                                 room.SetExitDoor(room.getDoorAtDirection(direction).getFirst());
-                                System.out.println("Exit door is now on the " + direction + " wall.");
                             }
 
                             if (!room.getItemsAtDirection(direction).isEmpty()) {
@@ -355,6 +362,9 @@ public class Main{
         scanner.close();
     }
 
+    /**
+     * This function is used when the player types help to print them a nicely formatted list of commands and what they do.
+     */
     private static void printCommands() {
         // how to play
         System.out.println();
@@ -374,6 +384,10 @@ public class Main{
         System.out.println(ConsoleColors.YELLOW+"8. about"+ConsoleColors.RESET+": prints game info");
         System.out.println(ConsoleColors.YELLOW+"9. exit"+ConsoleColors.RESET+": exits the game");
     }
+
+    /**
+     * Method to print the title at the beginning of the game and in the about section.
+     */
     private static void printTitle(){
         String ver = "v1.0"; // this is just a rough estimate based on what we've done so far vs what remains. Will say v1.0 when we hand in
         // text generated via https://patorjk.com/software/taag. This is the "Invita" font
@@ -399,12 +413,20 @@ public class Main{
         }
     };
 
+    /**
+     * Method to print out the player's score to the console.
+     * @param player Takes in a player object.
+     */
     private static void printScore(Player player) {
         int playerScore = player.getScore();
         System.out.println();
         System.out.println(ConsoleColors.YELLOW+"Player Score"+ConsoleColors.RESET+": " + playerScore);
     }
 
+    /**
+     * Method to play the intro at the beginning of the game.
+     * @throws InterruptedException
+     */
     private static void playIntro() throws InterruptedException {
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'BEGONE!'");
         Thread.sleep(2000);
@@ -459,6 +481,11 @@ public class Main{
                 "step further in...");
     }
 
+    /**
+     * Method to print the high scores from our mock database.
+     * @param scoreDB Takes in a Derby Database.
+     * @throws Exception
+     */
     private static void printHiScores(ScoreDB scoreDB) throws Exception {
 
 
@@ -484,6 +511,10 @@ public class Main{
             }
         }
     }
+
+    /**
+     * Method to print the About Info section of our game.
+     */
     private static void printAboutInfo() {
 
         String aboutHeader =
@@ -549,9 +580,22 @@ public class Main{
         System.out.println();
         System.out.println(thanksMessage);
     }
+
+    /**
+     * Method to set the Max score the player can reach before game over.
+     * @param room Takes in a room.
+     * @return Returns an integer.
+     */
     private static Integer setGameOverScore(Room room) {
         return room.getRoomPar() * 3;
     }
+
+    /**
+     * Method to warn the player when their score is getting close to the max.
+     * @param player Takes in a player.
+     * @param room Takes in a room.
+     * @param thrown Takes in a boolean.
+     */
     private static void checkScore(Player player, Room room, Boolean thrown) {
         int threshold = (room.getRoomPar()*3) / 2;
 
@@ -562,6 +606,11 @@ public class Main{
             thrown = true;
         }
     }
+
+    /**
+     * Method to print game over text to the player on game over.
+     * @param player Takes in a player.
+     */
     private static void gameOver(Player player) {
         String gameOver = ConsoleColors.RED+"\n" +
                 " ___   ___         ___        ___         ___   ___  \n" +
@@ -611,6 +660,11 @@ public class Main{
             System.out.println("Game Over Method Error");
         }
     }
+
+    /**
+     * Method the triggers on certain game over criteria.
+     * @param player Takes in a player.
+     */
     private static void gameOverSuccess(Player player) {
         String gameOver = ConsoleColors.RED+"\n" +
                 " ___   ___         ___        ___         ___   ___  \n" +
@@ -736,6 +790,10 @@ public class Main{
 
     /// ---------------------------------------{ INLINE CLASSES AND ENUMS BEGIN HERE }--------------------------------------------------------
     // enum representing four cardinal directions
+
+    /**
+     * Enum for the four directions: north, south, east, west
+     */
     public enum Direction {
         north("to the north"),
         south("to the south"),
@@ -753,6 +811,14 @@ public class Main{
         }
     }
 
+    /**
+     * Method for setting up new rooms for use in this main class.
+     * @param log Takes in a logger object.
+     * @param roomName Takes in a string.
+     * @param rightDoor Takes in a Door.
+     * @return Returns a room.
+     * @throws Exception
+     */
     private static Room SetNewRoom(Logger log, String roomName, boolean rightDoor) throws Exception {
         // Create RoomSetup object
         RoomSetup roomSetup = new RoomSetup();
@@ -791,10 +857,6 @@ public class Main{
         log.debug(ConsoleColors.PURPLE+"adding items to " + room.getName()+ConsoleColors.RESET);
         System.out.println();
         return room;
-    }
-
-    private static void ShowRoomName(Room currentRoom) {
-        System.out.println(currentRoom.getName());
     }
 
 
