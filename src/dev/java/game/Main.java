@@ -565,22 +565,36 @@ public class Main{
                 ConsoleColors.BLUE+"==========================================\n"+ConsoleColors.RESET +
                         "            THANKS FOR PLAYING!\n" +
                         ConsoleColors.BLUE+"=========================================="+ConsoleColors.RESET;
-        System.out.println(aboutHeader);
-        System.out.println(aboutInfo);
-        System.out.println();
-        System.out.println(descHeader);
-        System.out.println(descInfo);
-        System.out.println();
-        System.out.println(devTeamHeader);
-        System.out.println(devInfo);
-        System.out.println();
-        System.out.println(thanksInfoHeader);
-        System.out.println(thanksInfo);
-        System.out.println();
-        System.out.println(legalHeader);
-        System.out.println(legalInfo);
-        System.out.println();
-        System.out.println(thanksMessage);
+        try {
+            System.out.println(aboutHeader);
+            Thread.sleep(1000);
+            System.out.println(aboutInfo);
+            System.out.println();
+            Thread.sleep(1500);
+            System.out.println(descHeader);
+            Thread.sleep(1000);
+            System.out.println(descInfo);
+            System.out.println();
+            Thread.sleep(1500);
+            System.out.println(devTeamHeader);
+            Thread.sleep(1000);
+            System.out.println(devInfo);
+            System.out.println();
+            Thread.sleep(1500);
+            System.out.println(thanksInfoHeader);
+            Thread.sleep(1000);
+            System.out.println(thanksInfo);
+            System.out.println();
+            Thread.sleep(1500);
+            System.out.println(legalHeader);
+            Thread.sleep(1000);
+            System.out.println(legalInfo);
+            System.out.println();
+            Thread.sleep(1500);
+            System.out.println(thanksMessage);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
     }
 
     /**
@@ -622,21 +636,21 @@ public class Main{
                 " ---               ---        ---         ---        \n" +
                 "                                                     \n"+ConsoleColors.RESET;
         try {
-            Thread.sleep(3000);
+            Thread.sleep(4500);
             System.out.println();
             System.out.println();
             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                     ": The shadows in the room deepen, their edges sharpening as they creep toward you. The air grows heavy, pressing down on your chest like a weight you can't shake. The faint hum that has haunted you\n" +
                     "since you arrived now rises to a deafening roar, and the walls seem to close in, their surfaces rippling like liquid darkness.");
-            Thread.sleep(3000);
+            Thread.sleep(4500);
             System.out.println();
             System.out.println(ConsoleColors.RED+ "ACTION" +ConsoleColors.RESET+
                     ": You try to move, but your body refuses to obey. The shadows coil around you, their touch cold - unyielding. The last thing you see is the faint flicker of a candle in the distance, its light\n" +
                     "extinguished as the void consumes all. The last thing you hear is a low, hungry laugh - a sound that echoes in your mind long after everything else fades to black.");
-            Thread.sleep(3000);
+            Thread.sleep(4500);
             System.out.println();
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"\""+player.getUpperName()+"... I told you to be gone. Now you will stay... Forever.");
-            Thread.sleep(3000);
+            Thread.sleep(4500);
             System.out.println();
             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                     ": As the darkness envelops you completely, you feel a presence - vast, ancient, and utterly alien. It reaches for you, not with hands but with something indescribable - something that twists\n" +
@@ -644,18 +658,19 @@ public class Main{
                     "terrible than you could ever comprehend...");
             System.out.println();
             System.out.println();
-            Thread.sleep(3000);
+            Thread.sleep(4500);
             System.out.println(gameOver);
-            System.out.println();
             Thread.sleep(3000);
             System.out.println();
-            Thread.sleep(300);
+            Thread.sleep(1500);
             System.out.println();
-            Thread.sleep(300);
+            Thread.sleep(1500);
             System.out.println();
-            Thread.sleep(300);
+            Thread.sleep(1500);
             System.out.println();
-            Thread.sleep(300);
+            Thread.sleep(1500);
+            System.out.println();
+            Thread.sleep(1500);
             System.out.println();
             Thread.sleep(8000);
         } catch (InterruptedException ex) {
@@ -677,34 +692,35 @@ public class Main{
                 "                                                     \n"+ConsoleColors.RESET;
         try {
             System.out.println();
+            Thread.sleep(4500);
             ///  the revelation
             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                     ": As you step forward, a voice echoes through the void - a voice that is both familiar and alien, as if it is speaking from within your own mind.");
-            Thread.sleep(3000);
+            Thread.sleep(4500);
             System.out.println();
             //  voice speaks
             System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
                     ": 'You have done well to escape the labyrinth but tell me, wanderer... Do you truly believe you have won?'");
-            Thread.sleep(3000);
+            Thread.sleep(4500);
             System.out.println();
             System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
                     ": 'You are already dead. The rooms you traversed were not a prison of flesh and stone, but a purgatory of your own making. A final test of your will, your resilience, your desire to escape.'");
-            Thread.sleep(3000);
+            Thread.sleep(4500);
             System.out.println();
             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                     ": The words sink into your mind like stones dropped into a still pond. Memories flood back - fragmented, disjointed. A car crash. A hospital bed. The sound of a flatlining heart monitor.\n" +
                     "The realization hits you like a tidal wave - you never escaped death. You have been here all along.");
-            Thread.sleep(3000);
+            Thread.sleep(4500);
             System.out.println();
             ///  the choice
             System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                     ": The voice speaks again, its tone shifting from cold indifference to something almost... pitying.");
-            Thread.sleep(3000);
+            Thread.sleep(4500);
             System.out.println();
             System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
                     ": 'You have two choices, wanderer. You may step forward into the void and cease to exist - no pain, no fear, no memory. Or you may turn back and face the darkness that awaits. A darkness that\n" +
                     "will consume you, body and soul, for all eternity.'");
-            Thread.sleep(3000);
+            Thread.sleep(4500);
             System.out.println();
             // player choice
             Scanner scanner = new Scanner(System.in);
@@ -714,6 +730,7 @@ public class Main{
                 System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
                         ": 'Make your decision.'");
                 System.out.println();
+                Thread.sleep(4500);
                 System.out.println(ConsoleColors.BLUE+"OPTION 1"+ConsoleColors.RESET+": Step forward into the void\n" +
                         ConsoleColors.BLUE+"OPTION 2"+ConsoleColors.RESET+": Turn back and face the darkness");
                 System.out.println();
@@ -728,35 +745,35 @@ public class Main{
                 System.out.println();
                 System.out.println(ConsoleColors.GREEN+ "DISEMBODIED VOICE" +ConsoleColors.RESET+
                         ": 'And so, you choose oblivion. A fitting end for one who sought escape above all else.'");
-                Thread.sleep(3000);
+                Thread.sleep(4500);
                 System.out.println();
                 System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                         ": You take a step forward, and the void envelops you. There is no pain, no fear - only a profound sense of peace. The darkness closes in and, for a moment, you feel as though you are floating.");
-                Thread.sleep(3000);
+                Thread.sleep(4500);
                 System.out.println();
                 System.out.println();
                 System.out.println("Then, nothing.");
-                Thread.sleep(1500);
+                Thread.sleep(4500);
                 System.out.println();
-                Thread.sleep(1500);
+                Thread.sleep(4500);
                 System.out.println();
                 System.out.println("No thoughts.");
-                Thread.sleep(1500);
+                Thread.sleep(4500);
                 System.out.println();
-                Thread.sleep(1500);
+                Thread.sleep(4500);
                 System.out.println();
                 System.out.println("No memories.");
-                Thread.sleep(1500);
+                Thread.sleep(4500);
                 System.out.println();
-                Thread.sleep(1500);
+                Thread.sleep(4500);
                 System.out.println();
                 System.out.println("No self.");
-                Thread.sleep(1500);
+                Thread.sleep(4500);
                 System.out.println();
-                Thread.sleep(2500);
+                Thread.sleep(4500);
                 System.out.println();
                 System.out.println("You are gone.");
-                Thread.sleep(3500);
+                Thread.sleep(4500);
                 System.out.println();
                 Thread.sleep(1500);
                 System.out.println();
@@ -793,6 +810,12 @@ public class Main{
             Thread.sleep(3000);
             System.out.println(ConsoleColors.BLUE+ "IN THE END, THERE IS NO ESCAPE. ONLY THE CHOICES WE MAKE, AND THE CONSEQUENCES WE MUST ENDURE."+ConsoleColors.RESET);
             Thread.sleep(3000);
+            System.out.println();
+            Thread.sleep(1500);
+            System.out.println();
+            Thread.sleep(1500);
+            System.out.println();
+            Thread.sleep(1500);
             System.out.println();
             Thread.sleep(1500);
             System.out.println();

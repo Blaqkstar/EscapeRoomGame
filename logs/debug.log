@@ -199,3 +199,39 @@
 03-12-2025 11:46:16.113 DEBUG [game.Main] - [0;35muser input received[0m
 03-12-2025 11:46:16.114 DEBUG [game.Main] - [0;35minstantiating Consequences[0m
 03-12-2025 11:46:16.114 DEBUG [game.Main] - [0;35madding items to Consequences[0m
+03-12-2025 11:52:29.928 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-12-2025 11:52:29.932 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-12-2025 11:52:47.155 DEBUG [game.Main] - [0;35muser input received[0m
+03-12-2025 11:52:47.156 DEBUG [game.Main] - [0;35minstantiating Final Room[0m
+03-12-2025 11:52:47.156 DEBUG [game.Main] - [0;35madding items to Final Room[0m
+03-12-2025 11:55:32.574 DEBUG [game.Main] - [0;35muser input received[0m
+03-12-2025 11:55:32.574 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-12-2025 11:55:44.051 DEBUG [game.Main] - [0;35muser input received[0m
+03-12-2025 11:55:44.051 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-12-2025 11:55:46.046 DEBUG [game.Main] - [0;35muser input received[0m
+03-12-2025 11:55:46.046 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-12-2025 11:55:50.712 DEBUG [game.Main] - [0;35muser input received[0m
+03-12-2025 11:55:50.712 DEBUG [game.Main] - [0;35mplayer selected look[0m
+03-12-2025 11:55:55.936 DEBUG [game.Main] - [0;35muser input received[0m
+03-12-2025 11:55:55.936 DEBUG [game.Main] - [0;35mplayer selected use[0m
+03-12-2025 11:55:55.936 DEBUG [game.Main] - [0;35mSearching for item with key 'key'[0m
+03-12-2025 11:55:55.936 DEBUG [game.Main] - [0;35mFound item 'key'[0m
+03-12-2025 11:55:57.588 DEBUG [game.Main] - [0;35muser input received[0m
+03-12-2025 11:55:57.588 DEBUG [game.Main] - [0;35mplayer selected open[0m
+03-12-2025 11:55:57.588 DEBUG [game.Main] - [0;35minstantiating Consequences[0m
+03-12-2025 11:55:57.588 DEBUG [game.Main] - [0;35madding items to Consequences[0m
+03-12-2025 11:58:01.126 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-12-2025 11:58:01.128 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-12-2025 11:58:08.806 DEBUG [game.Main] - [0;35muser input received[0m
+03-12-2025 11:58:08.807 DEBUG [game.Main] - [0;35minstantiating Consequences[0m
+03-12-2025 11:58:08.807 DEBUG [game.Main] - [0;35madding items to Consequences[0m
+03-12-2025 12:00:18.952 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-12-2025 12:00:18.954 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-12-2025 12:00:24.769 DEBUG [game.Main] - [0;35muser input received[0m
+03-12-2025 12:00:24.769 DEBUG [game.Main] - [0;35minstantiating Consequences[0m
+03-12-2025 12:00:24.769 DEBUG [game.Main] - [0;35madding items to Consequences[0m
+03-12-2025 12:03:46.151 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-12-2025 12:03:46.154 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-12-2025 12:06:00.742 DEBUG [game.Main] - [0;35minstantiating Tutorial Room[0m
+03-12-2025 12:06:00.744 DEBUG [game.Main] - [0;35madding items to Tutorial Room[0m
+03-12-2025 12:06:04.490 DEBUG [game.Main] - [0;35muser input received[0m

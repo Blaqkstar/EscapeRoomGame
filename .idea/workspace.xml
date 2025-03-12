@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Text output cleanup">
+    <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Additional narrative text output cleanup&#10;Fixed a bug where if player reaches gameOver from Consequences, checkScore() incorrectly runs before asking if player wants to play again.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,14 +150,6 @@
       <workItem from="1741732827426" duration="2810000" />
       <workItem from="1741753770210" duration="3328000" />
       <workItem from="1741790361158" duration="3030000" />
-    </task>
-    <task id="LOCAL-00006" summary="Fixed Transmorgrifier interaction menu loop to behave as expected.&#10;Modified Room.describeItemsToPlayer to include a grammar formatter&#10;Cleaned up perceptual feedback output generally. Debug output is now purple, and any time the player receives some kind of perceptual feedback, it is now preceded by an 'PERCEPTION' indicator. &#10;Grouped up debug messages and created space between them and perceptual feedback&#10;Changed 'highscores' command to 'hiscores' to reduce player keystroke requirements&#10;Changed MakeRoom method naming conventions to allow for greater uniformity in our method calls (syntax is now MakeRoom_RoomName)">
-      <option name="closed" value="true" />
-      <created>1740895307939</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1740895307939</updated>
     </task>
     <task id="LOCAL-00007" summary="Some further cleanup work to diegetic feedback to improve player experience and readability">
       <option name="closed" value="true" />
@@ -545,14 +535,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741795080214</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Additional narrative text output cleanup&#10;Fixed a bug where if player reaches gameOver from Consequences, checkScore() incorrectly runs before asking if player wants to play again.">
+      <option name="closed" value="true" />
+      <created>1741798127636</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1741798127636</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Abstracted logic to set game over score into its own method, setGameOverScore()" />
     <MESSAGE value="Came up with a better placeholder name, pending group feedback.&#10;Added placeholder for about command&#10;Updated title font&#10;Some additional text output cleanup" />
     <MESSAGE value="Embellished the lever success/failure messages to fit the vibe of the game." />
     <MESSAGE value="Got Conservatory padded out with first pass of all its flavor items&#10;Removed Room from the constructor of a couple of the item child classes that didn't need to know about room details." />
@@ -577,7 +574,8 @@
     <MESSAGE value="Added lab music" />
     <MESSAGE value="text cleanup" />
     <MESSAGE value="Text output cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Text output cleanup" />
+    <MESSAGE value="Additional narrative text output cleanup&#10;Fixed a bug where if player reaches gameOver from Consequences, checkScore() incorrectly runs before asking if player wants to play again." />
+    <option name="LAST_COMMIT_MESSAGE" value="Additional narrative text output cleanup&#10;Fixed a bug where if player reaches gameOver from Consequences, checkScore() incorrectly runs before asking if player wants to play again." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
