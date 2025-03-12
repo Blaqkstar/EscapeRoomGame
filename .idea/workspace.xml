@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1dfdc85-7105-4882-9f55-0cb3ae09b9f8" name="Changes" comment="Updates to lab&#10;&#10;-Text and formatting updates with correct game tags and colors&#10;&#10;-Fixed bug that allowed player to transmorg items without first entering transmorg menu by adding beingUsed field to Transmorgrifier and checking isBeingUsed in item use() method&#10;&#10;-Removed items from room after transmorgrifying by adding removeItem method to Room&#10;&#10;-Updates required a few changes to item constructors. Mentioning this in case there's any issues similar to the one Joey encountered the other day">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/RoomSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Desk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Desk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/java/game/Lamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/java/game/Lamp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Kyle/IdeaProjects/EscapeRoomGame/resources/derbyclient.jar",
