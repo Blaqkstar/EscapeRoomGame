@@ -17,7 +17,7 @@ public class RoomSetup {
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": There is a deadbolt that looks like it would accept an old key.", "door");
 
         tutorialRoom.SetExitDoor(exitDoor);
-        tutorialRoom.setRoomPar(5); // ROOM PAR
+        tutorialRoom.setRoomPar(7); // ROOM PAR (7x3=21 turns to beat the room before game over)
 
         Desk itemDesk = new Desk("desk",
                 "a "+ConsoleColors.CYAN+"desk"+ConsoleColors.RESET+" with a "+ConsoleColors.CYAN+"lamp"+ConsoleColors.RESET,
@@ -56,7 +56,7 @@ public class RoomSetup {
                 ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+": You search for a keyhole but find none. It's a smooth, thick, steel plate.", "door");
         // defines SetExitDoor()
         conservatoryRoom.SetExitDoor(exitDoor);
-        conservatoryRoom.setRoomPar(15);
+        conservatoryRoom.setRoomPar(10); // ROOM PAR (10x3=30 turns to beat the room before game over)
         // creates levers and uses observer pattern to call checkLevers() automatically whenever a lever's position changes
         ///  LEVER A
         Lever leverA = new Lever("lever1", "a lever ("+ConsoleColors.CYAN + "Lever1" + ConsoleColors.RESET +") with an onyx grip",
@@ -139,7 +139,7 @@ public class RoomSetup {
 
         ArrayList<Item> items = new ArrayList<Item>();
 
-        labRoom.setRoomPar(10);
+        labRoom.setRoomPar(10); // ROOM PAR (10x3=30 turns to beat the room before game over)
 
         // machine attached to a wall. Player doesn't know how to use it (diegetically) until they inspect() on the scientist's research notebook
         // if they try to use transmorg before they read the notebook, they'll fall in and GAME OVER
@@ -213,7 +213,7 @@ public class RoomSetup {
 
         ArrayList<Item> items = new ArrayList<Item>();
 
-        finalRoom.setRoomPar(10);
+        finalRoom.setRoomPar(5); // ROOM PAR (5x3=15 turns to beat the room before game over)
 
         exitDoor = new Door(finalRoom, 1,
                 "The mirror-like surface of the " + ConsoleColors.CYAN + "door" + ConsoleColors.RESET + " glows faintly, its surface fractured like cracked glass. As you step closer, the image within begins to take shape — a\n" +
@@ -271,6 +271,7 @@ public class RoomSetup {
     public Room MakeRoom_TheEnd(boolean rightDoor) {
 
         Room theEndRoom = new Room();
+        theEndRoom.setRoomPar(1000); // ROOM PAR (1000x3=3000 turns to beat the room before game over). Ensuring that player doesn't receive a checkScore() here
 
         if(rightDoor) {
             theEndRoom.setIntroBlurb(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
@@ -294,6 +295,7 @@ public class RoomSetup {
                 ConsoleColors.GREEN+"PERCEPTION"+ConsoleColors.RESET+
                 ": The void stretches endlessly in all directions, a sea of darkness so profound that it feels as though it might swallow you whole. There is no light, no sound, no sense of time or space - only the\n" +
                 "faint, lingering memory of the rooms you left behind. The air is heavy, oppressive, as if the void itself is alive and watching.");
+        consequences.setRoomPar(1000); // ROOM PAR (1000x3=3000 turns to beat the room before game over). Ensuring that player doesn't receive a checkScore() here
 
         return consequences;
     }

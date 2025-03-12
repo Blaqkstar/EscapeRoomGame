@@ -60,8 +60,8 @@ public class Main{
             System.out.println();
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+": '"+player.getUpperName() + "... I do not know you...' ");
             Thread.sleep(500);
-
-            //playIntro(); /// -------------------------------------------------------------------------------- {<NARRATIVE INTRO HERE>} ------------
+            /// ----------------------------------------------------------------------------------------------------------------------------- {<NARRATIVE INTRO HERE>} ------------
+            playIntro();
 
             gameOverScore = setGameOverScore(room); // setsGameOverScore
 
@@ -431,12 +431,12 @@ public class Main{
      */
     private static void playIntro() throws InterruptedException {
         System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE: "+ConsoleColors.RESET+"'BEGONE!'");
-        Thread.sleep(2000);
+        Thread.sleep(4500);
         System.out.println();
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                 ": The voice's command reverberates through the astral plane, shaking the very fabric of your being. The dim candle flares violently, its light expanding into a blinding, otherworldly\n" +
                 "radiance. Shadows writhe and twist as if alive, stretching toward you like grasping tendrils. The air grows heavy, pressing against your soul with an almost tangible weight.");
-        Thread.sleep(6000);
+        Thread.sleep(7000);
         System.out.println();
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                 ": A low, resonant hum begins to build, vibrating through your essence. It grows louder and louder, until it feels as though the sound is coming from within you. The candle's light intensifies,\n" +
@@ -447,32 +447,36 @@ public class Main{
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                 ": The voice echoes again, but this time it is not alone - it is a chorus - a cacophony of whispers and blood-curdling screams, all in unison: \""+ConsoleColors.RED+"BEGONE!, BEGONE!, BEGONE!"+ConsoleColors.RESET+"\" The sound is\n" +
                 "deafening, overwhelming, as if the very fabric of the astral plane is rejecting you.");
-        Thread.sleep(6000);
+        Thread.sleep(7000);
         System.out.println();
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                 ": The light from the candle explodes outward in a blinding wave, engulfing everything. For a moment, you are weightless, suspended in a void of pure sensation. Colors and sounds blur together,\n" +
                 "indistinguishable from one another. You feel as though you are being pulled apart and reassembled, your essence scattered across the cosmos and then drawn back together. And then... ");
-        Thread.sleep(6000);
+        Thread.sleep(7000);
         System.out.println();
+        Thread.sleep(1500);
         System.out.println();
         System.out.println("Silence...");
-        Thread.sleep(3000);
+        Thread.sleep(4500);
         System.out.println();
+        Thread.sleep(1500);
         System.out.println();
         System.out.println("Darkness...");
-        Thread.sleep(3000);
+        Thread.sleep(4500);
         System.out.println();
+        Thread.sleep(1500);
         System.out.println();
         System.out.println("A single, faint pulse of light, like a heartbeat...");
-        Thread.sleep(3000);
+        Thread.sleep(4500);
         System.out.println();
+        Thread.sleep(1500);
         System.out.println();
         System.out.println("And then... ");
-        Thread.sleep(4000);
+        Thread.sleep(4500);
         System.out.println();
-        Thread.sleep(2000);
+        Thread.sleep(1500);
         System.out.println();
-        Thread.sleep(2000);
+        Thread.sleep(1500);
         System.out.println();
         System.out.println(ConsoleColors.GREEN+ "PERCEPTION" +ConsoleColors.RESET+
                 ": You awaken, groggily, to the sound of rain tapping against a fogged window. The air is heavy, thick with the scent of damp wood and something faintly metallic,\n" +
@@ -481,6 +485,7 @@ public class Main{
                 "coiling like a living thing. The wallpaper peels at the edges, revealing patterns beneath that seem to shift when you look away. Your head throbs faintly, as though you've\n" +
                 "forgotten something important. This place feels like a threshold - a space between worlds - and you can't tell if you're meant to escape or if something is waiting for you to\n" +
                 "step further in...");
+        Thread.sleep(7000);
     }
 
     /**
@@ -532,8 +537,8 @@ public class Main{
                         ConsoleColors.BLUE+"=========================================="+ConsoleColors.RESET;
         String descInfo =
                 "Echoes Beyond The Veil is a text-based adventure game with strong cosmic horror / noir overtones. The player takes on the role of an unwitting explorer who finds themselves\n" +
-                        "in a strange space between worlds with limited time to escape untold eldritch horrors and a fate worse than death.\n" +
-                        "With every decision, you shape the story and dive deeper into this strange, liminal, place.";
+                        "in a mysterious space between worlds with limited time to escape untold eldritch horrors and a fate worse than death.\n" +
+                        "With every decision, the story unfolds as you dive deeper into this strange, liminal space.";
         String devTeamHeader =
                 ConsoleColors.BLUE+"==========================================\n"+ConsoleColors.RESET +
                         "            DEVELOPMENT TEAM\n" +
@@ -570,27 +575,27 @@ public class Main{
             Thread.sleep(1000);
             System.out.println(aboutInfo);
             System.out.println();
-            Thread.sleep(1500);
+            Thread.sleep(800);
             System.out.println(descHeader);
-            Thread.sleep(1000);
+            Thread.sleep(800);
             System.out.println(descInfo);
             System.out.println();
-            Thread.sleep(1500);
+            Thread.sleep(800);
             System.out.println(devTeamHeader);
-            Thread.sleep(1000);
+            Thread.sleep(800);
             System.out.println(devInfo);
             System.out.println();
-            Thread.sleep(1500);
+            Thread.sleep(800);
             System.out.println(thanksInfoHeader);
-            Thread.sleep(1000);
+            Thread.sleep(800);
             System.out.println(thanksInfo);
             System.out.println();
-            Thread.sleep(1500);
+            Thread.sleep(800);
             System.out.println(legalHeader);
-            Thread.sleep(1000);
+            Thread.sleep(800);
             System.out.println(legalInfo);
             System.out.println();
-            Thread.sleep(1500);
+            Thread.sleep(800);
             System.out.println(thanksMessage);
         } catch (InterruptedException ex) {
             ex.printStackTrace();
