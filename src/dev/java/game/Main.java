@@ -62,7 +62,7 @@ public class Main{
             System.out.println(ConsoleColors.GREEN+"DISEMBODIED VOICE"+ConsoleColors.RESET+": '"+player.getUpperName() + "... I do not know you...' ");
             Thread.sleep(500);
             /// ----------------------------------------------------------------------------------------------------------------------------- {<NARRATIVE INTRO HERE>} ------------
-            //playIntro();
+            playIntro();
 
             gameOverScore = setGameOverScore(room); // setsGameOverScore
 
