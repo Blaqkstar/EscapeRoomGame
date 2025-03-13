@@ -76,18 +76,18 @@ public class Main{
                 input = scanner.nextLine(); // user input
                 if (input.equalsIgnoreCase("exit")) {
                     // exit message
-                    log.debug(ConsoleColors.PURPLE+"exiting game"+ConsoleColors.RESET);
+                    //log.debug(ConsoleColors.PURPLE+"exiting game"+ConsoleColors.RESET);
                     System.out.println("Thanks for playing!");
                     Thread.sleep(2000);
                     scanner.close();
                     System.exit(0); // quits
                 }
-                log.debug(ConsoleColors.PURPLE+"user input received"+ConsoleColors.RESET);
+                //log.debug(ConsoleColors.PURPLE+"user input received"+ConsoleColors.RESET);
 
                 // processes user input
                 /// ------------------------------------------------------------------------ { <LOOK ACTION HANDLER> } --------------------
                 if (input.startsWith("look ")) {
-                    log.debug(ConsoleColors.PURPLE+"player selected look"+ConsoleColors.RESET);
+                    //log.debug(ConsoleColors.PURPLE+"player selected look"+ConsoleColors.RESET);
                     System.out.println();
                     final String[] parts = input.split(" "); // splits input into parts, storing in an array
                     if (parts.length == 2) { // ensures that input consists of two parts
@@ -125,7 +125,7 @@ public class Main{
                     }
                     /// -------------------------------------------------------------------- { <INSPECT ACTION HANDLER> } --------------------
                 } else if(input.startsWith("inspect ")) {
-                    log.debug(ConsoleColors.PURPLE+"player selected inspect"+ConsoleColors.RESET);
+                    //log.debug(ConsoleColors.PURPLE+"player selected inspect"+ConsoleColors.RESET);
                     System.out.println();
                     final String[] parts = input.split(" "); // splits input into parts, storing in an array
                     if (parts.length == 2) { // ensures that input consists of two parts
@@ -159,13 +159,13 @@ public class Main{
                 }
                 /// ------------------------------------------------------------------------ { <USE ACTION HANDLER> } --------------------
                 else if (input.startsWith("use ")) {
-                    log.debug(ConsoleColors.PURPLE+"player selected use"+ConsoleColors.RESET);
+                    //log.debug(ConsoleColors.PURPLE+"player selected use"+ConsoleColors.RESET);
                     final String[] parts = input.split(" "); // splits input into parts, storing in an array
                     if (parts.length == 2) { // ensures that input consists of two parts
                         try {
                             // normalizes input to lowercase and trims whitespace
                             String itemName = parts[1].trim().toLowerCase();
-                            log.debug(ConsoleColors.PURPLE+"Searching for item with key '" + itemName + "'"+ConsoleColors.RESET); // for debug purposes
+                            //log.debug(ConsoleColors.PURPLE+"Searching for item with key '" + itemName + "'"+ConsoleColors.RESET); // for debug purposes
 
                             // Allow player to use transmorgrifer by calling it a "machine"
                             if (itemName.equalsIgnoreCase("machine")) {itemName="transmorgrifier";}
@@ -174,10 +174,10 @@ public class Main{
                             // declare item that is being used
                             Item item = room.getItems().get(itemName);
                             if (item != null) {
-                                log.debug(ConsoleColors.PURPLE+"Found item '" + item.getName() + "'"+ConsoleColors.RESET);
+                                //log.debug(ConsoleColors.PURPLE+"Found item '" + item.getName() + "'"+ConsoleColors.RESET);
                                 System.out.println();
                             } else {
-                                log.debug(ConsoleColors.PURPLE+"Item not found in room's items map"+ConsoleColors.RESET);
+                                //log.debug(ConsoleColors.PURPLE+"Item not found in room's items map"+ConsoleColors.RESET);
                                 System.out.println();
                             }
                             ///  DEBUG MESSAGES END
@@ -219,7 +219,7 @@ public class Main{
                 }
                 /// ----------------------------------------------------------------------  { <OPEN ACTION HANDLER> }--------------------
                 else if (input.startsWith("open ")) {
-                    log.debug(ConsoleColors.PURPLE+"player selected open"+ConsoleColors.RESET);
+                    //log.debug(ConsoleColors.PURPLE+"player selected open"+ConsoleColors.RESET);
                     System.out.println();
                     final String[] parts = input.split(" "); // splits input into parts, storing in an array
                     if (parts.length == 2) { // ensures that input consists of two parts
@@ -365,7 +365,7 @@ public class Main{
         } while (!input.equalsIgnoreCase("exit")); /// repeats loop until user types 'exit'... this is always true, but I created a band-aid by adding a check for 'exit' just after user input is accepted
 
         // exit message
-        log.info("exiting game...");
+        //log.info("exiting game...");
         System.out.println("Thanks for playing!");
         scanner.close();
     }
@@ -1034,8 +1034,8 @@ public class Main{
             throw new Exception("Room does not exist!"); // error handling in case room doesn't exist
         }
         // prints logs
-        log.debug(ConsoleColors.PURPLE+"instantiating " + room.getName()+ConsoleColors.RESET);
-        log.debug(ConsoleColors.PURPLE+"adding items to " + room.getName()+ConsoleColors.RESET);
+        //log.debug(ConsoleColors.PURPLE+"instantiating " + room.getName()+ConsoleColors.RESET);
+        //log.debug(ConsoleColors.PURPLE+"adding items to " + room.getName()+ConsoleColors.RESET);
         System.out.println();
         return room;
     }
