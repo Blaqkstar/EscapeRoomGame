@@ -561,7 +561,7 @@ public class Main{
                         ConsoleColors.BLUE+"=========================================="+ConsoleColors.RESET;
         String thanksInfo =
                 "- Our families, for putting up with late nights and cranky mornings.\n" +
-                        "- StackOverflow, for always sending us on a wild goose chase for an obscure forum post with the wrong answer.\n" +
+                        "- StackOverflow, always sending us on the hunt for a solution that isn't QUITE right but just enough to give us ideas.\n" +
                         "- Coffee, for doing what coffee do.\n" +
                         "- Josh, for helping us all nail down our understanding of interfaces.";
         String legalHeader =
